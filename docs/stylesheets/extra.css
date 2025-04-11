@@ -14,21 +14,6 @@
     padding: 0 1rem;
 }
 
-/* 移除文章顶部多余空间 */
-.md-content article h1:first-child,
-.md-content article h2:first-child {
-    display: none;
-}
-
-.md-content article {
-    margin-top: 0;
-}
-
-.md-content__inner {
-    margin-top: 0;
-    padding-top: 0;
-}
-
 /* 美化标题样式 */
 .md-content h1,
 .md-content h2,
@@ -40,6 +25,16 @@
     color: var(--md-primary-fg-color);
     margin-top: 1em;
     margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+/* 调整标题间距 */
+.md-content h1 + h2,
+.md-content h2 + h3,
+.md-content h3 + h4,
+.md-content h4 + h5,
+.md-content h5 + h6 {
+    margin-top: 0.5em;
 }
 
 /* 美化正文段落 */

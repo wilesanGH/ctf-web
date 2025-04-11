@@ -54,6 +54,8 @@ nav:
     - 普通注入: 'SQL-3-普通注入.md'
     - bool盲注思路: 'SQL-4-bool盲注思路.md'
     - bool盲注逻辑参考: 'SQL-5-bool盲注逻辑参考.md'
+  - 学习资源:
+    - 学习平台推荐: '网络安全与算法学习平台推荐.md'
 
 markdown_extensions:
   - admonition
