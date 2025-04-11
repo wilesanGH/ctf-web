@@ -1,0 +1,274 @@
+/* 设置全局字体为楷体 */
+:root {
+    --md-text-font: "KaiTi", "楷体", "Noto Sans SC", sans-serif;
+}
+
+/* 调整内容区域最大宽度和边距 */
+.md-grid {
+    max-width: 1440px;
+}
+
+.md-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* 移除文章顶部多余空间 */
+.md-content article h1:first-child,
+.md-content article h2:first-child {
+    display: none;
+}
+
+.md-content article {
+    margin-top: 0;
+}
+
+.md-content__inner {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* 美化标题样式 */
+.md-content h1,
+.md-content h2,
+.md-content h3,
+.md-content h4,
+.md-content h5,
+.md-content h6 {
+    font-family: "KaiTi", "楷体", "Noto Sans SC", sans-serif;
+    color: var(--md-primary-fg-color);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* 美化正文段落 */
+.md-content p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin: 0.8em 0;
+}
+
+/* 调整列表间距 */
+.md-content ul,
+.md-content ol {
+    margin: 0.5em 0;
+}
+
+.md-content li {
+    margin: 0.3em 0;
+}
+
+/* 美化图片显示 */
+.md-content img {
+    display: block;
+    margin: 1.2em auto;
+    max-width: 95%;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.md-content img:hover {
+    transform: scale(1.02);
+}
+
+/* 美化导航栏 */
+.md-nav {
+    font-family: "KaiTi", "楷体", "Noto Sans SC", sans-serif;
+}
+
+/* 左侧导航样式 */
+.md-nav--primary .md-nav__item {
+    padding: 0;
+}
+
+.md-nav--primary .md-nav__link {
+    margin: 0.4em 0;
+    padding: 0.4em 0.6em;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* 导航项缩进和层级线 */
+.md-nav--primary .md-nav__list .md-nav__list {
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 导航项展开/收起按钮 */
+.md-nav__toggle {
+    margin: 0.2rem 0;
+}
+
+.md-nav__icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.2rem;
+}
+
+/* 导航项悬停效果 */
+.md-nav__link:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    color: var(--md-accent-fg-color);
+}
+
+/* 当前选中的导航项 */
+.md-nav__item--active > .md-nav__link {
+    color: var(--md-accent-fg-color);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* 顶部导航样式 */
+.md-tabs {
+    background-color: var(--md-primary-fg-color);
+}
+
+.md-tabs__item {
+    font-size: 1.1em !important;
+    margin: 0 0.5em;
+}
+
+.md-tabs__link {
+    font-family: "KaiTi", "楷体", "Noto Sans SC", sans-serif;
+    margin: 0.5em 0;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+    opacity: 1;
+}
+
+/* 美化顶部导航栏 */
+.md-header {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 固定顶部标题样式 */
+.md-header__title {
+    position: relative;
+}
+
+.md-header__topic:first-child {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+    pointer-events: auto;
+}
+
+.md-header__topic + .md-header__topic {
+    display: none;
+}
+
+/* 顶部导航栏标题 */
+.md-header__topic {
+    font-family: "KaiTi", "楷体", "Noto Sans SC", sans-serif;
+    font-size: 1.3em;
+    color: #000000;
+}
+
+/* 调整右侧目录 */
+.md-sidebar--secondary {
+    padding: 1rem 0;
+}
+
+.md-sidebar--secondary .md-nav__title {
+    font-size: 1.1em;
+    padding: 0.5rem 0.8rem;
+}
+
+.md-sidebar--secondary .md-nav__item {
+    padding: 0.2rem 0.8rem;
+}
+
+/* 美化引用块 */
+blockquote {
+    border-left: 4px solid var(--md-primary-fg-color);
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    background-color: rgba(0,0,0,0.03);
+    border-radius: 0 5px 5px 0;
+}
+
+/* 美化表格样式 */
+.md-typeset table:not([class]) {
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 1em 0;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+    padding: 0.8em;
+}
+
+.md-typeset table:not([class]) td {
+    padding: 0.8em;
+}
+
+/* 美化链接样式 */
+.md-content a:not(.md-button) {
+    color: var(--md-accent-fg-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--md-accent-fg-color);
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.md-content a:not(.md-button):hover {
+    color: var(--md-accent-fg-color--dark);
+    border-bottom-color: var(--md-accent-fg-color--dark);
+}
+
+/* 调整首页内容布局 */
+.md-content__inner {
+    padding: 1rem 0;
+}
+
+/* 调整章节间距 */
+.md-content__inner > * {
+    margin-bottom: 1rem;
+}
+
+/* 优化项目特点列表样式 */
+.md-content__inner ul:not([class]) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+.md-content__inner ul:not([class]) li {
+    background: rgba(0, 0, 0, 0.03);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0;
+    transition: transform 0.2s ease;
+}
+
+.md-content__inner ul:not([class]) li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 调整搜索框样式 */
+.md-search__input {
+    background-color: rgba(0,0,0,0.05) !important;
+    color: #000000 !important;
+}
+
+.md-search__icon {
+    color: #000000 !important;
+} 

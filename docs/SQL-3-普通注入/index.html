@@ -1,0 +1,908 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/">
+      
+      
+        <link rel="next" href="../SQL-4-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>普通注入 - CTF-Web修炼手册</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-http1016238081less-1id1-order-by-3-" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="CTF-Web修炼手册" class="md-header__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CTF-Web修炼手册
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              普通注入
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  开始
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-tabs__link">
+          
+  
+  
+  环境配置
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="md-tabs__link">
+          
+  
+  
+  SQL注入技巧
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CTF-Web修炼手册" class="md-nav__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>
+
+    </a>
+    CTF-Web修炼手册
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    环境配置
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            环境配置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL-Hackbar 安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    SQL注入技巧
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            SQL注入技巧
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    注入中的关键词
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    information_schema利用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    普通注入
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    普通注入
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-http1016238081less-1id1-order-by-3-" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. http://10.16.2.3:8081/Less-1/?id=1' order by 3 --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-http1016238081less-1id-1-union-select-123-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,3 --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-http1016238081less-1id-1-union-select-1databaseversion-" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,database(),version() --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-http1016238081less-1id-1-union-select-12group_concattable_name-from-information_schematables-where-table_schemasecurity-" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema='security' --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-http1016238081less-1id-1-union-select-12group_concatcolumn_name-from-information_schemacolumns-where-table_nameusers-" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(column_name) from information_schema.columns where table_name='users' --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,id , password) from users --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,'-',id,'-' , password) from users --+
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-4-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    bool盲注思路
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    bool盲注逻辑参考
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-http1016238081less-1id1-order-by-3-" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. http://10.16.2.3:8081/Less-1/?id=1' order by 3 --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-http1016238081less-1id-1-union-select-123-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,3 --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-http1016238081less-1id-1-union-select-1databaseversion-" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,database(),version() --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-http1016238081less-1id-1-union-select-12group_concattable_name-from-information_schematables-where-table_schemasecurity-" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema='security' --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-http1016238081less-1id-1-union-select-12group_concatcolumn_name-from-information_schemacolumns-where-table_nameusers-" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(column_name) from information_schema.columns where table_name='users' --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,id , password) from users --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,'-',id,'-' , password) from users --+
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>普通注入</h1>
+
+<p>攻击过程一般分为以下几个步骤：</p>
+<ol>
+<li><strong>测试SQL注入漏洞</strong>：通过插入简单的SQL代码，确认是否存在注入漏洞。</li>
+<li><strong>确定查询的列数</strong>：通过<code>ORDER BY</code>或<code>UNION</code>来确定数据库查询中返回的列数。</li>
+<li><strong>获取数据库信息</strong>：通过查询数据库名称、版本等基本信息来了解数据库环境。</li>
+<li><strong>获取表和列信息</strong>：通过查询<code>information_schema</code>等系统表，获取数据库中的表和列信息。</li>
+<li><strong>提取敏感数据</strong>：最终，通过<code>GROUP_CONCAT</code>等函数获取敏感数据，如用户名、ID、密码等。</li>
+</ol>
+<p>详细过程如下：</p>
+<h3 id="1-http1016238081less-1id1-order-by-3-">1. <strong><code>http://10.16.2.3:8081/Less-1/?id=1' order by 3 --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 测试是否存在SQL注入漏洞。</p>
+<ul>
+<li><strong><code>id=1'</code></strong>：这个部分插入了一个闭合单引号（<code>'</code>），它试图结束掉原始的SQL语句，并引入新的SQL代码。通常，应用程序在执行查询时会拼接SQL语句，如果没有进行正确的参数化处理，注入攻击会成功。</li>
+<li><strong><code>order by 3</code></strong>：这是尝试通过SQL语句的<code>ORDER BY</code>子句来确定数据库中有多少列。这里<code>3</code>表示按第3列排序。如果数据库表中没有第3列，SQL会报错，攻击者可以通过调整这个数字来确定实际列数。</li>
+<li><strong><code>--+</code></strong>：这是SQL的注释符号。<code>--</code>表示注释的开始，<code>+</code>用于在URL编码中确保其作为注释符号被正确传递。它会将<code>ORDER BY 3</code>后面的内容视为注释，从而防止SQL语句后续的部分执行。</li>
+</ul>
+<p><strong>攻击目标：</strong> 测试系统是否容易受SQL注入影响，并尝试找出数据库查询中包含的列数。</p>
+<hr />
+<h3 id="2-http1016238081less-1id-1-union-select-123-">2. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,3 --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 通过<code>UNION</code>查询来获取数据库的更多信息。</p>
+<ul>
+<li><strong><code>id=-1'</code></strong>：与上一步类似，注入了一个闭合单引号（<code>'</code>）来结束原本的查询。</li>
+<li><strong><code>union select 1,2,3</code></strong>：<code>UNION</code>用于将两个<code>SELECT</code>查询的结果合并。在这种情况下，攻击者尝试返回3列的查询结果。前两个列（<code>1</code>和<code>2</code>）是占位符，而第三个列（<code>3</code>）可以是其他数据。如果这个查询成功，则说明数据库查询的列数至少是3。</li>
+<li><strong><code>--+</code></strong>：注释符号，防止SQL查询后续部分的执行。</li>
+</ul>
+<p><strong>攻击目标：</strong> 确认SQL查询中能返回的列数，并为进一步的注入操作做好准备。</p>
+<hr />
+<h3 id="3-http1016238081less-1id-1-union-select-1databaseversion-">3. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,database(),version() --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 获取数据库的基本信息。</p>
+<ul>
+<li><code>union select 1,database(),version()</code></li>
+</ul>
+<p>：这部分查询尝试通过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>UNION
+</code></pre></div>
+<p>查询获取两个数据库信息：</p>
+<ul>
+<li><code>1</code>：一个占位符。</li>
+<li><code>database()</code>：一个SQL函数，返回当前使用的数据库名称。</li>
+<li><code>version()</code>：一个SQL函数，返回数据库的版本信息。</li>
+</ul>
+<p>通过这种方式，攻击者可以获取有关数据库的名称和版本等敏感信息。</p>
+<hr />
+<h3 id="4-http1016238081less-1id-1-union-select-12group_concattable_name-from-information_schematables-where-table_schemasecurity-">4. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema='security' --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 获取数据库中表的名称。</p>
+<ul>
+<li><strong><code>group_concat(table_name)</code></strong>：<code>group_concat</code>是一个SQL聚合函数，允许将多个结果行连接成一个单一的字符串。在这里，攻击者试图从<code>information_schema.tables</code>中获取所有表名，并将它们连接成一个字符串。</li>
+<li><strong><code>where table_schema='security'</code></strong>：这是一个条件子句，限定了查询的范围，只获取数据库<code>security</code>中的表信息。<code>information_schema.tables</code>是一个系统表，包含了数据库中所有表的元数据。</li>
+</ul>
+<p><strong>攻击目标：</strong> 获取目标数据库中所有表的名称。</p>
+<hr />
+<h3 id="5-http1016238081less-1id-1-union-select-12group_concatcolumn_name-from-information_schemacolumns-where-table_nameusers-">5. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(column_name) from information_schema.columns where table_name='users' --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 获取某个表（例如<code>users</code>表）中的列名称。</p>
+<ul>
+<li><strong><code>group_concat(column_name)</code></strong>：类似于上一步，攻击者尝试通过<code>group_concat</code>获取<code>users</code>表中的所有列名，并将它们连接成一个字符串。</li>
+<li><strong><code>where table_name='users'</code></strong>：这个条件子句指定了只查询<code>users</code>表的列信息。</li>
+</ul>
+<p><strong>攻击目标：</strong> 获取<code>users</code>表中所有列的名称。</p>
+<hr />
+<h3 id="6-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-">6. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,id , password) from users --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 获取用户表中的敏感数据（如用户名、ID和密码）。</p>
+<ul>
+<li><strong><code>group_concat(username ,id , password)</code></strong>：攻击者试图获取<code>users</code>表中的<code>username</code>（用户名）、<code>id</code>（用户ID）和<code>password</code>（用户密码）字段的值，并将它们连接成一个字符串。</li>
+</ul>
+<p><strong>攻击目标：</strong> 获取<code>users</code>表中的所有用户信息（用户名、ID和密码）。这些数据对于进一步的攻击（如登陆攻击）非常有价值。</p>
+<hr />
+<h3 id="7-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-">7. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,'-',id,'-' , password) from users --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 改进之前的注入，获取数据格式化后输出。</p>
+<ul>
+<li><strong><code>group_concat(username ,'-',id,'-' , password)</code></strong>：这里，攻击者使用<code>'-'</code>作为分隔符来格式化输出数据。相比之前的查询，这种格式的输出更容易在后续处理中解析（例如，分割用户名、ID和密码）。</li>
+</ul>
+<p><strong>攻击目标：</strong> 以更易读或可解析的格式获取<code>users</code>表中的敏感数据（用户名、ID和密码）。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

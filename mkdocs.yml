@@ -1,5 +1,9 @@
 site_name: CTF-Web修炼手册
 
+# 文档目录
+docs_dir: md_docs
+site_dir: docs
+
 theme:
   name: material
   language: zh
