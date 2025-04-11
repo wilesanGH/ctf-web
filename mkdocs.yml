@@ -1,1 +1,38 @@
 site_name: CTF-WEB
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - 首页: index.md
+  - 工具安装:
+    - Firefox浏览器安装: index.md#安装-firefox-浏览器
+    - Hackbar插件安装: index.md#安装-hackbar-插件
+  - SQL注入:
+    - 注入中的几个关键词: SQL-1-注入中的几个关键词.md
+    - information_schema利用: SQL-2-information_schema利用.md
+    - 普通注入: SQL-3-普通注入.md
+    - bool盲注思路: SQL-4-bool盲注思路.md
+    - bool盲注逻辑参考: SQL-5-bool盲注逻辑参考.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.tasklist
