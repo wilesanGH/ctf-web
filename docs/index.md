@@ -1,33 +1,45 @@
-# 工具安装指南
+# CTF-Web修炼手册
 
-## 安装 firefox 浏览器
+## 项目介绍
 
-官网：https://www.mozilla.org/en-US/firefox/new/
+欢迎来到 CTF-Web 修炼手册！这是一个专注于 Web 安全和 CTF Web 题目的学习指南。本手册将帮助您：
 
-![firefox安装](assets/images/image-20241218123839288.png)
+- 🛠️ 配置必要的工具环境
+- 🔍 掌握 SQL 注入技巧
+- 💡 理解常见的 Web 漏洞
+- 🎯 提升 CTF 比赛解题能力
 
-默认安装 firefox。
+## 内容特点
 
-## 安装 Hackbar 插件
+- 📚 系统化的知识结构
+- 🔰 从基础到进阶的学习路径
+- 💻 丰富的实战案例
+- 🎓 详细的技术讲解
 
-![hackbar搜索](assets/images/image-20241218124040737.png)
+## 使用指南
 
-**输入 hackbar，按 Enter 键进行搜索**
+1. 首先在【工具安装】部分配置好必要的环境
+2. 按照目录顺序循序渐进地学习
+3. 动手实践每个案例，加深理解
+4. 参考代码和技巧，举一反三
 
-![hackbar选择](assets/images/image-20241218124130576.png)
+## 章节导航
 
-**选择 HackBar V2，点击**
+- **工具安装**
+  - Firefox 浏览器配置
+  - HackBar 插件使用
 
-![hackbar安装1](assets/images/image-20241218124319003.png)
+- **SQL 注入系列**
+  - SQL 注入基础知识
+  - information_schema 详解
+  - 普通注入技巧
+  - 布尔盲注方法
+  - 盲注逻辑进阶
 
-![hackbar安装2](assets/images/image-20241218124418569.png)
+## 持续更新
 
-![hackbar安装3](assets/images/image-20241218124519810.png)
+本手册将持续更新和完善，欢迎关注最新内容！
 
-安装完成，按 F12，选择 HackBar 工具
+---
 
-![hackbar使用](assets/images/image-20241218124630209.png)
-
-点击 Load URL，可以加载当前的 url
-
-对当前的 url 进行修改，再点击 Execute可以执行修改后的 Url
+> 🔔 **温馨提示**：在进行安全测试时，请确保遵守相关法律法规，只在授权的环境中进行测试。

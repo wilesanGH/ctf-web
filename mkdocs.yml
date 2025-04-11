@@ -1,29 +1,51 @@
-site_name: CTF-WEB
+site_name: CTF-Web修炼手册
 
 theme:
   name: material
   language: zh
+  icon:
+    logo: material/shield-check
+    favicon: material/shield-check
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep purple
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: 切换到浅色模式
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
-  - 首页: index.md
-  - 工具安装:
-    - Firefox浏览器安装: index.md
-    - Hackbar插件安装: index.md
-  - SQL注入:
-    - 注入中的几个关键词: 'SQL-1-注入中的几个关键词.md'
+  - 开始: index.md
+  - 环境配置:
+    - SQL-Hackbar 安装: 'SQL-Hackbar 安装.md'
+  - SQL注入技巧:
+    - 注入中的关键词: 'SQL-1-注入中的几个关键词.md'
     - information_schema利用: 'SQL-2-information_schema利用.md'
     - 普通注入: 'SQL-3-普通注入.md'
     - bool盲注思路: 'SQL-4-bool盲注思路.md'
@@ -33,12 +55,22 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.tabbed
-  - pymdownx.tasklist
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - attr_list
   - md_in_html
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
-  - search
+  - search:
+      lang: zh
+  - tags
