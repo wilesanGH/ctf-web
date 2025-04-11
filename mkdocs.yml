@@ -2,6 +2,7 @@ site_name: CTF-WEB
 
 theme:
   name: material
+  language: zh
   palette:
     - scheme: default
       primary: indigo
@@ -19,14 +20,14 @@ theme:
 nav:
   - 首页: index.md
   - 工具安装:
-    - Firefox浏览器安装: index.md#安装-firefox-浏览器
-    - Hackbar插件安装: index.md#安装-hackbar-插件
+    - Firefox浏览器安装: index.md
+    - Hackbar插件安装: index.md
   - SQL注入:
-    - 注入中的几个关键词: SQL-1-注入中的几个关键词.md
-    - information_schema利用: SQL-2-information_schema利用.md
-    - 普通注入: SQL-3-普通注入.md
-    - bool盲注思路: SQL-4-bool盲注思路.md
-    - bool盲注逻辑参考: SQL-5-bool盲注逻辑参考.md
+    - 注入中的几个关键词: 'SQL-1-注入中的几个关键词.md'
+    - information_schema利用: 'SQL-2-information_schema利用.md'
+    - 普通注入: 'SQL-3-普通注入.md'
+    - bool盲注思路: 'SQL-4-bool盲注思路.md'
+    - bool盲注逻辑参考: 'SQL-5-bool盲注逻辑参考.md'
 
 markdown_extensions:
   - admonition
@@ -36,3 +37,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tabbed
   - pymdownx.tasklist
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
