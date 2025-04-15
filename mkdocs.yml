@@ -47,13 +47,15 @@ extra_css:
 nav:
   - 开始: index.md
   - 环境配置:
-    - SQL-Hackbar 安装: 'SQL-Hackbar 安装.md'
+    - ENV-1-MySQL 安装: 'ENV-1-Mysql安装.md'
+    - ENV-2-SQL-Hackbar 安装: 'ENV-2-SQL-Hackbar 安装.md'
   - SQL注入技巧:
-    - 注入中的关键词: 'SQL-1-注入中的几个关键词.md'
-    - information_schema利用: 'SQL-2-information_schema利用.md'
-    - 普通注入: 'SQL-3-普通注入.md'
-    - bool盲注思路: 'SQL-4-bool盲注思路.md'
-    - bool盲注逻辑参考: 'SQL-5-bool盲注逻辑参考.md'
+    - SQL-1-MySQL 系统表: 'SQL-1-Mysql系统表.md'
+    - SQL-2-注入中的关键词: 'SQL-2-注入中的几个关键词.md'
+    - SQL-3-information_schema利用: 'SQL-3-information_schema利用.md'
+    - SQL-4-普通注入: 'SQL-4-普通注入.md'
+    - SQL-5-bool盲注思路: 'SQL-5-bool盲注思路.md'
+    - SQL-6-bool盲注逻辑参考: 'SQL-6-bool盲注逻辑参考.md'
   - 学习资源:
     - 学习平台推荐: '网络安全与算法学习平台推荐.md'
 

