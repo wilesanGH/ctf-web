@@ -1,5 +1,9 @@
 site_name: CTF-Web修炼手册
 
+# GitHub 仓库链接
+repo_url: https://github.com/wilesanGH/ctf-web
+repo_name: wilesanGH/ctf-web
+
 # 文档目录
 docs_dir: md_docs
 site_dir: docs

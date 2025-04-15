@@ -22,7 +22,7 @@
 .md-content h5,
 .md-content h6 {
     font-family: "KaiTi", "楷体", "Noto Sans SC", sans-serif;
-    color: #000000 !important;
+    color: var(--md-typeset-color) !important;
     margin-top: 1em;
     margin-bottom: 0.5em;
     line-height: 1.3;
