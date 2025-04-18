@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="../ENV-2-SQL-Hackbar%20%E5%AE%89%E8%A3%85/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>ENV-1-MySQL 安装 - CTF-Web修炼手册</title>
+        <title>ENV 1 Mysql安装 - CTF-Web修炼手册</title>
       
     
     
@@ -108,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ENV-1-MySQL 安装
+              ENV 1 Mysql安装
             
           </span>
         </div>
@@ -238,13 +234,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../Mysql安装.md" class="md-tabs__link">
           
   
   
@@ -264,11 +258,31 @@
     
     
       <li class="md-tabs__item">
+        <a href="../SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E5%88%A4%E6%96%AD%E4%B8%8E%E7%B1%BB%E5%9E%8B%E5%88%86%E6%9E%90/" class="md-tabs__link">
+          
+  
+  
+  SQL注入基础
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/" class="md-tabs__link">
           
   
   
-  SQL注入技巧
+  SQL注入实战
 
         </a>
       </li>
@@ -387,31 +401,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -424,7 +435,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             环境配置
@@ -435,160 +446,20 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    ENV-1-MySQL 安装
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Mysql安装.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ENV-1-MySQL 安装
+    MySQL 安装
     
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mysql" class="md-nav__link">
-    <span class="md-ellipsis">
-      一、MySQL 系统表简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      二、information_schema 数据库
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      三、常见的 SQL 注入信息枚举过程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      四、基于 information_schema 的 SQL 注入示例
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四、基于 information_schema 的 SQL 注入示例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      场景
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      注入步骤
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mysql-mysqluser" class="md-nav__link">
-    <span class="md-ellipsis">
-      五、MySQL 用户账户表 (mysql.user)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="五、MySQL 用户账户表 (mysql.user)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mysql_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      示例：列出 MySQL 用户
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ctf-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      六、CTF 中的 SQL 注入技巧
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sql_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      七、SQL 注入防护
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -601,12 +472,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../ENV-2-SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
+      <a href="../SQL-Hackbar 安装.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ENV-2-SQL-Hackbar 安装
+    SQL-Hackbar 安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQLi-labs%20docker%E5%AE%89%E8%A3%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLi-labs 环境搭建
     
   </span>
   
@@ -654,7 +548,7 @@
   
   
   <span class="md-ellipsis">
-    SQL注入技巧
+    SQL注入基础
     
   </span>
   
@@ -665,7 +559,174 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            SQL注入技巧
+            SQL注入基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E5%88%A4%E6%96%AD%E4%B8%8E%E7%B1%BB%E5%9E%8B%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL注入漏洞判断
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%ADSQL%E6%B3%A8%E5%85%A5%E7%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL注入点判断
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9F%BA%E7%A1%80SQL%E6%B3%A8%E5%85%A5%E8%AF%AD%E5%8F%A5%E5%A4%A7%E5%85%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    基础SQL注入语句
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MySQL%E6%96%B0%E6%89%8B%E5%BF%85%E5%A4%87%E5%85%B3%E9%94%AE%E8%AF%8D%E6%89%8B%E5%86%8C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MySQL关键词手册
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQL注入攻击流程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    SQL注入实战
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            SQL注入实战
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -745,29 +806,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-4-%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    SQL-4-普通注入
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../SQL-5-bool%E7%9B%B2%E6%B3%A8%E6%80%9D%E8%B7%AF/" class="md-nav__link">
         
   
@@ -807,6 +845,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%99%AE%E9%80%9A%E6%B3%A8%E5%85%A5SQLi_lab%20Less-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SQLi-labs Less-1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -836,10 +897,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -852,8 +913,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Web漏洞基础
           </label>
@@ -934,10 +995,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -950,8 +1011,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             学习资源
           </label>
@@ -1132,7 +1193,7 @@
   
 
 
-  <h1>ENV-1-MySQL 安装</h1>
+  <h1>ENV 1 Mysql安装</h1>
 
 <h3 id="mysql">一、MySQL 系统表简介</h3>
 <p>MySQL 的 <strong>系统表</strong> 存储在 <code>information_schema</code> 和 <code>mysql</code> 数据库中。它们保存了数据库的元数据，如表、列、用户权限、字符集等信息。</p>

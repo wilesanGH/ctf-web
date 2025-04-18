@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../%E5%B8%B8%E8%A7%81Web%E6%BC%8F%E6%B4%9E%E7%B1%BB%E5%9E%8B/">
+        <link rel="prev" href="..">
       
+      
+        <link rel="next" href="../SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E5%88%A4%E6%96%AD%E4%B8%8E%E7%B1%BB%E5%9E%8B%E5%88%86%E6%9E%90/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>学习平台推荐 - CTF-Web修炼手册</title>
+        <title>SQLi-labs 环境搭建 - CTF-Web修炼手册</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#dockerdocker-compose" class="md-skip">
           跳转至
         </a>
       
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              学习平台推荐
+              SQLi-labs 环境搭建
             
           </span>
         </div>
@@ -236,10 +238,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Mysql安装.md" class="md-tabs__link">
           
   
@@ -316,13 +320,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/" class="md-tabs__link">
           
   
   
@@ -405,28 +407,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -439,7 +444,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             环境配置
@@ -496,10 +501,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../SQLi-labs%20docker%E5%AE%89%E8%A3%85/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SQLi-labs 环境搭建
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -510,6 +535,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dockerdocker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装docker,docker-compose略
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sqli-labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装Sqli-labs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -981,31 +1042,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1018,7 +1076,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             学习资源
@@ -1029,32 +1087,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    学习平台推荐
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/" class="md-nav__link">
         
   
   
@@ -1065,71 +1101,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 算法刷题平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔐 网络安全训练平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛡️ 实战型安全学习平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 教程型 / 趣味型学习平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔐 密码学学习平台
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1159,8 +1130,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1169,45 +1138,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#dockerdocker-compose" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 算法刷题平台
+      安装docker,docker-compose略
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#sqli-labs" class="md-nav__link">
     <span class="md-ellipsis">
-      🔐 网络安全训练平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛡️ 实战型安全学习平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      📚 教程型 / 趣味型学习平台
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔐 密码学学习平台
+      安装Sqli-labs
     </span>
   </a>
   
@@ -1232,73 +1174,121 @@
   
 
 
-<h1 id="_1">网络安全与算法学习平台推荐</h1>
-<p>以下是一些优质的算法学习与网络安全训练平台，按类别整理，涵盖了从新手入门到进阶实战的各个阶段，适合算法练习、CTF竞赛、红蓝对抗等多种学习场景。</p>
-<hr />
-<h2 id="_2">🧠 算法刷题平台</h2>
-<p><strong>1. <a href="https://github.com/labuladong/fucking-algorithm?tab=readme-ov-file">labuladong/fucking-algorithm</a></strong>
- 推荐指数：★★★★★
- 这是一个系统性学习算法和数据结构的开源项目，内容从基础到进阶应有尽有，讲解清晰易懂，非常适合想提升算法思维和解题能力的开发者和学生。</p>
-<p><strong>2. <a href="https://github.com/youngyangyang04/leetcode-master">youngyangyang04/leetcode-master</a></strong>
- 推荐指数：★★★★
- 专注于 LeetCode 的刷题项目，提供详细的解题思路、代码示例和学习路径，适合想高效刷题、备战面试的人群。</p>
-<hr />
-<h2 id="_3">🔐 网络安全训练平台</h2>
-<p><strong>3. <a href="https://ctf.show/">CTFSHOW</a></strong>
- 推荐指数：★★★
- 一个适合初学者的 CTF 练习平台，拥有1500多个原创题目和友好的社区氛围，由上万名 CTF 爱好者共同打造。</p>
-<p><strong>4. <a href="https://www.nssctf.cn/">NSSCTF</a></strong>
- 推荐指数：★★★★
- 提供题库、比赛和 Writeup 资源，国内很多比赛的题目可以在这里复现，非常适合系统练习和社区交流。</p>
-<p><strong>5. <a href="https://buuoj.cn/">BUUCTF</a></strong>
- 推荐指数：★★
- 包含大量CTF比赛题目的聚合平台，适合题海战术式练习和复现经典题目。</p>
-<p><strong>6. <a href="https://ctf.bugku.com/">bugku</a></strong>
- 推荐指数：★★
- 提供安全相关知识挑战，适合初学者尝试和了解基础安全问题。</p>
-<hr />
-<h2 id="_4">🛡️ 实战型安全学习平台</h2>
-<p><strong>7. <a href="https://attackdefense.com/">Attack-Defense Labs</a></strong>
- 推荐指数：★★★★★
- 拥有2000+互动实验室，从Web到系统再到渗透全栈覆盖，适合从初学者到专家的实战技能训练。</p>
-<p><strong>8. <a href="https://tryhackme.com/">TryHackMe</a></strong>
- 推荐指数：★★★★★
- 通过任务引导方式学习网络安全，内容覆盖红队、蓝队、渗透测试等多个方向，适合新手到进阶用户。</p>
-<p><strong>9. <a href="https://www.hackthebox.eu/">HackTheBox</a></strong>
- 推荐指数：★★★★★
- 全球知名的靶机平台，提供大量真实环境靶机挑战，是CTF高手和安全从业者的常驻平台。</p>
-<p><strong>10. <a href="https://www.vulnhub.com/">VulnHub</a></strong>
- 推荐指数：★★★★★
- 老牌靶机平台，提供可下载的虚拟机靶机，适合本地搭建环境做渗透练习。</p>
-<p><strong>11. <a href="https://www.root-me.org/?lang=en">Root-Me</a></strong>
- 推荐指数：★★★★★
- 支持多种挑战类型，包括Web、逆向、密码学等，界面简洁，题目优质。</p>
-<p><strong>12. <a href="https://hackmyvm.eu/">HackMyVM</a></strong>
- 推荐指数：★★★
- 类似 VulnHub 和 HTB，提供大量靶机资源，适合渗透测试爱好者实战演练。</p>
-<hr />
-<h2 id="_5">📚 教程型 / 趣味型学习平台</h2>
-<p><strong>13. <a href="https://www.hacksplaining.com/">Learn to Hack (Hacksplaining)</a></strong>
- 推荐指数：★★★★★
- 交互式的安全教学平台，通过实际案例介绍常见的漏洞及其防御方式，适合课堂教学和个人学习。</p>
-<p><strong>14. <a href="https://defendtheweb.net/">Defend the Web</a></strong>
- 推荐指数：★★★★★
- 拥有60多个互动挑战，提供趣味十足的安全学习体验，适合初学者和进阶用户。</p>
-<p><strong>15. <a href="https://overthewire.org/wargames/">OverTheWire Wargames</a></strong>
- 推荐指数：★★★★★
- 以游戏化方式学习安全知识，经典兵棋推演式学习方式，非常适合入门者打基础。</p>
-<p><strong>16. <a href="https://cmdchallenge.com/">CmdChallenge</a></strong>
- 推荐指数：★★★★★
- 通过解谜游戏学习 Linux 命令行技巧，是锻炼命令行能力的好帮手。</p>
-<hr />
-<h2 id="_6">🔐 密码学学习平台</h2>
-<p><strong>17. <a href="https://cryptohack.org/">CryptoHack</a></strong>
- 推荐指数：★★★★
- 专为学习现代密码学设计，题目趣味性强，涵盖对称加密、RSA、椭圆曲线等内容。</p>
-<hr />
-<blockquote>
-<p>🎯 <strong>学习建议</strong>：初学者可从 CTFSHOW、CryptoHack、TryHackMe 等平台入手，逐步过渡到 HackTheBox、VulnHub、Root-Me 等高难度挑战。算法方面建议先读完 labuladong 的教程，再配合 LeetCode 刷题训练。</p>
-</blockquote>
+  <h1>SQLi-labs 环境搭建</h1>
+
+<h3 id="dockerdocker-compose">安装docker,docker-compose略</h3>
+<h3 id="sqli-labs">安装Sqli-labs</h3>
+<ol>
+<li>搜索sqli-labs</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>docker<span class="w"> </span>search<span class="w"> </span>register.liberx.info/sqli-labs
+</code></pre></div>
+<ol>
+<li>拉取sqli-labs</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>docker<span class="w"> </span>pull<span class="w"> </span>acgpiano/sqli-labs
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>docker<span class="w"> </span>images
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>REPOSITORY<span class="w">           </span>TAG<span class="w">       </span>IMAGE<span class="w"> </span>ID<span class="w">       </span>CREATED<span class="w">       </span>SIZE
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>acgpiano/sqli-labs<span class="w">   </span>latest<span class="w">    </span>0976afc45249<span class="w">   </span><span class="m">8</span><span class="w"> </span>years<span class="w"> </span>ago<span class="w">   </span>434MB
+</code></pre></div>
+<ol>
+<li>运行sqli-labs</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span>-dt<span class="w"> </span>--name<span class="w"> </span>sqli-labs<span class="w"> </span>-p<span class="w"> </span><span class="m">8081</span>:80<span class="w"> </span>--rm<span class="w"> </span>acgpiano/sqli-labs
+</code></pre></div>
+<p>### 1. <code>sudo</code></p>
+<p>这个命令前缀 <code>sudo</code> 表示以超级用户权限运行 Docker 命令。在大多数系统中，Docker 需要超级用户权限才能执行。</p>
+<p>### 2. <code>docker run</code></p>
+<p><code>docker run</code> 是 Docker 的命令，用来启动一个容器并运行一个镜像。</p>
+<p>### 3. <code>-d</code></p>
+<p><code>-d</code> 选项表示以 <strong>"后台模式"</strong> 启动容器（即"分离模式"）。容器将在后台运行，并且不会在终端显示容器的输出。</p>
+<p>### 4. <code>-t</code></p>
+<p><code>-t</code> 选项表示为容器分配一个伪终端（pseudo-TTY）。即使我们是以后台模式启动容器，容器仍然会分配一个虚拟终端，这通常用于需要交互式命令行操作的应用。</p>
+<p>### 5. <code>--name sqli-labs</code></p>
+<p><code>--name</code> 选项用于为容器指定一个名字，这里给容器命名为 <code>sqli-labs</code>。这样在后续管理容器时，你可以使用这个名字，而不需要容器的 ID。</p>
+<p>### 6. <code>-p 8081:80</code></p>
+<p><code>-p</code> 选项用于将主机的端口映射到容器的端口。在这里，<code>8081:80</code> 表示将主机的端口 <code>8081</code> 映射到容器的端口 <code>80</code>。这意味着你可以通过访问主机的 <code>http://localhost:8081</code> 来访问容器内的 Web 服务。</p>
+<p>### 7. <code>--rm</code></p>
+<p><code>--rm</code> 选项表示在容器停止运行时自动删除容器。这样可以避免容器在停止后仍然占用系统资源，适用于临时容器。</p>
+<p>### 8. <code>acgpiano/sqli-labs</code></p>
+<p>这是你要运行的 Docker 镜像的名称。<code>acgpiano/sqli-labs</code> 是一个镜像名称，通常用于构建 SQL 注入（SQLi）实验环境。这个镜像里包含了一个可以模拟 SQL 注入漏洞的 Web 应用，供渗透测试和学习使用。</p>
+<ol>
+<li>查看sqli-labs（<strong>注意需要开放8081端口</strong>）</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>docker<span class="w"> </span>ps<span class="w"> </span>-a
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>CONTAINER<span class="w"> </span>ID<span class="w">   </span>IMAGE<span class="w">                </span>COMMAND<span class="w">     </span>CREATED<span class="w">         </span>STATUS<span class="w">         </span>PORTS<span class="w">                                               </span>NAMES
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>532c48f3b629<span class="w">   </span>acgpiano/sqli-labs<span class="w">   </span><span class="s2">&quot;/run.sh&quot;</span><span class="w">   </span><span class="m">4</span><span class="w"> </span>minutes<span class="w"> </span>ago<span class="w">   </span>Up<span class="w"> </span><span class="m">4</span><span class="w"> </span>minutes<span class="w">   </span><span class="m">3306</span>/tcp,<span class="w"> </span><span class="m">0</span>.0.0.0:8081-&gt;80/tcp,<span class="w"> </span><span class="o">[</span>::<span class="o">]</span>:8081-&gt;80/tcp<span class="w">   </span>sqli-labs
+</code></pre></div>
+<ol>
+<li>初始化</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>532c48f3b629<span class="w"> </span>/bin/bash
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>root@532c48f3b629:/#<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/var/www/html/sql-connections/
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>root@532c48f3b629:/var/www/html/sql-connections#<span class="w"> </span>ls
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>db-creds.inc<span class="w">   </span>setup-db-challenge.php<span class="w">  </span>sql-connect-1.php<span class="w">  </span>sqli-connect.php
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>functions.php<span class="w">  </span>setup-db.php<span class="w">            </span>sql-connect.php<span class="w">    </span>test.php
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>root@532c48f3b629:/var/www/html/sql-connections#<span class="w"> </span>php<span class="w"> </span>setup-db.php
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>&lt;!DOCTYPE<span class="w"> </span>html<span class="w"> </span>PUBLIC<span class="w"> </span><span class="s2">&quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;</span><span class="w"> </span><span class="s2">&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;</span>&gt;
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>&lt;html<span class="w"> </span><span class="nv">xmlns</span><span class="o">=</span><span class="s2">&quot;http://www.w3.org/1999/xhtml&quot;</span>&gt;
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>&lt;head&gt;
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>&lt;meta<span class="w"> </span>http-equiv<span class="o">=</span><span class="s2">&quot;Content-Type&quot;</span><span class="w"> </span><span class="nv">content</span><span class="o">=</span><span class="s2">&quot;text/html; charset=utf-8&quot;</span><span class="w"> </span>/&gt;
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>&lt;title&gt;SETUP<span class="w"> </span>DB&lt;/title&gt;
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>&lt;/head&gt;
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>&lt;body<span class="w"> </span><span class="nv">bgcolor</span><span class="o">=</span><span class="s2">&quot;#000000&quot;</span>&gt;
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>&lt;div<span class="w"> </span><span class="nv">style</span><span class="o">=</span><span class="s2">&quot; margin-top:20px;color:#FFF; font-size:24px; text-align:center&quot;</span>&gt;<span class="w"> </span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>Welcome<span class="p">&amp;</span>nbsp<span class="p">;&amp;</span>nbsp<span class="p">;&amp;</span>nbsp<span class="p">;</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>&lt;font<span class="w"> </span><span class="nv">color</span><span class="o">=</span><span class="s2">&quot;#FF0000&quot;</span>&gt;<span class="w"> </span>Dhakkan<span class="w"> </span>&lt;/font&gt;
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>&lt;br&gt;
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>&lt;/div&gt;
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>&lt;div<span class="w"> </span><span class="nv">style</span><span class="o">=</span><span class="s2">&quot; margin-top:10px;color:#FFF; font-size:23px; text-align:left&quot;</span>&gt;
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>&lt;font<span class="w"> </span><span class="nv">size</span><span class="o">=</span><span class="s2">&quot;3&quot;</span><span class="w"> </span><span class="nv">color</span><span class="o">=</span><span class="s2">&quot;#FFFF00&quot;</span>&gt;
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>SETTING<span class="w"> </span>UP<span class="w"> </span>THE<span class="w"> </span>DATABASE<span class="w"> </span>SCHEMA<span class="w"> </span>AND<span class="w"> </span>POPULATING<span class="w"> </span>DATA<span class="w"> </span>IN<span class="w"> </span>TABLES:
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>&lt;br&gt;&lt;br&gt;<span class="w"> </span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="o">[</span>*<span class="o">]</span>...................Old<span class="w"> </span>database<span class="w"> </span><span class="s1">&#39;SECURITY&#39;</span><span class="w"> </span>purged<span class="w"> </span><span class="k">if</span><span class="w"> </span>exists&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="o">[</span>*<span class="o">]</span>...................Creating<span class="w"> </span>New<span class="w"> </span>database<span class="w"> </span><span class="s1">&#39;SECURITY&#39;</span><span class="w"> </span>successfully&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="o">[</span>*<span class="o">]</span>...................Creating<span class="w"> </span>New<span class="w"> </span>Table<span class="w"> </span><span class="s1">&#39;USERS&#39;</span><span class="w"> </span>successfully&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="o">[</span>*<span class="o">]</span>...................Creating<span class="w"> </span>New<span class="w"> </span>Table<span class="w"> </span><span class="s1">&#39;EMAILS&#39;</span><span class="w"> </span>successfully&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="o">[</span>*<span class="o">]</span>...................Creating<span class="w"> </span>New<span class="w"> </span>Table<span class="w"> </span><span class="s1">&#39;UAGENTS&#39;</span><span class="w"> </span>successfully&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="o">[</span>*<span class="o">]</span>...................Creating<span class="w"> </span>New<span class="w"> </span>Table<span class="w"> </span><span class="s1">&#39;REFERERS&#39;</span><span class="w"> </span>successfully&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="o">[</span>*<span class="o">]</span>...................Inserted<span class="w"> </span>data<span class="w"> </span>correctly<span class="w"> </span>into<span class="w"> </span>table<span class="w"> </span><span class="s1">&#39;USERS&#39;</span>&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="o">[</span>*<span class="o">]</span>...................Inserted<span class="w"> </span>data<span class="w"> </span>correctly<span class="w">  </span>into<span class="w"> </span>table<span class="w"> </span><span class="s1">&#39;EMAILS&#39;</span>&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>&lt;html&gt;
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a>&lt;head&gt;
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a>&lt;/head&gt;
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a>&lt;body<span class="w"> </span><span class="nv">bgcolor</span><span class="o">=</span><span class="s2">&quot;#000000&quot;</span>&gt;
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="o">[</span>*<span class="o">]</span>...................Old<span class="w"> </span>database<span class="w"> </span>purged<span class="w"> </span><span class="k">if</span><span class="w"> </span>exists&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="o">[</span>*<span class="o">]</span>...................Creating<span class="w"> </span>New<span class="w"> </span>database<span class="w"> </span>successfully&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a>
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a>
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a>
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a>
+<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a>
+<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a>
+<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a>
+<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a>
+<a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a><span class="o">[</span>*<span class="o">]</span>...................Creating<span class="w"> </span>New<span class="w"> </span>Table<span class="w"> </span><span class="s1">&#39;1QHBSGVU46&#39;</span><span class="w"> </span>successfully&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a><span class="o">[</span>*<span class="o">]</span>...................Inserted<span class="w"> </span>data<span class="w"> </span>correctly<span class="w">  </span>into<span class="w"> </span>table<span class="w"> </span><span class="s1">&#39;1QHBSGVU46&#39;</span>&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a><span class="o">[</span>*<span class="o">]</span>...................Inserted<span class="w"> </span>secret<span class="w"> </span>key<span class="w"> </span><span class="s1">&#39;secret_SGDJ&#39;</span><span class="w"> </span>into<span class="w"> </span>table<span class="w"> </span>&lt;br&gt;&lt;br&gt;
+<a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a>&lt;/body&gt;
+<a id="__codelineno-4-56" name="__codelineno-4-56" href="#__codelineno-4-56"></a>&lt;/html&gt;
+<a id="__codelineno-4-57" name="__codelineno-4-57" href="#__codelineno-4-57"></a>
+<a id="__codelineno-4-58" name="__codelineno-4-58" href="#__codelineno-4-58"></a>
+<a id="__codelineno-4-59" name="__codelineno-4-59" href="#__codelineno-4-59"></a>&lt;/font&gt;
+<a id="__codelineno-4-60" name="__codelineno-4-60" href="#__codelineno-4-60"></a>&lt;/div&gt;
+<a id="__codelineno-4-61" name="__codelineno-4-61" href="#__codelineno-4-61"></a>&lt;/body&gt;
+<a id="__codelineno-4-62" name="__codelineno-4-62" href="#__codelineno-4-62"></a>&lt;/html&gt;
+</code></pre></div>
+<p>如果是win11中的docker desktop 安装的docker,第5步可以在客户端里面来操作</p>
+<p><img alt="image-20241118235946233" src="../assets/Sqli-labs_docker%E5%AE%89%E8%A3%85/image-20241118235946233.png" /></p>
+<p><img alt="image-20241119000027985" src="../assets/Sqli-labs_docker%E5%AE%89%E8%A3%85/image-20241119000027985.png" /></p>
+<p><img alt="image-20241118162337495" src="../assets/Sqli-labs_docker%E5%AE%89%E8%A3%85/image-20241118162337495.png" /></p>
 
 
 
