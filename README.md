@@ -3,7 +3,7 @@
 [![Material for MkDocs](https://img.shields.io/badge/Material%20for%20MkDocs-9.5.0-blue.svg)](https://squidfunk.github.io/mkdocs-material/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-一个专注于 Web 安全与 CTF 学习的知识库，包含 SQL 注入、环境配置等实战经验分享。
+一个专注于 Web 安全与 CTF 学习的知识库，包含 SQL 注入、Web漏洞基础、环境配置等实战经验分享。
 
 ## 📚 目录结构
 
@@ -17,6 +17,9 @@
   - 普通注入实战
   - Bool 盲注思路
   - Bool 盲注逻辑参考
+- [Web漏洞基础](./md_docs/Web安全漏洞分类全景图（基础总结）.md)
+  - Web安全漏洞分类全景
+  - 常见Web漏洞类型详解
 - [学习资源](./md_docs/网络安全与算法学习平台推荐.md)
   - 优质学习平台推荐
 
@@ -51,7 +54,11 @@ mkdocs build
 
 ## 🤝 贡献指南
 
-欢迎提交 Issue 和 Pull Request 来帮助改进这个项目。
+欢迎提交 Issue 和 Pull Request 来帮助改进这个项目。在提交之前，请确保：
+
+1. 代码风格符合项目规范
+2. 文档更新完整
+3. 测试用例覆盖充分
 
 ## 📄 许可证
 
