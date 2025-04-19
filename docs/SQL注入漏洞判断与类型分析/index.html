@@ -1393,7 +1393,7 @@
 <li>原因：无论是整型参数还是字符型参数，单引号会导致SQL语句语法错误（如引号不匹配），从而触发错误信息。  </li>
 </ol>
 <p><strong>注意事项</strong>：  </p>
-<p>如果页面未报错，不一定表示没有SQL注入漏洞，可能存在过滤机制（如对单引号转义）。此时可尝试其他方法（如逻辑判断语句），但在本入门课程中暂不深入探讨。</p>
+<p>如果页面未报错，不一定表示没有SQL注入漏洞，可能存在过滤机制（如对单引号转义）。此时可尝试其他方法（如逻辑判断语句）。</p>
 <h2 id="2-sql">2. 判断SQL注入漏洞的类型</h2>
 <p>SQL注入漏洞通常分为两种类型：<strong>数字型</strong>和<strong>字符型</strong>。这些类型取决于数据库表中字段的数据类型（整型或字符串型）。以下是具体的判断方法。</p>
 <h3 id="21-sql">2.1 数字型SQL注入</h3>
@@ -1403,56 +1403,50 @@
 </code></pre></div>
 <h4 id="_2">判断方法</h4>
 <p>使用逻辑语句 <code>and 1=1</code> 和 <code>and 1=2</code> 进行测试：  </p>
-<ol>
-<li><strong>测试1</strong>：  </li>
-</ol>
-<p><code>http://xxx/abc.php?id=x and 1=1</code></p>
+<p><strong>测试1</strong>：  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>http://xxx/abc.php?id=x and 1=1
+</code></pre></div>
 <p>结果：页面运行正常，说明SQL语句被正确执行。  </p>
-<ol>
-<li><strong>测试2</strong>：  </li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>http://xxx/abc.php?id=x and 1=2
+<p><strong>测试2</strong>：  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>http://xxx/abc.php?id=x and 1=2
 </code></pre></div>
 <p>结果：页面运行错误，说明为数字型注入。</p>
 <h4 id="_3">原因分析</h4>
 <p>输入 <code>and 1=1</code>：  </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
 </code></pre></div>
 <p>语法正确，逻辑判断为真，返回正常。  </p>
 <p>输入 <code>and 1=2</code>：  </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">2</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">2</span>
 </code></pre></div>
 <p>语法正确，但逻辑判断为假，返回错误。  </p>
 <p><strong>假设验证</strong>：<br />
 如果是字符型注入，SQL语句会将 <code>and 1=1</code> 视为字符串：  </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x and 1=1&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x and 1=1&#39;</span>
 </code></pre></div>
 <p>此时不会进行逻辑判断，页面表现与数字型不同，因此假设不成立。</p>
 <h3 id="22-sql">2.2 字符型SQL注入</h3>
 <h4 id="_4">典型场景</h4>
 <p>当URL参数为字符串型时，SQL语句通常如下：  </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x&#39;</span>
 </code></pre></div>
 <h4 id="_5">判断方法</h4>
 <p>使用逻辑语句 <code>and '1'='1'</code> 和 <code>and '1'='2'</code> 进行测试：  </p>
-<ol>
-<li><strong>测试1</strong>：  </li>
-</ol>
-<p><code>http://xxx/abc.php?id=x' and '1'='1</code></p>
+<p><strong>测试1</strong>：  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>http://xxx/abc.php?id=x&#39; and &#39;1&#39;=&#39;1
+</code></pre></div>
 <p>结果：页面运行正常，说明SQL语句被正确执行。  </p>
-<ol>
-<li><strong>测试2</strong>：  </li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>http://xxx/abc.php?id=x&#39; and &#39;1&#39;=&#39;2
+<p><strong>测试2</strong>：  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>http://xxx/abc.php?id=x&#39; and &#39;1&#39;=&#39;2
 </code></pre></div>
 <p>结果：页面运行错误，说明为字符型注入。</p>
 <h4 id="_6">原因分析</h4>
 <p>输入 and '1'='1'： </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="o">=</span><span class="s1">&#39;1&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="o">=</span><span class="s1">&#39;1&#39;</span>
 </code></pre></div>
 <p>语法正确，逻辑判断为真，返回正常。  </p>
 <p>输入 and '1'='2'：   </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="o">=</span><span class="s1">&#39;2&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="o">=</span><span class="s1">&#39;2&#39;</span>
 </code></pre></div>
 <p>语法正确，但逻辑判断为假，返回错误。  </p>
 <p><strong>假设验证</strong>：<br />

