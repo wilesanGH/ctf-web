@@ -58,9 +58,9 @@ style AE fill:#6f9,stroke:#090
 style AG fill:#f99,stroke:#c00
 ```
 
-![Snipaste_2025-04-19_12-51-46](./../../png/SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/Snipaste_2025-04-19_12-51-46.png)
+![Snipaste_2025-04-19_12-51-46](./assets/images/Snipaste_2025-04-19_12-51-46.png)
 
-![Snipaste_2025-04-19_12-52-13](./../../png/SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/Snipaste_2025-04-19_12-52-13.png)
+![Snipaste_2025-04-19_12-52-13](./assets/images/Snipaste_2025-04-19_12-52-13.png)
 
 ## 流程图说明
 
@@ -149,8 +149,8 @@ style AG fill:#f99,stroke:#c00
 
 8. **横向移动**：
 
-   内网扫描
-   
-   密码爆破
-   
-   漏洞利用
+   > 内网扫描
+   >
+   > 密码爆破
+   >
+   > 漏洞利用
