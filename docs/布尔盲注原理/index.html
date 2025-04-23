@@ -242,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Mysql安装.md" class="md-tabs__link">
+        <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -455,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Mysql安装.md" class="md-nav__link">
+      <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -478,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar 安装.md" class="md-nav__link">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -507,6 +507,29 @@
   
   <span class="md-ellipsis">
     SQLi-labs 环境搭建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图床配置
     
   </span>
   
@@ -1283,7 +1306,7 @@
 
 <p>布尔盲注（Boolean-based Blind SQL Injection）是一种 SQL 注入攻击技术，利用数据库查询的布尔逻辑（真/假）来推断数据库中的数据。它适用于无法直接看到查询结果的场景，例如页面只返回“成功”或“失败”等简单状态。以下是布尔盲注的原理、步骤和示例。</p>
 <hr />
-<h3 id="_1"><strong>原理</strong></h3>
+<h3 id="_1"><strong>原理</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>布尔盲注的核心思想是通过构造特定的 SQL 注入语句，观察应用程序的响应是否发生变化（例如页面内容、状态码或响应时间），从而推断数据库中的数据。攻击者通过逐位或逐字符猜测数据，利用布尔条件（真/假）来确认猜测是否正确。</p>
 <p>关键点：</p>
 <ol>
@@ -1292,7 +1315,7 @@
 <li>通常需要多次请求，逐一测试每个字符或位的值。</li>
 </ol>
 <hr />
-<h3 id="_2"><strong>步骤</strong></h3>
+<h3 id="_2"><strong>步骤</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <ol>
 <li>确认注入点：</li>
 </ol>
@@ -1339,7 +1362,7 @@
 <p>重复上述步骤，逐位提取字符串（如表名、列名、数据内容）。</p>
 <p>例如，提取整个数据库版本字符串需要循环测试每个位置的字符。</p>
 <hr />
-<h3 id="_3"><strong>示例</strong></h3>
+<h3 id="_3"><strong>示例</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>假设有一个 Web 应用，URL 为：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>http://10.16.2.3:8081/Less-8?id=1
 </code></pre></div>
@@ -1372,7 +1395,7 @@
 <p>重复步骤，测试 SUBSTR((SELECT @@version), 2, 1)、 SUBSTR((SELECT @@version), 3, 1) 等。</p>
 <p>最终可能提取到版本字符串，如 Microsoft SQL Server。</p>
 <hr />
-<h3 id="_4"><strong>特点与难点</strong></h3>
+<h3 id="_4"><strong>特点与难点</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>特点：</p>
 <blockquote>
 <p>不需要直接看到查询结果，适合“盲”场景。</p>

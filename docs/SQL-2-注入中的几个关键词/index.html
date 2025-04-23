@@ -242,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Mysql安装.md" class="md-tabs__link">
+        <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -455,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Mysql安装.md" class="md-nav__link">
+      <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -478,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar 安装.md" class="md-nav__link">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -507,6 +507,29 @@
   
   <span class="md-ellipsis">
     SQLi-labs 环境搭建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图床配置
     
   </span>
   
@@ -1512,9 +1535,9 @@
 <p><strong><code>ORDER BY</code></strong>：主要用于测试SQL注入的漏洞，帮助攻击者确定查询返回的列数。如果列数未知，攻击者可以通过调整 <code>ORDER BY</code> 中的数字来找出正确的列数。</p>
 <p><strong><code>UNION</code></strong>：允许将多个 <code>SELECT</code> 查询的结果合并，攻击者可以使用 <code>UNION</code> 来获取数据库中的敏感信息（如表名、列名、数据库版本等）。<code>UNION</code> 查询需要返回与原查询相同数量和类型的列，因此攻击者通常会通过试探来确定合适的查询结构。</p>
 <p><strong><code>GROUP_CONCAT</code></strong> 是 MySQL 中非常强大的聚合函数，允许将多个结果行的值合并成一个字符串。在 SQL 注入攻击中，攻击者利用 <code>GROUP_CONCAT</code> 可以从数据库中提取多个表名、列名、甚至是敏感数据（如用户名和密码）。为了防止 SQL 注入，最有效的措施是使用参数化查询、严格的输入验证以及限制数据库用户权限等安全措施。</p>
-<h3 id="1-order-by">1. <strong><code>ORDER BY</code> 的作用</strong></h3>
+<h3 id="1-order-by">1. <strong><code>ORDER BY</code> 的作用</strong><a class="headerlink" href="#1-order-by" title="Permanent link">&para;</a></h3>
 <p><code>ORDER BY</code> 子句用于对查询结果进行排序。通常，它接受一个列名或列的索引作为参数，并对结果进行升序或降序排序。SQL注入攻击者可以利用 <code>ORDER BY</code> 来猜测查询返回的列数，从而为后续注入操作做好准备。</p>
-<h4 id="_1">示例：</h4>
+<h4 id="_1">示例：<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <p>假设有一个 URL 查询参数 <code>id=1</code>，并且应用程序没有进行有效的输入验证或参数化查询。攻击者可以注入 <code>ORDER BY</code> 子句来测试返回的列数。</p>
 <p><strong>正常查询：</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>SELECT * FROM products WHERE id = 1;
@@ -1537,9 +1560,9 @@
 </ul>
 <p>这个过程帮助攻击者确定数据库查询返回的列数，为后续的 <code>UNION</code> 查询做准备。</p>
 <hr />
-<h3 id="2-union">2. <strong><code>UNION</code> 的作用</strong></h3>
+<h3 id="2-union">2. <strong><code>UNION</code> 的作用</strong><a class="headerlink" href="#2-union" title="Permanent link">&para;</a></h3>
 <p><code>UNION</code> 是 SQL 的一个关键字，允许将两个或多个 <code>SELECT</code> 查询的结果合并成一个结果集。每个 <code>SELECT</code> 查询必须返回相同数量和类型的列。攻击者可以使用 <code>UNION</code> 来将恶意查询结果与原始查询的结果合并，进而泄露数据库中的敏感信息。</p>
-<h4 id="_2">示例：</h4>
+<h4 id="_2">示例：<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <p>假设一个查询返回了一张商品列表，攻击者通过注入的 <code>UNION</code> 查询尝试从数据库中获取其他信息，例如表的名称、数据库的版本等。</p>
 <p><strong>正常查询：</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SELECT id, name, price FROM products WHERE id = 1;
@@ -1566,7 +1589,7 @@
 <li><code>version()</code> 返回数据库的版本信息。</li>
 </ul>
 <p>如果查询成功，页面将显示商品列表以及数据库名称和版本信息。</p>
-<h4 id="_3">进阶：获取表名和列名</h4>
+<h4 id="_3">进阶：获取表名和列名<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <p>攻击者可以利用 <code>UNION</code> 查询获取更多敏感信息，例如数据库中的表名、列名等。</p>
 <ol>
 <li><strong>获取数据库表名：</strong></li>
@@ -1586,9 +1609,9 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>SELECT id, name, price FROM products WHERE id = 1 UNION SELECT 1, group_concat(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39;;
 </code></pre></div>
 <p>这个查询将返回 <code>users</code> 表的所有列名。</p>
-<h3 id="group_concat"><code>GROUP_CONCAT</code> 的基本用法</h3>
+<h3 id="group_concat"><code>GROUP_CONCAT</code> 的基本用法<a class="headerlink" href="#group_concat" title="Permanent link">&para;</a></h3>
 <p>在 MySQL 中，<code>GROUP_CONCAT</code> 允许你将多个行的结果合并为一个字符串，并且可以指定分隔符。默认情况下，结果使用逗号（<code>,</code>）作为分隔符。</p>
-<h4 id="1">示例 1：基础用法</h4>
+<h4 id="1">示例 1：基础用法<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
 <p>假设有一个名为 <code>users</code> 的表，包含如下数据：</p>
 <table>
 <thead>
@@ -1623,16 +1646,16 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>alice,bob,charlie
 </code></pre></div>
 <p>这时，<code>GROUP_CONCAT</code> 会将 <code>username</code> 列的所有值连接成一个以逗号分隔的字符串。</p>
-<h4 id="2">示例 2：使用自定义分隔符</h4>
+<h4 id="2">示例 2：使用自定义分隔符<a class="headerlink" href="#2" title="Permanent link">&para;</a></h4>
 <p>你也可以指定一个自定义的分隔符，例如使用破折号（<code>-</code>）作为分隔符：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>SELECT GROUP_CONCAT(username SEPARATOR &#39;-&#39;) FROM users;
 </code></pre></div>
 <p><strong>结果：</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>alice-bob-charlie
 </code></pre></div>
-<h3 id="sql">在 SQL 注入中的应用</h3>
+<h3 id="sql">在 SQL 注入中的应用<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h3>
 <p>在 SQL 注入攻击中，攻击者通常会使用 <code>GROUP_CONCAT</code> 来获取大量的表或列信息。由于 <code>GROUP_CONCAT</code> 可以合并多行数据，攻击者可以利用它一次性从数据库中提取多个敏感数据，并通过特定的分隔符将其格式化为易于分析的字符串。</p>
-<h4 id="_4">示例：列出表名</h4>
+<h4 id="_4">示例：列出表名<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <p>假设攻击者想列出数据库中的所有表名，可以通过 <code>information_schema.tables</code> 表来查询。攻击者可能会注入如下 SQL 查询：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema=&#39;security&#39; --+
 </code></pre></div>
@@ -1647,7 +1670,7 @@
 <li><code>GROUP_CONCAT(table_name)</code> 将所有的表名连接成一个以逗号分隔的字符串。</li>
 </ul>
 <p>通过这种方式，攻击者可以一次性列出数据库 <code>security</code> 中的所有表名。</p>
-<h4 id="_5">示例：列出特定表的列名</h4>
+<h4 id="_5">示例：列出特定表的列名<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <p>攻击者还可以使用 <code>GROUP_CONCAT</code> 获取某个表（如 <code>users</code> 表）中的所有列名：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(column_name) FROM information_schema.columns WHERE table_name=&#39;users&#39; --+
 </code></pre></div>
@@ -1662,7 +1685,7 @@
 <li><code>GROUP_CONCAT(column_name)</code> 将 <code>users</code> 表中的所有列名连接成一个字符串。</li>
 </ul>
 <p>这样，攻击者就可以获取 <code>users</code> 表的结构。</p>
-<h4 id="_6">示例：列出敏感数据（如用户名和密码）</h4>
+<h4 id="_6">示例：列出敏感数据（如用户名和密码）<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <p>进一步地，攻击者可以使用 <code>GROUP_CONCAT</code> 来提取表中的敏感数据，例如 <code>users</code> 表中的用户名和密码。</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>http://example.com/products?id=-1&#39; UNION SELECT 1, GROUP_CONCAT(username, &#39;-&#39;, password) FROM users --+
 </code></pre></div>
@@ -1677,13 +1700,13 @@
 <li>结果将显示所有用户的用户名和密码。</li>
 </ul>
 <p>这种方式可以让攻击者轻松获取表中的敏感数据。</p>
-<h3 id="3group_concat-sql"><code>3.GROUP_CONCAT</code> 在 SQL 注入中的优势</h3>
+<h3 id="3group_concat-sql"><code>3.GROUP_CONCAT</code> 在 SQL 注入中的优势<a class="headerlink" href="#3group_concat-sql" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>数据合并</strong>：<code>GROUP_CONCAT</code> 可以将多个查询结果合并为一个字符串，避免了分页查询的需要，使得攻击者能够快速获取大量数据。</li>
 <li><strong>格式化输出</strong>：攻击者可以自定义分隔符，将查询结果格式化为易于解析的字符串。这样，可以方便地在后续的攻击中处理和分析数据。</li>
 <li><strong>隐蔽性</strong>：使用 <code>GROUP_CONCAT</code> 时，攻击者往往能在单次查询中提取大量信息，减少被检测到的风险。</li>
 </ul>
-<h3 id="group_concat-sql">如何防止使用 <code>GROUP_CONCAT</code> 的 SQL 注入攻击</h3>
+<h3 id="group_concat-sql">如何防止使用 <code>GROUP_CONCAT</code> 的 SQL 注入攻击<a class="headerlink" href="#group_concat-sql" title="Permanent link">&para;</a></h3>
 <p>防止 SQL 注入攻击的关键是 <strong>输入验证</strong> 和 <strong>参数化查询</strong>。以下是一些最佳实践：</p>
 <ol>
 <li><strong>使用预处理语句（Prepared Statements）</strong>： 使用预处理语句可以避免 SQL 查询中直接插入用户输入的数据，防止恶意的 SQL 注入。例如，使用 MySQL 的 <code>mysqli</code> 或 <code>PDO</code> 函数进行预处理查询：</li>

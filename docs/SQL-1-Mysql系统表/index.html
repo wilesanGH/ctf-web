@@ -242,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Mysql安装.md" class="md-tabs__link">
+        <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -455,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Mysql安装.md" class="md-nav__link">
+      <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -478,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar 安装.md" class="md-nav__link">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -507,6 +507,29 @@
   
   <span class="md-ellipsis">
     SQLi-labs 环境搭建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图床配置
     
   </span>
   
@@ -1299,7 +1322,7 @@
 
   <h1>SQL-1-MySQL 系统表</h1>
 
-<h3 id="mysql">一、MySQL 系统表简介</h3>
+<h3 id="mysql">一、MySQL 系统表简介<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h3>
 <p>MySQL 的 <strong>系统表</strong> 存储在 <code>information_schema</code> 和 <code>mysql</code> 数据库中。它们保存了数据库的元数据，如表、列、用户权限、字符集等信息。</p>
 <ol>
 <li>
@@ -1310,7 +1333,7 @@
 </li>
 </ol>
 <hr />
-<h3 id="information_schema">二、<code>information_schema</code> 数据库</h3>
+<h3 id="information_schema">二、<code>information_schema</code> 数据库<a class="headerlink" href="#information_schema" title="Permanent link">&para;</a></h3>
 <p><code>information_schema</code> 是 MySQL 的元数据表，主要包含以下常用的系统表：</p>
 <table>
 <thead>
@@ -1351,7 +1374,7 @@
 </tbody>
 </table>
 <hr />
-<h3 id="sql">三、常见的 SQL 注入信息枚举过程</h3>
+<h3 id="sql">三、常见的 SQL 注入信息枚举过程<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h3>
 <p>通过 <strong>SQL 注入</strong> 攻击，参赛者可以利用系统表来泄露数据库中的敏感信息。以下是常见的步骤：</p>
 <p><strong>获取数据库名称</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">#</span><span class="err">获取当前</span><span class="w"> </span><span class="n">MySQL</span><span class="w"> </span><span class="err">实例中所有数据库的名称。</span>
@@ -1369,7 +1392,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SELECT login_name, login_passwd FROM lesson_user;
 </code></pre></div>
 <hr />
-<h3 id="information_schema-sql">四、基于 <code>information_schema</code> 的 SQL 注入示例</h3>
+<h3 id="information_schema-sql">四、基于 <code>information_schema</code> 的 SQL 注入示例<a class="headerlink" href="#information_schema-sql" title="Permanent link">&para;</a></h3>
 <p>假设一个网站存在 SQL 注入漏洞，我们将通过注入获取数据库信息。以下是一个注入场景示例。</p>
 <p>假设网站存在以下查询：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>SELECT * FROM users WHERE username=&#39;$username&#39; AND password=&#39;$password&#39;;
@@ -1393,7 +1416,7 @@
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="err">&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">UNION</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">username</span><span class="p">,</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="o">#</span>
 </code></pre></div>
 <hr />
-<h3 id="mysql-mysqluser">五、MySQL 用户账户表 (<code>mysql.user</code>)</h3>
+<h3 id="mysql-mysqluser">五、MySQL 用户账户表 (<code>mysql.user</code>)<a class="headerlink" href="#mysql-mysqluser" title="Permanent link">&para;</a></h3>
 <p><code>mysql.user</code> 是存储 MySQL 用户信息的表，通常只有高权限用户可以访问。</p>
 <table>
 <thead>

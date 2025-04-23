@@ -54,6 +54,7 @@ nav:
     - MySQL 安装: 'Mysql安装.md'
     - SQL-Hackbar 安装: 'SQL-Hackbar 安装.md'
     - SQLi-labs 环境搭建: 'SQLi-labs docker安装.md'
+    - 图床配置: '图床配置-腾讯云COS+PicGo.md'
   - SQL注入基础:
     - SQL注入漏洞判断: 'SQL注入漏洞判断与类型分析.md'
     - SQL注入点判断: '如何判断SQL注入点.md'
@@ -77,20 +78,20 @@ nav:
     - 学习平台推荐: '网络安全与算法学习平台推荐.md'
 
 markdown_extensions:
+  - tables
+  - attr_list
+  - footnotes
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+  - toc:
+      permalink: true
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true 
+  - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
-  - attr_list
-  - md_in_html
-  - def_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

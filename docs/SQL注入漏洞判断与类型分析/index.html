@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../SQLi-labs%20docker%E5%AE%89%E8%A3%85/">
+        <link rel="prev" href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/">
       
       
         <link rel="next" href="../%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%ADSQL%E6%B3%A8%E5%85%A5%E7%82%B9/">
@@ -242,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Mysql安装.md" class="md-tabs__link">
+        <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -455,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Mysql安装.md" class="md-nav__link">
+      <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -478,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar 安装.md" class="md-nav__link">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -507,6 +507,29 @@
   
   <span class="md-ellipsis">
     SQLi-labs 环境搭建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图床配置
     
   </span>
   
@@ -1447,9 +1470,9 @@
   
 
 
-<h1 id="sql">SQL注入漏洞判断与类型分析</h1>
+<h1 id="sql">SQL注入漏洞判断与类型分析<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
 <p>SQL注入是一种常见的Web安全漏洞，通常出现在动态网页的URL中，尤其是带有参数的URL，例如：<code>http://xxx.xxx.xxx/abcd.php?id=XX</code>。本文将介绍如何判断是否存在SQL注入漏洞，以及如何确定SQL注入的类型（数字型或字符型）。以下内容适用于ASP、PHP、JSP等动态网页，特别是那些访问数据库但未进行充分输入过滤的页面。</p>
-<h2 id="1-sql">1. 判断是否存在SQL注入漏洞</h2>
+<h2 id="1-sql">1. 判断是否存在SQL注入漏洞<a class="headerlink" href="#1-sql" title="Permanent link">&para;</a></h2>
 <p>SQL注入漏洞的核心在于用户输入未被正确过滤，导致恶意SQL语句被执行。以下是最经典的判断方法：</p>
 <p>单引号判断法</p>
 <p><strong>操作步骤</strong>：<br />
@@ -1463,14 +1486,14 @@
 </ol>
 <p><strong>注意事项</strong>：  </p>
 <p>如果页面未报错，不一定表示没有SQL注入漏洞，可能存在过滤机制（如对单引号转义）。此时可尝试其他方法（如逻辑判断语句）。</p>
-<h2 id="2-sql">2. 判断SQL注入漏洞的类型</h2>
+<h2 id="2-sql">2. 判断SQL注入漏洞的类型<a class="headerlink" href="#2-sql" title="Permanent link">&para;</a></h2>
 <p>SQL注入漏洞通常分为两种类型：<strong>数字型</strong>和<strong>字符型</strong>。这些类型取决于数据库表中字段的数据类型（整型或字符串型）。以下是具体的判断方法。</p>
-<h3 id="21-sql">2.1 数字型SQL注入</h3>
-<h4 id="_1">典型场景</h4>
+<h3 id="21-sql">2.1 数字型SQL注入<a class="headerlink" href="#21-sql" title="Permanent link">&para;</a></h3>
+<h4 id="_1">典型场景<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <p>当URL参数为整型时，SQL语句通常如下：  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span>
 </code></pre></div>
-<h4 id="_2">判断方法</h4>
+<h4 id="_2">判断方法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <p>使用逻辑语句 <code>and 1=1</code> 和 <code>and 1=2</code> 进行测试：  </p>
 <p><strong>测试1</strong>：  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>http://xxx/abc.php?id=x and 1=1
@@ -1480,7 +1503,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>http://xxx/abc.php?id=x and 1=2
 </code></pre></div>
 <p>结果：页面运行错误，说明为数字型注入。</p>
-<h4 id="_3">原因分析</h4>
+<h4 id="_3">原因分析<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <p>输入 <code>and 1=1</code>：  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
 </code></pre></div>
@@ -1494,12 +1517,12 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x and 1=1&#39;</span>
 </code></pre></div>
 <p>此时不会进行逻辑判断，页面表现与数字型不同，因此假设不成立。</p>
-<h3 id="22-sql">2.2 字符型SQL注入</h3>
-<h4 id="_4">典型场景</h4>
+<h3 id="22-sql">2.2 字符型SQL注入<a class="headerlink" href="#22-sql" title="Permanent link">&para;</a></h3>
+<h4 id="_4">典型场景<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <p>当URL参数为字符串型时，SQL语句通常如下：  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x&#39;</span>
 </code></pre></div>
-<h4 id="_5">判断方法</h4>
+<h4 id="_5">判断方法<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <p>使用逻辑语句 <code>and '1'='1'</code> 和 <code>and '1'='2'</code> 进行测试：  </p>
 <p><strong>测试1</strong>：  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>http://xxx/abc.php?id=x&#39; and &#39;1&#39;=&#39;1
@@ -1509,7 +1532,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>http://xxx/abc.php?id=x&#39; and &#39;1&#39;=&#39;2
 </code></pre></div>
 <p>结果：页面运行错误，说明为字符型注入。</p>
-<h4 id="_6">原因分析</h4>
+<h4 id="_6">原因分析<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <p>输入 and '1'='1'： </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="err">表名</span><span class="o">&gt;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;x&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="o">=</span><span class="s1">&#39;1&#39;</span>
 </code></pre></div>
@@ -1520,7 +1543,7 @@
 <p>语法正确，但逻辑判断为假，返回错误。  </p>
 <p><strong>假设验证</strong>：<br />
 如果是数字型注入，单引号会导致语法错误（如 <code>id = x' and '1'='1</code>），页面会直接报错，而非逻辑错误。</p>
-<h2 id="_7">总结</h2>
+<h2 id="_7">总结<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p><strong>是否存在SQL注入</strong>：通过单引号判断法快速检测，若页面返回数据库错误，则可能存在漏洞。  </p>
 <p><strong>注入类型</strong>：  </p>
 <p><strong>数字型</strong>：通过 <code>and 1=1</code> 和 <code>and 1=2</code> 判断，逻辑变化反映参数为整型。  </p>

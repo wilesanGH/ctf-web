@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/">
       
       
-        <link rel="next" href="../SQL%E6%B3%A8%E5%85%A5%E6%BC%8F%E6%B4%9E%E5%88%A4%E6%96%AD%E4%B8%8E%E7%B1%BB%E5%9E%8B%E5%88%86%E6%9E%90/">
+        <link rel="next" href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -244,7 +244,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Mysql安装.md" class="md-tabs__link">
+        <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -458,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Mysql安装.md" class="md-nav__link">
+      <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -481,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar 安装.md" class="md-nav__link">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -571,6 +571,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图床配置
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1245,8 +1268,8 @@
 
   <h1>SQLi-labs 环境搭建</h1>
 
-<h3 id="dockerdocker-compose">安装docker,docker-compose略</h3>
-<h3 id="sqli-labs">安装Sqli-labs</h3>
+<h3 id="dockerdocker-compose">安装docker,docker-compose略<a class="headerlink" href="#dockerdocker-compose" title="Permanent link">&para;</a></h3>
+<h3 id="sqli-labs">安装Sqli-labs<a class="headerlink" href="#sqli-labs" title="Permanent link">&para;</a></h3>
 <ol>
 <li>搜索sqli-labs</li>
 </ol>
@@ -1265,21 +1288,21 @@
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span>-dt<span class="w"> </span>--name<span class="w"> </span>sqli-labs<span class="w"> </span>-p<span class="w"> </span><span class="m">8081</span>:80<span class="w"> </span>--rm<span class="w"> </span>acgpiano/sqli-labs
 </code></pre></div>
-<p>### 1. <code>sudo</code></p>
+<p><strong><code>sudo</code></strong></p>
 <p>这个命令前缀 <code>sudo</code> 表示以超级用户权限运行 Docker 命令。在大多数系统中，Docker 需要超级用户权限才能执行。</p>
-<p>### 2. <code>docker run</code></p>
+<p><strong><code>docker run</code></strong></p>
 <p><code>docker run</code> 是 Docker 的命令，用来启动一个容器并运行一个镜像。</p>
-<p>### 3. <code>-d</code></p>
+<p><strong><code>-d</code></strong></p>
 <p><code>-d</code> 选项表示以 <strong>"后台模式"</strong> 启动容器（即"分离模式"）。容器将在后台运行，并且不会在终端显示容器的输出。</p>
-<p>### 4. <code>-t</code></p>
+<p><strong><code>-t</code></strong></p>
 <p><code>-t</code> 选项表示为容器分配一个伪终端（pseudo-TTY）。即使我们是以后台模式启动容器，容器仍然会分配一个虚拟终端，这通常用于需要交互式命令行操作的应用。</p>
-<p>### 5. <code>--name sqli-labs</code></p>
+<p><strong><code>--name sqli-labs</code></strong></p>
 <p><code>--name</code> 选项用于为容器指定一个名字，这里给容器命名为 <code>sqli-labs</code>。这样在后续管理容器时，你可以使用这个名字，而不需要容器的 ID。</p>
-<p>### 6. <code>-p 8081:80</code></p>
+<p><strong><code>-p 8081:80</code></strong></p>
 <p><code>-p</code> 选项用于将主机的端口映射到容器的端口。在这里，<code>8081:80</code> 表示将主机的端口 <code>8081</code> 映射到容器的端口 <code>80</code>。这意味着你可以通过访问主机的 <code>http://localhost:8081</code> 来访问容器内的 Web 服务。</p>
-<p>### 7. <code>--rm</code></p>
+<p><strong><code>--rm</code></strong></p>
 <p><code>--rm</code> 选项表示在容器停止运行时自动删除容器。这样可以避免容器在停止后仍然占用系统资源，适用于临时容器。</p>
-<p>### 8. <code>acgpiano/sqli-labs</code></p>
+<p><strong><code>acgpiano/sqli-labs</code></strong></p>
 <p>这是你要运行的 Docker 镜像的名称。<code>acgpiano/sqli-labs</code> 是一个镜像名称，通常用于构建 SQL 注入（SQLi）实验环境。这个镜像里包含了一个可以模拟 SQL 注入漏洞的 Web 应用，供渗透测试和学习使用。</p>
 <ol>
 <li>查看sqli-labs（<strong>注意需要开放8081端口</strong>）</li>

