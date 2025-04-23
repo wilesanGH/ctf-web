@@ -1,14 +1,7 @@
 ### 安装docker,docker-compose略
 
 ### 安装Sqli-labs
-
-1. 搜索sqli-labs
-
-   ```shell
-   sudo docker search register.liberx.info/sqli-labs
-   ```
-
-2. 拉取sqli-labs
+1. 拉取sqli-labs
 
    ```shell
    sudo docker pull acgpiano/sqli-labs
@@ -16,11 +9,7 @@
    REPOSITORY           TAG       IMAGE ID       CREATED       SIZE
    acgpiano/sqli-labs   latest    0976afc45249   8 years ago   434MB
    ```
-
-   
-
-3. 运行sqli-labs
-
+2. 运行sqli-labs
    ```shell
    sudo docker run -dt --name sqli-labs -p 8081:80 --rm acgpiano/sqli-labs
    
@@ -58,7 +47,7 @@
 
    这是你要运行的 Docker 镜像的名称。`acgpiano/sqli-labs` 是一个镜像名称，通常用于构建 SQL 注入（SQLi）实验环境。这个镜像里包含了一个可以模拟 SQL 注入漏洞的 Web 应用，供渗透测试和学习使用。
 
-4. 查看sqli-labs（**注意需要开放8081端口**）
+3. 查看sqli-labs（**注意需要开放8081端口**）
 
    ```shell
    sudo docker ps -a
@@ -66,7 +55,7 @@
    532c48f3b629   acgpiano/sqli-labs   "/run.sh"   4 minutes ago   Up 4 minutes   3306/tcp, 0.0.0.0:8081->80/tcp, [::]:8081->80/tcp   sqli-labs
    ```
 
-5. 初始化
+4. 初始化
 
    ```shell
    sudo docker exec -it 532c48f3b629 /bin/bash
