@@ -1,11 +1,11 @@
-site_name: CTF-Web安全学习笔记
+site_name: CTF-Web修炼手册
 site_description: Web安全学习笔记，包含SQL注入、XSS、CSRF等常见漏洞的学习记录
-site_author: wiles
-site_url: https://wiles.github.io/ctf-web
+site_author: wilesanGH
+site_url: https://github.com/wilesanGH
 
 # GitHub 仓库链接
-repo_url: https://github.com/wiles/ctf-web
-repo_name: wiles/ctf-web
+repo_url: https://github.com/wilesanGH/ctf-web
+repo_name: wilesanGH/ctf-web
 
 # 文档目录
 docs_dir: md_docs
@@ -91,14 +91,12 @@ nav:
   - 工具配置:
     - 图床配置: 图床配置-腾讯云COS+PicGo.md
 
-copyright: Copyright &copy; 2024 wiles
+copyright: Copyright &copy; 2025 wilesanGH
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/wiles
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/wiles
+      link: https://github.com/wilesanGH
 
 markdown_extensions:
   - tables

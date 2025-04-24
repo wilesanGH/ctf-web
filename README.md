@@ -3,25 +3,43 @@
 [![Material for MkDocs](https://img.shields.io/badge/Material%20for%20MkDocs-9.5.0-blue.svg)](https://squidfunk.github.io/mkdocs-material/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-一个专注于 Web 安全与 CTF 学习的知识库，包含 SQL 注入、Web漏洞基础、环境配置等实战经验分享。
+一个专注于 Web 安全与 CTF 学习的知识库，包含 SQL 注入、Web 漏洞基础、环境配置等实战经验分享。
 
 ## 📚 目录结构
 
-- [环境配置](./md_docs/ENV-1-Mysql安装.md)
-  - MySQL 安装与配置
-  - SQL-Hackbar 安装与使用
-- [SQL 注入技巧](./md_docs/SQL-1-Mysql系统表.md)
-  - MySQL 系统表详解
-  - 注入中的关键词解析
-  - information_schema 利用
-  - 普通注入实战
-  - Bool 盲注思路
-  - Bool 盲注逻辑参考
-- [Web漏洞基础](./md_docs/Web安全漏洞分类全景图（基础总结）.md)
-  - Web安全漏洞分类全景
-  - 常见Web漏洞类型详解
-- [学习资源](./md_docs/网络安全与算法学习平台推荐.md)
-  - 优质学习平台推荐
+### 环境配置
+- MySQL 安装与配置
+- SQL-Hackbar 安装与使用
+- 图床配置-腾讯云COS+PicGo
+- 靶场环境搭建
+  - DVWA 环境搭建
+  - bWAPP 靶场搭建
+  - Vulhub 靶场搭建
+  - Pikachu 靶场搭建
+  - WebGoat 靶场搭建
+  - SQLi-labs docker 安装
+
+### SQL 注入系列
+- MySQL 系统表说明
+- SQL 注入中的关键词
+- 普通注入实战
+- Bool 盲注原理
+- Bool 盲注过程
+- Bool 盲注语句参考
+- SQL 注入完整攻击流程图
+- 如何判断 SQL 注入点
+- SQL 注入漏洞判断与类型分析
+- 基础 SQL 注入语句大全
+- MySQL 新手必备关键词手册
+
+### Web 安全基础
+- Web 安全漏洞分类全景图
+- 常见 Web 漏洞类型详解
+- HTTP 状态码详解
+- HTTP 请求与响应样例
+
+### 学习资源
+- 网络安全与算法学习平台推荐
 
 ## 🚀 快速开始
 

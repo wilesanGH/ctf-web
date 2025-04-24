@@ -27,7 +27,7 @@
 
 ### 环境配置
 - [MySQL 安装与配置](./Mysql安装.md)
-- [SQL-Hackbar 安装与使用](./SQL-Hackbar%20安装.md)
+- [SQL-Hackbar 安装与使用](./SQL-Hackbar 安装.md)
 - [图床配置-腾讯云COS+PicGo](./图床配置-腾讯云COS+PicGo.md)
 - 靶场环境搭建
   - [DVWA 环境搭建](./DVWA环境搭建.md)
@@ -35,15 +35,15 @@
   - [Vulhub 靶场搭建](./Vulhub靶场搭建.md)
   - [Pikachu 靶场搭建](./Pikachu靶场搭建.md)
   - [WebGoat 靶场搭建](./WebGoat靶场搭建.md)
-  - [SQLi-labs docker 安装](./SQLi-labs%20docker安装.md)
+  - [SQLi-labs docker 安装](./SQLi-labs docker安装.md)
 
 ### SQL 注入系列
-- [MySQL 系统表详解](./SQL-1-Mysql系统表.md)
-- [注入中的关键词解析](./SQL-2-注入中的几个关键词.md)
-- [information_schema 利用](./SQL-3-information_schema利用.md)
-- [普通注入实战](./普通注入SQLi_lab%20Less-1.md)
-- [Bool 盲注思路](./SQL-5-bool盲注思路.md)
-- [Bool 盲注逻辑参考](./SQL-6-bool盲注逻辑参考.md)
+- [MySQL 系统表说明](./Mysql系统表说明.md)
+- [SQL 注入中的关键词](./SQL注入中的关键词.md)
+- [普通注入实战](./普通注入SQLi_lab Less-1.md)
+- [Bool 盲注原理](./bool盲注原理.md)
+- [Bool 盲注过程](./bool盲注过程.md)
+- [Bool 盲注语句参考](./bool盲注语句参考.md)
 - [SQL 注入完整攻击流程图](./SQL注入完整攻击流程图.md)
 - [如何判断 SQL 注入点](./如何判断SQL注入点.md)
 - [SQL 注入漏洞判断与类型分析](./SQL注入漏洞判断与类型分析.md)
