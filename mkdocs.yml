@@ -59,6 +59,8 @@ nav:
       - DVWA 环境搭建: 'DVWA环境搭建.md'
       - Pikachu 靶场搭建: 'Pikachu靶场搭建.md'
       - WebGoat 靶场搭建: 'WebGoat靶场搭建.md'
+      - bWAPP 靶场搭建: 'bWAPP靶场搭建.md'
+      - Vulhub 靶场搭建: 'Vulhub靶场搭建.md'
     - 工具配置:
       - 图床配置: '图床配置-腾讯云COS+PicGo.md'
   - Web基础:

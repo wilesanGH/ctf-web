@@ -18,27 +18,50 @@
 
 ## 使用指南
 
-1. 首先在【工具安装】部分配置好必要的环境
+1. 首先在【环境配置】部分配置好必要的环境
 2. 按照目录顺序循序渐进地学习
 3. 动手实践每个案例，加深理解
 4. 参考代码和技巧，举一反三
 
 ## 章节导航
 
-- **工具安装**
-  - Firefox 浏览器配置
-  - HackBar 插件使用
+### 环境配置
+- [MySQL 安装与配置](./Mysql安装.md)
+- [SQL-Hackbar 安装与使用](./SQL-Hackbar%20安装.md)
+- [图床配置-腾讯云COS+PicGo](./图床配置-腾讯云COS+PicGo.md)
+- 靶场环境搭建
+  - [DVWA 环境搭建](./DVWA环境搭建.md)
+  - [bWAPP 靶场搭建](./bWAPP靶场搭建.md)
+  - [Vulhub 靶场搭建](./Vulhub靶场搭建.md)
+  - [Pikachu 靶场搭建](./Pikachu靶场搭建.md)
+  - [WebGoat 靶场搭建](./WebGoat靶场搭建.md)
+  - [SQLi-labs docker 安装](./SQLi-labs%20docker安装.md)
 
-- **SQL 注入系列**
-  - SQL 注入基础知识
-  - information_schema 详解
-  - 普通注入技巧
-  - 布尔盲注方法
-  - 盲注逻辑进阶
+### SQL 注入系列
+- [MySQL 系统表详解](./SQL-1-Mysql系统表.md)
+- [注入中的关键词解析](./SQL-2-注入中的几个关键词.md)
+- [information_schema 利用](./SQL-3-information_schema利用.md)
+- [普通注入实战](./普通注入SQLi_lab%20Less-1.md)
+- [Bool 盲注思路](./SQL-5-bool盲注思路.md)
+- [Bool 盲注逻辑参考](./SQL-6-bool盲注逻辑参考.md)
+- [SQL 注入完整攻击流程图](./SQL注入完整攻击流程图.md)
+- [如何判断 SQL 注入点](./如何判断SQL注入点.md)
+- [SQL 注入漏洞判断与类型分析](./SQL注入漏洞判断与类型分析.md)
+- [基础 SQL 注入语句大全](./基础SQL注入语句大全.md)
+- [MySQL 新手必备关键词手册](./MySQL新手必备关键词手册.md)
+
+### Web 安全基础
+- [Web 安全漏洞分类全景图](./Web安全漏洞分类全景图（基础总结）.md)
+- [常见 Web 漏洞类型详解](./常见Web漏洞类型.md)
+- [HTTP 状态码详解](./http状态码.md)
+- [HTTP 请求与响应样例](./http请求与响应样例.md)
+
+### 学习资源
+- [网络安全与算法学习平台推荐](./网络安全与算法学习平台推荐.md)
 
 ## 持续更新
 
-本手册将持续更新和完善，欢迎关注最新内容！
+本手册将持续更新和完善，有误的地方欢迎指正！
 
 ---
 

