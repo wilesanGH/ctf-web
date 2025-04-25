@@ -50,6 +50,7 @@
 - [SQL 注入漏洞判断与类型分析](./SQL注入漏洞判断与类型分析.md)
 - [基础 SQL 注入语句大全](./基础SQL注入语句大全.md)
 - [MySQL 新手必备关键词手册](./MySQL新手必备关键词手册.md)
+- [SQL 报错注入详解](./SQL 报错注入详解.md)
 - Sqlmap工具使用
   - [Sqlmap安装与配置](./Sqlmap-安装.md)
   - [Sqlmap使用-Less1](./Sqlmap-less1.md)

