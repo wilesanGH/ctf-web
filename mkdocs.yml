@@ -60,11 +60,12 @@ nav:
       - Pikachu靶场搭建: Pikachu靶场搭建.md
       - Vulhub靶场搭建: Vulhub靶场搭建.md
       - bWAPP靶场搭建: bWAPP靶场搭建.md
-      - SQLi-labs docker安装: SQLi-labs docker安装.md
+      - SQLi-labs安装指南: Sqli-labs安装指南.md
     - 数据库环境:
       - MySQL安装: Mysql安装.md
     - 工具安装:
       - SQL-Hackbar安装: SQL-Hackbar 安装.md
+      - Python安装与VScode配置: Python安装-VScode安装及配置.md
   - SQL注入:
     - 基础知识:
       - MySQL新手必备关键词手册: MySQL新手必备关键词手册.md
@@ -81,6 +82,11 @@ nav:
       - 布尔盲注语句参考: bool盲注语句参考.md
     - 实战案例:
       - SQLi-labs Less-1: 普通注入SQLi_lab Less-1.md
+    - Sqlmap工具:
+      - Sqlmap安装与配置: Sqlmap-安装.md
+      - Sqlmap使用-Less1: Sqlmap-less1.md
+      - Sqlmap使用-Less8: Sqlmap-less8.md
+      - Sqlmap使用-Less10: Sqlmap-less10.md
   - Web安全基础:
     - 常见Web漏洞类型: 常见Web漏洞类型.md
     - Web安全漏洞分类全景图: Web安全漏洞分类全景图（基础总结）.md

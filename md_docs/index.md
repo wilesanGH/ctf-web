@@ -29,13 +29,14 @@
 - [MySQL 安装与配置](./Mysql安装.md)
 - [SQL-Hackbar 安装与使用](./SQL-Hackbar 安装.md)
 - [图床配置-腾讯云COS+PicGo](./图床配置-腾讯云COS+PicGo.md)
+- [Python安装与VScode配置](./Python安装-VScode安装及配置.md)
 - 靶场环境搭建
   - [DVWA 环境搭建](./DVWA环境搭建.md)
   - [bWAPP 靶场搭建](./bWAPP靶场搭建.md)
   - [Vulhub 靶场搭建](./Vulhub靶场搭建.md)
   - [Pikachu 靶场搭建](./Pikachu靶场搭建.md)
   - [WebGoat 靶场搭建](./WebGoat靶场搭建.md)
-  - [SQLi-labs docker 安装](./SQLi-labs docker安装.md)
+  - [SQLi-labs 安装指南](./Sqli-labs安装指南.md)
 
 ### SQL 注入系列
 - [MySQL 系统表说明](./Mysql系统表说明.md)
@@ -49,6 +50,11 @@
 - [SQL 注入漏洞判断与类型分析](./SQL注入漏洞判断与类型分析.md)
 - [基础 SQL 注入语句大全](./基础SQL注入语句大全.md)
 - [MySQL 新手必备关键词手册](./MySQL新手必备关键词手册.md)
+- Sqlmap工具使用
+  - [Sqlmap安装与配置](./Sqlmap-安装.md)
+  - [Sqlmap使用-Less1](./Sqlmap-less1.md)
+  - [Sqlmap使用-Less8](./Sqlmap-less8.md)
+  - [Sqlmap使用-Less10](./Sqlmap-less10.md)
 
 ### Web 安全基础
 - [Web 安全漏洞分类全景图](./Web安全漏洞分类全景图（基础总结）.md)
