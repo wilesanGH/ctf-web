@@ -88,6 +88,17 @@ nav:
       - Sqlmap使用-Less1: Sqlmap-less1.md
       - Sqlmap使用-Less8: Sqlmap-less8.md
       - Sqlmap使用-Less10: Sqlmap-less10.md
+  - PHP安全:
+    - PHP反序列化:
+      - PHP反序列化介绍: php反序列化介绍.md
+      - PHP反序列化造链法: php反序列化造链法.md
+      - PHP反序列化类名爆破: php反序列化类名爆破.md
+      - PHP生成反序列脚本: php生成反序列脚本.md
+    - PHP绕过技巧:
+      - Bash空格绕过技巧: bash空格绕过技巧.md
+      - preg_match空格检测绕过策略: preg_match 空格检测绕过策略.md
+  - 密码学:
+    - RSA原理: RSA原理.md
   - Web安全基础:
     - 常见Web漏洞类型: 常见Web漏洞类型.md
     - Web安全漏洞分类全景图: Web安全漏洞分类全景图（基础总结）.md
