@@ -66,6 +66,12 @@ nav:
     - 工具安装:
       - SQL-Hackbar安装: SQL-Hackbar 安装.md
       - Python安装与VScode配置: Python安装-VScode安装及配置.md
+      - Postman安装与使用: postman安装与使用.md
+      - BurpSuite安装与配置: BurpSuite 安装与配置.md
+    - 虚拟化环境:
+      - Vmware安装: Vmware安装.md
+      - Kali安装: Kali安装.md
+      - Docker与Docker Compose安装: docker、docker compose安装.md
   - SQL注入:
     - 基础知识:
       - MySQL新手必备关键词手册: MySQL新手必备关键词手册.md

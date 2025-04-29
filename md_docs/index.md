@@ -17,4 +17,4 @@
 
 ## 版权声明
 
-本手册采用MIT License发布。详情请参考[LICENSE](LICENSE)文件。
+本手册采用MIT License发布。详情请参考[LICENSE文件](https://github.com/wilesanGH/ctf-web/blob/main/LICENSE)。
