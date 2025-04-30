@@ -65,7 +65,7 @@
    >
    > 生成并保存 token（只会显示一次）
 
-![image-20250430132621130](./../../png/%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE+PicGo/image-20250430132621130.png)
+![image-20250430132621130](https://cdn.jsdelivr.net/gh/wilesanGH/PicGo@master/img/image-20250430132621130.png)
 
 ### 2.3 PicGo 配置 GitHub 图床
 

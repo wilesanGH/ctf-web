@@ -15,6 +15,8 @@
         <link rel="canonical" href="https://github.com/wilesanGH/%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE%2BPicGo/">
       
       
+        <link rel="prev" href="../%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E4%B8%8E%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%E6%8E%A8%E8%8D%90/">
+      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>图床 + PicGo 配置指南 - CTF-Web修炼手册</title>
+        <title>图床配置 - CTF-Web修炼手册</title>
       
     
     
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              图床 + PicGo 配置指南
+              图床配置
             
           </span>
         </div>
@@ -390,11 +392,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../图床配置-腾讯云COS+PicGo.md" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -926,10 +930,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../图床配置.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    图床配置
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -940,6 +966,188 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-cos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 腾讯云 COS 配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 腾讯云 COS 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 创建存储桶
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 获取密钥信息
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. GitHub 图床配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. GitHub 图床配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 创建 GitHub 仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-github-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 生成 GitHub Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-picgo-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 PicGo 配置 GitHub 图床
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 使用说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 注意事项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-typora-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Typora 配置上传图片到 GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-picgo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. PicGo 配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. PicGo 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-picgo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 安装 PicGo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-cos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 配置腾讯云 COS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 使用说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 注意事项
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 常见问题
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2361,28 +2569,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -2395,7 +2606,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             工具配置
@@ -2406,10 +2617,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../图床配置-腾讯云COS+PicGo.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    图床配置
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2420,6 +2653,188 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-cos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 腾讯云 COS 配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 腾讯云 COS 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 创建存储桶
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 获取密钥信息
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. GitHub 图床配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. GitHub 图床配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 创建 GitHub 仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-github-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 生成 GitHub Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-picgo-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 PicGo 配置 GitHub 图床
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 使用说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 注意事项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-typora-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Typora 配置上传图片到 GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-picgo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. PicGo 配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. PicGo 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-picgo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 安装 PicGo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-cos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 配置腾讯云 COS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 使用说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 注意事项
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 常见问题
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2699,7 +3114,7 @@
 <p>设置 token 过期时间</p>
 <p>生成并保存 token（只会显示一次）</p>
 </blockquote>
-<p><img alt="image-20250430132621130" src="./../../png/%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE+PicGo/image-20250430132621130.png" /></p>
+<p><img alt="image-20250430132621130" src="https://cdn.jsdelivr.net/gh/wilesanGH/PicGo@master/img/image-20250430132621130.png" /></p>
 <h3 id="23-picgo-github">2.3 PicGo 配置 GitHub 图床<a class="headerlink" href="#23-picgo-github" title="Permanent link">&para;</a></h3>
 <ol>
 <li>打开 PicGo</li>
