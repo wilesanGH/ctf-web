@@ -12,7 +12,7 @@
 
 2. 运行sqli-labs
    ```shell
-   sudo docker run -dt --name sqli-labs -p 8081:80 --rm acgpiano/sqli-labs
+   sudo docker run -dt --name sqli-labs -p 8081:80 acgpiano/sqli-labs
    ```
 
    **`sudo`**

@@ -27,7 +27,7 @@ docker --version
 
 2. 运行容器：
    ```bash
-   docker run --rm -dt -p 8082:80 vulnerables/web-dvwa
+   docker run -dt --name dvwa -p 8082:80 vulnerables/web-dvwa
    ```
 
 3. 访问 DVWA：

