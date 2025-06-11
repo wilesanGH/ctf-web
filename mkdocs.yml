@@ -20,21 +20,21 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
-      accent: black
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: 切换到深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: white
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: 切换到浅色模式
   font:
     text: Noto Sans SC
-    code: Roboto Mono
+    code: JetBrains Mono
   features:
     - navigation.instant
     - navigation.tracking
@@ -47,6 +47,8 @@ theme:
     - search.highlight
     - content.code.copy
     - content.tabs.link
+    - content.code.annotate
+    - content.tooltips
 
 extra_css:
   - stylesheets/extra.css
@@ -63,6 +65,8 @@ nav:
       - SQLi-labs安装指南: Sqli-labs安装指南.md
     - 数据库环境:
       - MySQL安装: Mysql安装.md
+      - MySQL系统表说明: Mysql系统表说明.md
+      - MySQL新手必备关键词手册: MySQL新手必备关键词手册.md
     - 工具安装:
       - SQL-Hackbar安装: SQL-Hackbar 安装.md
       - Python安装与VScode配置: Python安装-VScode安装及配置.md
@@ -73,10 +77,15 @@ nav:
       - Vmware安装: Vmware安装.md
       - Kali安装: Kali安装.md
       - Docker与Docker Compose安装: docker、docker compose安装.md
+  - Web安全基础:
+    - 基础知识:
+      - 常见Web漏洞类型: 常见Web漏洞类型.md
+      - Web安全漏洞分类全景图: Web安全漏洞分类全景图（基础总结）.md
+      - HTTP状态码: http状态码.md
+      - HTTP请求与响应样例: http请求与响应样例.md
+      - Content-Type详解: content-type.md
   - SQL注入:
     - 基础知识:
-      - MySQL新手必备关键词手册: MySQL新手必备关键词手册.md
-      - MySQL系统表说明: Mysql系统表说明.md
       - SQL注入关键词: SQL注入中的关键词.md
       - 基础SQL注入语句: 基础SQL注入语句大全.md
     - 漏洞分析:
@@ -95,6 +104,8 @@ nav:
       - Sqlmap使用-Less1: Sqlmap-less1.md
       - Sqlmap使用-Less8: Sqlmap-less8.md
       - Sqlmap使用-Less10: Sqlmap-less10.md
+  - XSS:
+    - XSS 完全指南: xss_guide.md
   - PHP安全:
     - PHP反序列化:
       - PHP反序列化介绍: php反序列化介绍.md
@@ -106,15 +117,8 @@ nav:
       - preg_match空格检测绕过策略: preg_match 空格检测绕过策略.md
   - 密码学:
     - RSA原理: RSA原理.md
-  - Web安全基础:
-    - 常见Web漏洞类型: 常见Web漏洞类型.md
-    - Web安全漏洞分类全景图: Web安全漏洞分类全景图（基础总结）.md
-    - HTTP状态码: http状态码.md
-    - HTTP请求与响应样例: http请求与响应样例.md
   - 学习资源:
     - 网络安全与算法学习平台推荐: 网络安全与算法学习平台推荐.md
-  - 工具配置:
-    - 图床配置: 图床配置+PicGo.md
 
 copyright: Copyright &copy; 2025 wilesanGH
 
@@ -122,6 +126,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/wilesanGH
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/wilesanGH
+  version:
+    provider: mike
 
 markdown_extensions:
   - tables
@@ -131,9 +139,16 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      title: 目录
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.details
@@ -142,8 +157,34 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.progressbar
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.smartsymbols
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
 
 plugins:
   - search:
       lang: zh
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - tags
+  - git-revision-date-localized:
+      type: datetime
+  - minify:
+      minify_html: true
+  - rss:
+      categories: []
+      date_from_meta:
+        enabled: true
