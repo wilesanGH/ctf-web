@@ -132,17 +132,17 @@ search:
 
 | 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 简介 |
 |---|---|---|---|---|---|
-| CCF-A | [征稿官网](https://www.ndss-symposium.org/ndss2027/) | NDSS | 2026-08-19 | March 22 - March 26, 2027 · Seoul, Republic of Korea | 聚焦网络与分布式系统安全，涵盖协议、系统及应用安全等前沿议题。 |
-| CCF-A | [征稿官网](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2026-08-25 | August 11-13, 2027 · Denver, CO, USA | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
-| CCF-A | [征稿官网](https://eurocrypt.iacr.org/2027/) | EUROCRYPT | 2026-09-17 | April 11-15, 2027 · Eindhoven, Netherlands | 聚焦密码学基础理论与应用，涵盖加密算法、安全协议、密码分析及相关前沿研究。 |
-| CCF-A | [征稿官网](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | TBD · MONTREAL, CANADA | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
-| CCF-B | [征稿官网](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-08-03 | TBA · Tokyo, Japan | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
-| CCF-B | [征稿官网](https://ches.iacr.org/2027/) | CHES | 2026-10-15 | September 6 - 9, 2027 · Cancún, Mexico | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
-| CCF-B | [征稿官网](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
-| CCF-C | [征稿官网](https://www.cloud-conf.net/cscloud/2026/cscloud/) | CSCloud | 2026-08-01 | December 19-21, 2026 · Shanghai, China | 关注网络安全与云计算交叉领域，包括云安全、数据保护与安全服务等。 |
-| CCF-C | [征稿官网](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-08-21 | July 12-16, 2027 · Macau, China | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
-| CCF-C | [征稿官网](https://petsymposium.org/cfp27.php) | PETS | 2026-08-31 | July 19-24, 2027 · Delft, The Netherlands | 专注于隐私增强技术，涵盖匿名通信、数据保护及隐私度量等研究。 |
-| CCF-C | [征稿官网](https://fc27.ifca.ai/) | FC | 2026-09-17 | February 8-12, 2027 · Barbados (tentative) | 专注于金融密码学与数据安全，研究支付系统、区块链、隐私保护及金融领域的网络安全技术。 |
+| CCF-A | [CCF会议](https://www.ndss-symposium.org/ndss2027/) | NDSS | 2026-08-19 | March 22 - March 26, 2027 · Seoul, Republic of Korea | 聚焦网络与分布式系统安全，涵盖协议、系统及应用安全等前沿议题。 |
+| CCF-A | [CCF会议](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2026-08-25 | August 11-13, 2027 · Denver, CO, USA | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
+| CCF-A | [CCF会议](https://eurocrypt.iacr.org/2027/) | EUROCRYPT | 2026-09-17 | April 11-15, 2027 · Eindhoven, Netherlands | 聚焦密码学基础理论与应用，涵盖加密算法、安全协议、密码分析及相关前沿研究。 |
+| CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | TBD · MONTREAL, CANADA | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
+| CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-08-03 | TBA · Tokyo, Japan | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
+| CCF-B | [CCF会议](https://ches.iacr.org/2027/) | CHES | 2026-10-15 | September 6 - 9, 2027 · Cancún, Mexico | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
+| CCF-B | [CCF会议](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
+| CCF-C | [CCF会议](https://www.cloud-conf.net/cscloud/2026/cscloud/) | CSCloud | 2026-08-01 | December 19-21, 2026 · Shanghai, China | 关注网络安全与云计算交叉领域，包括云安全、数据保护与安全服务等。 |
+| CCF-C | [CCF会议](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-08-21 | July 12-16, 2027 · Macau, China | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
+| CCF-C | [CCF会议](https://petsymposium.org/cfp27.php) | PETS | 2026-08-31 | July 19-24, 2027 · Delft, The Netherlands | 专注于隐私增强技术，涵盖匿名通信、数据保护及隐私度量等研究。 |
+| CCF-C | [CCF会议](https://fc27.ifca.ai/) | FC | 2026-09-17 | February 8-12, 2027 · Barbados (tentative) | 专注于金融密码学与数据安全，研究支付系统、区块链、隐私保护及金融领域的网络安全技术。 |
 <!-- AUTO:SEC_CFP:END -->
 
 ## 四、综述(Survey)专门渠道(2026-06/07 核实)

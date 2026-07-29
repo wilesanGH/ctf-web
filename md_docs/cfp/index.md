@@ -464,58 +464,58 @@ search:
 
 | 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 领域 | 简介 |
 |---|---|---|---|---|---|---|
-| CCF-A | [征稿官网](https://conf.researchr.org/home/hpca-2027) | HPCA | 2026-07-31 | Jan 30-Feb 3, 2027 · Salt Lake City, Utah | 体系结构/并行/存储 | IEEE高性能计算机体系结构国际研讨会，研究高性能处理器、存储系统及并行架构设计。 |
-| CCF-A | [征稿官网](https://infocom2027.ieee-infocom.org/) | INFOCOM | 2026-07-31 | May 24 - 27, 2027 · Honolulu, HI, USA | 计算机网络 | 研究计算机通信与网络，涉及协议设计、网络架构、移动计算及系统优化。 |
-| CCF-A | [征稿官网](https://www.ubicomp.org/ubicomp-iswc-2026) | UbiComp/ISWC | 2026-08-01 | October 11-15, 2026 · Shanghai, China | 人机交互与普适计算 | ACM普适与泛在计算国际联合会议，研究普适计算、可穿戴设备及智能环境交互技术。 |
-| CCF-A | [征稿官网](https://www.vldb.org/2027/) | VLDB | 2026-08-01 | August 23 - August 27, 2027 · Athens, Greece | 数据库/数据挖掘/信息检索 | VLDB是超大型数据库国际会议，涵盖数据库系统、数据挖掘、信息检索等大规模数据管理技术。 |
-| CCF-A | [征稿官网](https://ppopp27.sigplan.org/) | PPoPP | 2026-08-03 | Mar 20-24, 2027 · Salt Lake City, Utah, USA | 体系结构/并行/存储 | PPoPP是并行编程原理与实践研讨会，聚焦并行计算模型、编译优化及高性能计算系统。 |
-| CCF-A | [征稿官网](https://www.ndss-symposium.org/ndss2027/) | NDSS | 2026-08-19 | March 22 - March 26, 2027 · Seoul, Republic of Korea | 网络与信息安全 | 聚焦网络与分布式系统安全，涵盖协议、系统及应用安全等前沿议题。 |
-| CCF-A | [征稿官网](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2026-08-25 | August 11-13, 2027 · Denver, CO, USA | 网络与信息安全 | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
-| CCF-A | [征稿官网](https://ieeevr.org/2027/) | IEEE VR | 2026-08-31 | February 27 - March 3, 2027 · Melbourne, Australia | 图形学与多媒体 | IEEE虚拟现实会议，探讨沉浸式交互、增强现实、触觉反馈及VR/AR系统技术。 |
-| CCF-A | [征稿官网](https://www.asplos-conference.org/asplos2027/cfp/) | ASPLOS | 2026-09-09 | April 11-15, 2027 · Crete, Greece | 体系结构/并行/存储 | 国际编程语言与操作系统体系结构支持会议，涵盖计算机体系结构、编译优化及系统软件。 |
-| CCF-A | [征稿官网](https://chi2027.acm.org/) | CHI | 2026-09-10 | May 10 - 14, 2027 · David L. Lawrence Convention Center, Pittsburgh, USA | 人机交互与普适计算 | ACM人机交互会议，研究用户界面设计、交互技术、可用性评估及普适计算应用。 |
-| CCF-A | [征稿官网](https://www.usenix.org/conference/fast27) | FAST | 2026-09-15 | FEBRUARY 23-25, 2027 · Renton, WA, USA | 体系结构/并行/存储 | 聚焦文件与存储技术，涵盖存储系统设计、文件系统、数据保护与性能优化等方向。 |
-| CCF-A | [征稿官网](https://eurocrypt.iacr.org/2027/) | EUROCRYPT | 2026-09-17 | April 11-15, 2027 · Eindhoven, Netherlands | 网络与信息安全 | 聚焦密码学基础理论与应用，涵盖加密算法、安全协议、密码分析及相关前沿研究。 |
-| CCF-A | [征稿官网](https://www.usenix.org/conference/nsdi27) | NSDI | 2026-09-17 | May 11-13, 2027 · Providence, RI, USA | 计算机网络 | 关注网络化系统的设计与实现，涵盖分布式系统、网络架构、存储及操作系统等领域的创新研究。 |
-| CCF-A | [征稿官网](https://2027.eurosys.org/) | EuroSys | 2026-09-24 | April 19-24, 2027 · Rabat, Morocco | 体系结构/并行/存储 | 研究计算机系统设计与实现，涵盖操作系统、分布式系统、虚拟化等核心方向。 |
-| CCF-A | [征稿官网](https://conf.researchr.org/home/fse-2027) | FSE | 2026-10-02 | July 12-16, 2027 · Shenzhen, China | 软件工程/系统软件/PL | ACM国际软件工程基础会议，聚焦软件工程的理论基础、方法、工具与实践，包括需求、设计、测试、验证等。 |
-| CCF-A | [征稿官网](https://2027.sigmod.org/) | SIGMOD | 2026-10-17 | June 13-19, 2027 · Huntington Beach, CA, USA | 数据库/数据挖掘/信息检索 | ACM数据管理会议，聚焦数据库系统、数据挖掘、信息检索及大规模数据处理技术。 |
-| CCF-A | [征稿官网](https://acmweb2027.org/) | WWW | 2026-10-18 | May 10 - 14, 2027 · Dublin, Ireland | 交叉/综合/新兴 | 国际万维网会议，研究Web技术、语义网、社交网络、信息检索及新兴网络应用。 |
-| CCF-A | [征稿官网](https://icde2027.github.io/) | ICDE | 2026-11-11 | May 17-21, 2027 · Copenhagen, Denmark | 数据库/数据挖掘/信息检索 | IEEE国际数据工程会议，关注数据管理、数据挖掘、大数据系统及数据工程应用。 |
-| CCF-A | [征稿官网](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | TBD · MONTREAL, CANADA | 网络与信息安全 | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
-| CCF-A | [征稿官网](https://www.usenix.org/conference/osdi27) | OSDI | 2026-12-08 | July 7-9, 2027 · Baltimore, MD, USA | 软件工程/系统软件/PL | USENIX操作系统设计与实现研讨会，涵盖操作系统内核、分布式系统、虚拟化及系统安全。 |
-| CCF-B | [征稿官网](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-08-03 | TBA · Tokyo, Japan | 网络与信息安全 | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
-| CCF-B | [征稿官网](https://www.cidrdb.org/cidr2027/) | CIDR | 2026-08-04 | January 24-27, 2027 · Amsterdam, The Netherlands | 数据库/数据挖掘/信息检索 | CIDR是创新数据系统研究会议，探讨新型数据管理架构、查询处理与存储技术。 |
-| CCF-B | [征稿官网](https://iui.hosting.acm.org/2027/) | IUI | 2026-08-20 | February 8-11, 2027 · Helsinki, Finland | 人机交互与普适计算 | IUI是智能用户界面会议，研究人机交互中的智能技术，如推荐、自适应界面与自然交互。 |
-| CCF-B | [征稿官网](https://wsdm-conference.org/2027/) | WSDM | 2026-08-24 | February 15 - 19, 2027 · Cordis, Hong Kong SAR, China | 数据库/数据挖掘/信息检索 | 国际网络搜索与数据挖掘会议，聚焦搜索引擎、推荐系统、社交网络及数据挖掘算法。 |
-| CCF-B | [征稿官网](https://edbticdt2027.github.io/) | ICDT | 2026-09-10 | April 6-9, 2027 · Lille, France | 数据库/数据挖掘/信息检索 | 专注于数据库理论，涵盖数据模型、查询语言、数据管理基础等核心研究领域。 |
-| CCF-B | [征稿官网](https://conf.researchr.org/home/cgo-2027) | IEEE/ACM CGO | 2026-09-10 | TBD · Salt Lake City, Utah, USA | 体系结构/并行/存储 | 研究代码生成与优化技术，包括编译器优化、运行时系统及高性能计算相关方法。 |
-| CCF-B | [征稿官网](https://2027.ieeeicassp.org/) | ICASSP | 2026-09-16 | May 16-21, 2027 · Toronto, Canada | 图形学与多媒体 | 涵盖声学、语音与信号处理，包括音频分析、语音识别、图像处理等多媒体技术。 |
-| CCF-B | [征稿官网](https://www.date-conference.com/date-2027-call-papers) | DATE | 2026-09-20 | March 22-24, 2027 · Dresden, Germany | 体系结构/并行/存储 | 关注电子系统设计与自动化，包括芯片设计、测试验证、嵌入式系统等研究。 |
-| CCF-B | [征稿官网](https://conf.researchr.org/home/saner-2027) | SANER | 2026-09-25 | March 9-12, 2027 · Richmond, Virginia, United States | 软件工程/系统软件/PL | IEEE国际软件分析、演化与重构会议，涵盖软件分析、软件演化、软件重构及软件维护等研究方向。 |
-| CCF-B | [征稿官网](https://datacompressionconference.org/) | DCC | 2026-10-02 | March 23-26, 2027 · Snowbird, Utah, United States | 图形学与多媒体 | 数据压缩会议，研究数据压缩算法、理论、实现与应用，涵盖图像、视频、音频及通用数据压缩技术。 |
-| CCF-B | [征稿官网](https://edbticdt2027.github.io/) | EDBT | 2026-10-07 | April 6-9, 2027 · Lille, France | 数据库/数据挖掘/信息检索 | 国际扩展数据库技术会议，研究数据库系统、数据管理、查询处理、数据集成及新兴数据技术。 |
-| CCF-B | [征稿官网](https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference) | AAMAS | 2026-10-09 | May 03, 2027 · Hanoi, Vietnam | 人工智能 | 研究自主智能体与多智能体系统的理论、设计及应用，涵盖协作、博弈、机器人及分布式人工智能。 |
-| CCF-B | [征稿官网](https://www.sigmetrics.org/sigmetrics2027/) | SIGMETRICS | 2026-10-09 | June 7-11, 2027 · Atlanta, Georgia, USA | 体系结构/并行/存储 | ACM测量与评估特别兴趣组会议，研究计算机系统性能测量、建模、分析与评估，涵盖网络、存储、分布式系统… |
-| CCF-B | [征稿官网](https://2027.ieee-iscas.org/) | ISCAS | 2026-10-13 | June 6-9, 2027 · Bordeaux, France | 体系结构/并行/存储 | IEEE国际电路与系统研讨会，涵盖电路理论、设计与实现，以及信号处理、通信等系统级研究。 |
-| CCF-B | [征稿官网](https://ches.iacr.org/2027/) | CHES | 2026-10-15 | September 6 - 9, 2027 · Cancún, Mexico | 网络与信息安全 | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
-| CCF-B | [征稿官网](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 网络与信息安全 | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
-| CCF-C | [征稿官网](https://adma2026.github.io/) | ADMA | 2026-07-31 | November 13 - 15, 2026 · Hong Kong, China | 数据库/数据挖掘/信息检索 | 国际高级数据挖掘与应用会议，探讨数据挖掘算法、应用及大数据分析的前沿技术。 |
-| CCF-C | [征稿官网](https://www.cloud-conf.net/cscloud/2026/cscloud/) | CSCloud | 2026-08-01 | December 19-21, 2026 · Shanghai, China | 网络与信息安全 | 关注网络安全与云计算交叉领域，包括云安全、数据保护与安全服务等。 |
-| CCF-C | [征稿官网](https://www.adai.ai/dai/2026/index.html) | DAI | 2026-08-03 | November 29-December 2, 2026 · Hong Kong, China | 人工智能 | 研究分布式人工智能理论与系统，涉及多智能体协作、分布式学习与决策。 |
-| CCF-C | [征稿官网](https://www.mmasia2026.org/) | MMAsia | 2026-08-03 | December 15-18, 2026 · VinUniversity, Hanoi, Vietnam | 图形学与多媒体 | MMAsia是ACM多媒体亚洲会议，研究多媒体内容分析、检索、交互及系统应用。 |
-| CCF-C | [征稿官网](https://www.mmm2027.net/) | MMM | 2026-08-16 | January 5-8, 2027 · Siem Reap, Cambodia | 图形学与多媒体 | MMM是多媒体建模国际会议，关注多媒体数据表示、检索、分析与可视化方法。 |
-| CCF-C | [征稿官网](https://ieee-msn.org/2026) | MSN | 2026-08-20 | December 18-20, 2026 · Ningbo, China | 计算机网络 | 探讨移动性、传感与网络技术，覆盖物联网、边缘计算及智能感知等方向。 |
-| CCF-C | [征稿官网](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-08-21 | July 12-16, 2027 · Macau, China | 网络与信息安全 | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
-| CCF-C | [征稿官网](https://bigdataieee.org/BigData2026/) | BigData | 2026-08-21 | December 14-17, 2026 · Phoenix, Arizona, United State | 交叉/综合/新兴 | IEEE国际大数据会议，涵盖大数据处理、分析、存储、应用及系统架构等前沿研究。 |
-| CCF-C | [征稿官网](https://3dvconf.github.io/2027/) | 3DV | 2026-08-28 | April 6-9, 2027 · Thessaloniki, Greece | 图形学与多媒体 | 国际三维视觉会议，研究三维重建、点云处理、深度估计及多视角几何等方向。 |
-| CCF-C | [征稿官网](https://petsymposium.org/cfp27.php) | PETS | 2026-08-31 | July 19-24, 2027 · Delft, The Netherlands | 网络与信息安全 | 专注于隐私增强技术，涵盖匿名通信、数据保护及隐私度量等研究。 |
-| CCF-C | [征稿官网](https://wcnc2027.ieee-wcnc.org/) | WCNC | 2026-09-15 | April 5-8, 2027 · Panama City, Panama | 计算机网络 | 聚焦无线通信与网络技术，涵盖5G/6G、物联网及智能网络架构等研究。 |
-| CCF-C | [征稿官网](https://fc27.ifca.ai/) | FC | 2026-09-17 | February 8-12, 2027 · Barbados (tentative) | 网络与信息安全 | 专注于金融密码学与数据安全，研究支付系统、区块链、隐私保护及金融领域的网络安全技术。 |
-| CCF-C | [征稿官网](https://ecir2027.co.uk/) | ECIR | 2026-10-02 | March 21-25, 2027 · Southampton, UK | 数据库/数据挖掘/信息检索 | 欧洲信息检索会议，关注信息检索模型、算法、系统与应用，包括搜索、推荐、文本挖掘及多媒体检索。 |
-| CCF-C | [征稿官网](https://icc2027.ieee-icc.org) | ICC | 2026-10-02 | May 30 - June 3, 2027 · Washington, DC, USA | 计算机网络 | 涵盖通信网络技术，包括无线通信、光网络、物联网、网络安全及下一代通信系统等研究方向。 |
-| CCF-C | [征稿官网](https://2027.refsq.org/) | REFSQ | 2026-11-12 | April 12-15, 2027 · Basel, Switzerland | 软件工程/系统软件/PL | 需求工程：软件质量基础会议，研究需求获取、建模、验证及软件质量保障方法。 |
-| CCF-C | [征稿官网](https://ijcnn.org/2027) | IJCNN | 2027-01-31 | June 14 - 18, 2027 · Cape Town, South Africa | 人工智能 | 聚焦神经网络与人工智能，涵盖深度学习、强化学习、神经计算及智能系统应用等研究。 |
+| CCF-A | [CCF会议](https://conf.researchr.org/home/hpca-2027) | HPCA | 2026-07-31 | Jan 30-Feb 3, 2027 · Salt Lake City, Utah | 体系结构/并行/存储 | IEEE高性能计算机体系结构国际研讨会，研究高性能处理器、存储系统及并行架构设计。 |
+| CCF-A | [CCF会议](https://infocom2027.ieee-infocom.org/) | INFOCOM | 2026-07-31 | May 24 - 27, 2027 · Honolulu, HI, USA | 计算机网络 | 研究计算机通信与网络，涉及协议设计、网络架构、移动计算及系统优化。 |
+| CCF-A | [CCF会议](https://www.ubicomp.org/ubicomp-iswc-2026) | UbiComp/ISWC | 2026-08-01 | October 11-15, 2026 · Shanghai, China | 人机交互与普适计算 | ACM普适与泛在计算国际联合会议，研究普适计算、可穿戴设备及智能环境交互技术。 |
+| CCF-A | [CCF会议](https://www.vldb.org/2027/) | VLDB | 2026-08-01 | August 23 - August 27, 2027 · Athens, Greece | 数据库/数据挖掘/信息检索 | VLDB是超大型数据库国际会议，涵盖数据库系统、数据挖掘、信息检索等大规模数据管理技术。 |
+| CCF-A | [CCF会议](https://ppopp27.sigplan.org/) | PPoPP | 2026-08-03 | Mar 20-24, 2027 · Salt Lake City, Utah, USA | 体系结构/并行/存储 | PPoPP是并行编程原理与实践研讨会，聚焦并行计算模型、编译优化及高性能计算系统。 |
+| CCF-A | [CCF会议](https://www.ndss-symposium.org/ndss2027/) | NDSS | 2026-08-19 | March 22 - March 26, 2027 · Seoul, Republic of Korea | 网络与信息安全 | 聚焦网络与分布式系统安全，涵盖协议、系统及应用安全等前沿议题。 |
+| CCF-A | [CCF会议](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2026-08-25 | August 11-13, 2027 · Denver, CO, USA | 网络与信息安全 | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
+| CCF-A | [CCF会议](https://ieeevr.org/2027/) | IEEE VR | 2026-08-31 | February 27 - March 3, 2027 · Melbourne, Australia | 图形学与多媒体 | IEEE虚拟现实会议，探讨沉浸式交互、增强现实、触觉反馈及VR/AR系统技术。 |
+| CCF-A | [CCF会议](https://www.asplos-conference.org/asplos2027/cfp/) | ASPLOS | 2026-09-09 | April 11-15, 2027 · Crete, Greece | 体系结构/并行/存储 | 国际编程语言与操作系统体系结构支持会议，涵盖计算机体系结构、编译优化及系统软件。 |
+| CCF-A | [CCF会议](https://chi2027.acm.org/) | CHI | 2026-09-10 | May 10 - 14, 2027 · David L. Lawrence Convention Center, Pittsburgh, USA | 人机交互与普适计算 | ACM人机交互会议，研究用户界面设计、交互技术、可用性评估及普适计算应用。 |
+| CCF-A | [CCF会议](https://www.usenix.org/conference/fast27) | FAST | 2026-09-15 | FEBRUARY 23-25, 2027 · Renton, WA, USA | 体系结构/并行/存储 | 聚焦文件与存储技术，涵盖存储系统设计、文件系统、数据保护与性能优化等方向。 |
+| CCF-A | [CCF会议](https://eurocrypt.iacr.org/2027/) | EUROCRYPT | 2026-09-17 | April 11-15, 2027 · Eindhoven, Netherlands | 网络与信息安全 | 聚焦密码学基础理论与应用，涵盖加密算法、安全协议、密码分析及相关前沿研究。 |
+| CCF-A | [CCF会议](https://www.usenix.org/conference/nsdi27) | NSDI | 2026-09-17 | May 11-13, 2027 · Providence, RI, USA | 计算机网络 | 关注网络化系统的设计与实现，涵盖分布式系统、网络架构、存储及操作系统等领域的创新研究。 |
+| CCF-A | [CCF会议](https://2027.eurosys.org/) | EuroSys | 2026-09-24 | April 19-24, 2027 · Rabat, Morocco | 体系结构/并行/存储 | 研究计算机系统设计与实现，涵盖操作系统、分布式系统、虚拟化等核心方向。 |
+| CCF-A | [CCF会议](https://conf.researchr.org/home/fse-2027) | FSE | 2026-10-02 | July 12-16, 2027 · Shenzhen, China | 软件工程/系统软件/PL | ACM国际软件工程基础会议，聚焦软件工程的理论基础、方法、工具与实践，包括需求、设计、测试、验证等。 |
+| CCF-A | [CCF会议](https://2027.sigmod.org/) | SIGMOD | 2026-10-17 | June 13-19, 2027 · Huntington Beach, CA, USA | 数据库/数据挖掘/信息检索 | ACM数据管理会议，聚焦数据库系统、数据挖掘、信息检索及大规模数据处理技术。 |
+| CCF-A | [CCF会议](https://acmweb2027.org/) | WWW | 2026-10-18 | May 10 - 14, 2027 · Dublin, Ireland | 交叉/综合/新兴 | 国际万维网会议，研究Web技术、语义网、社交网络、信息检索及新兴网络应用。 |
+| CCF-A | [CCF会议](https://icde2027.github.io/) | ICDE | 2026-11-11 | May 17-21, 2027 · Copenhagen, Denmark | 数据库/数据挖掘/信息检索 | IEEE国际数据工程会议，关注数据管理、数据挖掘、大数据系统及数据工程应用。 |
+| CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | TBD · MONTREAL, CANADA | 网络与信息安全 | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
+| CCF-A | [CCF会议](https://www.usenix.org/conference/osdi27) | OSDI | 2026-12-08 | July 7-9, 2027 · Baltimore, MD, USA | 软件工程/系统软件/PL | USENIX操作系统设计与实现研讨会，涵盖操作系统内核、分布式系统、虚拟化及系统安全。 |
+| CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-08-03 | TBA · Tokyo, Japan | 网络与信息安全 | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
+| CCF-B | [CCF会议](https://www.cidrdb.org/cidr2027/) | CIDR | 2026-08-04 | January 24-27, 2027 · Amsterdam, The Netherlands | 数据库/数据挖掘/信息检索 | CIDR是创新数据系统研究会议，探讨新型数据管理架构、查询处理与存储技术。 |
+| CCF-B | [CCF会议](https://iui.hosting.acm.org/2027/) | IUI | 2026-08-20 | February 8-11, 2027 · Helsinki, Finland | 人机交互与普适计算 | IUI是智能用户界面会议，研究人机交互中的智能技术，如推荐、自适应界面与自然交互。 |
+| CCF-B | [CCF会议](https://wsdm-conference.org/2027/) | WSDM | 2026-08-24 | February 15 - 19, 2027 · Cordis, Hong Kong SAR, China | 数据库/数据挖掘/信息检索 | 国际网络搜索与数据挖掘会议，聚焦搜索引擎、推荐系统、社交网络及数据挖掘算法。 |
+| CCF-B | [CCF会议](https://edbticdt2027.github.io/) | ICDT | 2026-09-10 | April 6-9, 2027 · Lille, France | 数据库/数据挖掘/信息检索 | 专注于数据库理论，涵盖数据模型、查询语言、数据管理基础等核心研究领域。 |
+| CCF-B | [CCF会议](https://conf.researchr.org/home/cgo-2027) | IEEE/ACM CGO | 2026-09-10 | TBD · Salt Lake City, Utah, USA | 体系结构/并行/存储 | 研究代码生成与优化技术，包括编译器优化、运行时系统及高性能计算相关方法。 |
+| CCF-B | [CCF会议](https://2027.ieeeicassp.org/) | ICASSP | 2026-09-16 | May 16-21, 2027 · Toronto, Canada | 图形学与多媒体 | 涵盖声学、语音与信号处理，包括音频分析、语音识别、图像处理等多媒体技术。 |
+| CCF-B | [CCF会议](https://www.date-conference.com/date-2027-call-papers) | DATE | 2026-09-20 | March 22-24, 2027 · Dresden, Germany | 体系结构/并行/存储 | 关注电子系统设计与自动化，包括芯片设计、测试验证、嵌入式系统等研究。 |
+| CCF-B | [CCF会议](https://conf.researchr.org/home/saner-2027) | SANER | 2026-09-25 | March 9-12, 2027 · Richmond, Virginia, United States | 软件工程/系统软件/PL | IEEE国际软件分析、演化与重构会议，涵盖软件分析、软件演化、软件重构及软件维护等研究方向。 |
+| CCF-B | [CCF会议](https://datacompressionconference.org/) | DCC | 2026-10-02 | March 23-26, 2027 · Snowbird, Utah, United States | 图形学与多媒体 | 数据压缩会议，研究数据压缩算法、理论、实现与应用，涵盖图像、视频、音频及通用数据压缩技术。 |
+| CCF-B | [CCF会议](https://edbticdt2027.github.io/) | EDBT | 2026-10-07 | April 6-9, 2027 · Lille, France | 数据库/数据挖掘/信息检索 | 国际扩展数据库技术会议，研究数据库系统、数据管理、查询处理、数据集成及新兴数据技术。 |
+| CCF-B | [CCF会议](https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference) | AAMAS | 2026-10-09 | May 03, 2027 · Hanoi, Vietnam | 人工智能 | 研究自主智能体与多智能体系统的理论、设计及应用，涵盖协作、博弈、机器人及分布式人工智能。 |
+| CCF-B | [CCF会议](https://www.sigmetrics.org/sigmetrics2027/) | SIGMETRICS | 2026-10-09 | June 7-11, 2027 · Atlanta, Georgia, USA | 体系结构/并行/存储 | ACM测量与评估特别兴趣组会议，研究计算机系统性能测量、建模、分析与评估，涵盖网络、存储、分布式系统… |
+| CCF-B | [CCF会议](https://2027.ieee-iscas.org/) | ISCAS | 2026-10-13 | June 6-9, 2027 · Bordeaux, France | 体系结构/并行/存储 | IEEE国际电路与系统研讨会，涵盖电路理论、设计与实现，以及信号处理、通信等系统级研究。 |
+| CCF-B | [CCF会议](https://ches.iacr.org/2027/) | CHES | 2026-10-15 | September 6 - 9, 2027 · Cancún, Mexico | 网络与信息安全 | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
+| CCF-B | [CCF会议](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 网络与信息安全 | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
+| CCF-C | [CCF会议](https://adma2026.github.io/) | ADMA | 2026-07-31 | November 13 - 15, 2026 · Hong Kong, China | 数据库/数据挖掘/信息检索 | 国际高级数据挖掘与应用会议，探讨数据挖掘算法、应用及大数据分析的前沿技术。 |
+| CCF-C | [CCF会议](https://www.cloud-conf.net/cscloud/2026/cscloud/) | CSCloud | 2026-08-01 | December 19-21, 2026 · Shanghai, China | 网络与信息安全 | 关注网络安全与云计算交叉领域，包括云安全、数据保护与安全服务等。 |
+| CCF-C | [CCF会议](https://www.adai.ai/dai/2026/index.html) | DAI | 2026-08-03 | November 29-December 2, 2026 · Hong Kong, China | 人工智能 | 研究分布式人工智能理论与系统，涉及多智能体协作、分布式学习与决策。 |
+| CCF-C | [CCF会议](https://www.mmasia2026.org/) | MMAsia | 2026-08-03 | December 15-18, 2026 · VinUniversity, Hanoi, Vietnam | 图形学与多媒体 | MMAsia是ACM多媒体亚洲会议，研究多媒体内容分析、检索、交互及系统应用。 |
+| CCF-C | [CCF会议](https://www.mmm2027.net/) | MMM | 2026-08-16 | January 5-8, 2027 · Siem Reap, Cambodia | 图形学与多媒体 | MMM是多媒体建模国际会议，关注多媒体数据表示、检索、分析与可视化方法。 |
+| CCF-C | [CCF会议](https://ieee-msn.org/2026) | MSN | 2026-08-20 | December 18-20, 2026 · Ningbo, China | 计算机网络 | 探讨移动性、传感与网络技术，覆盖物联网、边缘计算及智能感知等方向。 |
+| CCF-C | [CCF会议](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-08-21 | July 12-16, 2027 · Macau, China | 网络与信息安全 | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
+| CCF-C | [CCF会议](https://bigdataieee.org/BigData2026/) | BigData | 2026-08-21 | December 14-17, 2026 · Phoenix, Arizona, United State | 交叉/综合/新兴 | IEEE国际大数据会议，涵盖大数据处理、分析、存储、应用及系统架构等前沿研究。 |
+| CCF-C | [CCF会议](https://3dvconf.github.io/2027/) | 3DV | 2026-08-28 | April 6-9, 2027 · Thessaloniki, Greece | 图形学与多媒体 | 国际三维视觉会议，研究三维重建、点云处理、深度估计及多视角几何等方向。 |
+| CCF-C | [CCF会议](https://petsymposium.org/cfp27.php) | PETS | 2026-08-31 | July 19-24, 2027 · Delft, The Netherlands | 网络与信息安全 | 专注于隐私增强技术，涵盖匿名通信、数据保护及隐私度量等研究。 |
+| CCF-C | [CCF会议](https://wcnc2027.ieee-wcnc.org/) | WCNC | 2026-09-15 | April 5-8, 2027 · Panama City, Panama | 计算机网络 | 聚焦无线通信与网络技术，涵盖5G/6G、物联网及智能网络架构等研究。 |
+| CCF-C | [CCF会议](https://fc27.ifca.ai/) | FC | 2026-09-17 | February 8-12, 2027 · Barbados (tentative) | 网络与信息安全 | 专注于金融密码学与数据安全，研究支付系统、区块链、隐私保护及金融领域的网络安全技术。 |
+| CCF-C | [CCF会议](https://ecir2027.co.uk/) | ECIR | 2026-10-02 | March 21-25, 2027 · Southampton, UK | 数据库/数据挖掘/信息检索 | 欧洲信息检索会议，关注信息检索模型、算法、系统与应用，包括搜索、推荐、文本挖掘及多媒体检索。 |
+| CCF-C | [CCF会议](https://icc2027.ieee-icc.org) | ICC | 2026-10-02 | May 30 - June 3, 2027 · Washington, DC, USA | 计算机网络 | 涵盖通信网络技术，包括无线通信、光网络、物联网、网络安全及下一代通信系统等研究方向。 |
+| CCF-C | [CCF会议](https://2027.refsq.org/) | REFSQ | 2026-11-12 | April 12-15, 2027 · Basel, Switzerland | 软件工程/系统软件/PL | 需求工程：软件质量基础会议，研究需求获取、建模、验证及软件质量保障方法。 |
+| CCF-C | [CCF会议](https://ijcnn.org/2027) | IJCNN | 2027-01-31 | June 14 - 18, 2027 · Cape Town, South Africa | 人工智能 | 聚焦神经网络与人工智能，涵盖深度学习、强化学习、神经计算及智能系统应用等研究。 |
 
 ---
 
