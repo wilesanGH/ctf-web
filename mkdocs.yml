@@ -170,6 +170,9 @@ nav:
       - CTF工具安装状态报告: CTF工具安装状态报告.md
     - 其他:
       - 操作日志: 操作日志.md
+  - 学术征稿:
+    - 在征征稿总表: cfp/index.md
+    - 安全方向投稿手册: cfp/security.md
 
 copyright: Copyright &copy; 2025 wilesanGH
 
