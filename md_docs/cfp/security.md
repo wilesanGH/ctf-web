@@ -130,7 +130,7 @@ search:
 
 ### CCF 安全(网络与信息安全)会议
 
-| 等级 | 链接 | 会议 | 下一截稿 | 会期 · 地点 | 简介 |
+| 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 简介 |
 |---|---|---|---|---|---|
 | CCF-A | [征稿官网](https://www.ndss-symposium.org/ndss2027/) | NDSS | 2026-08-19 | March 22 - March 26, 2027 · Seoul, Republic of Korea | 聚焦网络与分布式系统安全，涵盖协议、系统及应用安全等前沿议题。 |
 | CCF-A | [征稿官网](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2026-08-25 | August 11-13, 2027 · Denver, CO, USA | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
