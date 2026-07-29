@@ -181,3 +181,5 @@ search:
 
 📌 手册由公众号数据管线维护,重大变化(OA 政策、预警名单更新)随月更刷新。
 🔍 关注公众号,每周三/周日推送筛选后的计算机/AI 征稿(安全方向优先标注)。
+
+<img src="https://cdn.jsdelivr.net/gh/wilesanGH/PicGo@latest/img/2026-07-29-11-15-03-02820b9ec0171e0b96c5f90942c303ff-WechatIMG200-affc3f.jpg" width="200" alt="公众号二维码">
