@@ -2,3 +2,11 @@
 # AI 维护指南(仅本地)
 AGENTS.md
 CLAUDE.md
+
+# macOS 系统文件(2026-08:曾有 7 个 .DS_Store 被误入库)
+.DS_Store
+**/.DS_Store
+
+# 工具本地工作区,不入库
+.spec-workflow/
+txt_docs/
