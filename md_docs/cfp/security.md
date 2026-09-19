@@ -6,7 +6,7 @@ search:
 # 安全方向 SCI / CCF 投稿手册
 
 > 面向:网络安全 / AI 安全 / 隐私保护 / 可信 AI 方向的研究生与青年教师
-> 版本:v1(2026-07)· 征稿清单更新至 2026-09-14 · 由公众号数据管线整理,事实性信息均经官网核实,核实日期随文标注
+> 版本:v1(2026-07)· 征稿清单更新至 2026-09-19 · 由公众号数据管线整理,事实性信息均经官网核实,核实日期随文标注
 > ⚠️ 免责:截稿、APC、出版模式随时可能调整,投稿前务必以官网为准;本手册不做中介、不承诺录用。
 
 🔍 本手册由公众号维护,每周三/周日推送筛选后的征稿速递(安全方向优先标注),扫码关注:
@@ -32,14 +32,12 @@ search:
 ## 三、当前在征·安全方向征稿清单(每月自动刷新)
 
 <!-- AUTO:SEC_CFP:BEGIN 由 tools/build_master_table.py 自动刷新,勿手改 -->
-> 数据日期:2026-09-14 · A 类安全征稿 70 条 + CCF 安全会议 9 个(截稿常调整,以官网为准)
+> 数据日期:2026-09-19 · A 类安全征稿 72 条 + CCF 安全会议 7 个(截稿常调整,以官网为准)
 
 ### 期刊特刊(A 类安全,按截稿排序)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 学科 |
 |---|---|---|---|---|---|---|
-| 2026-09-15 | [Springer](https://link.springer.com/collections/ejfhdigdfd) | DESIGN AUTOMATION FOR EMBEDDED SYSTEMS(4区·IF0.9) | Special Issue on Emerging Trends in Security and Sustainabil… | 面向资源受限嵌入式系统，征集兼顾安全与可持续性的设计技术，涵盖EDA框架、跨层方法及低功耗智能架构。 | Sangeet Saha | 计算机：硬件 |
-| 2026-09-15 | [Wiley](https://onlinelibrary.wiley.com/page/journal/24756725/call-for-papers/si-2025-001123) | Security and Privacy(4区·IF2.9) | AI for Security and Privacy in the IoT and Edge Continuum | AI增强物联网与边缘计算安全，聚焦威胁检测、隐私保护学习及对抗鲁棒性治理。 | — | 计算机：信息系统 |
 | 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/331651/trustworthy-and-resilient-edge-ai-systems-engineering-validation-and-deployment-under-cyber-disturbance-and-data-degradation) | Ad Hoc Networks(3区·IF4.8) | Trustworthy and Resilient Edge AI Systems: Engineering, Vali… | 边缘AI系统在对抗性网络干扰与数据退化下的可信弹性工程、验证与部署方法。 | Ellis Solaiman, Omer Rana, Karan… | 计算机：信息系统 |
 | 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/325817/privacy-preserving-and-secure-large-language-models-for-unmanned-aerial-vehicles-uavs) | COMPUTERS & ELECTRICAL ENGINEERING(3区·IF4.9) | Privacy-Preserving and Secure Large Language Models for Unma… | 研究无人机中隐私保护与安全大语言模型，提升自主决策与系统安全。 | Weizhi Meng, Yongjun Ren, Rishik… | 计算机：硬件 |
 | 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/334016/fault-aware-security-design-of-current-and-post-quantum-computing-systems) | JOURNAL OF SYSTEMS ARCHITECTURE(3区·IF4.1) | Fault-aware security design of current and post-quantum comp… | 聚焦当前与后量子计算系统的故障感知安全设计，涵盖硬件与软件的攻击及对策研究。 | Alessandro Barenghi, Juliane Krä… | 计算机：硬件 |
@@ -48,6 +46,7 @@ search:
 | 2026-09-30 | [Wiley](https://onlinelibrary.wiley.com/page/journal/10991190/homepage/call-for-papers/si-2026-000416) | International Journal of Network Management(4区·IF2.6) | Architectures and Ecosystems for Cryptocurrency Exchanges: S… | 研究加密货币交易所架构、密钥管理、智能合约漏洞与DeFi攻击，强化安全审计与系统韧性。 | — | 计算机：信息系统 |
 | 2026-09-30 | [IET](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518652/homepage/call-for-papers/si-2026-000058) | IET Control Theory and Applications(4区·IF2.3) | Cybersecurity of Networked Control Systems: From Vulnerabili… | 针对网络化控制系统，研究漏洞分析、攻击检测、韧性控制与数据驱动防御，保障工业IoT安全。 | — | 自动化与控制系统 |
 | 2026-10-01 | [Elsevier](https://www.sciencedirect.com/special-issue/333161/artificial-intelligence-and-machine-learning-for-critical-infrastructure-protection-and-homeland-security) | International Journal of Critical Infrastructure Protection(3区·IF5.3) | Artificial Intelligence and Machine Learning for Critical In… | 探讨AI与ML在关键基础设施保护中的应用，涵盖实时异常检测与数据驱动决策支持。 | Selcuk Uluagac, Rebecca Montanar… | 计算机：信息系统 |
+| 2026-10-01 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-wireless-communications/cfp/wireless-endogenous-security-ai-native-next-generation-wireless-networks) | IEEE WIRELESS COMMUNICATIONS(2区·IF11.6) | Wireless Endogenous Security for AI-Native Next-Generation W… | 研究AI原生6G网络的内生安全机制，应对智能体AI引入的新型复杂安全威胁。 | Liang Jin (Lead Guest Editor) , … | 计算机：硬件 |
 | 2026-10-30 | [Elsevier](https://www.sciencedirect.com/special-issue/334111/legal-frameworks-technical-challenges-and-regulatory-design-for-governing-general-purpose-ai-systems) | Computer Law & Security Review(3区·IF3.2) | Legal Frameworks, Technical Challenges, and Regulatory Desig… | 融合法律与技术，研究通用AI系统的治理框架、技术特性及支撑监管的计算工具。 | Davide Audrito, Livio Robaldo, R… | computer/core |
 | 2026-10-30 | [Springer](https://link.springer.com/collections/gagdfebeia) | Innovations in Systems and Software Engineering(4区·IF1.4) | Resilient, Trustworthy, and AI-Driven Software Systems for N… | 研究面向下一代应用的韧性、可信及AI驱动的软件系统，重点在于故障容错、可解释性及自适应自我修复机制。 | Manju Kaushik PhD, Dr.-Ing Tizia… | 计算机：软件工程 |
 | 2026-10-31 | [Springer](https://link.springer.com/collections/dcggjhgaai) | NEW GENERATION COMPUTING(4区·IF2.8) | Card-based Cryptography 4 | 聚焦基于卡片的密码学，探讨使用实体卡片进行安全多方计算、零知识证明及其扩展到日常物品的研究与应用。 | — | 计算机：硬件 |
@@ -66,6 +65,7 @@ search:
 | 2026-11-30 | [Springer](https://link.springer.com/collections/jfjicibgff) | MOBILE NETWORKS & APPLICATIONS(4区·IF2) | Security and Efficiency in Agentic AI | 研究具自主规划能力的AgenticAI的安全与效率挑战，分析数据来源风险并提出防护策略。 | Meikang Qiu PhD, Wenqi Wei PhD | 计算机：硬件 |
 | 2026-12-01 | [IEEE](https://www.computer.org/digital-library/magazines/sp/cfp-one-decade-gdpr-challenges) | IEEE SECURITY & PRIVACY(4区·IF3.1) | Special Issue on One Decade of GDPR – Contributions to Data … | 回顾GDPR十年对全球数据保护的标杆影响，探讨数据主体权利及合规挑战。 | — | 计算机：信息系统 |
 | 2026-12-04 | [Springer](https://link.springer.com/collections/eadadbijdh) | Cryptography and Communications-Discrete-Structures Boolean Functions and Sequences(3区·IF1.1) | Cyber Security Cryptology and Machine Learning in Communicat… | 邀稿/信息较少 | Yehuda Afek Ph.D | 计算机：理论方法 |
+| 2026-12-15 | [IEEE](https://www.comsoc.org/publications/journals/ieee-lnet/cfp/security-and-privacy-emerging-communication-technologies-generative-ai-era) | IEEE NETWORK(3区·IF6.3) | Security and Privacy in Emerging Communication Technologies:… | 生成式AI时代新兴通信技术的安全与隐私,涵盖5G/6G、边缘计算与物联网的零信任架构及物理层窃听、干扰防护。 | after the Special Issue submissi… | 计算机：硬件 |
 | 2026-12-16 | [Springer](https://link.springer.com/collections/fgbahfbegf) | Journal of King Saud University-Computer and Information Sciences(2区·IF6.1) | Leveraging Data Mining Techniques for Enhancing Cybersecurit… | 采用数据挖掘的聚类、分类、关联规则和异常检测等方法，结合人工智能与机器学习，实现网络威胁的智能早期发现与自动响… | Prof. Mustapha Bouakkaz PhD | 计算机：信息系统 |
 | 2026-12-20 | [Springer](https://link.springer.com/collections/hgdhggfbih) | COMPUTING(4区·IF2.8) | AI-Driven Modeling and Analysis for Wireless and Mobile Heal… | 利用人工智能建模与分析方法，研究无线传感器网络、体域网络及移动设备在医疗中的安全、性能与可信度提升。 | Prof. Richard Chbeir PhD, Ernest… | 计算机：理论方法 |
 | 2026-12-20 | [Springer](https://link.springer.com/collections/ieijcfgahf) | MOBILE NETWORKS & APPLICATIONS(4区·IF2) | Emerging Security and Privacy in CPS and Communication Netwo… | 探讨网络物理系统与通信网络的安全与隐私挑战，重点研究云计算、物联网及5G/6G环境下的防护机制。 | Yinzhi Cao | 计算机：硬件 |
@@ -78,16 +78,18 @@ search:
 | 2026-12-31 | [Springer](https://link.springer.com/collections/dhdidagcjf) | Journal of Cloud Computing-Advances Systems and Applications(3区·IF4.3) | Resilience-by-Design for Cloud-Native Systems | 探讨云原生系统的设计韧性，应对微服务、容器编排、弹性伸缩等带来的动态故障与级联失效，提升跨行业可靠性。 | Amro Al-Said Ahmad Ph.D. | 计算机：信息系统 |
 | 2026-12-31 | [Springer](https://link.springer.com/collections/giajgeaadf) | MOBILE NETWORKS & APPLICATIONS(4区·IF2) | Quantum AI-enabled 6G Networks: From Cutting-edge Technologi… | 研究量子AI赋能的6G网络，克服原生智能不足、安全、延迟及可靠性挑战，实现泛在连接与数字孪生应用。 | Antonino Masaracchia PhD | 计算机：硬件 |
 | 2026-12-31 | [Springer](https://link.springer.com/collections/cifddiacgg) | WIRELESS NETWORKS(4区·IF2.1) | AI-powered Secure and Smart Wireless Networks | 聚焦人工智能、边缘计算与物联网在无线网络中的安全与智能化研究，探讨实时通信、便携部署及多功能应用场景。 | — | 计算机：信息系统 |
-| 2026-12-31 | [IEEE](https://www.computer.org/digital-library/journals/tq/cfp-safety-alignment-responsibility-language) | IEEE Transactions on Dependable and Secure Computing(2区·IF7.5) | CFP: Special Issue on Safety, Alignment, and Responsibility … | 关注大语言模型在安全、对齐与责任方面的挑战，涉及医疗、金融等高影响领域。 | at: Shuo Shang , University of E… | 计算机：硬件 |
+| 2026-12-31 | [IEEE](https://www.computer.org/digital-library/journals/tq/cfp-safety-alignment-responsibility-language) | IEEE Transactions on Dependable and Secure Computing(2区·IF7.5) | Special Issue on Safety, Alignment, and Responsibility of La… | 关注大语言模型在安全、对齐与责任方面的挑战，涉及医疗、金融等高影响领域。 | at: Shuo Shang , University of E… | 计算机：硬件 |
 | 2026-12-31 | [Wiley](https://onlinelibrary.wiley.com/page/journal/21613915/call-for-papers/si-2026-000781) | Transactions on Emerging Telecommunications Technologies(4区·IF2.5) | Explainable and Trustworthy AI for Communications and Networ… | 探索6G通信中可解释可信AI，覆盖语义通信、分布式学习、数字孪生及安全隐私评测。 | — | 电信学 |
-| 2027-01-04 | [IEEE](https://www.computer.org/digital-library/magazines/cg/cfp-visualization-secure-ai-cyber-systems) | IEEE COMPUTER GRAPHICS AND APPLICATIONS(4区·IF1.5) | Special Issue on on Visualization for Secure AI and Cyber Sy… | 聚焦可视化在安全AI与网络系统中的应用，涵盖网络监控、入侵检测等场景的交互式可视分析，以及生成式AI带来的新型… | Xumeng Wang (Lead GE), Nankai Un… | 计算机：软件工程 |
+| 2027-01-04 | [IEEE](https://www.computer.org/digital-library/magazines/cg/cfp-visualization-secure-ai-cyber-systems) | IEEE COMPUTER GRAPHICS AND APPLICATIONS(4区·IF1.5) | Special Issue on Visualization for Secure AI and Cyber Syste… | 聚焦可视化在安全AI与网络系统中的应用，涵盖网络监控、入侵检测等场景的交互式可视分析，以及生成式AI带来的新型… | Xumeng Wang (Lead GE), Nankai Un… | 计算机：软件工程 |
 | 2027-01-15 | [Springer](https://link.springer.com/collections/egdbefhiee) | INFORMATION SYSTEMS FRONTIERS(3区·IF6.2) | Special Issue: Keeping Humans in the Loop in the AI-Driven F… | 研究人工智能在网络安全中的攻防技术，涵盖生成式AI钓鱼、深度伪造及AI伴侣隐私风险与威胁检测。 | Laura Amo | 计算机：信息系统 |
-| 2027-01-15 | [IEEE](https://www.computer.org/digital-library/journals/tq/cfp-trust-privacy-security-agentic-systems) | IEEE Transactions on Dependable and Secure Computing(2区·IF7.5) | CFP: Special Issue on Trust, Privacy, and Security in Intell… | 聚焦智能体系统的信任、隐私与安全，应对提示注入、工具滥用、智能体合谋及记忆污染等新型攻击面。 | at: Hongxin Hu (Lead), Universit… | 计算机：硬件 |
+| 2027-01-15 | [IEEE](https://www.computer.org/digital-library/journals/tq/cfp-trust-privacy-security-agentic-systems) | IEEE Transactions on Dependable and Secure Computing(2区·IF7.5) | Special Issue on Trust, Privacy, and Security in Intelligent… | 聚焦智能体系统的信任、隐私与安全，应对提示注入、工具滥用、智能体合谋及记忆污染等新型攻击面。 | at: Hongxin Hu (Lead), Universit… | 计算机：硬件 |
 | 2027-01-31 | [Elsevier](https://www.sciencedirect.com/special-issue/335890/human-centered-and-trustworthy-ai-for-cybersecurity-in-cyber-physical-systems) | ENGINEERING APPLICATIONS OF ARTIFICIAL INTELLIGENCE(1区·IF8) | Human-Centered and Trustworthy AI for Cybersecurity in Cyber… | 聚焦人因与可信AI在网络物理系统中的对抗样本、数据中毒及社会工程威胁的检测与缓解。 | Stefano Cirillo; Idio Guarino; P… | 自动化与控制系统 |
 | 2027-02-20 | [Springer](https://link.springer.com/collections/fabiejaich) | Journal of King Saud University-Computer and Information Sciences(2区·IF6.1) | Smart Malware Detection: Fusing Threat Intelligence with Rea… | 利用人工智能深度信念网络结合威胁情报与实时行为分析，实现全面智能恶意软件检测与防护。 | Mohd Faizal Abdollah PhD | 计算机：信息系统 |
 | 2027-02-26 | [Springer](https://link.springer.com/collections/fdgfgfjcih) | EURASIP Journal on Information Security(4区·IF2.1) | AI-Era Threats and Deepfake Defense for Digital Trust | 探讨AI时代深度伪造及虚假信息威胁，提出基于机器学习的检测与防御技术，以维护数字生态信任。 | Weizhi Meng PhD | 计算机：信息系统 |
 | 2027-02-26 | [Springer](https://link.springer.com/collections/fdjbaifjbh) | EURASIP Journal on Information Security(4区·IF2.1) | Advances in Post-Quantum Security for Critical Systems | 研究后量子密码算法在医疗、智能电网等关键系统中的应用，以抵御量子攻击保障长期安全。 | Luca Mariot PhD | 计算机：信息系统 |
 | 2027-02-26 | [Springer](https://link.springer.com/collections/ggjbfiddca) | Peer-to-Peer Networking and Applications(4区·IF2.6) | Secure and Trustworthy Architectures for Decentralized Peer-… | 研究基于智能框架和AI的去中心化P2P网络架构，构建可信任的边缘、物联网及自治系统安全机制。 | Dajiang Chen Ph.D. | 计算机：信息系统 |
+| 2027-03-01 | [IEEE](https://www.computer.org/digital-library/magazines/mi/cfp-systems-cryptographic-computing) | IEEE MICRO(3区·IF3) | Special Issue on Systems for Cryptographic Computing | 面向密码计算的系统设计,涵盖全同态加密、安全多方计算与零知识证明的软硬件加速及部署开销优化。 | at: Brandon Reagen , New York Un… | 计算机：硬件 |
+| 2027-03-15 | [IEEE](https://ieee-iotj.org/wp-content/uploads/2026/09/Federated_Unlearning_Model.pdf) | IEEE Internet of Things Journal(2区·IF8.9) | Federated Unlearning and Model Governance for Trustworthy Io… | 可信物联网中的联邦遗忘与模型治理,研究边缘侧选择性遗忘、模型溯源与可审计性,回应数据删除合规要求。 | Francesco Piccialli, David Camac… | 计算机：信息系统 |
 | 2027-03-25 | [Springer](https://link.springer.com/collections/dchffhehhe) | Complex & Intelligent Systems(3区·IF4.6) | Trustworthy AI and Large Language Models for Risk, Fault Dia… | 研究可信赖的人工智能与大型语言模型在关键系统中的风险评估、故障诊断及韧性提升，强调可解释性和不确定性处理。 | Khalil Al-Bukhaiti PhD | 计算机：人工智能 |
 | 2027-03-30 | [Elsevier](https://www.sciencedirect.com/special-issue/335527/secure-agentic-intelligent-and-quantum-ready-internet-of-things-for-civil-protection-public-safety-and-cloud-to-thing-continuum-systems) | Internet of Things(2区·IF7.6) | Secure, Agentic, Intelligent and Quantum-Ready Internet of T… | 面向公共安全与云边连续体，探索安全、智能且抗量子攻击的物联网系统，涉及数字孪生与AI分析。 | Aniello Castiglione; Vincenzo Lo… | 计算机：信息系统 |
 | 2027-03-31 | [Springer](https://link.springer.com/collections/fdhecdaaeh) | DESIGNS CODES AND CRYPTOGRAPHY(3区·IF1.2) | Recent Advances in Rank-Metric Codes and Related Topics | 聚焦秩度量码的最新进展，基于OpeRa工作坊讨论，收录开放问题研究成果，推动理论创新与实际应用。 | Geertrui Van de Voorde PhD, Gian… | 计算机：理论方法 |
@@ -113,12 +115,10 @@ search:
 
 | 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 简介 |
 |---|---|---|---|---|---|
-| CCF-A | [CCF会议](https://eurocrypt.iacr.org/2027/) | EUROCRYPT | 2026-09-17 | April 11-15, 2027 · Eindhoven, Netherlands | 聚焦密码学基础理论与应用，涵盖加密算法、安全协议、密码分析及相关前沿研究。 |
 | CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | TBD · MONTREAL, CANADA | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
 | CCF-B | [CCF会议](https://ches.iacr.org/2027/) | CHES | 2026-10-15 | September 6 - 9, 2027 · Cancún, Mexico | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
 | CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-10-15 | TBA · Tokyo, Japan | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
 | CCF-B | [CCF会议](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
-| CCF-C | [CCF会议](https://fc27.ifca.ai/) | FC | 2026-09-17 | February 8-12, 2027 · Barbados (tentative) | 专注于金融密码学与数据安全，研究支付系统、区块链、隐私保护及金融领域的网络安全技术。 |
 | CCF-C | [CCF会议](https://acns2027.isg.rhul.ac.uk/) | ACNS | 2026-09-24 | June 28 - July 1, 2027 · Royal Holloway, Egham, UK | 应用密码学与网络安全会议，研究密码学算法、协议设计及网络系统安全防护技术。 |
 | CCF-C | [CCF会议](https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/) | CT-RSA | 2026-10-22 | April 5-8, 2027 · San Francisco, California, USA | RSA大会密码学专场，关注密码算法设计、安全协议分析、公钥密码学及实际系统安全应用等研究。 |
 | CCF-C | [CCF会议](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-12-11 | July 12-16, 2027 · Macau, China | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
