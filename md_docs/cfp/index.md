@@ -5,7 +5,7 @@ search:
 
 # 计算机/AI 在征征稿总表
 
-> 更新日期:2026-09-19 · 期刊特刊 461 条 + CCF 在征会议 37 个
+> 更新日期:2026-10-02 · 期刊特刊 401 条 + CCF 在征会议 96 个
 > 期刊等级 = 2025 中科院分区;「方向」列:A=安全/可信AI/隐私核心(优先看),B=计算机/AI 基本盘,C=交叉(已从严筛)。
 > ⚠️ 信息仅供参考,截稿日期可能调整,投稿前请务必以官网为准核实投稿范围、截稿时间与版面费(APC)。
 
@@ -17,28 +17,10 @@ search:
 
 ## 一、期刊特刊(按出版商)
 
-### Elsevier(112 条)
+### Elsevier(94 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-09-28 | [Elsevier](https://www.sciencedirect.com/special-issue/334131/generative-models-for-computer-vision) | PATTERN RECOGNITION(1区·IF7.6) | Generative Models for Computer Vision | 聚焦生成式模型在计算机视觉的变革性应用，涵盖图像视频生成、神经渲染及其与具身AI系统的融合。 | Fangneng Zhan; Adam Kortylewski; Kai… | B | 计算机：人工智能 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/331774/novel-multimodal-foundation-models-in-applied-computing-and-intelligence) | APPLIED SOFT COMPUTING(2区·IF6.6) | Novel Multimodal Foundation Models in Applied Computing and Intel… | 探索多模态基础模型在应用计算中的前沿，涉及文本、图像、音频等跨模态感知、理解与推理技术。 | Chengwang Xiao, Chengtao Cai, Yi Y. … | B | 计算机：人工智能 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/331651/trustworthy-and-resilient-edge-ai-systems-engineering-validation-and-deployment-under-cyber-disturbance-and-data-degradation) | Ad Hoc Networks(3区·IF4.8) | Trustworthy and Resilient Edge AI Systems: Engineering, Validatio… | 边缘AI系统在对抗性网络干扰与数据退化下的可信弹性工程、验证与部署方法。 | Ellis Solaiman, Omer Rana, Karan Mit… | A | 计算机：信息系统 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/329524/geoscience-large-language-models-and-knowledge-graphs) | Applied Computing and Geosciences(3区·IF3.2) | Geoscience Large Language Models and Knowledge Graphs | 融合大语言模型与知识图谱，变革地学数据管理与知识发现范式。 | Chengbin Wang, Qinjun Qiu, Xiaohui J… | B | 计算机：跨学科应用; 地球科 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/332845/applications-of-nurbs-in-architectural-geometry) | COMPUTER AIDED GEOMETRIC DESIGN(4区·IF1.7) | Applications of NURBS in Architectural Geometry | 纪念NURBS50周年，探讨其在建筑几何建模、分析与建造中的应用进展。 | Konstantinos Gavriil, Caitlin Muelle… | C | 计算机：软件工程 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/325817/privacy-preserving-and-secure-large-language-models-for-unmanned-aerial-vehicles-uavs) | COMPUTERS & ELECTRICAL ENGINEERING(3区·IF4.9) | Privacy-Preserving and Secure Large Language Models for Unmanned … | 研究无人机中隐私保护与安全大语言模型，提升自主决策与系统安全。 | Weizhi Meng, Yongjun Ren, Rishikesh … | A | 计算机：硬件 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/335342/digital-driving-smart-empowerment-and-building-a-new-future-for-global-aquaculture) | COMPUTERS AND ELECTRONICS IN AGRICULTURE(1区·IF10.3) | Digital Driving, Smart Empowerment, and Building a New Future for… | 利用人工智能、大数据、物联网等技术实现智能渔业建模、传感与决策 | Prof. Daoliang Li, Assoc. Prof. Xueq… | C | 农业综合 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/325059/foundation-models-in-agriculture-advancing-ai-for-precision-and-smart-farming) | COMPUTERS AND ELECTRONICS IN AGRICULTURE(1区·IF10.3) | Foundation Models in Agriculture: Advancing AI for Precision and … | 探索基础模型（如LLM和视觉模型）在精准农业中的创新应用与变革潜力。 | Dong Chen, Azlan Zahid, Yiannis Ampa… | C | 农业综合 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/327465/simulation-driven-industrial-transformation-towards-resilient-sustainable-and-human-centric-operations) | Computers & Industrial Engineering(2区·IF6.5) | Simulation-Driven Industrial Transformation: Towards Resilient, S… | 利用工业仿真优化流程与资源，驱动弹性、可持续、人本的运营转型。 | Masood Fathi, Mehdi Toloo, Ming-Lang… | C | 计算机：跨学科应用; 工程： |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/333434/special-issue-on-acm-international-conference-on-computing-frontiers-2026) | JOURNAL OF PARALLEL AND DISTRIBUTED COMPUTING(3区·IF4) | Special Issue on ACM International Conference on Computing Fronti… | 收录计算前沿会议最佳论文，聚焦新计算模型、架构与硬件等前沿研究。 | Serena Curzel, Hubertus Franke, Maur… | B | 计算机：理论方法 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/329342/special-issue-on-ai-techniques-for-performance-reliability-and-sustainability-of-modern-software-systems) | JOURNAL OF SYSTEMS AND SOFTWARE(2区·IF4.1) | Special Issue on AI Techniques for Performance, Reliability, and … | 探索AI技术在现代软件系统性能建模、评估与优化中的应用，解决大语言模型等黑盒透明性难题。 | Marin Litoiu, Emilio Incerto, Daniel… | B | 计算机：软件工程 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/334016/fault-aware-security-design-of-current-and-post-quantum-computing-systems) | JOURNAL OF SYSTEMS ARCHITECTURE(3区·IF4.1) | Fault-aware security design of current and post-quantum computing… | 聚焦当前与后量子计算系统的故障感知安全设计，涵盖硬件与软件的攻击及对策研究。 | Alessandro Barenghi, Juliane Krämer,… | A | 计算机：硬件 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/332977/intelligent-and-generative-multimedia-computing-outstanding-papers-of-chinamm2026) | JOURNAL OF VISUAL COMMUNICATION AND IMAGE REPRESENTATION(4区·IF3.1) | Intelligent and Generative Multimedia Computing -- Outstanding Pa… | 聚焦智能与生成式多媒体计算，涵盖视觉通信、图像处理等前沿多媒体技术的研究与应用。 | Dan Guo, Yifan Jiao, Wu Liu, Jiaying… | B | 计算机：信息系统 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/324750/generative-ai-for-vv-in-mechanical-and-structural-systems) | MECHANICAL SYSTEMS AND SIGNAL PROCESSING(1区·IF10.2) | Generative AI for V&V in Mechanical and Structural Systems | 利用生成式AI进行机械系统模型更新、健康监测与不确定性量化 | Dr. Sifeng Bi, Dr. Tanmoy Mukhopadhy… | B | 工程：机械 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/334012/selected-papers-from-the-34th-european-symposium-on-artificial-neural-networks-computational-intelligence-and-machine-learning-esann-2026) | NEUROCOMPUTING(2区·IF6.5) | Selected papers from the 34th European Symposium on Artificial Ne… | 精选第34届ESANN会议优秀论文，展示人工神经网络、计算智能与机器学习的最新进展。 | Luca Oneto; Nicolò Navarin; Kerstin … | B | 计算机：人工智能 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/334596/simulation-and-modeling-techniques-for-blockchain-integration-in-iot-and-cloud-environments) | SIMULATION MODELLING PRACTICE AND THEORY(3区·IF4.6) | Simulation and Modeling Techniques for Blockchain Integration in … | 研究区块链与物联网、云环境融合的建模与仿真技术，强调安全与去中心化信任机制。 | Helen Karatza | B | 计算机：跨学科应用 |
-| 2026-10-01 | [Elsevier](https://www.sciencedirect.com/special-issue/333161/artificial-intelligence-and-machine-learning-for-critical-infrastructure-protection-and-homeland-security) | International Journal of Critical Infrastructure Protection(3区·IF5.3) | Artificial Intelligence and Machine Learning for Critical Infrast… | 探讨AI与ML在关键基础设施保护中的应用，涵盖实时异常检测与数据驱动决策支持。 | Selcuk Uluagac, Rebecca Montanari, F… | A | 计算机：信息系统 |
-| 2026-10-01 | [Elsevier](https://www.sciencedirect.com/special-issue/333344/special-issue-on-design-and-architectures-for-signal-and-image-processing-dasip-2026) | JOURNAL OF SYSTEMS ARCHITECTURE(3区·IF4.1) | Special Issue on Design and Architectures for Signal and Image Pr… | 聚焦信号、图像与视频处理及机器学习在定制化嵌入、边缘与云架构上的设计与实现创新。 | Marcin Kowalczyk,Camille Monière | B | 计算机：硬件 |
 | 2026-10-10 | [Elsevier](https://www.sciencedirect.com/special-issue/331901/agentic-ai-for-intelligent-industrial-systems) | ENGINEERING APPLICATIONS OF ARTIFICIAL INTELLIGENCE(1区·IF8) | Agentic AI for Intelligent Industrial Systems | 聚焦智能体AI范式，研究其在动态工业环境中自主感知、推理与行动的前沿应用。 | Hafiz Muhammad Attaullah; Yansha Den… | B | 自动化与控制系统 |
 | 2026-10-10 | [Elsevier](https://www.sciencedirect.com/special-issue/330427/knowledge-engineering-automation) | Journal of Web Semantics(3区·IF3.1) | Knowledge Engineering Automation | 研究大语言模型与神经符号AI驱动的知识工程自动化，涵盖本体学习与验证。 | Valentina V. Presutti | B | 计算机：人工智能 |
 | 2026-10-15 | [Elsevier](https://www.sciencedirect.com/special-issue/331683/foundation-models-and-sim-to-real-control-for-communication-centric-wireless-perception) | COMPUTER COMMUNICATIONS(3区·IF4.3) | Foundation Models and Sim-to-Real Control for Communication-Centr… | 探索基础模型与仿真到现实控制方法，赋能以通信为中心的无线感知研究。 | Theofanis Raptis; Constantinos Mario… | B | 计算机：信息系统 |
@@ -134,31 +116,10 @@ search:
 | 2027-10-01 | [Elsevier](https://www.sciencedirect.com/special-issue/334473/analysis-and-design-of-hybrid-systems-2027) | Nonlinear Analysis-Hybrid Systems(3区·IF4.1) | Analysis and Design of Hybrid Systems 2027 | 研究连续与离散动态交互的混合系统，结合AI与机器学习工具，支撑信息物理系统建模与设计。 | Giordano Pola; Jana Tumova | B | 自动化与控制系统 |
 | 2027-12-31 | [Elsevier](https://www.sciencedirect.com/special-issue/335739/algorithms-in-logic-and-artificial-intelligence-essays-dedicated-to-stefan-szeider-on-the-occasion-of-his-60th-birthday) | Computer Science Review(1区·IF12.7) | Algorithms in Logic and Artificial Intelligence: Essays Dedicated… | 聚焦逻辑与人工智能领域的算法进展，涵盖SAT求解、模型检验及AI驱动问题的算法发展。 | Robert Ganian; Friedrich Slivovsky. | B | 计算机：信息系统 |
 
-### Springer(250 条)
+### Springer(229 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-09-19 | [Springer](https://link.springer.com/collections/bdghhhajae) | International Journal of Social Robotics(2区·IF3.7) | Toward Sustainable Social Robotics. Ecological and Social Pathway… | 关注生态与社会双路径的可持续社会机器人，资源高效设计、生命周期及跨文化人机交互。 | Dr. Lorenzo Carnevale PhD. | B | 机器人学 |
-| 2026-09-20 | [Springer](https://link.springer.com/collections/iacdfefhie) | International Journal of Computer-Supported Collaborative Learning(1区·IF6.8) | 20th Anniversary of International Journal of Computer-supported C… | 邀稿/信息较少 | — | B | 教育学和教育研究 |
-| 2026-09-20 | [Springer](https://link.springer.com/collections/hbeihffhee) | International Journal of Social Robotics(2区·IF3.7) | The future of psychology and robotics | 探讨心理学与机器人学交叉领域的未来，征集超越现状的人机交互新见解与发展方向，涵盖心理机制及机器人开发挑战。 | Ruud Hortensius PhD | B | 机器人学 |
-| 2026-09-20 | [Springer](https://link.springer.com/collections/jaeiejghgj) | International Journal on Document Analysis and Recognition(3区·IF2.5) | Special issue on Computer Vision Systems for Document Analysis an… | 聚焦计算机视觉驱动的文档分析与识别，强调鲁棒性、泛化性与多模态，应对语言、版式、书写风格等文档异构性。 | Axel De Nardin | B | 计算机：人工智能 |
-| 2026-09-28 | [Springer](https://link.springer.com/collections/aaaihgcafc) | EMPIRICAL SOFTWARE ENGINEERING(2区·IF3.6) | Agentic Software Engineering: The Rise of AI Teammates | 研究AI智能体作为软件工程队友的协作模式，分析代码变更提议、开发者响应及真实项目中的协作范式。 | Ahmed Hassan Ph.D | B | 计算机：软件工程 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/abcegacgha) | AUTONOMOUS AGENTS AND MULTI-AGENT SYSTEMS(3区·IF2.6) | Special Issue- Artificial Intelligence Through Theory of Mind | 邀稿，信息较少。 | Nitay Alon | B | 自动化与控制系统 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/geiadeefdd) | Automated Software Engineering(4区·IF3.1) | The Interplay of Automated Software Engineering and Software-Inte… | 探讨生成式AI与智能体驱动的软件工程自动化如何重塑软件密集型企业的战略、创新与运营，推动软件工程与商业研究深度融合。 | Jorge Melegati Ph.D | B | 计算机：软件工程 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/decccgbjaf) | CCF Transactions on Pervasive Computing and Interaction(4区·IF1.5) | Intelligent Healthcare Computing | 面向可穿戴与普适环境，研究AI智能体在长期动态监测、个体差异及资源受限下的智能医疗计算新范式与挑战。 | — | C | 计算机：人工智能 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/cebgacfbhg) | Journal of Big Data(2区·IF6.4) | 24th International Conference on Machine Learning and Application… | 征集ICMLA2025扩展论文，聚焦机器学习、人工智能与可扩展大数据分析的新方法及实际应用，深化理论验证与贡献。 | Huanjing Wang Ph.D. | B | 计算机：理论方法 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/fgeicdccge) | Journal of Cloud Computing-Advances Systems and Applications(3区·IF4.3) | The Expanding Cloudscape: Innovations in Data, Intelligence, and … | 探讨云计算的演进，涵盖AI集成、边缘计算、量子技术与可持续设计，聚焦自主编排、实时智能及绿色基础设施等创新方向。 | Massimo Canonico Ph.D. | B | 计算机：信息系统 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/fgjbejahge) | Journal of Cryptographic Engineering(4区·IF1.4) | Security Proofs for Embedded Systems: Selected Papers from PROOFS… | 收录PROOFS2024与2025研讨会论文，聚焦嵌入式系统安全证明的形式化方法与验证技术，要求原创未发表成果。 | Maria Mushtaq Ph.D | A | 计算机：理论方法 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/cgcghdegdh) | METHODOLOGY AND COMPUTING IN APPLIED PROBABILITY(4区·IF1.1) | International Congress on Modelling and Simulation 2025 | 精选2025年国际建模与仿真大会论文，涵盖概率统计建模、博弈论、机器学习、贝叶斯计算及马尔可夫决策过程等方向。 | Georgy Sofronov | B | 统计学与概率论 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/hacaeejbcb) | MOBILE NETWORKS & APPLICATIONS(4区·IF2) | Edge Intelligence for Electromagnetic Spectrum Awareness in Next-… | 面向6G的边缘智能，实时感知复杂异构电磁谱环境，支持通信、感知与智能决策的融合应用。 | Tao Li, Nan Su | B | 计算机：硬件 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/ibjfgcffab) | MOBILE NETWORKS & APPLICATIONS(4区·IF2) | Recent Advance in AI-enabled Edge Computing and 5G/B5G for Intell… | 探讨AI赋能边缘计算与5G/B5G融合，涵盖6G原生AI设计、自优化网络、资源管理及生成式AI驱动的分布式智能应用。 | Jyh-Cheng Chen PhD | B | 计算机：硬件 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/ccbdjbjgag) | Quantum Information Processing(3区·IF2.2) | Quantum Information in Japan | 日本量子信息研究聚焦量子密钥分发、量子传感及量子博弈论，涵盖量子计算、通信网络与材料等前沿技术。 | Fatih Ozaydin, Tokyo International U… | B | 量子科技 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/aeehcdcbej) | THEORY OF COMPUTING SYSTEMS(4区·IF0.6) | Selected Papers from The International Joint Conference on Theore… | 本征稿聚焦理论计算机科学前沿，涵盖算法与复杂性、博弈论、区块链、量子计算等领域的设计与分析。 | Jin-Yi Cai PhD | B | 计算机：理论方法 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/dgcjjbejdb) | WIRELESS NETWORKS(4区·IF2.1) | Agentic AI-Driven Low-Altitude Economy Networks | 低空经济网络利用6G/5G-Advanced及边缘云智能实现网络层自治，支撑物流、城市空中移动、空中检测与应急响应。 | Lisheng Fan PhD | B | 计算机：信息系统 |
-| 2026-10-01 | [Springer](https://link.springer.com/collections/jjgcbecced) | Automated Software Engineering(4区·IF3.1) | Intelligent Techniques for Automated Code Review and Software Qua… | 基于AutoML和大型语言模型的智能技术，用于自动代码审查与软件质量评估，提升有效性、效率和智能水平。 | Wellington Pinheiro dos Santos Ph.D | B | 计算机：软件工程 |
-| 2026-10-01 | [Springer](https://link.springer.com/collections/eefheafjba) | Automated Software Engineering(4区·IF3.1) | Low-Code Development - Architecture, Design, and Modeling | 探讨低代码/无代码技术对软件架构、设计与建模的影响，以及相关流程和质量管理工具的重新设计。 | — | B | 计算机：软件工程 |
-| 2026-10-01 | [Springer](https://link.springer.com/collections/cieaggfhga) | EURASIP Journal on Wireless Communications and Networking(4区·IF1.9) | AI for Communications and Communications for AI | AI驱动通信实现智能感知与自适应控制，通信网络支持大规模模型训练、边缘推理及低时延数据交换，构建自治上下文感知网络。 | Haihan Duan PhD | B | 工程：电子与电气 |
-| 2026-10-01 | [Springer](https://link.springer.com/collections/eiibiiafhc) | INTERNATIONAL JOURNAL OF COMPUTER VISION(2区·IF9.3) | Computer Vision Approaches for Animal Tracking and Modeling 2026 | 利用计算机视觉的目标检测与目标追踪技术进行动物行为建模，应用于神经科学、生态学及动物保育的行为量化研究。 | Isla DuPorge | C | 计算机：人工智能 |
 | 2026-10-02 | [Springer](https://link.springer.com/collections/cfbfcbgjfi) | Swarm Intelligence(4区·IF1.9) | ANTS 2026 (invitation only) | 邀稿/信息较少 | Razanne Abu-Aisheh Ph.D, Aaron T. Be… | B | 计算机：人工智能 |
 | 2026-10-11 | [Springer](https://link.springer.com/collections/ediejjifje) | Journal of Healthcare Informatics Research(4区·IF3.7) | Adaptation and Evidence-grounding of Generative Interventional Sy… | 生成式干预系统研究；方法：AEGIS的生成式AI、反事实与校准不确定性；应用：医疗与政策决策的因果效果估计。 | Yi Guo PhD, Mattia Prosperi PhD | C | 计算机：信息系统; 卫生保健 |
 | 2026-10-15 | [Springer](https://link.springer.com/collections/hhigaahbii) | EURASIP Journal on Wireless Communications and Networking(4区·IF1.9) | AI‑Native UAV Communications for 6G: ISAC, Semantics, and Air‑Spa… | 探讨6G环境下基于AI原生的无人机通信，融合ISAC、语义及空天地一体化，实现灵活三维覆盖与边缘智能服务。 | Wei Wu Ph.D. | B | 工程：电子与电气 |
@@ -389,22 +350,10 @@ search:
 | 滚动 | [Springer](https://link.springer.com/collections/jhacheaade) | Software and Systems Modeling(3区·IF3.2) | Regular Papers | 邀稿/信息较少 | — | B | 计算机：软件工程 |
 | 滚动 | [Springer](https://link.springer.com/collections/cadfbiedii) | Software and Systems Modeling(3区·IF3.2) | Tool Papers | 征集描述和分析创新软件工具及系统的论文，涵盖架构、设计模式、实现技术、可用性等方面，推动建模及相关领域发展。 | — | B | 计算机：软件工程 |
 
-### IEEE(60 条)
+### IEEE(48 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-09-21 | [IEEE](https://www.computer.org/digital-library/magazines/so/cfp-human-centric-ai) | IEEE SOFTWARE(4区·IF3.6) | Special Issue on Human-Centric AI for Software Engineering | 聚焦人本AI在软件工程中的可解释性、信任与公平性，贯穿设计、测试与运维全流程。 | Silvia Abrahao, Kelly Blincoe, Emers… | B | 计算机：软件工程 |
-| 2026-09-30 | [IEEE](https://www.computer.org/digital-library/magazines/cg/cfp-ai-governance-authenticity-provenance) | IEEE COMPUTER GRAPHICS AND APPLICATIONS(4区·IF1.5) | Special Issue on AI Governance, Authenticity, and Provenance for … | 面向生成式视觉媒体的治理、鉴真与溯源，构建记录与验证内容来源的技术基础设施。 | Changjian Chen , Hunan University, C… | B | 计算机：软件工程 |
-| 2026-09-30 | [IEEE](https://www.comsoc.org/publications/journals/ieee-jsac/cfp/agentic-ai-intelligent-networks) | IEEE JOURNAL ON SELECTED AREAS IN COMMUNICATIONS(1区·IF17.2) | Agentic AI for Intelligent Networks | 面向6G网络中的海量边缘设备，研究智能体AI实现环境感知、自主决策与协同控制，应对动态信道下的时延与可靠性约束。 | strongly encourage and welcome submi… | B | 工程：电子与电气 |
-| 2026-09-30 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-network/cfp/ai-native-smart-radio-environments-6g-evolving-conventional) | IEEE NETWORK(3区·IF6.3) | AI-native Smart Radio Environments for 6G: Evolving from Conventi… | 探索6G自治理网络，将AI深度融入架构以实现环境感知、智能决策与动态执行的闭环自主管控。 | Kai Yu (Lead Guest Editor) , KTH Roy… | B | 计算机：硬件 |
-| 2026-09-30 | [IEEE](https://www.comsoc.org/publications/journals/ieee-lnet/cfp/zero-trust-architecture-and-adaptive-access-control-next) | IEEE NETWORK(3区·IF6.3) | Zero-Trust Architecture and Adaptive Access Control for Next-Gene… | 针对下一代网络异构环境，研究零信任架构与自适应访问控制机制，保障协议设计与资源管理的安全。 | Dionysis Xenakis (Lead Guest Editor)… | A | 计算机：硬件 |
-| 2026-09-30 | [IEEE](https://ctsoc.ieee.org/publications/ieee-transactions-on-consumer-electronics) | IEEE TRANSACTIONS ON CONSUMER ELECTRONICS(2区·IF10.9) | Special Section: Research and Applications of Low-Altitude Urban … | 面向智慧城市低空出行场景，探索消费电子与无人机系统集成，涵盖嵌入式平台、实时数据处理及无线通信以保障城市空中交通的安全可… | — | C | 工程：电子与电气 |
-| 2026-09-30 | [IEEE](https://cis.ieee.org/images/files/Publications/TEVC/cfp-MetaDesignEA_extended.pdf) | IEEE TRANSACTIONS ON EVOLUTIONARY COMPUTATION(1区·IF12) | Meta-Learning and Automated Design of Evolutionary Algorithms | 利用元学习与自动化方法设计进化算法，通过智能代理自动配置与生成优化策略。 | — | B | 计算机：人工智能 |
-| 2026-09-30 | [IEEE](https://www.computer.org/digital-library/magazines/it/cfp-computing-frontier-quantum-intelligent) | IT Professional(4区·IF2.8) | Special Issue on Leading the Next Computing Frontier: Quantum and… | 聚焦量子与智能系统融合，探讨其在企业信息系统与数字创新中重塑复杂问题建模与求解范式的前沿。 | at: Bhuvan Unhelkar , University of … | B | 计算机：信息系统 |
-| 2026-10-01 | [IEEE](https://www.computer.org/digital-library/magazines/co/cfp-computing-communication-outer-space) | COMPUTER(4区·IF2.8) | Special Issue on Computing and Communication in Outer Space | 面向太空工业化与探索，研究低延迟场景下支撑物理AI自主运行的天基计算与通信关键技术需求。 | via the linked email addresses below… | B | 计算机：硬件 |
-| 2026-10-01 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-communications-magazine/cfp/radio-protocols-6g) | IEEE COMMUNICATIONS MAGAZINE(2区·IF8.3) | Radio protocols for 6G | 面向6G标准化，研究涵盖MAC至SDAP及RRC的现代化无线协议，以高效支撑AI、感知与沉浸通信。 | Klaus Pedersen , Nokia, Denmark I-Ka… | B | 工程：电子与电气 |
-| 2026-10-01 | [IEEE](https://www.comsoc.org/publications/journals/ieee-jsac/cfp/exploiting-flexible-positioning-movable-and-pinching-antennas-next-generation-wireless-networks) | IEEE JOURNAL ON SELECTED AREAS IN COMMUNICATIONS(1区·IF17.2) | Exploiting Flexible Positioning: Movable and Pinching Antennas fo… | 利用可移动与可捏合天线实现灵活定位，充分挖掘空间自由度以增强通信感知性能与波束赋形能力。 | Lipeng Zhu (Lead Guest Editor) , Bei… | B | 工程：电子与电气 |
-| 2026-10-01 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-wireless-communications/cfp/wireless-endogenous-security-ai-native-next-generation-wireless-networks) | IEEE WIRELESS COMMUNICATIONS(2区·IF11.6) | Wireless Endogenous Security for AI-Native Next-Generation Wirele… | 研究AI原生6G网络的内生安全机制，应对智能体AI引入的新型复杂安全威胁。 | Liang Jin (Lead Guest Editor) , Info… | A | 计算机：硬件 |
 | 2026-10-08 | [IEEE](https://www.computer.org/digital-library/magazines/pc/cfp-revisiting-mobility) | IEEE PERVASIVE COMPUTING(4区·IF1.9) | Special Issue on Revisiting Mobility | 聚焦普适计算驱动的交通变革，探讨互联车辆、自主无人机及多模态平台中分布式智能与实时决策。 | — | C | 计算机：信息系统 |
 | 2026-10-31 | [IEEE](https://ieee-iotj.org/wp-content/uploads/2026/05/AI_Driven_Network.pdf) | IEEE Internet of Things Journal(2区·IF8.9) | AI-Driven Network Forensics for Edge-Intelligent Internet of Thin… | 研究AI驱动网络取证，利用边缘基础设施作为可信证据源，解决大规模异构物联网事后分析与问责难题。 | Jialing He, Akhilesh S. Thyagaturu, … | A | 计算机：信息系统 |
 | 2026-10-31 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-network/cfp/ai-empowered-cognitive-digital-twin-future-network) | IEEE NETWORK(3区·IF6.3) | AI-Empowered Cognitive Digital Twin for Future Network Ecosystems | 探索AI赋能认知数字孪生，面向6G车联网、工业物联网等场景，实现意图感知与自适应网络优化。 | Jun Cai , Concordia University, Cana… | B | 计算机：硬件 |
@@ -454,12 +403,10 @@ search:
 | 2027-03-31 | [IEEE](https://www.ieeesmc.org/wp-content/uploads/2026/01/TCYB_CFP_Embodied_Intelligence_for_Immersive_Telepresence.pdf) | IEEE Transactions on Cybernetics(1区·IF10.5) | Embodied Intelligence for Immersive Telepresence: Selected Best P… | 沉浸式远程临场中的具身智能,融合感知、通信、决策与控制,在时延和不确定性下实现安全的人机闭环交互。 | — | B | 自动化与控制系统 |
 | 2027-03-31 | [IEEE](https://cis.ieee.org/images/files/Publications/TETCI/CFP-SI_for_TETCI.pdf) | IEEE Transactions on Emerging Topics in Computational Intelligence(2区·IF6.5) | Research and Applications of Self-Learning Computational Intellig… | 面向复杂场景的自学习计算智能方法,涵盖相关理论研究与实际应用。 | — | B | 计算机：人工智能 |
 
-### ACM(10 条)
+### ACM(8 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-09-30 | [ACM](https://dl.acm.org/journal/jocch/calls-for-papers) | ACM Journal on Computing and Cultural Heritage(3区·IF2.2) | Special Issue on Computational Techniques for Games Heritage | 聚焦计算技术用于游戏文化遗产的保存与重建，探索AI与数据分析方法复原历史游戏实践。 | Summer Courts; Walter Crist; Tim Pen… | C | 人文科学 |
-| 2026-09-30 | [ACM](https://dl.acm.org/journal/tweb/calls-for-papers) | ACM Transactions on the Web(4区·IF4.1) | Special Issue on the Agentic Web | 探讨AI智能体在开放Web环境中自主发现、通信与协作的架构与协议，构建智能体网络新范式。 | Boualem Benatallah; Pradyumna Chari;… | B | 计算机：信息系统 |
 | 2026-10-30 | [ACM](https://dl.acm.org/journal/tsas/calls-for-papers) | ACM Transactions on Spatial Algorithms and Systems(4区·IF2.9) | Special Issue on Spatial Analytics for Science | 研究空间分析在科学领域的应用，结合GIS、遥感与机器学习等方法挖掘位置依赖与空间模式。 | Vandana Janeja; Peer Kröger; Ranga R… | C | 遥感 |
 | 2026-11-30 | [ACM](https://dl.acm.org/journal/tsas/calls-for-papers) | ACM Transactions on Spatial Algorithms and Systems(4区·IF2.9) | Special Issue on Human Mobility | 利用GPS与智能城市数据研究人类移动规律，优化交通系统、管控人群安全并建模传染病传播。 | Takahiro Yabe; Andreas Züfle | B | 遥感 |
 | 2026-12-01 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tomm/pdf/ACM-TOMM-CfP-QME-2026-1776277359530.pdf) | ACM Transactions on Multimedia Computing Communications and Applications(3区·IF6) | Special Issue on Quality of Multimedia Experience 2026 | 聚焦多媒体体验质量，收录QoMEX’26优秀论文扩展版，探讨评估与改进方法。 | — | B | 计算机：信息系统 |
@@ -469,12 +416,10 @@ search:
 | 2027-02-28 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tomm/pdf/TOMM-SI-CFP-Embodied-Multimedia-1783775370067.pdf) | ACM Transactions on Multimedia Computing Communications and Applications(3区·IF6) | Special Issue on Embodied Multimedia: Infrastructure, Perception,… | 研究具身多媒体作为自主代理的感知与通信基础，支持物理与虚拟环境交互。 | — | B | 计算机：信息系统 |
 | 2027-04-19 | [ACM](https://dl.acm.org/journal/tompecs/calls-for-papers) | ACM Transactions on Modeling and Performance Evaluation of Computing Systems(4区·IF1.7) | Special Issue on Quantum Computing and Networking Systems | 关注量子计算与网络系统的建模与性能评估，涵盖量子硬件、算法及系统演进中的关键挑战。 | John C.S. Lui; Mark S. Squillante | B | 计算机：信息系统 |
 
-### Taylor & Francis(12 条)
+### Taylor & Francis(10 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-09-30 | [Taylor & Francis](https://think.taylorandfrancis.com/special_issues/eis-data-intelligence/) | Enterprise Information Systems(3区·IF3.9) | Data Intelligence Drives Innovation in E-Commerce Enterprises: Br… | 聚焦数据智能驱动的电商创新，探索预测分析、个性化推荐与实时供应链优化等数字化商业模式。 | — | C | 计算机：信息系统 |
-| 2026-09-30 | [Taylor & Francis](https://think.taylorandfrancis.com/special_issues/ism-responsible-design/) | INFORMATION SYSTEMS MANAGEMENT(4区·IF3.9) | Responsible Design: Care Ethics for AI-Enabled Systems | 探讨AI系统设计中的关怀伦理，关注数字系统如何塑造脆弱性、参与度与人类能动性等结构性问题。 | — | B | 计算机：信息系统 |
 | 2026-11-30 | [Taylor & Francis](https://think.taylorandfrancis.com/special_issues/educational-immersion-for-all-accessibility-and-inclusion-in-extended-reality/) | BEHAVIOUR & INFORMATION TECHNOLOGY(4区·IF3.1) | Educational Immersion for All: Accessibility and Inclusion in eXt… | 探讨扩展现实（VR/AR/MR）在教育中的无障碍与包容性应用，提升沉浸式学习体验。 | Andrea Antonio Cantone | B | 计算机：控制论; 人体工程学 |
 | 2026-11-30 | [Taylor & Francis](https://think.taylorandfrancis.com/special_issues/special-issue-on-computational-intelligence-in-engineering-science-selected-papers-from-iccies-2026/) | Journal of Information and Telecommunication(4区·IF2.1) | Special Issue on Computational Intelligence in Engineering Scienc… | 聚焦计算智能（机器学习、深度学习、模糊逻辑等）在工程科学中的应用，涵盖智能制造、自主系统及物联网通信。 | Anh Cuong Cuong | B | 计算机：信息系统 |
 | 2027-01-15 | [Taylor & Francis](https://think.taylorandfrancis.com/special_issues/theorizing-the-data-ai-nexus/) | EUROPEAN JOURNAL OF INFORMATION SYSTEMS(2区·IF8.1) | Theorizing the Data-AI Nexus | 重新理论化数据与AI的融合关系，将数据视为计算智能基础，构建复杂社会技术现象的新理论体系。 | — | B | 计算机：信息系统 |
@@ -486,24 +431,19 @@ search:
 | 2027-07-31 | [Taylor & Francis](https://think.taylorandfrancis.com/special_issues/human-ai-interaction-in-intelligent-workplaces-behaviour-trust-experience-and-human-centered-design/) | BEHAVIOUR & INFORMATION TECHNOLOGY(4区·IF3.1) | Human-AI Interaction in Intelligent Workplaces: Behaviour, Trust,… | 考察人工智能在智慧职场中的互动行为、信任建立及以人为本的设计，包括生成式助手与决策支持系统。 | Muhammad Imran Rasheed | B | 计算机：控制论; 人体工程学 |
 | 2027-07-31 | [Taylor & Francis](https://think.taylorandfrancis.com/special_issues/icmota26varanasi/) | OPTIMIZATION METHODS & SOFTWARE(4区·IF1.4) | ICMOTA26Varanasi | 聚焦优化方法在人工智能、数据分析、控制系统及工业运营中的前沿理论与应用进展。 | — | B | 计算机：软件工程; 运筹学与 |
 
-### Wiley(6 条)
+### Wiley(4 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-09-30 | [Wiley](https://onlinelibrary.wiley.com/page/journal/15320634/homepage/call-for-papers/si-2023-000251) | CONCURRENCY AND COMPUTATION-PRACTICE & EXPERIENCE(4区·IF1.5) | Special Collection: Quantum Frontiers—A Century of Discovery and … | 聚焦量子计算、信息与软件的理论、系统及应用前沿，探索高性能计算融合路径。 | — | B | 计算机：软件工程 |
-| 2026-09-30 | [Wiley](https://onlinelibrary.wiley.com/page/journal/10991190/homepage/call-for-papers/si-2026-000416) | International Journal of Network Management(4区·IF2.6) | Architectures and Ecosystems for Cryptocurrency Exchanges: Securi… | 研究加密货币交易所架构、密钥管理、智能合约漏洞与DeFi攻击，强化安全审计与系统韧性。 | — | A | 计算机：信息系统 |
 | 2026-10-31 | [Wiley](https://onlinelibrary.wiley.com/page/journal/10991131/call-for-papers/si-2026-000412) | INTERNATIONAL JOURNAL OF COMMUNICATION SYSTEMS(4区·IF1.8) | UAV Assisted Intelligent Reflecting Surfaces for Next Generation … | 无人机辅助智能反射面赋能V2X通信，涉及波束成形、边缘智能、强化学习与物理层安全。 | — | B | 工程：电子与电气 |
 | 2026-10-31 | [Wiley](https://onlinelibrary.wiley.com/page/journal/10991190/homepage/call-for-papers/si-2026-000414) | International Journal of Network Management(4区·IF2.6) | AI-driven Management and MLOps for Networks and Services | 面向云、边缘及5G/6G网络的AI运维与MLOps，涵盖模型监控、漂移管理、隐私与对抗安全。 | — | B | 计算机：信息系统 |
 | 2026-12-31 | [Wiley](https://onlinelibrary.wiley.com/page/journal/21613915/call-for-papers/si-2026-000781) | Transactions on Emerging Telecommunications Technologies(4区·IF2.5) | Explainable and Trustworthy AI for Communications and Networking | 探索6G通信中可解释可信AI，覆盖语义通信、分布式学习、数字孪生及安全隐私评测。 | — | A | 电信学 |
 | 2027-03-31 | [Wiley](https://onlinelibrary.wiley.com/page/journal/15320634/homepage/call-for-papers/si-2026-000459) | CONCURRENCY AND COMPUTATION-PRACTICE & EXPERIENCE(4区·IF1.5) | SSCAD–2026 | 精选SSCAD2026优秀论文扩展，聚焦体系结构、高性能计算、编译优化与并行算法能效。 | — | B | 计算机：软件工程 |
 
-### IET(9 条)
+### IET(6 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-09-30 | [IET](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518652/homepage/call-for-papers/si-2026-000058) | IET Control Theory and Applications(4区·IF2.3) | Cybersecurity of Networked Control Systems: From Vulnerability As… | 针对网络化控制系统，研究漏洞分析、攻击检测、韧性控制与数据驱动防御，保障工业IoT安全。 | — | A | 自动化与控制系统 |
-| 2026-09-30 | [IET](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518733/homepage/call-for-papers/si-2024-001280) | IET Microwaves Antennas & Propagation(4区·IF1.2) | Advanced Design, Packaging, and Fabrication Technologies for mmWa… | 面向毫米波与太赫兹无线应用，研究射频前端先进设计、封装、制造及高能效技术。 | — | B | 工程：电子与电气 |
-| 2026-09-30 | [IET](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518733/homepage/call-for-papers/si-2025-001334) | IET Microwaves Antennas & Propagation(4区·IF1.2) | Antenna Designs and Propagation Modelling for 6G THz Applications | 研究6G太赫兹天线设计、超大规模MIMO、RIS传播建模与混合模数架构。 | — | B | 工程：电子与电气 |
 | 2026-10-30 | [IET](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518652/homepage/call-for-papers/si-2025-001566) | IET Control Theory and Applications(4区·IF2.3) | Modelling, Analysis, and Control of Competition Behaviour in Mult… | 聚焦多智能体竞争行为建模与控制，融合博弈论与强化学习，研究纳什均衡及鲁棒对抗交互。 | — | B | 自动化与控制系统 |
 | 2026-10-31 | [IET](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518792/homepage/call-for-papers/si-2026-000061) | IET Radar Sonar and Navigation(4区·IF1.5) | Advanced Target Detection, Tracking, and Imaging for Radar and So… | 探索雷达与声呐系统的先进目标检测、跟踪与成像，利用AI深度学习提升低信噪比处理性能。 | — | B | 工程：电子与电气 |
 | 2026-11-30 | [IET](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518636/homepage/call-for-papers/si-2025-001470) | IET Communications(4区·IF1.6) | Advances in Free-Space Optical Communications and Emerging Applic… | 研究自由空间光通信与非地面网络，结合AI/ML优化与RIS技术，探索星空地融合组网。 | — | B | 工程：电子与电气 |
@@ -522,43 +462,102 @@ search:
 
 | 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 领域 | 简介 |
 |---|---|---|---|---|---|---|
-| CCF-A | [CCF会议](https://2027.eurosys.org/) | EuroSys | 2026-09-24 | April 19-24, 2027 · Rabat, Morocco | 体系结构/并行/存储 | 研究计算机系统设计与实现，涵盖操作系统、分布式系统、虚拟化等核心方向。 |
-| CCF-A | [CCF会议](https://iclr.cc/Conferences/2027) | ICLR | 2026-09-25 | April 26-30, 2027 · San Francisco, CA, USA | 人工智能 | 国际学习表征会议，聚焦深度学习、表征学习、神经网络架构及无监督学习等人工智能核心方向。 |
 | CCF-A | [CCF会议](https://conf.researchr.org/home/fse-2027) | FSE | 2026-10-02 | July 12-16, 2027 · Shenzhen, China | 软件工程/系统软件/PL | ACM国际软件工程基础会议，聚焦软件工程的理论基础、方法、工具与实践，包括需求、设计、测试、验证等。 |
+| CCF-A | [CCF会议](https://2027.splashcon.org/track/splashoopsla2027) | OOPSLA | 2026-10-14 | October 10-15, 2027 · Prague, Czechia | 软件工程/系统软件/PL | 面向对象编程系统、语言与应用会议,涵盖编程语言设计与实现、程序分析与软件构造。 |
 | CCF-A | [CCF会议](https://2027.sigmod.org/) | SIGMOD | 2026-10-17 | June 13-19, 2027 · Huntington Beach, CA, USA | 数据库/数据挖掘/信息检索 | ACM数据管理会议，聚焦数据库系统、数据挖掘、信息检索及大规模数据处理技术。 |
-| CCF-A | [CCF会议](https://acmweb2027.org/) | WWW | 2026-10-18 | May 10 - 14, 2027 · Dublin, Ireland | 交叉/综合/新兴 | 国际万维网会议，研究Web技术、语义网、社交网络、信息检索及新兴网络应用。 |
-| CCF-A | [CCF会议](https://www.ubicomp.org/ubicomp-iswc-2026) | UbiComp/ISWC | 2026-11-01 | October 11-15, 2026 · Shanghai, China | 人机交互与普适计算 | ACM普适与泛在计算国际联合会议，研究普适计算、可穿戴设备及智能环境交互技术。 |
+| CCF-A | [CCF会议](https://www2027.thewebconf.org/) | WWW | 2026-10-25 | May 10 - 14, 2027 · Dublin, Ireland | 交叉/综合/新兴 | 国际万维网会议，研究Web技术、语义网、社交网络、信息检索及新兴网络应用。 |
+| CCF-A | [CCF会议](https://www.vldb.org/2027/) | VLDB | 2026-11-01 | August 23 - August 27, 2027 · Athens, Greece | 数据库/数据挖掘/信息检索 | VLDB是超大型数据库国际会议，涵盖数据库系统、数据挖掘、信息检索等大规模数据管理技术。 |
+| CCF-A | [CCF会议](https://acm-stoc.org/stoc2027/) | STOC | 2026-11-02 | June 6-11, 2027 · Atlanta, Georgia, USA | 计算机科学理论 | ACM 计算理论会议,涵盖算法设计、计算复杂性与理论计算机科学基础问题。 |
 | CCF-A | [CCF会议](https://icde2027.github.io/) | ICDE | 2026-11-11 | May 17-21, 2027 · Copenhagen, Denmark | 数据库/数据挖掘/信息检索 | IEEE国际数据工程会议，关注数据管理、数据挖掘、大数据系统及数据工程应用。 |
 | CCF-A | [CCF会议](https://pldi27.sigplan.org/) | PLDI | 2026-11-12 | June 5-11, 2027 · Atlanta, Georgia, USA | 软件工程/系统软件/PL | 编程语言设计与实现的学术会议。 |
-| CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | TBD · MONTREAL, CANADA | 网络与信息安全 | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
+| CCF-A | [CCF会议](https://cvpr.thecvf.com/Conferences/2027) | CVPR | 2026-11-16 | June 20-25, 2027 · Seattle, WA, United States | 人工智能 | IEEE/CVF 计算机视觉与模式识别会议,涵盖视觉表征、检测分割、生成与多模态模型。 |
+| CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | May 17-19, 2027 · MONTREAL, CANADA | 网络与信息安全 | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
+| CCF-A | [CCF会议](https://dac.com/2027/authors/call-for-contributions) | DAC | 2026-11-18 | July 11-14, 2027 · San Jose, CA | 体系结构/并行/存储 | 设计自动化会议,涵盖芯片设计自动化、EDA 算法、验证与系统级设计。 |
 | CCF-A | [CCF会议](https://www.usenix.org/conference/osdi27) | OSDI | 2026-12-08 | July 7-9, 2027 · Baltimore, MD, USA | 软件工程/系统软件/PL | USENIX操作系统设计与实现研讨会，涵盖操作系统内核、分布式系统、虚拟化及系统安全。 |
-| CCF-B | [CCF会议](https://www.date-conference.com/date-2027-call-papers) | DATE | 2026-09-20 | March 22-24, 2027 · Dresden, Germany | 体系结构/并行/存储 | 关注电子系统设计与自动化，包括芯片设计、测试验证、嵌入式系统等研究。 |
-| CCF-B | [CCF会议](https://conf.researchr.org/home/saner-2027) | SANER | 2026-09-25 | March 9-12, 2027 · Richmond, Virginia, United States | 软件工程/系统软件/PL | IEEE国际软件分析、演化与重构会议，涵盖软件分析、软件演化、软件重构及软件维护等研究方向。 |
-| CCF-B | [CCF会议](https://eg2027.isti.cnr.it/) | Eurographics | 2026-10-01 | May 10-14, 2027 · Lucca, Italy | 图形学与多媒体 | 欧洲图形学会议，涵盖计算机图形学、可视化、交互技术及虚拟现实等研究领域。 |
-| CCF-B | [CCF会议](https://www.isfpga.org/) | FPGA | 2026-10-01 | March 14 - March 16, 2027 · Monterey, California, USA | 体系结构/并行/存储 | 现场可编程门阵列国际研讨会，聚焦FPGA架构、设计工具、应用及嵌入式系统等研究。 |
-| CCF-B | [CCF会议](https://datacompressionconference.org/) | DCC | 2026-10-02 | March 23-26, 2027 · Snowbird, Utah, United States | 图形学与多媒体 | 数据压缩会议，研究数据压缩算法、理论、实现与应用，涵盖图像、视频、音频及通用数据压缩技术。 |
+| CCF-A | [CCF会议](https://2027.aclweb.org/) | ACL | 2027-01-04 | August 17-22, 2027 · Kyoto, Japan | 人工智能 | 计算语言学协会年会,涵盖自然语言处理模型、语言理解与生成及大模型方法。 |
+| CCF-A | [CCF会议](https://conf.researchr.org/home/issta-2027) | ISSTA | 2027-01-11 | September 7-10, 2027 · Singapore | 软件工程/系统软件/PL | ACM SIGSOFT 软件测试与分析会议,关注测试、静态与动态分析及缺陷检测。 |
+| CCF-A | [CCF会议](https://conferences.i-cav.org/2027/) | CAV | 2027-01-20 | July 19-23, 2027 · KIT, Amsterdam, The Netherlands | 计算机科学理论 | 计算机辅助验证会议,关注模型检验、定理证明与软硬件形式化验证。 |
+| CCF-A | [CCF会议](https://sigir2027.org/) | SIGIR | 2027-01-21 | July 18-24, 2027 · San Jose, California, USA | 数据库/数据挖掘/信息检索 | 信息检索研究与发展会议,涵盖检索模型、排序学习、推荐与检索增强生成。 |
+| CCF-A | [CCF会议](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2027-01-26 | August 11-13, 2027 · Denver, CO, USA | 网络与信息安全 | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
+| CCF-B | [CCF会议](https://eg2027.isti.cnr.it/) | Eurographics | 2026-10-02 | May 10-14, 2027 · Lucca, Italy | 图形学与多媒体 | 欧洲图形学会议，涵盖计算机图形学、可视化、交互技术及虚拟现实等研究领域。 |
 | CCF-B | [CCF会议](https://edbticdt2027.github.io/) | EDBT | 2026-10-07 | April 6-9, 2027 · Lille, France | 数据库/数据挖掘/信息检索 | 国际扩展数据库技术会议，研究数据库系统、数据管理、查询处理、数据集成及新兴数据技术。 |
+| CCF-B | [CCF会议](https://warwick.ac.uk/fac/sci/dcs/aamas2027/) | AAMAS | 2026-10-08 | May 3-7, 2027 · Hanoi, Vietnam | 人工智能 | 研究自主智能体与多智能体系统的理论、设计及应用，涵盖协作、博弈、机器人及分布式人工智能。 |
+| CCF-B | [CCF会议](https://www.isfpga.org/) | FPGA | 2026-10-08 | March 14 - March 16, 2027 · Monterey, California, USA | 体系结构/并行/存储 | 现场可编程门阵列国际研讨会，聚焦FPGA架构、设计工具、应用及嵌入式系统等研究。 |
 | CCF-B | [CCF会议](https://www.ipdps.org/) | IPDPS | 2026-10-08 | June 1-5, 2027 · Seattle, USA | 体系结构/并行/存储 | IEEE国际并行与分布式处理研讨会，涵盖并行算法、分布式系统、高性能计算及集群计算等。 |
-| CCF-B | [CCF会议](https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference) | AAMAS | 2026-10-09 | May 03, 2027 · Hanoi, Vietnam | 人工智能 | 研究自主智能体与多智能体系统的理论、设计及应用，涵盖协作、博弈、机器人及分布式人工智能。 |
+| CCF-B | [CCF会议](https://datacompressionconference.org/) | DCC | 2026-10-09 | March 23-26, 2027 · Snowbird, Utah, United States | 图形学与多媒体 | 数据压缩会议，研究数据压缩算法、理论、实现与应用，涵盖图像、视频、音频及通用数据压缩技术。 |
 | CCF-B | [CCF会议](https://www.sigmetrics.org/sigmetrics2027/) | SIGMETRICS | 2026-10-09 | June 7-11, 2027 · Atlanta, Georgia, USA | 体系结构/并行/存储 | ACM测量与评估特别兴趣组会议，研究计算机系统性能测量、建模、分析与评估，涵盖网络、存储、分布式系统… |
 | CCF-B | [CCF会议](https://2027.coling-iccl.org/) | COLING | 2026-10-12 | May 9-14, 2027 · Macau SAR, China | 人工智能 | 国际计算语言学会议，涵盖自然语言处理、语料库语言学、机器翻译及语言资源建设等。 |
 | CCF-B | [CCF会议](https://2027.naacl.org/) | NAACL | 2026-10-12 | June 1-5, 2027 · San Francisco, California, USA | 人工智能 | 北美计算语言学协会年会，聚焦自然语言处理、计算语义、对话系统及多语言技术等研究。 |
 | CCF-B | [CCF会议](https://2027.ieee-iscas.org/) | ISCAS | 2026-10-13 | June 6-9, 2027 · Bordeaux, France | 体系结构/并行/存储 | IEEE国际电路与系统研讨会，涵盖电路理论、设计与实现，以及信号处理、通信等系统级研究。 |
 | CCF-B | [CCF会议](https://ches.iacr.org/2027/) | CHES | 2026-10-15 | September 6 - 9, 2027 · Cancún, Mexico | 网络与信息安全 | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
-| CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-10-15 | TBA · Tokyo, Japan | 网络与信息安全 | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
+| CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-10-15 | September 13-17, 2027 · Tokyo, Japan | 网络与信息安全 | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
+| CCF-B | [CCF会议](https://etaps.org/2027) | ETAPS | 2026-10-15 | April 10-15, 2027 · Copenhagen, Denmark | 软件工程/系统软件/PL | 欧洲软件理论与实践联合会议,涵盖编译、形式化方法、程序语义与软件工具。 |
+| CCF-B | [CCF会议](https://recomb.org/recomb2027/) | RECOMB | 2026-11-04 | May 17-20, 2027 · Toronto, Canada | 交叉/综合/新兴 | 计算分子生物学会议,关注基因组与序列分析等生物数据的算法与计算方法。 |
+| CCF-B | [CCF会议](https://hscc.acm.org/2027/) | HSCC | 2026-11-05 | May 17-20, 2027 · Boulder, Colorado, USA | 计算机科学理论 | 混合系统计算与控制会议,关注连续—离散混合动态系统的建模、验证与控制。 |
+| CCF-B | [CCF会议](https://conf.researchr.org/home/icpc-2027) | ICPC | 2026-11-05 | April 25-26, 2027 · Dublin, Ireland | 软件工程/系统软件/PL | IEEE 程序理解会议,研究代码理解、程序分析与软件可读性等问题。 |
 | CCF-B | [CCF会议](https://2027.rtas.org/) | RTAS | 2026-11-05 | May 17-20, 2027 · Boulder, Colorado | 体系结构/并行/存储 | IEEE实时与嵌入式技术及应用研讨会，研究实时系统调度、嵌入式平台设计、时间敏感网络及安全关键应用。 |
+| CCF-B | [CCF会议](https://sensys.acm.org/2027/) | SenSys | 2026-11-05 | May 17-20, 2027 · Boulder, CO, USA | 计算机网络 | ACM 嵌入式网络传感系统会议,涵盖传感器网络、物联网系统与边缘感知。 |
+| CCF-B | [CCF会议](https://deal.us.es/caise27/) | CAiSE | 2026-11-15 | June 7-11, 2027 · Seville, Spain | 软件工程/系统软件/PL | 高级信息系统工程会议,关注信息系统建模、需求工程与业务流程方法。 |
+| CCF-B | [CCF会议](https://2027.ecoop.org/) | ECOOP | 2026-11-19 | June 28 - July 2, 2027 · Turin, Italy | 软件工程/系统软件/PL | 欧洲面向对象编程会议,关注编程语言设计、类型系统与程序分析。 |
 | CCF-B | [CCF会议](https://secon2027.ieee-secon.org/) | SECON | 2026-11-30 | May 5-7, 2027 · Lisbon, Portugal | 计算机网络 | 感知、通信与网络融合的智能物联网系统研究。 |
+| CCF-B | [CCF会议](https://fse.iacr.org/2027/) | FSE | 2026-12-01 | May 24-28, 2027 · Maastricht, Netherlands | 网络与信息安全 | 快速软件加密会议,关注对称密码的设计与分析,涵盖分组密码、流密码与哈希函数。 |
 | CCF-B | [CCF会议](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 网络与信息安全 | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
+| CCF-B | [CCF会议](https://www.sigmobile.org/mobisys/2027/) | MobiSys | 2026-12-04 | June 21-25, 2027 · Ho Chi Minh City, Vietnam | 计算机网络 | ACM 移动系统、应用与服务会议,关注移动系统设计、移动感知与端侧机器学习。 |
+| CCF-B | [CCF会议](https://ics-conference.org/index.html) | ICS | 2026-12-07 | TBD · Atlanta, Georgia, USA | 体系结构/并行/存储 | ACM 国际超级计算会议,关注高性能计算体系结构、并行算法与系统优化。 |
+| CCF-B | [CCF会议](https://2027.sigmod.org/) | PODS | 2026-12-10 | June 13-19, 2027 · Huntington Beach, California, USA | 数据库/数据挖掘/信息检索 | ACM 数据库系统原理会议,关注数据库理论、查询语言与数据管理的形式化基础。 |
+| CCF-B | [CCF会议](https://icaps27.icaps-conference.org/) | ICAPS | 2026-12-14 | June 27 - July 2, 2027 · Columbia, SC, USA | 人工智能 | 自动规划与调度会议,关注规划算法、调度方法与序贯决策。 |
+| CCF-B | [CCF会议](https://nossdav.org/) | NOSSDAV | 2027-01-11 | TBD · Ghent, Belgium | 计算机网络 | 网络与操作系统音视频支持研讨会,关注流媒体传输、视频系统与服务质量。 |
+| CCF-B | [CCF会议](https://www.icwsm.org/2027/) | ICWSM | 2027-01-15 | TBD · Edinburgh, Scotland | 人机交互与普适计算 | AAAI 网络与社交媒体会议,关注社交网络数据分析、在线行为与计算社会科学。 |
+| CCF-B | [CCF会议](https://spaa.acm.org/) | SPAA | 2027-01-29 | June 5 - June 11, 2027 · Atlanta, GA, USA | 体系结构/并行/存储 | ACM 并行算法与体系结构会议,关注并行与分布式算法、调度与并发数据结构。 |
 | CCF-B | [CCF会议](https://www.icmr2027.org/) | ICMR | 2027-01-31 | June 7-10, 2027 · Singapore | 图形学与多媒体 | 多媒体检索领域的国际学术会议，聚焦多模态内容分析与智能检索技术。 |
-| CCF-C | [CCF会议](https://acns2027.isg.rhul.ac.uk/) | ACNS | 2026-09-24 | June 28 - July 1, 2027 · Royal Holloway, Egham, UK | 网络与信息安全 | 应用密码学与网络安全会议，研究密码学算法、协议设计及网络系统安全防护技术。 |
-| CCF-C | [CCF会议](https://ecir2027.co.uk/) | ECIR | 2026-10-02 | March 21-25, 2027 · Southampton, UK | 数据库/数据挖掘/信息检索 | 欧洲信息检索会议，关注信息检索模型、算法、系统与应用，包括搜索、推荐、文本挖掘及多媒体检索。 |
+| CCF-B | [CCF会议](https://sigops.org/s/conferences/hotos/2027/) | HotOS | 2027-02-01 | May 24-26, 2027 · Burghausen, Bavaria, Germany | 软件工程/系统软件/PL | USENIX 操作系统前沿议题研讨会,讨论操作系统与系统软件的新思路与争议问题。 |
+| CCF-B | [CCF会议](https://interspeech2027.org/) | InterSpeech | 2027-02-09 | August 29 - September 2, 2027 · São Paulo, Brazil | 图形学与多媒体 | 国际语音通信协会会议,涵盖语音识别与合成、说话人分析与口语语言处理。 |
+| CCF-B | [CCF会议](https://mobilehci.acm.org/2027/) | MobileHCI | 2027-02-17 | September 20-23, 2027 · Limassol, Cyprus | 人机交互与普适计算 | ACM 移动人机交互会议,关注移动与可穿戴设备的交互设计与用户研究。 |
+| CCF-B | [CCF会议](https://fscd-cade.science.ru.nl/) | CADE | 2027-02-22 | August 22-25, 2027 · Nijmegen, Netherlands | 计算机科学理论 | 自动演绎会议,关注自动定理证明、推理系统与逻辑求解技术。 |
+| CCF-B | [CCF会议](https://icfp27.sigplan.org/) | ICFP | 2027-02-25 | September 26 - October 1, 2027 · Nijmegen, Netherlands | 软件工程/系统软件/PL | 函数式编程会议,关注函数式语言设计、类型理论与程序实现技术。 |
+| CCF-B | [CCF会议](https://conf.researchr.org/home/icsme-2027) | ICSME | 2027-03-05 | September 7-11, 2027 · Toronto, Canada | 软件工程/系统软件/PL | 软件维护与演化会议,关注遗留系统维护、重构与软件演化分析。 |
+| CCF-B | [CCF会议](https://ecai2027.org/) | ECAI | 2027-04-14 | October 2-7, 2027 · Athens, Greece | 人工智能 | 欧洲人工智能会议,涵盖知识表示、机器学习、多智能体与 AI 应用。 |
 | CCF-C | [CCF会议](https://icc2027.ieee-icc.org) | ICC | 2026-10-02 | May 30 - June 3, 2027 · Washington, DC, USA | 计算机网络 | 涵盖通信网络技术，包括无线通信、光网络、物联网、网络安全及下一代通信系统等研究方向。 |
+| CCF-C | [CCF会议](https://virtual.aistats.org/Conferences/2027) | AISTATS | 2026-10-06 | May 3-6, 2027 · Montréal, Canada | 人工智能 | 人工智能与统计学交叉会议,关注统计机器学习的理论、算法与推断方法。 |
+| CCF-C | [CCF会议](https://ecir2027.co.uk/) | ECIR | 2026-10-06 | March 21-25, 2027 · Southampton, UK | 数据库/数据挖掘/信息检索 | 欧洲信息检索会议，关注信息检索模型、算法、系统与应用，包括搜索、推荐、文本挖掘及多媒体检索。 |
+| CCF-C | [CCF会议](https://dfrws.org/conferences/dfceurope2027/) | DFRWS | 2026-10-09 | March 30 - April 2, 2027 · Edinburgh, Scotland | 网络与信息安全 | 数字取证研究会议,关注取证技术与工具,涵盖磁盘、内存、网络与移动设备取证。 |
+| CCF-C | [CCF会议](https://www.ifip119.org/Conferences/) | IFIP WG 11.9 | 2026-10-10 | January 7 - 8, 2027 · New Delhi, India | 网络与信息安全 | IFIP 数字取证会议,聚焦数字证据的获取、分析与司法应用等取证研究。 |
 | CCF-C | [CCF会议](https://algorithmiclearningtheory.org/alt2027/) | ALT | 2026-10-12 | March 9-12, 2027 · Leiden, Netherlands | 人工智能 | 算法学习理论国际会议，聚焦机器学习算法的理论基础，涵盖统计学习、在线学习、强化学习及复杂度分析等方向… |
 | CCF-C | [CCF会议](https://fg2027.ieee-biometrics.org/) | FG | 2026-10-16 | April 26-30, 2027 · Marrakesh, Morocco | 人工智能 | 国际自动人脸与姿态识别会议，研究人脸检测、表情分析、姿态估计及多模态生物特征识别等视觉计算技术。 |
 | CCF-C | [CCF会议](https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/) | CT-RSA | 2026-10-22 | April 5-8, 2027 · San Francisco, California, USA | 网络与信息安全 | RSA大会密码学专场，关注密码算法设计、安全协议分析、公钥密码学及实际系统安全应用等研究。 |
+| CCF-C | [CCF会议](https://2027.msrconf.org/) | MSR | 2026-10-23 | April 26-27, 2027 · Dublin, Ireland | 软件工程/系统软件/PL | 软件仓库挖掘会议,研究代码库、缺陷库与开发历史数据的分析与实证方法。 |
+| CCF-C | [CCF会议](https://popl27.sigplan.org/home/pepm-2027) | PEPM | 2026-10-23 | January 12, 2027 · Mexico City, Mexico | 软件工程/系统软件/PL | ACM SIGPLAN 部分求值与程序操作研讨会,关注程序特化、变换与元编程技术。 |
+| CCF-C | [CCF会议](http://iccvm.org/2027/) | CVM | 2026-10-26 | April 9-11, 2027 · Nanyang Technological University, Singapore | 图形学与多媒体 | 计算视觉媒体会议,涵盖图形学、视觉与多媒体中的建模、渲染与图像处理。 |
+| CCF-C | [CCF会议](https://www.sacmat.org/2027/) | SACMAT | 2026-10-30 | July 19-21, 2027 · Durham, England, United Kingdom | 网络与信息安全 | ACM 访问控制模型与技术会议,聚焦授权模型、策略规范与访问控制实现。 |
+| CCF-C | [CCF会议](http://2027.cscwd.org) | CSCWD | 2026-10-31 | May 26-28, 2027 · Brisbane, Australia | 人机交互与普适计算 | 计算机支持的协同设计会议,关注协同工作、群体交互与协同设计系统。 |
+| CCF-C | [CCF会议](https://conf.researchr.org/home/icst-2027) | ICST | 2026-11-02 | May 17-21, 2027 · San Sebastian, Spain | 软件工程/系统软件/PL | IEEE 软件测试、验证与确认会议,关注测试生成、缺陷检测与验证技术。 |
+| CCF-C | [CCF会议](https://pacificvis2027.github.io/) | PacificVis | 2026-11-09 | April 19-22, 2027 · Busan, South Korea | 图形学与多媒体 | IEEE 太平洋可视化会议,关注数据可视化、可视分析与交互式呈现技术。 |
 | CCF-C | [CCF会议](https://2027.refsq.org/) | REFSQ | 2026-11-12 | April 12-15, 2027 · Basel, Switzerland | 软件工程/系统软件/PL | 需求工程：软件质量基础会议，研究需求获取、建模、验证及软件质量保障方法。 |
+| CCF-C | [CCF会议](https://www.pakdd2027.org/) | PAKDD | 2026-11-20 | June 29-July 2, 2027 · Wellington, New Zealand | 数据库/数据挖掘/信息检索 | 亚太知识发现与数据挖掘会议,涵盖数据挖掘算法与大规模数据分析应用。 |
+| CCF-C | [CCF会议](https://www.codaspy.org/2027/) | CODASPY | 2026-11-23 | June 14-17, 2027 · Fort Collins, Colorado, USA | 网络与信息安全 | ACM 数据与应用安全隐私会议,聚焦数据安全、隐私保护与应用层防护机制。 |
+| CCF-C | [CCF会议](https://acisp.org/) | ACISP | 2026-11-30 | July 7-10, 2027 · Melbourne, Australia | 网络与信息安全 | 澳大利亚信息安全与隐私会议,涵盖密码学、系统安全与隐私保护技术。 |
+| CCF-C | [CCF会议](https://petsymposium.org/cfp27.php) | PETS | 2026-11-30 | July 19-24, 2027 · Delft, The Netherlands | 网络与信息安全 | 专注于隐私增强技术，涵盖匿名通信、数据保护及隐私度量等研究。 |
+| CCF-C | [CCF会议](https://hpcclab.org/ccgrid27/) | CCGRID | 2026-12-01 | May 24-27, 2027 · Dallas-Fort Worth, Texas, USA | 体系结构/并行/存储 | IEEE 集群、云与互联网计算会议,关注分布式系统、云资源调度与大规模计算。 |
+| CCF-C | [CCF会议](https://wowmom2027.dii.unipi.it/index.html) | WoWMoM | 2026-12-01 | June 21-24, 2027 · Irvine, California, USA | 计算机网络 | IEEE 无线移动与多媒体网络会议,关注无线组网、移动计算与多媒体传输。 |
+| CCF-C | [CCF会议](https://eurosp2027.ieee-security.org/) | EuroS&P | 2026-12-02 | July 5 - 9, 2027 · Madrid, Spain | 网络与信息安全 | IEEE 欧洲安全与隐私会议,涵盖系统安全、密码应用、隐私与攻击防御研究。 |
 | CCF-C | [CCF会议](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-12-11 | July 12-16, 2027 · Macau, China | 网络与信息安全 | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
+| CCF-C | [CCF会议](https://www.ets2027.co.uk/) | ETS | 2026-12-15 | May 24-28, 2027 · London, UK | 体系结构/并行/存储 | IEEE 欧洲测试会议,关注集成电路测试、可测性设计与可靠性验证。 |
+| CCF-C | [CCF会议](https://icdf2c.eai-conferences.org/2027/) | ICDF2C | 2026-12-15 | June 25-27, 2027 · New York, USA | 网络与信息安全 | 数字取证与网络犯罪会议,关注取证分析方法与网络犯罪调查技术。 |
+| CCF-C | [CCF会议](https://gmp-conference-2027.github.io/gmp2027/) | GMP | 2026-12-21 | June 21-25, 2027 · Singapore | 图形学与多媒体 | 几何建模与处理会议,关注曲面建模、几何计算与离散几何处理方法。 |
+| CCF-C | [CCF会议](https://dis.acm.org/2027/) | DIS | 2027-01-18 | June 28 - July 2, 2027 · Stockholm, Sweden | 人机交互与普适计算 | ACM 交互系统设计会议,关注交互设计方法、用户体验与设计研究实践。 |
+| CCF-C | [CCF会议](https://acns2027.isg.rhul.ac.uk/) | ACNS | 2027-01-21 | June 28 - July 1, 2027 · Royal Holloway, Egham, UK | 网络与信息安全 | 应用密码学与网络安全会议，研究密码学算法、协议设计及网络系统安全防护技术。 |
+| CCF-C | [CCF会议](https://conf.researchr.org/home/ease-2027) | EASE | 2027-01-22 | June 15 - 18, 2027 · Hanoi, Vietnam | 软件工程/系统软件/PL | 软件工程评估与评测会议,关注实证软件工程、度量与实验评估方法。 |
+| CCF-C | [CCF会议](https://2027.worldhaptics.org/) | WHC | 2027-01-29 | July 12-15, 2027 · Boston, Massachusetts, USA | 人机交互与普适计算 | IEEE 世界触觉会议,关注触觉感知、力反馈设备与触觉交互技术。 |
+| CCF-C | [CCF会议](https://ieeecompsac.computer.org/2027/) | COMPSAC | 2027-01-31 | July 13-16, 2027 · Tokyo, Japan | 软件工程/系统软件/PL | 国际计算机软件与应用会议,涵盖软件工程、系统与应用等计算机技术主题。 |
 | CCF-C | [CCF会议](https://ijcnn.org/2027) | IJCNN | 2027-01-31 | June 14 - 18, 2027 · Cape Town, South Africa | 人工智能 | 聚焦神经网络与人工智能，涵盖深度学习、强化学习、神经计算及智能系统应用等研究。 |
+| CCF-C | [CCF会议](https://interact2027.org/) | INTERACT | 2027-02-01 | August 23-27, 2027 · Tallinn, Estonia | 人机交互与普适计算 | IFIP 人机交互会议,关注交互技术、可用性与以人为中心的系统设计。 |
+| CCF-C | [CCF会议](https://securecomm.eai-conferences.org/2027/) | SecureComm | 2027-02-01 | October 15-18, 2027 · Hefei, China | 网络与信息安全 | 通信网络安全与隐私会议,关注网络攻击防御、协议安全与隐私保护。 |
+| CCF-C | [CCF会议](https://conferences.graphicsinterface.org/2027) | GI | 2027-02-05 | June 15-18, 2027 · Winnipeg, Canada | 人机交互与普适计算 | Graphics Interface 会议,涵盖计算机图形学、人机交互与可视化研究。 |
+| CCF-C | [CCF会议](https://icdar2027.org/) | ICDAR | 2027-02-20 | August 18 - 22, 2027 · Kuala Lumpur, Malaysia | 人工智能 | 文档分析与识别会议,关注文字检测识别、版面分析与文档理解。 |
+| CCF-C | [CCF会议](https://ieeecec.org/2027) | IEEE CEC | 2027-02-28 | July 25-28, 2027 · Edinburgh, Scotland, UK | 人工智能 | IEEE 进化计算大会,关注进化算法、群体智能与优化方法及应用。 |
+| CCF-C | [CCF会议](https://2027.ieee-iros.org/) | IROS | 2027-03-01 | September 26 - October 1, 2027 · Florence, Italy | 人工智能 | IEEE/RSJ 智能机器人与系统会议,涵盖机器人感知、规划控制与人机协作。 |
+| CCF-C | [CCF会议](https://smiconf.github.io/2027/) | SMI | 2027-03-08 | June 21-25, 2027 · Singapore | 图形学与多媒体 | 形状建模国际会议,关注几何形状表示、建模与分析方法。 |
+| CCF-C | [CCF会议](https://cgs-network.org/cgi27/) | CGI | 2027-04-20 | July 5-9, 2027 · Cairns, Australia | 图形学与多媒体 | 计算机图形学国际会议,涵盖渲染、建模、动画与虚拟现实等图形技术。 |
 
 ---
 

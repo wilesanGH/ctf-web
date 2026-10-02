@@ -6,7 +6,7 @@ search:
 # 安全方向 SCI / CCF 投稿手册
 
 > 面向:网络安全 / AI 安全 / 隐私保护 / 可信 AI 方向的研究生与青年教师
-> 版本:v1(2026-07)· 征稿清单更新至 2026-09-19 · 由公众号数据管线整理,事实性信息均经官网核实,核实日期随文标注
+> 版本:v1(2026-07)· 征稿清单更新至 2026-10-02 · 由公众号数据管线整理,事实性信息均经官网核实,核实日期随文标注
 > ⚠️ 免责:截稿、APC、出版模式随时可能调整,投稿前务必以官网为准;本手册不做中介、不承诺录用。
 
 🔍 本手册由公众号维护,每周三/周日推送筛选后的征稿速递(安全方向优先标注),扫码关注:
@@ -32,21 +32,12 @@ search:
 ## 三、当前在征·安全方向征稿清单(每月自动刷新)
 
 <!-- AUTO:SEC_CFP:BEGIN 由 tools/build_master_table.py 自动刷新,勿手改 -->
-> 数据日期:2026-09-19 · A 类安全征稿 72 条 + CCF 安全会议 7 个(截稿常调整,以官网为准)
+> 数据日期:2026-10-02 · A 类安全征稿 63 条 + CCF 安全会议 18 个(截稿常调整,以官网为准)
 
 ### 期刊特刊(A 类安全,按截稿排序)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 学科 |
 |---|---|---|---|---|---|---|
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/331651/trustworthy-and-resilient-edge-ai-systems-engineering-validation-and-deployment-under-cyber-disturbance-and-data-degradation) | Ad Hoc Networks(3区·IF4.8) | Trustworthy and Resilient Edge AI Systems: Engineering, Vali… | 边缘AI系统在对抗性网络干扰与数据退化下的可信弹性工程、验证与部署方法。 | Ellis Solaiman, Omer Rana, Karan… | 计算机：信息系统 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/325817/privacy-preserving-and-secure-large-language-models-for-unmanned-aerial-vehicles-uavs) | COMPUTERS & ELECTRICAL ENGINEERING(3区·IF4.9) | Privacy-Preserving and Secure Large Language Models for Unma… | 研究无人机中隐私保护与安全大语言模型，提升自主决策与系统安全。 | Weizhi Meng, Yongjun Ren, Rishik… | 计算机：硬件 |
-| 2026-09-30 | [Elsevier](https://www.sciencedirect.com/special-issue/334016/fault-aware-security-design-of-current-and-post-quantum-computing-systems) | JOURNAL OF SYSTEMS ARCHITECTURE(3区·IF4.1) | Fault-aware security design of current and post-quantum comp… | 聚焦当前与后量子计算系统的故障感知安全设计，涵盖硬件与软件的攻击及对策研究。 | Alessandro Barenghi, Juliane Krä… | 计算机：硬件 |
-| 2026-09-30 | [Springer](https://link.springer.com/collections/fgjbejahge) | Journal of Cryptographic Engineering(4区·IF1.4) | Security Proofs for Embedded Systems: Selected Papers from P… | 收录PROOFS2024与2025研讨会论文，聚焦嵌入式系统安全证明的形式化方法与验证技术，要求原创未发表成果… | Maria Mushtaq Ph.D | 计算机：理论方法 |
-| 2026-09-30 | [IEEE](https://www.comsoc.org/publications/journals/ieee-lnet/cfp/zero-trust-architecture-and-adaptive-access-control-next) | IEEE NETWORK(3区·IF6.3) | Zero-Trust Architecture and Adaptive Access Control for Next… | 针对下一代网络异构环境，研究零信任架构与自适应访问控制机制，保障协议设计与资源管理的安全。 | Dionysis Xenakis (Lead Guest Edi… | 计算机：硬件 |
-| 2026-09-30 | [Wiley](https://onlinelibrary.wiley.com/page/journal/10991190/homepage/call-for-papers/si-2026-000416) | International Journal of Network Management(4区·IF2.6) | Architectures and Ecosystems for Cryptocurrency Exchanges: S… | 研究加密货币交易所架构、密钥管理、智能合约漏洞与DeFi攻击，强化安全审计与系统韧性。 | — | 计算机：信息系统 |
-| 2026-09-30 | [IET](https://ietresearch.onlinelibrary.wiley.com/hub/journal/17518652/homepage/call-for-papers/si-2026-000058) | IET Control Theory and Applications(4区·IF2.3) | Cybersecurity of Networked Control Systems: From Vulnerabili… | 针对网络化控制系统，研究漏洞分析、攻击检测、韧性控制与数据驱动防御，保障工业IoT安全。 | — | 自动化与控制系统 |
-| 2026-10-01 | [Elsevier](https://www.sciencedirect.com/special-issue/333161/artificial-intelligence-and-machine-learning-for-critical-infrastructure-protection-and-homeland-security) | International Journal of Critical Infrastructure Protection(3区·IF5.3) | Artificial Intelligence and Machine Learning for Critical In… | 探讨AI与ML在关键基础设施保护中的应用，涵盖实时异常检测与数据驱动决策支持。 | Selcuk Uluagac, Rebecca Montanar… | 计算机：信息系统 |
-| 2026-10-01 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-wireless-communications/cfp/wireless-endogenous-security-ai-native-next-generation-wireless-networks) | IEEE WIRELESS COMMUNICATIONS(2区·IF11.6) | Wireless Endogenous Security for AI-Native Next-Generation W… | 研究AI原生6G网络的内生安全机制，应对智能体AI引入的新型复杂安全威胁。 | Liang Jin (Lead Guest Editor) , … | 计算机：硬件 |
 | 2026-10-30 | [Elsevier](https://www.sciencedirect.com/special-issue/334111/legal-frameworks-technical-challenges-and-regulatory-design-for-governing-general-purpose-ai-systems) | Computer Law & Security Review(3区·IF3.2) | Legal Frameworks, Technical Challenges, and Regulatory Desig… | 融合法律与技术，研究通用AI系统的治理框架、技术特性及支撑监管的计算工具。 | Davide Audrito, Livio Robaldo, R… | computer/core |
 | 2026-10-30 | [Springer](https://link.springer.com/collections/gagdfebeia) | Innovations in Systems and Software Engineering(4区·IF1.4) | Resilient, Trustworthy, and AI-Driven Software Systems for N… | 研究面向下一代应用的韧性、可信及AI驱动的软件系统，重点在于故障容错、可解释性及自适应自我修复机制。 | Manju Kaushik PhD, Dr.-Ing Tizia… | 计算机：软件工程 |
 | 2026-10-31 | [Springer](https://link.springer.com/collections/dcggjhgaai) | NEW GENERATION COMPUTING(4区·IF2.8) | Card-based Cryptography 4 | 聚焦基于卡片的密码学，探讨使用实体卡片进行安全多方计算、零知识证明及其扩展到日常物品的研究与应用。 | — | 计算机：硬件 |
@@ -115,13 +106,24 @@ search:
 
 | 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 简介 |
 |---|---|---|---|---|---|
-| CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | TBD · MONTREAL, CANADA | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
+| CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | May 17-19, 2027 · MONTREAL, CANADA | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
+| CCF-A | [CCF会议](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2027-01-26 | August 11-13, 2027 · Denver, CO, USA | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
 | CCF-B | [CCF会议](https://ches.iacr.org/2027/) | CHES | 2026-10-15 | September 6 - 9, 2027 · Cancún, Mexico | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
-| CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-10-15 | TBA · Tokyo, Japan | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
+| CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2026-10-15 | September 13-17, 2027 · Tokyo, Japan | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
+| CCF-B | [CCF会议](https://fse.iacr.org/2027/) | FSE | 2026-12-01 | May 24-28, 2027 · Maastricht, Netherlands | 快速软件加密会议,关注对称密码的设计与分析,涵盖分组密码、流密码与哈希函数。 |
 | CCF-B | [CCF会议](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
-| CCF-C | [CCF会议](https://acns2027.isg.rhul.ac.uk/) | ACNS | 2026-09-24 | June 28 - July 1, 2027 · Royal Holloway, Egham, UK | 应用密码学与网络安全会议，研究密码学算法、协议设计及网络系统安全防护技术。 |
+| CCF-C | [CCF会议](https://dfrws.org/conferences/dfceurope2027/) | DFRWS | 2026-10-09 | March 30 - April 2, 2027 · Edinburgh, Scotland | 数字取证研究会议,关注取证技术与工具,涵盖磁盘、内存、网络与移动设备取证。 |
+| CCF-C | [CCF会议](https://www.ifip119.org/Conferences/) | IFIP WG 11.9 | 2026-10-10 | January 7 - 8, 2027 · New Delhi, India | IFIP 数字取证会议,聚焦数字证据的获取、分析与司法应用等取证研究。 |
 | CCF-C | [CCF会议](https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/) | CT-RSA | 2026-10-22 | April 5-8, 2027 · San Francisco, California, USA | RSA大会密码学专场，关注密码算法设计、安全协议分析、公钥密码学及实际系统安全应用等研究。 |
+| CCF-C | [CCF会议](https://www.sacmat.org/2027/) | SACMAT | 2026-10-30 | July 19-21, 2027 · Durham, England, United Kingdom | ACM 访问控制模型与技术会议,聚焦授权模型、策略规范与访问控制实现。 |
+| CCF-C | [CCF会议](https://www.codaspy.org/2027/) | CODASPY | 2026-11-23 | June 14-17, 2027 · Fort Collins, Colorado, USA | ACM 数据与应用安全隐私会议,聚焦数据安全、隐私保护与应用层防护机制。 |
+| CCF-C | [CCF会议](https://acisp.org/) | ACISP | 2026-11-30 | July 7-10, 2027 · Melbourne, Australia | 澳大利亚信息安全与隐私会议,涵盖密码学、系统安全与隐私保护技术。 |
+| CCF-C | [CCF会议](https://petsymposium.org/cfp27.php) | PETS | 2026-11-30 | July 19-24, 2027 · Delft, The Netherlands | 专注于隐私增强技术，涵盖匿名通信、数据保护及隐私度量等研究。 |
+| CCF-C | [CCF会议](https://eurosp2027.ieee-security.org/) | EuroS&P | 2026-12-02 | July 5 - 9, 2027 · Madrid, Spain | IEEE 欧洲安全与隐私会议,涵盖系统安全、密码应用、隐私与攻击防御研究。 |
 | CCF-C | [CCF会议](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-12-11 | July 12-16, 2027 · Macau, China | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
+| CCF-C | [CCF会议](https://icdf2c.eai-conferences.org/2027/) | ICDF2C | 2026-12-15 | June 25-27, 2027 · New York, USA | 数字取证与网络犯罪会议,关注取证分析方法与网络犯罪调查技术。 |
+| CCF-C | [CCF会议](https://acns2027.isg.rhul.ac.uk/) | ACNS | 2027-01-21 | June 28 - July 1, 2027 · Royal Holloway, Egham, UK | 应用密码学与网络安全会议，研究密码学算法、协议设计及网络系统安全防护技术。 |
+| CCF-C | [CCF会议](https://securecomm.eai-conferences.org/2027/) | SecureComm | 2027-02-01 | October 15-18, 2027 · Hefei, China | 通信网络安全与隐私会议,关注网络攻击防御、协议安全与隐私保护。 |
 <!-- AUTO:SEC_CFP:END -->
 
 ## 四、综述(Survey)专门渠道(2026-06/07 核实)
