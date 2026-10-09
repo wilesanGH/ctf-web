@@ -5,7 +5,7 @@ search:
 
 # 计算机/AI 在征征稿总表
 
-> 更新日期:2026-10-02 · 期刊特刊 401 条 + CCF 在征会议 96 个
+> 更新日期:2026-10-09 · 期刊特刊 406 条 + CCF 在征会议 87 个
 > 期刊等级 = 2025 中科院分区;「方向」列:A=安全/可信AI/隐私核心(优先看),B=计算机/AI 基本盘,C=交叉(已从严筛)。
 > ⚠️ 信息仅供参考,截稿日期可能调整,投稿前请务必以官网为准核实投稿范围、截稿时间与版面费(APC)。
 
@@ -116,11 +116,10 @@ search:
 | 2027-10-01 | [Elsevier](https://www.sciencedirect.com/special-issue/334473/analysis-and-design-of-hybrid-systems-2027) | Nonlinear Analysis-Hybrid Systems(3区·IF4.1) | Analysis and Design of Hybrid Systems 2027 | 研究连续与离散动态交互的混合系统，结合AI与机器学习工具，支撑信息物理系统建模与设计。 | Giordano Pola; Jana Tumova | B | 自动化与控制系统 |
 | 2027-12-31 | [Elsevier](https://www.sciencedirect.com/special-issue/335739/algorithms-in-logic-and-artificial-intelligence-essays-dedicated-to-stefan-szeider-on-the-occasion-of-his-60th-birthday) | Computer Science Review(1区·IF12.7) | Algorithms in Logic and Artificial Intelligence: Essays Dedicated… | 聚焦逻辑与人工智能领域的算法进展，涵盖SAT求解、模型检验及AI驱动问题的算法发展。 | Robert Ganian; Friedrich Slivovsky. | B | 计算机：信息系统 |
 
-### Springer(229 条)
+### Springer(228 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-10-02 | [Springer](https://link.springer.com/collections/cfbfcbgjfi) | Swarm Intelligence(4区·IF1.9) | ANTS 2026 (invitation only) | 邀稿/信息较少 | Razanne Abu-Aisheh Ph.D, Aaron T. Be… | B | 计算机：人工智能 |
 | 2026-10-11 | [Springer](https://link.springer.com/collections/ediejjifje) | Journal of Healthcare Informatics Research(4区·IF3.7) | Adaptation and Evidence-grounding of Generative Interventional Sy… | 生成式干预系统研究；方法：AEGIS的生成式AI、反事实与校准不确定性；应用：医疗与政策决策的因果效果估计。 | Yi Guo PhD, Mattia Prosperi PhD | C | 计算机：信息系统; 卫生保健 |
 | 2026-10-15 | [Springer](https://link.springer.com/collections/hhigaahbii) | EURASIP Journal on Wireless Communications and Networking(4区·IF1.9) | AI‑Native UAV Communications for 6G: ISAC, Semantics, and Air‑Spa… | 探讨6G环境下基于AI原生的无人机通信，融合ISAC、语义及空天地一体化，实现灵活三维覆盖与边缘智能服务。 | Wei Wu Ph.D. | B | 工程：电子与电气 |
 | 2026-10-15 | [Springer](https://link.springer.com/collections/ihafejcaca) | Journal on Multimodal User Interfaces(3区·IF2.1) | Smart Voice Agents | 本征稿聚焦智能语音代理，探讨多模态交互在医疗、汽车及网页无障碍场景中的设计、实现与评估。 | — | B | 计算机：人工智能 |
@@ -350,11 +349,10 @@ search:
 | 滚动 | [Springer](https://link.springer.com/collections/jhacheaade) | Software and Systems Modeling(3区·IF3.2) | Regular Papers | 邀稿/信息较少 | — | B | 计算机：软件工程 |
 | 滚动 | [Springer](https://link.springer.com/collections/cadfbiedii) | Software and Systems Modeling(3区·IF3.2) | Tool Papers | 征集描述和分析创新软件工具及系统的论文，涵盖架构、设计模式、实现技术、可用性等方面，推动建模及相关领域发展。 | — | B | 计算机：软件工程 |
 
-### IEEE(48 条)
+### IEEE(47 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-10-08 | [IEEE](https://www.computer.org/digital-library/magazines/pc/cfp-revisiting-mobility) | IEEE PERVASIVE COMPUTING(4区·IF1.9) | Special Issue on Revisiting Mobility | 聚焦普适计算驱动的交通变革，探讨互联车辆、自主无人机及多模态平台中分布式智能与实时决策。 | — | C | 计算机：信息系统 |
 | 2026-10-31 | [IEEE](https://ieee-iotj.org/wp-content/uploads/2026/05/AI_Driven_Network.pdf) | IEEE Internet of Things Journal(2区·IF8.9) | AI-Driven Network Forensics for Edge-Intelligent Internet of Thin… | 研究AI驱动网络取证，利用边缘基础设施作为可信证据源，解决大规模异构物联网事后分析与问责难题。 | Jialing He, Akhilesh S. Thyagaturu, … | A | 计算机：信息系统 |
 | 2026-10-31 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-network/cfp/ai-empowered-cognitive-digital-twin-future-network) | IEEE NETWORK(3区·IF6.3) | AI-Empowered Cognitive Digital Twin for Future Network Ecosystems | 探索AI赋能认知数字孪生，面向6G车联网、工业物联网等场景，实现意图感知与自适应网络优化。 | Jun Cai , Concordia University, Cana… | B | 计算机：硬件 |
 | 2026-10-31 | [IEEE](https://www.computer.org/digital-library/journals/tsc/cfp-language-models-ecosystems-design) | IEEE Transactions on Services Computing(2区·IF5.8) | Special Issue on Large Language Models in Service-Oriented Ecosys… | 探讨大语言模型在面向服务生态系统中的应用，涵盖服务识别、发现、组合及智能自动化设计。 | — | B | 计算机：信息系统 |
@@ -403,18 +401,25 @@ search:
 | 2027-03-31 | [IEEE](https://www.ieeesmc.org/wp-content/uploads/2026/01/TCYB_CFP_Embodied_Intelligence_for_Immersive_Telepresence.pdf) | IEEE Transactions on Cybernetics(1区·IF10.5) | Embodied Intelligence for Immersive Telepresence: Selected Best P… | 沉浸式远程临场中的具身智能,融合感知、通信、决策与控制,在时延和不确定性下实现安全的人机闭环交互。 | — | B | 自动化与控制系统 |
 | 2027-03-31 | [IEEE](https://cis.ieee.org/images/files/Publications/TETCI/CFP-SI_for_TETCI.pdf) | IEEE Transactions on Emerging Topics in Computational Intelligence(2区·IF6.5) | Research and Applications of Self-Learning Computational Intellig… | 面向复杂场景的自学习计算智能方法,涵盖相关理论研究与实际应用。 | — | B | 计算机：人工智能 |
 
-### ACM(8 条)
+### ACM(15 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-10-30 | [ACM](https://dl.acm.org/journal/tsas/calls-for-papers) | ACM Transactions on Spatial Algorithms and Systems(4区·IF2.9) | Special Issue on Spatial Analytics for Science | 研究空间分析在科学领域的应用，结合GIS、遥感与机器学习等方法挖掘位置依赖与空间模式。 | Vandana Janeja; Peer Kröger; Ranga R… | C | 遥感 |
-| 2026-11-30 | [ACM](https://dl.acm.org/journal/tsas/calls-for-papers) | ACM Transactions on Spatial Algorithms and Systems(4区·IF2.9) | Special Issue on Human Mobility | 利用GPS与智能城市数据研究人类移动规律，优化交通系统、管控人群安全并建模传染病传播。 | Takahiro Yabe; Andreas Züfle | B | 遥感 |
+| 2026-10-30 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tsas/pdf/ACM-TSAS-Special-Issue-on-Spatial-Analytics-for-Science-CFP-1777405515990.pdf) | ACM Transactions on Spatial Algorithms and Systems(4区·IF2.9) | Special Issue on Spatial Analytics for Science | 研究空间分析在科学领域的应用，结合GIS、遥感与机器学习等方法挖掘位置依赖与空间模式。 | — | C | 遥感 |
+| 2026-10-30 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tweb/pdf/ACM-TWEB-CfP-SI-Agentic-Web-1789923301267.pdf) | ACM Transactions on the Web(4区·IF4.1) | Special Issue on the Agentic Web | 探讨AI智能体在开放Web环境中自主发现、通信与协作的架构与协议，构建智能体网络新范式。 | — | B | 计算机：信息系统 |
+| 2026-10-31 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/todaes/pdf/ACM-TODAES-SI-ORGD-AI-EDA-1790793074817.pdf) | ACM TRANSACTIONS ON DESIGN AUTOMATION OF ELECTRONIC SYSTEMS(4区·IF2) | Special Issue on Open, Reliable, and Generalizable Datasets for A… | 针对AI驱动电子设计自动化，征集开放、可靠且可泛化的数据集，以解决模型部署的根本性约束。 | — | B | 计算机：硬件 |
+| 2026-11-30 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tsas/pdf/ACM-TSAS-CFP-Human-Mobility-1776969816517.pdf) | ACM Transactions on Spatial Algorithms and Systems(4区·IF2.9) | Special Issue on Human Mobility | 利用GPS与智能城市数据研究人类移动规律，优化交通系统、管控人群安全并建模传染病传播。 | — | B | 遥感 |
 | 2026-12-01 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tomm/pdf/ACM-TOMM-CfP-QME-2026-1776277359530.pdf) | ACM Transactions on Multimedia Computing Communications and Applications(3区·IF6) | Special Issue on Quality of Multimedia Experience 2026 | 聚焦多媒体体验质量，收录QoMEX’26优秀论文扩展版，探讨评估与改进方法。 | — | B | 计算机：信息系统 |
+| 2026-12-30 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/taas/pdf/taas-Beyond-Scaling-%20From-theory%20to-Deployment%20-1790706438050.pdf) | ACM Transactions on Autonomous and Adaptive Systems(4区·IF2.1) | Special Issue on Beyond Scaling: From Theory to Deployment of Eff… | 高效基础模型从理论到部署,涵盖模型压缩与加速、高效架构和训练算法、软硬件协同设计及云边端部署。 | — | B | 计算机：人工智能 |
+| 2026-12-30 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tomacs/pdf/ACM-TOMACS-CfP-SI-Simulation-Age-Digital-Twins-AI-1790359104390.pdf) | ACM Transactions on Modeling and Computer Simulation(4区·IF1.9) | Simulation in the Age of Digital Twins and AI | 数字孪生与AI时代的仿真研究,涵盖生成模型和大模型辅助建模、学习增强的随机仿真及数字孪生系统。 | — | B | 计算机：跨学科应用 |
+| 2026-12-31 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/jocch/PDFs/ACM-JOCCH-CfP-SI-Computational-Techniques-Games-Heritage-1789501509720.pdf) | ACM Journal on Computing and Cultural Heritage(3区·IF2.2) | Special Issue on Computational Techniques for Games Heritage | 聚焦计算技术用于游戏文化遗产的保存与重建，探索AI与数据分析方法复原历史游戏实践。 | — | C | 人文科学 |
+| 2027-01-15 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tist/pdf/ACM-CFP-SI-KI-LLM-1787682027707.pdf) | ACM Transactions on Intelligent Systems and Technology(3区·IF6.6) | Special Issue on Knowledge-Informed Large Language Models: Integr… | 知识融合的大模型,将物理定律、符号推理与因果结构注入预训练和推理过程,提升可靠性与分布外泛化。 | — | B | 计算机：人工智能 |
 | 2027-01-15 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tsas/pdf/ACM-TSAS-CfP-SI-Research-Industry-1784659354520.pdf) | ACM Transactions on Spatial Algorithms and Systems(4区·IF2.9) | Special Issue on Research in Industry | 探讨地理空间研究在产业中的应用，涵盖物流、移动、能源等场景的空间系统部署与挑战。 | — | B | 遥感 |
+| 2027-01-31 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tist/pdf/ACM-TIST-CfP-SI-LLM-Driven-Agentic-AI-Intelligent-Systems-1783777382553.pdf) | ACM Transactions on Intelligent Systems and Technology(3区·IF6.6) | LLM-Driven Agentic AI in Intelligent Systems: Theory, Technologie… | 大模型驱动的智能体系统,涵盖智能体的形式化理论、长程推理与规划、工具及多智能体协同、可靠性评测。 | — | B | 计算机：人工智能 |
 | 2027-01-31 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/fac/pdf/ACM-FAC-CfP-SI-Formal-Methods-Intersymbolic-AI-1783776817357.pdf) | FORMAL ASPECTS OF COMPUTING(3区·IF1.4) | Special Issue on Formal Methods and Intersymbolic Artificial Inte… | 探讨形式方法与符号及子符号AI的融合，构建可依赖、可解释的可信系统。 | — | B | 计算机：软件工程 |
-| 2027-02-28 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tomm/pdf/ACM-TOMM-CfP-SI-Fine-Grained-Affective-Video-Text-Retrieval-MLM-1787681356223.pdf) | ACM Transactions on Multimedia Computing Communications and Applications(3区·IF6) | Special Issue on Fine-grained Affective Video-Text Retrieval with… | 利用多模态大模型进行视频文本情感细粒度检索，实现跨模态理解与交互式搜索。 | — | B | 计算机：信息系统 |
 | 2027-02-28 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tomm/pdf/TOMM-SI-CFP-Embodied-Multimedia-1783775370067.pdf) | ACM Transactions on Multimedia Computing Communications and Applications(3区·IF6) | Special Issue on Embodied Multimedia: Infrastructure, Perception,… | 研究具身多媒体作为自主代理的感知与通信基础，支持物理与虚拟环境交互。 | — | B | 计算机：信息系统 |
-| 2027-04-19 | [ACM](https://dl.acm.org/journal/tompecs/calls-for-papers) | ACM Transactions on Modeling and Performance Evaluation of Computing Systems(4区·IF1.7) | Special Issue on Quantum Computing and Networking Systems | 关注量子计算与网络系统的建模与性能评估，涵盖量子硬件、算法及系统演进中的关键挑战。 | John C.S. Lui; Mark S. Squillante | B | 计算机：信息系统 |
+| 2027-02-28 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tomm/pdf/ACM-TOMM-CfP-SI-Fine-Grained-Affective-Video-Text-Retrieval-MLM-1787681356223.pdf) | ACM Transactions on Multimedia Computing Communications and Applications(3区·IF6) | Special Issue on Fine-grained Affective Video-Text Retrieval with… | 利用多模态大模型进行视频文本情感细粒度检索，实现跨模态理解与交互式搜索。 | — | B | 计算机：信息系统 |
+| 2027-04-19 | [ACM](https://dl.acm.org/pb-assets/static_journal_pages/tompecs/pdf/ACM-TOMPECS-CFP-SI-Quantum-Computing-Networking-Systems-1786043757573.pdf) | ACM Transactions on Modeling and Performance Evaluation of Computing Systems(4区·IF1.7) | Special Issue on Quantum Computing and Networking Systems | 关注量子计算与网络系统的建模与性能评估，涵盖量子硬件、算法及系统演进中的关键挑战。 | — | B | 计算机：信息系统 |
 
 ### Taylor & Francis(10 条)
 
@@ -462,7 +467,6 @@ search:
 
 | 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 领域 | 简介 |
 |---|---|---|---|---|---|---|
-| CCF-A | [CCF会议](https://conf.researchr.org/home/fse-2027) | FSE | 2026-10-02 | July 12-16, 2027 · Shenzhen, China | 软件工程/系统软件/PL | ACM国际软件工程基础会议，聚焦软件工程的理论基础、方法、工具与实践，包括需求、设计、测试、验证等。 |
 | CCF-A | [CCF会议](https://2027.splashcon.org/track/splashoopsla2027) | OOPSLA | 2026-10-14 | October 10-15, 2027 · Prague, Czechia | 软件工程/系统软件/PL | 面向对象编程系统、语言与应用会议,涵盖编程语言设计与实现、程序分析与软件构造。 |
 | CCF-A | [CCF会议](https://2027.sigmod.org/) | SIGMOD | 2026-10-17 | June 13-19, 2027 · Huntington Beach, CA, USA | 数据库/数据挖掘/信息检索 | ACM数据管理会议，聚焦数据库系统、数据挖掘、信息检索及大规模数据处理技术。 |
 | CCF-A | [CCF会议](https://www2027.thewebconf.org/) | WWW | 2026-10-25 | May 10 - 14, 2027 · Dublin, Ireland | 交叉/综合/新兴 | 国际万维网会议，研究Web技术、语义网、社交网络、信息检索及新兴网络应用。 |
@@ -479,11 +483,6 @@ search:
 | CCF-A | [CCF会议](https://conferences.i-cav.org/2027/) | CAV | 2027-01-20 | July 19-23, 2027 · KIT, Amsterdam, The Netherlands | 计算机科学理论 | 计算机辅助验证会议,关注模型检验、定理证明与软硬件形式化验证。 |
 | CCF-A | [CCF会议](https://sigir2027.org/) | SIGIR | 2027-01-21 | July 18-24, 2027 · San Jose, California, USA | 数据库/数据挖掘/信息检索 | 信息检索研究与发展会议,涵盖检索模型、排序学习、推荐与检索增强生成。 |
 | CCF-A | [CCF会议](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2027-01-26 | August 11-13, 2027 · Denver, CO, USA | 网络与信息安全 | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
-| CCF-B | [CCF会议](https://eg2027.isti.cnr.it/) | Eurographics | 2026-10-02 | May 10-14, 2027 · Lucca, Italy | 图形学与多媒体 | 欧洲图形学会议，涵盖计算机图形学、可视化、交互技术及虚拟现实等研究领域。 |
-| CCF-B | [CCF会议](https://edbticdt2027.github.io/) | EDBT | 2026-10-07 | April 6-9, 2027 · Lille, France | 数据库/数据挖掘/信息检索 | 国际扩展数据库技术会议，研究数据库系统、数据管理、查询处理、数据集成及新兴数据技术。 |
-| CCF-B | [CCF会议](https://warwick.ac.uk/fac/sci/dcs/aamas2027/) | AAMAS | 2026-10-08 | May 3-7, 2027 · Hanoi, Vietnam | 人工智能 | 研究自主智能体与多智能体系统的理论、设计及应用，涵盖协作、博弈、机器人及分布式人工智能。 |
-| CCF-B | [CCF会议](https://www.isfpga.org/) | FPGA | 2026-10-08 | March 14 - March 16, 2027 · Monterey, California, USA | 体系结构/并行/存储 | 现场可编程门阵列国际研讨会，聚焦FPGA架构、设计工具、应用及嵌入式系统等研究。 |
-| CCF-B | [CCF会议](https://www.ipdps.org/) | IPDPS | 2026-10-08 | June 1-5, 2027 · Seattle, USA | 体系结构/并行/存储 | IEEE国际并行与分布式处理研讨会，涵盖并行算法、分布式系统、高性能计算及集群计算等。 |
 | CCF-B | [CCF会议](https://datacompressionconference.org/) | DCC | 2026-10-09 | March 23-26, 2027 · Snowbird, Utah, United States | 图形学与多媒体 | 数据压缩会议，研究数据压缩算法、理论、实现与应用，涵盖图像、视频、音频及通用数据压缩技术。 |
 | CCF-B | [CCF会议](https://www.sigmetrics.org/sigmetrics2027/) | SIGMETRICS | 2026-10-09 | June 7-11, 2027 · Atlanta, Georgia, USA | 体系结构/并行/存储 | ACM测量与评估特别兴趣组会议，研究计算机系统性能测量、建模、分析与评估，涵盖网络、存储、分布式系统… |
 | CCF-B | [CCF会议](https://2027.coling-iccl.org/) | COLING | 2026-10-12 | May 9-14, 2027 · Macau SAR, China | 人工智能 | 国际计算语言学会议，涵盖自然语言处理、语料库语言学、机器翻译及语言资源建设等。 |
@@ -517,9 +516,6 @@ search:
 | CCF-B | [CCF会议](https://icfp27.sigplan.org/) | ICFP | 2027-02-25 | September 26 - October 1, 2027 · Nijmegen, Netherlands | 软件工程/系统软件/PL | 函数式编程会议,关注函数式语言设计、类型理论与程序实现技术。 |
 | CCF-B | [CCF会议](https://conf.researchr.org/home/icsme-2027) | ICSME | 2027-03-05 | September 7-11, 2027 · Toronto, Canada | 软件工程/系统软件/PL | 软件维护与演化会议,关注遗留系统维护、重构与软件演化分析。 |
 | CCF-B | [CCF会议](https://ecai2027.org/) | ECAI | 2027-04-14 | October 2-7, 2027 · Athens, Greece | 人工智能 | 欧洲人工智能会议,涵盖知识表示、机器学习、多智能体与 AI 应用。 |
-| CCF-C | [CCF会议](https://icc2027.ieee-icc.org) | ICC | 2026-10-02 | May 30 - June 3, 2027 · Washington, DC, USA | 计算机网络 | 涵盖通信网络技术，包括无线通信、光网络、物联网、网络安全及下一代通信系统等研究方向。 |
-| CCF-C | [CCF会议](https://virtual.aistats.org/Conferences/2027) | AISTATS | 2026-10-06 | May 3-6, 2027 · Montréal, Canada | 人工智能 | 人工智能与统计学交叉会议,关注统计机器学习的理论、算法与推断方法。 |
-| CCF-C | [CCF会议](https://ecir2027.co.uk/) | ECIR | 2026-10-06 | March 21-25, 2027 · Southampton, UK | 数据库/数据挖掘/信息检索 | 欧洲信息检索会议，关注信息检索模型、算法、系统与应用，包括搜索、推荐、文本挖掘及多媒体检索。 |
 | CCF-C | [CCF会议](https://dfrws.org/conferences/dfceurope2027/) | DFRWS | 2026-10-09 | March 30 - April 2, 2027 · Edinburgh, Scotland | 网络与信息安全 | 数字取证研究会议,关注取证技术与工具,涵盖磁盘、内存、网络与移动设备取证。 |
 | CCF-C | [CCF会议](https://www.ifip119.org/Conferences/) | IFIP WG 11.9 | 2026-10-10 | January 7 - 8, 2027 · New Delhi, India | 网络与信息安全 | IFIP 数字取证会议,聚焦数字证据的获取、分析与司法应用等取证研究。 |
 | CCF-C | [CCF会议](https://algorithmiclearningtheory.org/alt2027/) | ALT | 2026-10-12 | March 9-12, 2027 · Leiden, Netherlands | 人工智能 | 算法学习理论国际会议，聚焦机器学习算法的理论基础，涵盖统计学习、在线学习、强化学习及复杂度分析等方向… |
