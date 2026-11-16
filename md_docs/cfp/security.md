@@ -6,7 +6,7 @@ search:
 # 安全方向 SCI / CCF 投稿手册
 
 > 面向:网络安全 / AI 安全 / 隐私保护 / 可信 AI 方向的研究生与青年教师
-> 版本:v1(2026-07)· 征稿清单更新至 2026-11-12 · 由公众号数据管线整理,事实性信息均经官网核实,核实日期随文标注
+> 版本:v1(2026-07)· 征稿清单更新至 2026-11-16 · 由公众号数据管线整理,事实性信息均经官网核实,核实日期随文标注
 > ⚠️ 免责:截稿、APC、出版模式随时可能调整,投稿前务必以官网为准;本手册不做中介、不承诺录用。
 
 🔍 本手册由公众号维护,每周三/周日推送筛选后的征稿速递(安全方向优先标注),扫码关注:
@@ -32,7 +32,7 @@ search:
 ## 三、当前在征·安全方向征稿清单(每月自动刷新)
 
 <!-- AUTO:SEC_CFP:BEGIN 由 tools/build_master_table.py 自动刷新,勿手改 -->
-> 数据日期:2026-11-12 · A 类安全征稿 69 条 + CCF 安全会议 12 个(截稿常调整,以官网为准)
+> 数据日期:2026-11-16 · A 类安全征稿 69 条 + CCF 安全会议 17 个(截稿常调整,以官网为准)
 
 ### 期刊特刊(A 类安全,按截稿排序)
 
@@ -116,14 +116,19 @@ search:
 | CCF-A | [CCF会议](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2027-01-26 | August 11-13, 2027 · Denver, CO, USA | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
 | CCF-B | [CCF会议](https://fse.iacr.org/2027/) | FSE | 2026-12-01 | May 24-28, 2027 · Maastricht, Netherlands | 快速软件加密会议,关注对称密码的设计与分析,涵盖分组密码、流密码与哈希函数。 |
 | CCF-B | [CCF会议](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
+| CCF-B | [CCF会议](https://ches.iacr.org/2027/) | CHES | 2027-01-15 | September 6 - 9, 2027 · Cancún, Mexico | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
+| CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2027-01-28 | September 13-17, 2027 · Tokyo, Japan | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
 | CCF-C | [CCF会议](https://www.codaspy.org/2027/) | CODASPY | 2026-11-23 | June 14-17, 2027 · Fort Collins, Colorado, USA | ACM 数据与应用安全隐私会议,聚焦数据安全、隐私保护与应用层防护机制。 |
 | CCF-C | [CCF会议](https://acisp.org/) | ACISP | 2026-11-30 | July 7-10, 2027 · Melbourne, Australia | 澳大利亚信息安全与隐私会议,涵盖密码学、系统安全与隐私保护技术。 |
+| CCF-C | [CCF会议](https://blocksys.info/2027/) | BlockSys | 2026-11-30 | April 9-11, 2027 · Foshan, China | 区块链、人工智能与可信系统会议,关注区块链技术、智能合约、AI 融合应用与可信系统设计。 |
 | CCF-C | [CCF会议](https://petsymposium.org/cfp27.php) | PETS | 2026-11-30 | July 19-24, 2027 · Delft, The Netherlands | 专注于隐私增强技术，涵盖匿名通信、数据保护及隐私度量等研究。 |
 | CCF-C | [CCF会议](https://eurosp2027.ieee-security.org/) | EuroS&P | 2026-12-02 | July 5 - 9, 2027 · Madrid, Spain | IEEE 欧洲安全与隐私会议,涵盖系统安全、密码应用、隐私与攻击防御研究。 |
 | CCF-C | [CCF会议](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-12-11 | July 12-16, 2027 · Macau, China | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
 | CCF-C | [CCF会议](https://icdf2c.eai-conferences.org/2027/) | ICDF2C | 2026-12-15 | June 25-27, 2027 · New York, USA | 数字取证与网络犯罪会议,关注取证分析方法与网络犯罪调查技术。 |
+| CCF-C | [CCF会议](https://ifipsec.org/) | SEC | 2026-12-15 | June 14-16, 2027 · Linköping University, Linköping, Sweden | IFIP 信息安全国际会议,涵盖网络与系统安全、隐私保护、密码应用与安全管理。 |
 | CCF-C | [CCF会议](https://acns2027.isg.rhul.ac.uk/) | ACNS | 2027-01-21 | June 28 - July 1, 2027 · Royal Holloway, Egham, UK | 应用密码学与网络安全会议，研究密码学算法、协议设计及网络系统安全防护技术。 |
 | CCF-C | [CCF会议](https://securecomm.eai-conferences.org/2027/) | SecureComm | 2027-02-01 | October 15-18, 2027 · Hefei, China | 通信网络安全与隐私会议,关注网络攻击防御、协议安全与隐私保护。 |
+| CCF-C | [CCF会议](https://www.sacmat.org/2027/) | SACMAT | 2027-02-12 | July 19-21, 2027 · Durham, England, United Kingdom | ACM 访问控制模型与技术会议,聚焦授权模型、策略规范与访问控制实现。 |
 <!-- AUTO:SEC_CFP:END -->
 
 ## 四、综述(Survey)专门渠道(2026-06/07 核实)

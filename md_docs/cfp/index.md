@@ -5,7 +5,7 @@ search:
 
 # 计算机/AI 在征征稿总表
 
-> 更新日期:2026-11-12 · 期刊特刊 446 条 + CCF 在征会议 56 个
+> 更新日期:2026-11-16 · 期刊特刊 440 条 + CCF 在征会议 96 个
 > 期刊等级 = 2025 中科院分区;「方向」列:A=安全/可信AI/隐私核心(优先看),B=计算机/AI 基本盘,C=交叉(已从严筛)。
 > ⚠️ 信息仅供参考,截稿日期可能调整,投稿前请务必以官网为准核实投稿范围、截稿时间与版面费(APC)。
 
@@ -17,13 +17,10 @@ search:
 
 ## 一、期刊特刊(按出版商)
 
-### Elsevier(100 条)
+### Elsevier(97 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-11-15 | [Elsevier](https://www.sciencedirect.com/special-issue/332257/soft-computing-for-agentic-ai-advances-and-applications) | APPLIED SOFT COMPUTING(2区·IF6.6) | Soft Computing for Agentic AI: Advances and Applications | 研究模糊逻辑、神经网络等软计算方法在自主决策与适应动态环境的智能体AI中的应用与进展。 | Sahil Garg, Bong Jun Choi, Biplab Si… | B | 计算机：人工智能 |
-| 2026-11-15 | [Elsevier](https://www.sciencedirect.com/special-issue/338150/innovations-applications-and-future-perspectives-in-blockchain-and-distributed-ledger-technology) | Blockchain-Research and Applications(2区·IF6.5) | Innovations, Applications, and Future Perspectives in Blockchain … | 区块链与分布式账本技术的创新与应用,关注其在金融、医疗、物联网中的隐私、安全、可扩展与互操作问题。 | Carmelo Felicetti, Stefano S. Bistar… | B | 计算机：信息系统 |
-| 2026-11-15 | [Elsevier](https://www.sciencedirect.com/special-issue/331557/trustworthy-multimodal-information-fusion-for-healthcare-representation-causality-and-human-centered-intelligence) | Information Fusion(1区·IF15.5) | Trustworthy Multimodal Information Fusion for Healthcare: Represe… | 面向真实临床约束，研究可信多模态信息融合，聚焦表征、因果推断与人本智能，确保系统可靠可解释。 | Chengliang Liu, Bob Zhang, Yuting He… | C | 计算机：人工智能 |
 | 2026-11-30 | [Elsevier](https://www.sciencedirect.com/special-issue/335443/pse-asia-2026-12th-asian-symposium-on-process-systems-engineering) | COMPUTERS & CHEMICAL ENGINEERING(2区·IF3.9) | PSE Asia 2026: 12th Asian Symposium on Process Systems Engineerin… | 聚焦人工智能、碳中和与过程安全，探索化工系统的计算新方法 | Il Moon;Rajagopalan Srinivasan;Jinso… | B | 计算机：跨学科应用; 工程： |
 | 2026-11-30 | [Elsevier](https://www.sciencedirect.com/special-issue/334111/legal-frameworks-technical-challenges-and-regulatory-design-for-governing-general-purpose-ai-systems) | Computer Law & Security Review(3区·IF3.2) | Legal Frameworks, Technical Challenges, and Regulatory Design for… | 融合法律与技术，研究通用AI系统的治理框架、技术特性及支撑监管的计算工具。 | Davide Audrito, Livio Robaldo, Rober… | A | computer/core |
 | 2026-11-30 | [Elsevier](https://www.sciencedirect.com/special-issue/335716/best-papers-of-dolap-2026) | INFORMATION SYSTEMS(3区·IF3.4) | Best Papers of DOLAP 2026 | 聚焦大数据分析处理，涵盖空间数据管理、查询优化及AI驱动的大规模数据分析技术。 | Eleni Tzirita Zacharatou; Alejandro … | B | 计算机：信息系统 |
@@ -122,11 +119,10 @@ search:
 | 2027-10-01 | [Elsevier](https://www.sciencedirect.com/special-issue/334473/analysis-and-design-of-hybrid-systems-2027) | Nonlinear Analysis-Hybrid Systems(3区·IF4.1) | Analysis and Design of Hybrid Systems 2027 | 研究连续与离散动态交互的混合系统，结合AI与机器学习工具，支撑信息物理系统建模与设计。 | Giordano Pola; Jana Tumova | B | 自动化与控制系统 |
 | 2027-12-31 | [Elsevier](https://www.sciencedirect.com/special-issue/335739/algorithms-in-logic-and-artificial-intelligence-essays-dedicated-to-stefan-szeider-on-the-occasion-of-his-60th-birthday) | Computer Science Review(1区·IF12.7) | Algorithms in Logic and Artificial Intelligence: Essays Dedicated… | 聚焦逻辑与人工智能领域的算法进展，涵盖SAT求解、模型检验及AI驱动问题的算法发展。 | Robert Ganian; Friedrich Slivovsky. | B | 计算机：信息系统 |
 
-### Springer(229 条)
+### Springer(228 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-11-15 | [Springer](https://link.springer.com/collections/aidbjgaedd) | International Journal on Document Analysis and Recognition(3区·IF2.5) | ICDAR 2027 | 征集文档分析与识别领域的原创研究，涵盖算法、系统及应用，并要求作者在会议口头报告。 | Jean-Christophe Burie, Lianwen Jin | B | 计算机：人工智能 |
 | 2026-11-20 | [Springer](https://link.springer.com/collections/jjjcjbaaia) | Intelligent Service Robotics(4区·IF4.3) | TEXTILE ROBOTICS: A MATERIAL (R)EVOLUTION | 探讨纺织材料在软体、可穿戴机器人中的应用，重点研究其在人机交互、医疗康复及传感驱动平台中的创新设计与原型制作。 | — | B | 机器人学 |
 | 2026-11-24 | [Springer](https://link.springer.com/collections/gigghigcbh) | EURASIP Journal on Wireless Communications and Networking(4区·IF1.9) | 3D-Networks for 6G: System Design, Technologies, and Proof of Con… | 研究6G三维网络，融合卫星‑地面、无人机、高空平台等技术，实现全覆盖、超低时延和高可靠性的系统设计与概念验证。 | — | B | 工程：电子与电气 |
 | 2026-11-27 | [Springer](https://link.springer.com/collections/efibgiebdf) | EPJ Data Science(2区·IF2.5) | AI and Computational Approaches for Digital Connectivity | 利用人工智能、机器学习和高级分析方法，研究数字连接性的影响测量、提升及其在经济、社会和韧性方面的应用。 | Esteban Moro PhD | B | 数学跨学科应用 |
@@ -356,12 +352,10 @@ search:
 | 滚动 | [Springer](https://link.springer.com/collections/jhacheaade) | Software and Systems Modeling(3区·IF3.2) | Regular Papers | 邀稿/信息较少 | — | B | 计算机：软件工程 |
 | 滚动 | [Springer](https://link.springer.com/collections/cadfbiedii) | Software and Systems Modeling(3区·IF3.2) | Tool Papers | 征集描述和分析创新软件工具及系统的论文，涵盖架构、设计模式、实现技术、可用性等方面，推动建模及相关领域发展。 | — | B | 计算机：软件工程 |
 
-### IEEE(58 条)
+### IEEE(56 条)
 
 | 截稿 | 征稿官网 | 期刊(分区·IF) | 特刊 | 中文简介 | 客座编辑 | 方向 | 学科 |
 |---|---|---|---|---|---|---|---|
-| 2026-11-15 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-network/cfp/ai-empowered-cognitive-digital-twin-future-network-ecosystems) | IEEE NETWORK(3区·IF6.3) | AI-Empowered Cognitive Digital Twin for Future Network Ecosystems | 探索AI赋能认知数字孪生，面向6G车联网、工业物联网等场景，实现意图感知与自适应网络优化。 | Jun Cai , Concordia University, Cana… | B | 计算机：硬件 |
-| 2026-11-15 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-wireless-communications/cfp/orbit-computing-striding-era-space-centric-intelligence) | IEEE WIRELESS COMMUNICATIONS(2区·IF11.6) | In-Orbit Computing: Striding into the Era of Space-Centric Intell… | 研究在轨计算范式，利用星上智能处理数据，突破星地通信瓶颈与延迟限制。 | Jia Ye , Chongqing University, China… | B | 计算机：硬件 |
 | 2026-11-30 | [IEEE](https://ieee-iotj.org/wp-content/uploads/2026/06/Graph_Representation_Learning.pdf) | IEEE Internet of Things Journal(2区·IF8.9) | Graph Representation Learning for Internet of Things | 利用图表示学习优化物联网通信，解决非欧几里得关联下的资源分配与安全难题。 | Yang Lu, Zhiguo Ding, Arumugam Nalla… | B | 计算机：信息系统 |
 | 2026-11-30 | [IEEE](https://www.comsoc.org/publications/magazines/ieee-network/cfp/towards-intellicise-agent-communication-networks-autonomous-integration-and-evolution-humans-and-networks) | IEEE NETWORK(3区·IF6.3) | Towards Intellicise Agent Communication Networks: Autonomous Inte… | 探索6G中具备自学习能力的智能体通信网络，实现人与网络双向协同进化与意图感知。 | Rui Meng (Lead Guest Editor), Beijin… | B | 计算机：硬件 |
 | 2026-11-30 | [IEEE](https://www.ieeesmc.org/wp-content/uploads/2026/01/Prescribed-Time-Control-The-First-Decade-and-Beyond-Call-for-Papers.pdf) | IEEE Transactions on Cybernetics(1区·IF10.5) | Prescribed-Time Control: The First Decade and Beyond | 预设时间控制十年回顾与展望,关注其抗噪鲁棒性、可扩展性等落地挑战及在控制系统中的应用。 | — | B | 自动化与控制系统 |
@@ -507,40 +501,65 @@ search:
 
 | 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 领域 | 简介 |
 |---|---|---|---|---|---|---|
-| CCF-A | [CCF会议](https://pldi27.sigplan.org/) | PLDI | 2026-11-12 | June 5-11, 2027 · Atlanta, Georgia, USA | 软件工程/系统软件/PL | 编程语言设计与实现的学术会议。 |
-| CCF-A | [CCF会议](https://cvpr.thecvf.com/Conferences/2027) | CVPR | 2026-11-16 | June 20-25, 2027 · Seattle, WA, United States | 人工智能 | IEEE/CVF 计算机视觉与模式识别会议,涵盖视觉表征、检测分割、生成与多模态模型。 |
+| CCF-A | [CCF会议](https://cvpr.thecvf.com/Conferences/2027) | CVPR | 2026-11-16 | June 22-25, 2027 · Seattle, WA, United States | 人工智能 | IEEE/CVF 计算机视觉与模式识别会议,涵盖视觉表征、检测分割、生成与多模态模型。 |
+| CCF-A | [CCF会议](https://iscaconf.org/isca2027/) | ISCA | 2026-11-16 | June 5-9, 2027 · Atlanta, Georgia, USA | 体系结构/并行/存储 | 计算机体系结构领域旗舰会议,涵盖处理器、存储系统、并行架构、专用加速器与能效设计。 |
 | CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | May 17-19, 2027 · MONTREAL, CANADA | 网络与信息安全 | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
 | CCF-A | [CCF会议](https://dac.com/2027/authors/call-for-contributions) | DAC | 2026-11-18 | July 11-14, 2027 · San Jose, CA | 体系结构/并行/存储 | 设计自动化会议,涵盖芯片设计自动化、EDA 算法、验证与系统级设计。 |
+| CCF-A | [CCF会议](https://www.vldb.org/2027/) | VLDB | 2026-12-01 | August 23 - August 27, 2027 · Athens, Greece | 数据库/数据挖掘/信息检索 | VLDB是超大型数据库国际会议，涵盖数据库系统、数据挖掘、信息检索等大规模数据管理技术。 |
 | CCF-A | [CCF会议](https://www.usenix.org/conference/osdi27) | OSDI | 2026-12-08 | July 7-9, 2027 · Baltimore, MD, USA | 软件工程/系统软件/PL | USENIX操作系统设计与实现研讨会，涵盖操作系统内核、分布式系统、虚拟化及系统安全。 |
-| CCF-A | [CCF会议](https://2027.aclweb.org/) | ACL | 2027-01-04 | August 17-22, 2027 · Kyoto, Japan | 人工智能 | 计算语言学协会年会,涵盖自然语言处理模型、语言理解与生成及大模型方法。 |
+| CCF-A | [CCF会议](https://2027.aclweb.org/) | ACL | 2027-01-04 | August 20-22, 2027 · Kyoto, Japan | 人工智能 | 计算语言学协会年会,涵盖自然语言处理模型、语言理解与生成及大模型方法。 |
 | CCF-A | [CCF会议](https://conf.researchr.org/home/issta-2027) | ISSTA | 2027-01-11 | September 7-10, 2027 · Singapore | 软件工程/系统软件/PL | ACM SIGSOFT 软件测试与分析会议,关注测试、静态与动态分析及缺陷检测。 |
-| CCF-A | [CCF会议](https://conferences.i-cav.org/2027/) | CAV | 2027-01-20 | July 19-23, 2027 · KIT, Amsterdam, The Netherlands | 计算机科学理论 | 计算机辅助验证会议,关注模型检验、定理证明与软硬件形式化验证。 |
+| CCF-A | [CCF会议](https://conferences.i-cav.org/2027/) | CAV | 2027-01-20 | July 21-23, 2027 · KIT, Amsterdam, The Netherlands | 计算机科学理论 | 计算机辅助验证会议,关注模型检验、定理证明与软硬件形式化验证。 |
 | CCF-A | [CCF会议](https://sigir2027.org/) | SIGIR | 2027-01-21 | July 18-24, 2027 · San Jose, California, USA | 数据库/数据挖掘/信息检索 | 信息检索研究与发展会议,涵盖检索模型、排序学习、推荐与检索增强生成。 |
+| CCF-A | [CCF会议](https://icml.cc/Conferences/2027) | ICML | 2027-01-22 | August 2-4, 2027 · Riocentro, Rio de Janeiro, Brazil | 人工智能 | 国际机器学习会议,涵盖机器学习理论与算法、深度学习、强化学习及其应用。 |
 | CCF-A | [CCF会议](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2027-01-26 | August 11-13, 2027 · Denver, CO, USA | 网络与信息安全 | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
-| CCF-B | [CCF会议](https://deal.us.es/caise27/) | CAiSE | 2026-11-15 | June 7-11, 2027 · Seville, Spain | 软件工程/系统软件/PL | 高级信息系统工程会议,关注信息系统建模、需求工程与业务流程方法。 |
+| CCF-A | [CCF会议](https://s2027.siggraph.org/) | ACM SIGGRAPH | 2027-01-28 | August 8 - 12, 2027 · Anaheim, California | 图形学与多媒体 | 计算机图形学与交互技术旗舰会议,涵盖渲染、几何建模、动画、物理仿真与计算成像。 |
+| CCF-A | [CCF会议](https://conferences.sigcomm.org/sigcomm/2027/) | SIGCOMM | 2027-02-02 | August 8 - 12, 2027 · Bangkok, Thailand | 计算机网络 | 计算机通信旗舰会议,涵盖网络体系结构、协议、数据中心网络、网络测量与网络系统设计。 |
+| CCF-A | [CCF会议](https://2027.splashcon.org/track/splashoopsla2027) | OOPSLA | 2027-04-07 | October 10-15, 2027 · Prague, Czechia | 软件工程/系统软件/PL | 面向对象编程系统、语言与应用会议,涵盖编程语言设计与实现、程序分析与软件构造。 |
+| CCF-B | [CCF会议](https://conferences.sigcomm.org/imc/2027/) | IMC | 2026-11-17 | Oct 25-29, 2027 · Atlanta, GA, USA | 计算机网络 | 互联网测量会议,关注网络流量、性能、安全与用户行为的测量方法、数据集与实证分析。 |
+| CCF-B | [CCF会议](https://wsdm-conference.org/2027/) | WSDM | 2026-11-17 | February 15 - 19, 2027 · Cordis, Hong Kong SAR, China | 数据库/数据挖掘/信息检索 | 国际网络搜索与数据挖掘会议，聚焦搜索引擎、推荐系统、社交网络及数据挖掘算法。 |
 | CCF-B | [CCF会议](https://2027.ecoop.org/) | ECOOP | 2026-11-19 | June 28 - July 2, 2027 · Turin, Italy | 软件工程/系统软件/PL | 欧洲面向对象编程会议,关注编程语言设计、类型系统与程序分析。 |
+| CCF-B | [CCF会议](https://dasfaa2027.github.io/) | DASFAA | 2026-11-25 | May 27-30, 2027 · Shenyang, China | 数据库/数据挖掘/信息检索 | 面向先进应用的数据库系统会议,涵盖数据管理、查询处理、数据挖掘与大数据系统。 |
 | CCF-B | [CCF会议](https://secon2027.ieee-secon.org/) | SECON | 2026-11-30 | May 5-7, 2027 · Lisbon, Portugal | 计算机网络 | 感知、通信与网络融合的智能物联网系统研究。 |
 | CCF-B | [CCF会议](https://fse.iacr.org/2027/) | FSE | 2026-12-01 | May 24-28, 2027 · Maastricht, Netherlands | 网络与信息安全 | 快速软件加密会议,关注对称密码的设计与分析,涵盖分组密码、流密码与哈希函数。 |
 | CCF-B | [CCF会议](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 网络与信息安全 | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
+| CCF-B | [CCF会议](https://eurovis27.github.io/web/) | EuroVis | 2026-12-02 | May 31-June 4, 2027 · Stuttgart, Germany | 图形学与多媒体 | 欧洲图形学会可视化会议,涵盖科学可视化、信息可视化与可视分析的方法和应用。 |
+| CCF-B | [CCF会议](https://cgweek27.computational-geometry.org/) | SOCG | 2026-12-02 | June 21-25, 2027 · Bengaluru, India | 计算机科学理论 | 计算几何国际研讨会,关注几何算法、离散与组合几何、拓扑数据分析及其应用。 |
+| CCF-B | [CCF会议](https://conf.researchr.org/home/CC-2027) | CC | 2026-12-03 | March 20-21, 2027 · Salt Lake City, Utah, USA | 软件工程/系统软件/PL | 编译器构造国际会议,涵盖编译优化、程序分析、代码生成与语言运行时实现。 |
+| CCF-B | [CCF会议](https://conferences.sigcomm.org/co-next/2027/#!/home) | CoNEXT | 2026-12-04 | December 6-9, 2027 (To be confirmed) · Rio de Janeiro, Brazil | 计算机网络 | 新兴网络实验与技术会议,关注网络体系结构、协议设计、网络测量与新型网络系统。 |
 | CCF-B | [CCF会议](https://www.sigmobile.org/mobisys/2027/) | MobiSys | 2026-12-04 | June 21-25, 2027 · Ho Chi Minh City, Vietnam | 计算机网络 | ACM 移动系统、应用与服务会议,关注移动系统设计、移动感知与端侧机器学习。 |
-| CCF-B | [CCF会议](https://ics-conference.org/index.html) | ICS | 2026-12-07 | TBD · Atlanta, Georgia, USA | 体系结构/并行/存储 | ACM 国际超级计算会议,关注高性能计算体系结构、并行算法与系统优化。 |
+| CCF-B | [CCF会议](https://klab-ai3.github.io/ics2027/) | ICS | 2026-12-07 | June 5-11, 2027 · Atlanta, Georgia, USA | 体系结构/并行/存储 | ACM 国际超级计算会议,关注高性能计算体系结构、并行算法与系统优化。 |
 | CCF-B | [CCF会议](https://2027.sigmod.org/) | PODS | 2026-12-10 | June 13-19, 2027 · Huntington Beach, California, USA | 数据库/数据挖掘/信息检索 | ACM 数据库系统原理会议,关注数据库理论、查询语言与数据管理的形式化基础。 |
+| CCF-B | [CCF会议](https://warwick.ac.uk/fac/sci/dcs/aamas2027/) | AAMAS | 2026-12-11 | May 3-7, 2027 · Hanoi, Vietnam | 人工智能 | 研究自主智能体与多智能体系统的理论、设计及应用，涵盖协作、博弈、机器人及分布式人工智能。 |
 | CCF-B | [CCF会议](https://icaps27.icaps-conference.org/) | ICAPS | 2026-12-14 | June 27 - July 2, 2027 · Columbia, SC, USA | 人工智能 | 自动规划与调度会议,关注规划算法、调度方法与序贯决策。 |
+| CCF-B | [CCF会议](https://2027.coling-iccl.org/) | COLING | 2026-12-23 | May 9-14 (in-person) and 6-7 (virtual), 2027 · Macau SAR, China / Online | 人工智能 | 国际计算语言学会议，涵盖自然语言处理、语料库语言学、机器翻译及语言资源建设等。 |
+| CCF-B | [CCF会议](https://2027.naacl.org/) | NAACL | 2026-12-23 | June 1-5, 2027 · San Francisco, California, USA | 人工智能 | 北美计算语言学协会年会，聚焦自然语言处理、计算语义、对话系统及多语言技术等研究。 |
+| CCF-B | [CCF会议](https://2027.ieeeicme.org/) | ICME | 2026-12-30 | July 13-17, 2027 · Xiamen, China | 图形学与多媒体 | IEEE 多媒体国际会议,涵盖多媒体信号处理、音视频分析、多模态理解与多媒体系统。 |
+| CCF-B | [CCF会议](https://2027.ijcai.org/) | IJCAI | 2027-01-11 | August 7-13, 2027 · Kyoto, Japan | 人工智能 | 国际人工智能联合会议,覆盖机器学习、知识表示、规划、自然语言处理与多智能体等方向。 |
 | CCF-B | [CCF会议](https://nossdav.org/) | NOSSDAV | 2027-01-11 | TBD · Ghent, Belgium | 计算机网络 | 网络与操作系统音视频支持研讨会,关注流媒体传输、视频系统与服务质量。 |
+| CCF-B | [CCF会议](https://www.sigmetrics.org/sigmetrics2027/) | SIGMETRICS | 2027-01-11 | June 7-11, 2027 · Atlanta, Georgia, USA | 体系结构/并行/存储 | ACM测量与评估特别兴趣组会议，研究计算机系统性能测量、建模、分析与评估，涵盖网络、存储、分布式系统… |
+| CCF-B | [CCF会议](https://www.iscb.org/ismbeccb2027/) | ISMB | 2027-01-14 | July 18-22, 2027 · Copenhagen, Denmark | 交叉/综合/新兴 | 分子生物学智能系统会议,关注计算生物学与生物信息学的算法、模型与数据分析。 |
+| CCF-B | [CCF会议](https://ches.iacr.org/2027/) | CHES | 2027-01-15 | September 6 - 9, 2027 · Cancún, Mexico | 网络与信息安全 | 聚焦密码硬件与嵌入式系统安全，涵盖密码算法实现、侧信道攻击与防护等研究。 |
 | CCF-B | [CCF会议](https://www.icwsm.org/2027/) | ICWSM | 2027-01-15 | TBD · Edinburgh, Scotland | 人机交互与普适计算 | AAAI 网络与社交媒体会议,关注社交网络数据分析、在线行为与计算社会科学。 |
+| CCF-B | [CCF会议](https://www.ieee-security.org/TC/CSF2027/) | CSFW | 2027-01-28 | September 13-17, 2027 · Tokyo, Japan | 网络与信息安全 | 聚焦计算机安全理论基础，涵盖安全协议、形式化方法、隐私保护及系统安全验证等前沿研究。 |
+| CCF-B | [CCF会议](https://learningtheory.org/colt2027/) | COLT | 2027-01-29 | June 28 - July 2, 2027 · Tokyo, Japan | 人工智能 | 学习理论年会,关注机器学习的理论基础,包括统计学习、在线学习、优化与计算复杂性。 |
 | CCF-B | [CCF会议](https://spaa.acm.org/) | SPAA | 2027-01-29 | June 5 - June 11, 2027 · Atlanta, GA, USA | 体系结构/并行/存储 | ACM 并行算法与体系结构会议,关注并行与分布式算法、调度与并发数据结构。 |
 | CCF-B | [CCF会议](https://www.icmr2027.org/) | ICMR | 2027-01-31 | June 7-10, 2027 · Singapore | 图形学与多媒体 | 多媒体检索领域的国际学术会议，聚焦多模态内容分析与智能检索技术。 |
 | CCF-B | [CCF会议](https://sigops.org/s/conferences/hotos/2027/) | HotOS | 2027-02-01 | May 24-26, 2027 · Burghausen, Bavaria, Germany | 软件工程/系统软件/PL | USENIX 操作系统前沿议题研讨会,讨论操作系统与系统软件的新思路与争议问题。 |
-| CCF-B | [CCF会议](https://interspeech2027.org/) | InterSpeech | 2027-02-09 | August 29 - September 2, 2027 · São Paulo, Brazil | 图形学与多媒体 | 国际语音通信协会会议,涵盖语音识别与合成、说话人分析与口语语言处理。 |
+| CCF-B | [CCF会议](https://interspeech2027.org/) | InterSpeech | 2027-02-10 | August 29 - September 2, 2027 · São Paulo, Brazil | 图形学与多媒体 | 国际语音通信协会会议,涵盖语音识别与合成、说话人分析与口语语言处理。 |
 | CCF-B | [CCF会议](https://mobilehci.acm.org/2027/) | MobileHCI | 2027-02-17 | September 20-23, 2027 · Limassol, Cyprus | 人机交互与普适计算 | ACM 移动人机交互会议,关注移动与可穿戴设备的交互设计与用户研究。 |
 | CCF-B | [CCF会议](https://fscd-cade.science.ru.nl/) | CADE | 2027-02-22 | August 22-25, 2027 · Nijmegen, Netherlands | 计算机科学理论 | 自动演绎会议,关注自动定理证明、推理系统与逻辑求解技术。 |
 | CCF-B | [CCF会议](https://icfp27.sigplan.org/) | ICFP | 2027-02-25 | September 26 - October 1, 2027 · Nijmegen, Netherlands | 软件工程/系统软件/PL | 函数式编程会议,关注函数式语言设计、类型理论与程序实现技术。 |
+| CCF-B | [CCF会议](https://conf.researchr.org/home/RE-2027) | RE | 2027-03-01 | August 23-27, 2027 · Milan, Italy | 软件工程/系统软件/PL | IEEE 需求工程会议,关注需求获取、建模、验证与管理等需求工程理论与实践。 |
 | CCF-B | [CCF会议](https://conf.researchr.org/home/icsme-2027) | ICSME | 2027-03-05 | September 7-11, 2027 · Toronto, Canada | 软件工程/系统软件/PL | 软件维护与演化会议,关注遗留系统维护、重构与软件演化分析。 |
 | CCF-B | [CCF会议](https://ecai2027.org/) | ECAI | 2027-04-14 | October 2-7, 2027 · Athens, Greece | 人工智能 | 欧洲人工智能会议,涵盖知识表示、机器学习、多智能体与 AI 应用。 |
-| CCF-C | [CCF会议](https://2027.refsq.org/) | REFSQ | 2026-11-12 | April 12-15, 2027 · Basel, Switzerland | 软件工程/系统软件/PL | 需求工程：软件质量基础会议，研究需求获取、建模、验证及软件质量保障方法。 |
+| CCF-B | [CCF会议](https://kr.org/KR2027/) | KR | 2027-04-28 | September 21-24, 2027 · Buenos Aires, Argentina | 人工智能 | 知识表示与推理原理会议,关注知识表示、逻辑推理、本体与非单调推理等方向。 |
+| CCF-B | [CCF会议](https://icdm2027-website.onrender.com/) | ICDM | 2027-06-06 | November 15-18, 2027 · Brisbane, Australia | 数据库/数据挖掘/信息检索 | IEEE 数据挖掘国际会议,涵盖数据挖掘算法、机器学习方法、大数据分析与应用。 |
 | CCF-C | [CCF会议](https://www.pakdd2027.org/) | PAKDD | 2026-11-20 | June 29-July 2, 2027 · Wellington, New Zealand | 数据库/数据挖掘/信息检索 | 亚太知识发现与数据挖掘会议,涵盖数据挖掘算法与大规模数据分析应用。 |
 | CCF-C | [CCF会议](https://www.codaspy.org/2027/) | CODASPY | 2026-11-23 | June 14-17, 2027 · Fort Collins, Colorado, USA | 网络与信息安全 | ACM 数据与应用安全隐私会议,聚焦数据安全、隐私保护与应用层防护机制。 |
 | CCF-C | [CCF会议](https://acisp.org/) | ACISP | 2026-11-30 | July 7-10, 2027 · Melbourne, Australia | 网络与信息安全 | 澳大利亚信息安全与隐私会议,涵盖密码学、系统安全与隐私保护技术。 |
+| CCF-C | [CCF会议](https://blocksys.info/2027/) | BlockSys | 2026-11-30 | April 9-11, 2027 · Foshan, China | 网络与信息安全 | 区块链、人工智能与可信系统会议,关注区块链技术、智能合约、AI 融合应用与可信系统设计。 |
+| CCF-C | [CCF会议](http://2027.cscwd.org) | CSCWD | 2026-11-30 | May 26-28, 2027 · Brisbane, Australia | 人机交互与普适计算 | 计算机支持的协同设计会议,关注协同工作、群体交互与协同设计系统。 |
 | CCF-C | [CCF会议](https://petsymposium.org/cfp27.php) | PETS | 2026-11-30 | July 19-24, 2027 · Delft, The Netherlands | 网络与信息安全 | 专注于隐私增强技术，涵盖匿名通信、数据保护及隐私度量等研究。 |
 | CCF-C | [CCF会议](https://hpcclab.org/ccgrid27/) | CCGRID | 2026-12-01 | May 24-27, 2027 · Dallas-Fort Worth, Texas, USA | 体系结构/并行/存储 | IEEE 集群、云与互联网计算会议,关注分布式系统、云资源调度与大规模计算。 |
 | CCF-C | [CCF会议](https://wowmom2027.dii.unipi.it/index.html) | WoWMoM | 2026-12-01 | June 21-24, 2027 · Irvine, California, USA | 计算机网络 | IEEE 无线移动与多媒体网络会议,关注无线组网、移动计算与多媒体传输。 |
@@ -548,21 +567,36 @@ search:
 | CCF-C | [CCF会议](https://asiaccs2027.cityu.edu.mo/index.html) | AsiaCCS | 2026-12-11 | July 12-16, 2027 · Macau, China | 网络与信息安全 | 关注计算机与通信安全，涵盖密码学、软件安全、隐私保护等亚洲地区议题。 |
 | CCF-C | [CCF会议](https://www.ets2027.co.uk/) | ETS | 2026-12-15 | May 24-28, 2027 · London, UK | 体系结构/并行/存储 | IEEE 欧洲测试会议,关注集成电路测试、可测性设计与可靠性验证。 |
 | CCF-C | [CCF会议](https://icdf2c.eai-conferences.org/2027/) | ICDF2C | 2026-12-15 | June 25-27, 2027 · New York, USA | 网络与信息安全 | 数字取证与网络犯罪会议,关注取证分析方法与网络犯罪调查技术。 |
+| CCF-C | [CCF会议](https://ifipsec.org/) | SEC | 2026-12-15 | June 14-16, 2027 · Linköping University, Linköping, Sweden | 网络与信息安全 | IFIP 信息安全国际会议,涵盖网络与系统安全、隐私保护、密码应用与安全管理。 |
+| CCF-C | [CCF会议](https://2027.eswc-conferences.org/) | ESWC | 2026-12-17 | May 23-27, 2027 · Limassol, Cyprus | 数据库/数据挖掘/信息检索 | 欧洲语义网会议,关注知识图谱、本体工程、语义技术与链接数据。 |
 | CCF-C | [CCF会议](https://gmp-conference-2027.github.io/gmp2027/) | GMP | 2026-12-21 | June 21-25, 2027 · Singapore | 图形学与多媒体 | 几何建模与处理会议,关注曲面建模、几何计算与离散几何处理方法。 |
+| CCF-C | [CCF会议](https://www.fccm.org/) | FCCM | 2027-01-17 | May 10-11, 2027 · Provo, Utah, USA | 体系结构/并行/存储 | 可编程定制计算机器会议,关注 FPGA 体系结构、可重构计算、硬件加速与设计工具。 |
 | CCF-C | [CCF会议](https://dis.acm.org/2027/) | DIS | 2027-01-18 | June 28 - July 2, 2027 · Stockholm, Sweden | 人机交互与普适计算 | ACM 交互系统设计会议,关注交互设计方法、用户体验与设计研究实践。 |
 | CCF-C | [CCF会议](https://acns2027.isg.rhul.ac.uk/) | ACNS | 2027-01-21 | June 28 - July 1, 2027 · Royal Holloway, Egham, UK | 网络与信息安全 | 应用密码学与网络安全会议，研究密码学算法、协议设计及网络系统安全防护技术。 |
 | CCF-C | [CCF会议](https://conf.researchr.org/home/ease-2027) | EASE | 2027-01-22 | June 15 - 18, 2027 · Hanoi, Vietnam | 软件工程/系统软件/PL | 软件工程评估与评测会议,关注实证软件工程、度量与实验评估方法。 |
+| CCF-C | [CCF会议](https://gecco-2027.sigevo.org/HomePage) | GECCO | 2027-01-25 | July 12-16, 2027 · Kraków, Poland | 人工智能 | 遗传与进化计算会议,关注进化算法、遗传编程、群体智能与进化优化方法。 |
+| CCF-C | [CCF会议](https://idc.acm.org/2027/) | IDC | 2027-01-25 | June 21-24, 2027 · Seattle, Washington, USA | 人机交互与普适计算 | 交互设计与儿童会议,关注面向儿童的交互技术、教育技术与以儿童为中心的设计研究。 |
+| CCF-C | [CCF会议](https://mdm2027.github.io/index.html) | MDM | 2027-01-25 | June 28 - July 1, 2027 · Hamilton, New Zealand | 数据库/数据挖掘/信息检索 | IEEE 移动数据管理会议,关注移动与时空数据管理、位置服务、物联网数据与移动计算。 |
 | CCF-C | [CCF会议](https://2027.worldhaptics.org/) | WHC | 2027-01-29 | July 12-15, 2027 · Boston, Massachusetts, USA | 人机交互与普适计算 | IEEE 世界触觉会议,关注触觉感知、力反馈设备与触觉交互技术。 |
 | CCF-C | [CCF会议](https://ieeecompsac.computer.org/2027/) | COMPSAC | 2027-01-31 | July 13-16, 2027 · Tokyo, Japan | 软件工程/系统软件/PL | 国际计算机软件与应用会议,涵盖软件工程、系统与应用等计算机技术主题。 |
 | CCF-C | [CCF会议](https://ijcnn.org/2027) | IJCNN | 2027-01-31 | June 14 - 18, 2027 · Cape Town, South Africa | 人工智能 | 聚焦神经网络与人工智能，涵盖深度学习、强化学习、神经计算及智能系统应用等研究。 |
 | CCF-C | [CCF会议](https://interact2027.org/) | INTERACT | 2027-02-01 | August 23-27, 2027 · Tallinn, Estonia | 人机交互与普适计算 | IFIP 人机交互会议,关注交互技术、可用性与以人为中心的系统设计。 |
 | CCF-C | [CCF会议](https://securecomm.eai-conferences.org/2027/) | SecureComm | 2027-02-01 | October 15-18, 2027 · Hefei, China | 网络与信息安全 | 通信网络安全与隐私会议,关注网络攻击防御、协议安全与隐私保护。 |
+| CCF-C | [CCF会议](https://www.cgs-network.org/casaxr27/) | CASA | 2027-02-04 | June 4-6, 2027 · Xi'an, China | 图形学与多媒体 | 计算机动画与社交智能体会议,关注角色动画、虚拟人、行为仿真与虚拟现实交互。 |
 | CCF-C | [CCF会议](https://conferences.graphicsinterface.org/2027) | GI | 2027-02-05 | June 15-18, 2027 · Winnipeg, Canada | 人机交互与普适计算 | Graphics Interface 会议,涵盖计算机图形学、人机交互与可视化研究。 |
-| CCF-C | [CCF会议](https://icdar2027.org/) | ICDAR | 2027-02-20 | August 18 - 22, 2027 · Kuala Lumpur, Malaysia | 人工智能 | 文档分析与识别会议,关注文字检测识别、版面分析与文档理解。 |
+| CCF-C | [CCF会议](https://www.sacmat.org/2027/) | SACMAT | 2027-02-12 | July 19-21, 2027 · Durham, England, United Kingdom | 网络与信息安全 | ACM 访问控制模型与技术会议,聚焦授权模型、策略规范与访问控制实现。 |
+| CCF-C | [CCF会议](http://www.icccn.org/ICCCN27/) | ICCCN | 2027-02-19 | July 12-15, 2027 · Rome, Italy | 计算机网络 | IEEE 计算机通信与网络会议,涵盖网络协议、无线与移动网络、网络安全与网络应用。 |
 | CCF-C | [CCF会议](https://ieeecec.org/2027) | IEEE CEC | 2027-02-28 | July 25-28, 2027 · Edinburgh, Scotland, UK | 人工智能 | IEEE 进化计算大会,关注进化算法、群体智能与优化方法及应用。 |
-| CCF-C | [CCF会议](https://2027.ieee-iros.org/) | IROS | 2027-03-01 | September 26 - October 1, 2027 · Florence, Italy | 人工智能 | IEEE/RSJ 智能机器人与系统会议,涵盖机器人感知、规划控制与人机协作。 |
+| CCF-C | [CCF会议](https://2027.ieee-iros.org/) | IROS | 2027-03-01 | September 27 - October 1, 2027 · Florence, Italy | 人工智能 | IEEE/RSJ 智能机器人与系统会议,涵盖机器人感知、规划控制与人机协作。 |
+| CCF-C | [CCF会议](https://icdar2027.org/) | ICDAR | 2027-03-05 | August 18 - 22, 2027 · Kuala Lumpur, Malaysia | 人工智能 | 文档分析与识别会议,关注文字检测识别、版面分析与文档理解。 |
+| CCF-C | [CCF会议](https://conferences.sigappfr.org/apweb2027/) | APWeb-WAIM | 2027-03-07 | August 29-31, 2027 · Guiyang, China / Online | 数据库/数据挖掘/信息检索 | 亚太 Web 与大数据联合会议,涵盖 Web 数据管理、大数据分析、信息检索与数据挖掘。 |
+| CCF-C | [CCF会议](https://www.icpr2027.com/) | ICPR | 2027-03-08 | October 4-6 and 14-15, 2027 · Online | 人工智能 | 国际模式识别会议,涵盖模式识别、计算机视觉、机器学习与生物特征识别等方向。 |
 | CCF-C | [CCF会议](https://smiconf.github.io/2027/) | SMI | 2027-03-08 | June 21-25, 2027 · Singapore | 图形学与多媒体 | 形状建模国际会议,关注几何形状表示、建模与分析方法。 |
-| CCF-C | [CCF会议](https://cgs-network.org/cgi27/) | CGI | 2027-04-20 | July 5-9, 2027 · Cairns, Australia | 图形学与多媒体 | 计算机图形学国际会议,涵盖渲染、建模、动画与虚拟现实等图形技术。 |
+| CCF-C | [CCF会议](http://ic-icc.cn/2027/index.php) | ICIC | 2027-03-15 | July 22-26, 2027 · Jinan, China | 交叉/综合/新兴 | 国际智能计算会议,涵盖神经网络、进化计算、模式识别与生物信息学等智能计算方法与应用。 |
+| CCF-C | [CCF会议](https://2027.ieeeicip.org/) | ICIP | 2027-03-31 | November 29-December 3, 2027 · Singapore | 图形学与多媒体 | IEEE 图像处理国际会议,涵盖图像与视频处理、分析、压缩、复原与计算成像。 |
+| CCF-C | [CCF会议](https://ijcb2027.ieee-biometrics.org/) | IJCB | 2027-04-10 | September 13-17, 2027 · Foz do Iguaçu, Brazil | 人工智能 | 国际生物特征识别联合会议,关注人脸、指纹、虹膜等生物特征识别及其防伪与隐私问题。 |
+| CCF-C | [CCF会议](https://cgs-network.org/cgi27/) | CGI | 2027-04-21 | July 5-9, 2027 · Cairns, Australia | 图形学与多媒体 | 计算机图形学国际会议,涵盖渲染、建模、动画与虚拟现实等图形技术。 |
+| CCF-C | [CCF会议](https://fscd-cade.science.ru.nl/) | FSCD | 2027-04-26 | August 23-26, 2027 · Nijmegen, Netherlands | 计算机科学理论 | 计算与演绎形式结构会议,关注重写系统、类型论、λ演算、证明论与形式化验证。 |
 
 ---
 
