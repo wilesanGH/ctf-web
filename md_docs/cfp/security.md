@@ -6,7 +6,7 @@ search:
 # 安全方向 SCI / CCF 投稿手册
 
 > 面向:网络安全 / AI 安全 / 隐私保护 / 可信 AI 方向的研究生与青年教师
-> 版本:v1(2026-07)· 征稿清单更新至 2026-11-16 · 由公众号数据管线整理,事实性信息均经官网核实,核实日期随文标注
+> 版本:v1(2026-07)· 征稿清单更新至 2026-11-23 · 由公众号数据管线整理,事实性信息均经官网核实,核实日期随文标注
 > ⚠️ 免责:截稿、APC、出版模式随时可能调整,投稿前务必以官网为准;本手册不做中介、不承诺录用。
 
 🔍 本手册由公众号维护,每周三/周日推送筛选后的征稿速递(安全方向优先标注),扫码关注:
@@ -32,7 +32,7 @@ search:
 ## 三、当前在征·安全方向征稿清单(每月自动刷新)
 
 <!-- AUTO:SEC_CFP:BEGIN 由 tools/build_master_table.py 自动刷新,勿手改 -->
-> 数据日期:2026-11-16 · A 类安全征稿 69 条 + CCF 安全会议 17 个(截稿常调整,以官网为准)
+> 数据日期:2026-11-23 · A 类安全征稿 70 条 + CCF 安全会议 16 个(截稿常调整,以官网为准)
 
 ### 期刊特刊(A 类安全,按截稿排序)
 
@@ -93,6 +93,7 @@ search:
 | 2027-04-30 | [Elsevier](https://www.sciencedirect.com/special-issue/336670/standards-and-interfaces-for-secure-and-trustworthy-multi-agent-iot-systems) | COMPUTER STANDARDS & INTERFACES(2区·IF3.1) | Standards and Interfaces for Secure and Trustworthy Multi-Ag… | 研究多智能体物联网安全标准与接口，重点密码协议、隐私保护及可信验证。 | Kuo-Hui Yeh, Zuoxia Yu, Yang Cao… | 计算机：硬件 |
 | 2027-04-30 | [Springer](https://link.springer.com/collections/jgdheeicda) | MOBILE NETWORKS & APPLICATIONS(4区·IF2) | Trustworthy and Efficient Time-Series Intelligence at the Mo… | 移动边缘的可信高效时序智能,涵盖轻量预测与异常检测、基础模型适配、差分隐私与安全数据共享。 | Phien Nguyen Ngoc PhD | 计算机：硬件 |
 | 2027-04-30 | [Springer](https://link.springer.com/collections/idffehagbe) | WORLD WIDE WEB-INTERNET AND WEB INFORMATION SYSTEMS(4区·IF3.4) | Graph-Enhanced Large Language Models for Trustworthy Web Int… | 图增强大模型用于可信Web智能,源自WWW'26 GLOW研讨会,关注图结构与大模型结合的可信数据管理。 | Asst. Prof. Gianluca Bonifazi Ph… | 计算机：信息系统 |
+| 2027-05-01 | [Wiley](https://onlinelibrary.wiley.com/page/journal/14680394/call-for-papers/si-2026-001323) | EXPERT SYSTEMS(4区·IF2.3) | Safe and Trustworthy Autonomous Systems in Real-World Enviro… | 安全可信的自主系统:面向自动驾驶、机器人与具身智能体,研究开放环境下的安全性、可靠性、可解释性与泛化。 | — | 计算机：人工智能 |
 | 2027-05-10 | [Springer](https://link.springer.com/collections/gefifjbacf) | International Journal of Data Science and Analytics(3区·IF2.9) | Data-Centric Generative AI and Large Language Models for Int… | 探索数据中心的生成式AI与大语言模型在网络安全中的应用，结合深度生成模型与语义理解实现威胁检测、漏洞分析等智能… | Arcangelo Castiglione PhD | 计算机：人工智能 |
 | 2027-05-26 | [Springer](https://link.springer.com/collections/ccfdjcgbef) | Journal of King Saud University-Computer and Information Sciences(2区·IF6.1) | Intelligent Information Security, Privacy Protection, and Em… | 聚焦智能信息安全与隐私保护，涵盖区块链安全、联邦学习、可信AI、隐私计算及高级加密等前沿技术的研究与应用。 | Suo Gao PhD | 计算机：信息系统 |
 | 2027-05-31 | [Elsevier](https://www.sciencedirect.com/special-issue/337660/special-issue-on-reliable-and-trustworthy-automated-software-engineering) | JOURNAL OF SYSTEMS AND SOFTWARE(2区·IF4.1) | Special Issue on Reliable and Trustworthy Automated Software… | 可靠可信的自动化软件工程,关注代码生成、漏洞检测、测试与修复等自动化工具的可信性与安全保障。 | Gregorio Dalia, Andrea Di Sorbo,… | 计算机：软件工程 |
@@ -112,7 +113,6 @@ search:
 
 | 等级 | 征稿官网 | 会议 | 下一截稿 | 会期 · 地点 | 简介 |
 |---|---|---|---|---|---|
-| CCF-A | [CCF会议](https://sp2027.ieee-security.org/index.html) | S&P | 2026-11-17 | May 17-19, 2027 · MONTREAL, CANADA | 探讨计算机安全与隐私保护的综合议题，覆盖系统安全、软件安全、密码学及隐私增强技术。 |
 | CCF-A | [CCF会议](https://www.usenix.org/conference/usenixsecurity27) | USENIX Security | 2027-01-26 | August 11-13, 2027 · Denver, CO, USA | 研讨系统安全前沿，覆盖操作系统、网络、隐私及机器学习安全等领域。 |
 | CCF-B | [CCF会议](https://fse.iacr.org/2027/) | FSE | 2026-12-01 | May 24-28, 2027 · Maastricht, Netherlands | 快速软件加密会议,关注对称密码的设计与分析,涵盖分组密码、流密码与哈希函数。 |
 | CCF-B | [CCF会议](https://dsn2027-berlin.github.io/) | DSN | 2026-12-02 | June 22-25, 2027 · Berlin, Germany | 关注可靠系统与网络，研究容错计算、安全关键系统、网络可靠性及系统弹性等方向。 |
